@@ -1,6 +1,0 @@
-{
-    "rules": {
-        "indent": "off",
-        "comma-dangle": ["error", "never"]
-    }
-}
