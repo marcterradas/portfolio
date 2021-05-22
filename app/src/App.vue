@@ -1,28 +1,16 @@
 <template>
-  <div id="app">
-    <div class="regular">Regular</div>
-    <div class="bold">Bold</div>
-    <div class="italic">Italic</div>
-    <div class="bolditalic">Bold Italic</div>
-  </div>
+    <div id="app">
+        <router-view></router-view>
+    </div>
 </template>
 
+<script>
+export default {
+    name: 'App'
+}
+</script>
+
 <style lang="scss">
-
-  .regular {
-    font-family: Roboto-Regular;
-  }
-
-  .bold {
-    font-family: Roboto-Bold;
-  }
-
-  .italic {
-    font-family: Roboto-Italic;
-  }
-
-  .bolditalic {
-    font-family: Roboto-BoldItalic;
-  }
-
+#app {
+}
 </style>
