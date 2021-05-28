@@ -2,10 +2,9 @@
     <nav id="nav">
         <div>
             <select v-model="selectedLanguage">
-                <option v-for="(index, language) in languages" :key="index">{{ language }}</option>
+                <option v-for="(language, index) in languages" :key="index" :value="index">{{ language }}</option>
             </select>
         </div>
-        <div>{{ selectedLanguage }}</div>
     </nav>
 </template>
 
