@@ -1,10 +1,14 @@
 <template>
     <nav id="nav">
-        <div class="right"></div>
+        <div class="right">
+            <div class="element">{{ $t('home') }}</div>
+        </div>
         <div class="left">
-            <select v-model="selectedLanguage">
-                <option v-for="(language, index) in languages" :key="index" :value="index">{{ language }}</option>
-            </select>
+            <div class="element">
+                <select v-model="selectedLanguage">
+                    <option v-for="(language, index) in languages" :key="index" :value="index">{{ language }}</option>
+                </select>
+            </div>
         </div>
     </nav>
 </template>
@@ -24,7 +28,8 @@ export default {
                 this.$store.commit('language/setSelectedLanguage', language)
             }
         }
-    }
+    },
+    methods: {}
 }
 </script>
 
@@ -39,6 +44,16 @@ export default {
 
     .right {
         width: 50%;
+
+        .element {
+            background-color: $grey;
+            color: $white;
+            padding: 10px;
+            cursor: pointer;
+            width: fit-content;
+            border-radius: 4px;
+            border: 1px solid $grey;
+        }
     }
 
     .left {
@@ -53,10 +68,8 @@ export default {
             color: $white;
             padding: 10px;
             cursor: pointer;
-
-            option {
-                cursor: pointer;
-            }
+            border: 1px solid $grey;
+            border-radius: 4px;
         }
     }
 }
