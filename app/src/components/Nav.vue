@@ -1,7 +1,7 @@
 <template>
     <nav id="nav">
         <div class="right">
-            <div class="element">{{ $t('home') }}</div>
+            <!-- <div class="element">{{ $t('home') }}</div> -->
         </div>
         <div class="left">
             <div class="element">
