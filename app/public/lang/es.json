@@ -3,5 +3,30 @@
     "home": "Inicio",
     "work": "Experiencia Laboral",
     "education": "Educación",
-    "about_me": "Sobre mi"
+    "about_me": "Sobre mi",
+    "work_description": {
+        "intowin": {
+            "position": "Full Stack Developer",
+            "company": "Intowin",
+            "duration": "Junio 2019 - Presente",
+            "type": "Jornada Completa",
+            "location": "Mataró y Remoto"
+        },
+        "kriter": {
+            "position": "Full Stack Developer",
+            "company": "Kriter Software",
+            "duration": "Junio 2018 - Junio 2019",
+            "type": "Media Jornada",
+            "location": "Mataró"
+        },
+        "hospital": {
+            "position": "Técnico Informático",
+            "company": "Consorci Sanitari del Maresme",
+            "duration": "Octubre 2016 - Marzo 2017",
+            "type": "Becario",
+            "location": "Mataró"
+        }
+    },
+    "education_description": {},
+    "about_me_description": {}
 }
