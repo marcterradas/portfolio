@@ -42,6 +42,7 @@ export default {
             .position {
                 font-family: Roboto-Bold;
                 font-size: 16px;
+                margin-bottom: 3px;
             }
 
             .company {
