@@ -105,11 +105,6 @@ export default {
                 background-repeat: no-repeat;
                 background-position: center;
             }
-
-            .resume {
-                width: 100%;
-                padding: 10px 0 0 10px;
-            }
         }
     }
 }
