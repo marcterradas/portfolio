@@ -6,28 +6,25 @@
             <div class="description">Full Stack Developer</div>
         </div>
         <div id="information">
-            <div class="element" id="work">
-                <div class="title">{{ $t('work') }}</div>
-                <div class="icon"></div>
-                <div class="resume"></div>
-            </div>
-            <div class="element" id="education">
-                <div class="title">{{ $t('education') }}</div>
-                <div class="icon"></div>
-                <div class="resume"></div>
-            </div>
-            <div class="element" id="about_me">
-                <div class="title">{{ $t('about_me') }}</div>
-                <div class="icon"></div>
-                <div class="resume"></div>
-            </div>
+            <Work></Work>
+            <Education></Education>
+            <AboutMe></AboutMe>
         </div>
     </div>
 </template>
 
 <script>
+import Work from '@/components/resume/Work'
+import Education from '@/components/resume/Education'
+import AboutMe from '@/components/resume/AboutMe'
+
 export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+        Work,
+        Education,
+        AboutMe
+    }
 }
 </script>
 <style lang="scss">
@@ -88,13 +85,10 @@ export default {
 
         .element {
             width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
             border-radius: 4px;
             border: 1px solid $grey;
             padding: 20px 0;
+            cursor: pointer;
 
             .title {
                 text-align: center;
@@ -111,23 +105,10 @@ export default {
                 background-repeat: no-repeat;
                 background-position: center;
             }
-        }
 
-        #work {
-            .icon {
-                background-image: url('../../public/img/work-light.png');
-            }
-        }
-
-        #education {
-            .icon {
-                background-image: url('../../public/img/education-light.png');
-            }
-        }
-
-        #about_me {
-            .icon {
-                background-image: url('../../public/img/about_me-light.png');
+            .resume {
+                width: 100%;
+                padding: 10px 0 0 10px;
             }
         }
     }
