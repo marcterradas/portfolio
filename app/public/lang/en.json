@@ -27,6 +27,15 @@
             "location": "Mataró"
         }
     },
-    "education_description": {},
+    "education_description": {
+        "daw": {
+            "degree": "Associate Degree, Web Development",
+            "place": "Thos i Codina High School"
+        },
+        "smx": {
+            "degree": "Associate Degree, Systems and NetworksS",
+            "place": "Thos i Codina High School"
+        }
+    },
     "about_me_description": {}
 }

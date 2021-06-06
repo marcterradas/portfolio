@@ -27,6 +27,15 @@
             "location": "Mataró"
         }
     },
-    "education_description": {},
+    "education_description": {
+        "daw": {
+            "degree": "CFGS Desenvolupament d'Aplicacions Web (DAW)",
+            "place": "I.E.S Thos i Codina (Mataró)"
+        },
+        "smx": {
+            "degree": "CFGM Sistemes Microinformàtics i Xarxes (SMX)",
+            "place": "I.E.S Thos i Codina (Mataró)"
+        }
+    },
     "about_me_description": {}
 }
