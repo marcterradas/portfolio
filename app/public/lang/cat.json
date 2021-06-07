@@ -37,5 +37,12 @@
             "place": "I.E.S Thos i Codina (Mataró)"
         }
     },
-    "about_me_description": {}
+    "about_me_description": {
+        "birthday": "26/04/1998, Barcelona",
+        "description": {
+            "part1": "Hola!, em dic Marc, tinc {age} i sóc desenvolupador de software 🧑‍💻.",
+            "part2": "Tinc {experience} anys d'experiència com a desenvolupador de software 💪.",
+            "part3": "Esportista 🏃."
+        }
+    }
 }

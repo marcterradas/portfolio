@@ -33,9 +33,16 @@
             "place": "Thos i Codina High School"
         },
         "smx": {
-            "degree": "Associate Degree, Systems and NetworksS",
+            "degree": "Associate Degree, Systems and Networks",
             "place": "Thos i Codina High School"
         }
     },
-    "about_me_description": {}
+    "about_me_description": {
+        "birthday": "1998-04-26, Barcelona",
+        "description": {
+            "part1": "Hi! My name is Marc, I'm {age} years old and I'm a software developer 🧑‍💻.",
+            "part2": "I have {experience} years of experience as a software developer 💪.",
+            "part3": "Sports player 🏃."
+        }
+    }
 }
