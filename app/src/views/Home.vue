@@ -82,6 +82,7 @@ export default {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 20px;
+        row-gap: 20px;
 
         .element {
             width: 100%;
@@ -105,6 +106,23 @@ export default {
                 background-repeat: no-repeat;
                 background-position: center;
             }
+
+            &:hover {
+                transition: background-color 1s ease;
+                background-color: $grey;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        #information {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        #information {
+            grid-template-columns: 1fr;
         }
     }
 }
