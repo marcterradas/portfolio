@@ -41,7 +41,7 @@ export default {
     justify-content: center;
     padding: 20px;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
-    background-color: $white;
+    // background-color: $white;
     transition: 1s;
 
     .right {
