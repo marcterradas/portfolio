@@ -90,7 +90,6 @@ export default {
             padding: 20px 0;
             box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.15);
             background-color: $white;
-            cursor: pointer;
             transition: 1s;
 
             .title {
