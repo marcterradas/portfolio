@@ -31,7 +31,7 @@ export default {
 <style lang="scss">
 #work {
     .icon {
-        background-image: url('../../../public/img/work-light.png');
+        background-image: url('../../../public/img/work-dark.png');
     }
 
     .resume {

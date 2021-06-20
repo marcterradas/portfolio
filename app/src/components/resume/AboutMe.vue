@@ -34,7 +34,7 @@ export default {
 <style lang="scss">
 #about_me {
     .icon {
-        background-image: url('../../../public/img/about_me-light.png');
+        background-image: url('../../../public/img/about_me-dark.png');
     }
 
     .resume {

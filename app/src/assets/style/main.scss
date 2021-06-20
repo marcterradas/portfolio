@@ -2,10 +2,8 @@
 @import 'fonts.scss';
 @import 'colors.scss';
 
-body {
-    background-color: $black;
-}
-
 div {
-    color: $white;
+    color: $black;
+    font-family: Roboto-Regular;
+    font-size: 16px;
 }

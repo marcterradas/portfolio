@@ -47,12 +47,12 @@ export default {
             width: 160px;
             height: 160px;
             border-radius: 50%;
-            border: 1px solid $grey;
             margin-bottom: 20px;
             background-image: url('../../public/img/marc.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center -20px;
+            box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.15);
         }
 
         .name {
@@ -87,9 +87,11 @@ export default {
         .element {
             width: 100%;
             border-radius: 4px;
-            border: 1px solid $grey;
             padding: 20px 0;
+            box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.15);
+            background-color: $white;
             cursor: pointer;
+            transition: 1s;
 
             .title {
                 text-align: center;
@@ -109,7 +111,7 @@ export default {
 
             &:hover {
                 transition: background-color 1s ease;
-                background-color: $grey;
+                background-color: $white2;
             }
         }
     }

@@ -40,7 +40,9 @@ export default {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border-bottom: 1px solid $grey;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
+    background-color: $white;
+    transition: 1s;
 
     .right {
         width: 50%;
@@ -64,12 +66,22 @@ export default {
         justify-content: flex-end;
         select {
             height: 40px;
-            background-color: $grey;
             color: $white;
             padding: 10px;
             cursor: pointer;
-            border: 1px solid $grey;
             border-radius: 4px;
+            border: none;
+            box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+            background-color: $white2;
+            color: $black;
+            font-family: Roboto-Regular;
+
+            option {
+                background-color: $white2;
+                color: $black;
+                font-family: Roboto-Regular;
+                border: none;
+            }
         }
     }
 }
