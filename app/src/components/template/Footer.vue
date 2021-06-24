@@ -38,7 +38,7 @@ export default {}
             cursor: pointer;
 
             &#github {
-                background-image: url('../../../public/img/github.svg');
+                background-image: url('../../../public/img/github.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -50,7 +50,7 @@ export default {}
             }
 
             &#linkedin {
-                background-image: url('../../../public/img/linkedin.svg');
+                background-image: url('../../../public/img/linkedin.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
