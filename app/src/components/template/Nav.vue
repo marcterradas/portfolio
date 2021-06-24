@@ -70,10 +70,16 @@ export default {
             cursor: pointer;
             border-radius: 4px;
             border: none;
-            box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-            background-color: $white2;
+            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
             color: $black;
             font-family: Roboto-Regular;
+            background-color: $white;
+            transition: 1s;
+
+            &:hover {
+                transition: background-color 1s ease;
+                background-color: $white2;
+            }
 
             option {
                 background-color: $white2;
