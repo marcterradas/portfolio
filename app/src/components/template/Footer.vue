@@ -1,10 +1,10 @@
 <template>
     <footer id="footer">
         <div class="element">
-            <a href="https://github.com/marcterradas" target="_blank"> <img src="../../../public/img/github.svg" /> </a>
+            <a href="https://github.com/marcterradas" target="_blank" id="github"></a>
         </div>
         <div class="element">
-            <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank"> <img src="../../../public/img/linkedin.svg" /> </a>
+            <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank" id="linkedin"></a>
         </div>
     </footer>
 </template>
@@ -23,6 +23,7 @@ export default {}
     align-items: center;
     justify-content: center;
     box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
 
     .element {
         width: 50%;
@@ -31,9 +32,34 @@ export default {}
         justify-content: center;
         cursor: pointer;
 
-        img {
+        a {
             width: 40px;
             height: 40px;
+            transition: 1s;
+
+            &#github {
+                background-image: url('../../../public/img/github.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                &:hover {
+                    transition: background-image 0.6s ease;
+                    background-image: url('../../../public/img/githubHover.png');
+                }
+            }
+
+            &#linkedin {
+                background-image: url('../../../public/img/linkedin.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                &:hover {
+                    transition: background-image 0.6s ease;
+                    background-image: url('../../../public/img/linkedinHover.png');
+                }
+            }
         }
     }
 
