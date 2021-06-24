@@ -6,7 +6,7 @@ const state = {
         es: 'Castellano',
         en: 'English'
     },
-    selectedLanguage: 'en'
+    selectedLanguage: localStorage.getItem('language') ? localStorage.getItem('language') : 'en'
 }
 
 const getters = {
@@ -24,6 +24,7 @@ const mutations = {
     setSelectedLanguage(state, language) {
         state.selectedLanguage = language
         i18n.locale = language
+        localStorage.setItem('language', language)
     }
 }
 
