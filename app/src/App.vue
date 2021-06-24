@@ -21,6 +21,5 @@ export default {
 
 <style lang="scss">
 #app {
-    // position: relative;
 }
 </style>
