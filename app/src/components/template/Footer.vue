@@ -30,12 +30,12 @@ export default {}
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
 
         a {
             width: 40px;
             height: 40px;
             transition: 1s;
+            cursor: pointer;
 
             &#github {
                 background-image: url('../../../public/img/github.svg');
