@@ -14,8 +14,8 @@ const languages = {
 }
 
 const i18n = new VueI18n({
-    locale: 'en',
-    fallbackLocale: 'en',
+    locale: localStorage.getItem('language') ? localStorage.getItem('language') : 'en',
+    fallbackLocale: localStorage.getItem('language') ? localStorage.getItem('language') : 'en',
     messages: Object.assign(languages)
 })
 
