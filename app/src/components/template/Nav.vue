@@ -5,9 +5,7 @@
         </div>
         <div class="left">
             <div class="element" id="cv">
-                <div class="button">
-                    <a href="documents/marcterradas.pdf" download>{{ $t('download_cv') }}</a>
-                </div>
+                <a class="button" href="documents/marcterradas.pdf" download>{{ $t('download_cv') }}</a>
             </div>
             <div class="element">
                 <select v-model="selectedLanguage">
@@ -111,12 +109,9 @@ export default {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
-                    a {
-                        color: $black;
-                        text-decoration: none;
-                        font-family: Roboto-Regular;
-                    }
+                    color: $black;
+                    text-decoration: none;
+                    font-family: Roboto-Regular;
 
                     &:hover {
                         transition: background-color 1s ease;
