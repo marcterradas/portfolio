@@ -1,7 +1,7 @@
 <template>
     <nav id="nav">
         <div class="right">
-            <!-- <div class="element">{{ $t('home') }}</div> -->
+            <div v-if="selectedPage != 'home'" class="element" @click="changeSelectedPage('home')">{{ $t('home') }}</div>
         </div>
         <div class="left">
             <div class="element" id="cv">
@@ -30,9 +30,24 @@ export default {
             set: function (language) {
                 this.$store.commit('language/setSelectedLanguage', language)
             }
+        },
+        selectedPage: {
+            get: function () {
+                return this.$store.getters['getSelectedPage']
+            },
+            set: function (newPage) {
+                this.$store.commit('setSelectedPage', newPage)
+            }
         }
     },
-    methods: {}
+    methods: {
+        changeSelectedPage: function (page) {
+            if (this.selectedPage !== page) {
+                this.selectedPage = page
+                this.$router.push(this.selectedPage)
+            }
+        }
+    }
 }
 </script>
 
@@ -50,13 +65,22 @@ export default {
         width: 50%;
 
         .element {
-            background-color: $grey;
             color: $white;
             padding: 10px;
             cursor: pointer;
-            width: fit-content;
             border-radius: 4px;
-            border: 1px solid $grey;
+            border: none;
+            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+            color: $black;
+            font-family: Roboto-Regular;
+            background-color: $white;
+            transition: 1s;
+            width: fit-content;
+
+            &:hover {
+                transition: background-color 1s ease;
+                background-color: $white2;
+            }
         }
     }
 
@@ -124,11 +148,11 @@ export default {
 
     @media screen and (max-width: 1200px) {
         .right {
-            display: none;
+            width: 25%;
         }
 
         .left {
-            width: 100%;
+            width: 75%;
         }
     }
 }
