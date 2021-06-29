@@ -11,11 +11,6 @@ Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/',
-        name: 'home',
-        component: Home
-    },
-    {
         path: '/work',
         name: 'work',
         component: Work
@@ -32,9 +27,9 @@ const routes = [
     },
     {
         path: '*',
-        name: 'default',
+        name: 'home',
         component: Home
-    }
+    },
 ]
 
 const router = new VueRouter({
