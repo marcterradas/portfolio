@@ -29,16 +29,12 @@ export default {
         selectedPage: {
             get: function () {
                 return this.$store.getters['getSelectedPage']
-            },
-            set: function (newPage) {
-                this.$store.commit('setSelectedPage', newPage)
             }
         }
     },
     methods: {
         changeSelectedPage: function (page) {
-            this.selectedPage = page
-            this.$router.push(this.selectedPage)
+            this.$router.push(page)
         }
     }
 }

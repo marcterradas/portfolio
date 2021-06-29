@@ -34,17 +34,13 @@ export default {
         selectedPage: {
             get: function () {
                 return this.$store.getters['getSelectedPage']
-            },
-            set: function (newPage) {
-                this.$store.commit('setSelectedPage', newPage)
             }
         }
     },
     methods: {
         changeSelectedPage: function (page) {
             if (this.selectedPage !== page) {
-                this.selectedPage = page
-                this.$router.push(this.selectedPage)
+                this.$router.push(page)
             }
         }
     }
@@ -153,6 +149,29 @@ export default {
 
         .left {
             width: 75%;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .right,
+        .left {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            margin-bottom: 20px;
+        }
+
+        .left {
+            justify-content: space-between;
+            .element {
+                &#cv {
+                    margin-right: 0;
+                }
+            }
         }
     }
 }

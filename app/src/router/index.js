@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '@/store/index.js'
 
 const Home = () => import('@/views/Home.vue')
 const Work = () => import('@/views/Work.vue')
@@ -39,6 +40,11 @@ const routes = [
 const router = new VueRouter({
     mode: 'history',
     routes
+})
+
+router.beforeEach((to, from, next) => {
+    store.commit('setSelectedPage', to.name)
+    next()
 })
 
 export default router
