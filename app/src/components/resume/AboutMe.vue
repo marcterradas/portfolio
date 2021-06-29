@@ -1,5 +1,5 @@
 <template>
-    <div class="element" id="about_me">
+    <div class="element" id="about_me" @click="$emit('selectedPage','about')">
         <div class="title">{{ $t('about_me') }}</div>
         <div class="icon"></div>
         <div class="resume">

@@ -6,9 +6,9 @@
             <div class="description">Full Stack Developer</div>
         </div>
         <div id="information">
-            <Work></Work>
-            <Education></Education>
-            <AboutMe></AboutMe>
+            <Work @selectedPage="changeSelectedPage($event)"></Work>
+            <Education @selectedPage="changeSelectedPage($event)"></Education>
+            <AboutMe @selectedPage="changeSelectedPage($event)"></AboutMe>
         </div>
     </div>
 </template>
@@ -24,6 +24,22 @@ export default {
         Work,
         Education,
         AboutMe
+    },
+    computed: {
+        selectedPage: {
+            get: function () {
+                return this.$store.getters['getSelectedPage']
+            },
+            set: function (newPage) {
+                this.$store.commit('setSelectedPage', newPage)
+            }
+        }
+    },
+    methods: {
+        changeSelectedPage: function (page) {
+            this.selectedPage = page
+            this.$router.push(this.selectedPage)
+        }
     }
 }
 </script>
@@ -91,6 +107,7 @@ export default {
             box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.15);
             background-color: $white;
             transition: 1s;
+            cursor: pointer;
 
             .title {
                 text-align: center;
