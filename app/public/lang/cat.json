@@ -11,31 +11,38 @@
             "company": "Intowin",
             "duration": "Juny 2019 - Present",
             "type": "Jornada completa",
-            "location": "Mataró i Remot"
+            "location": "Mataró i Remot",
+            "description": "Frontend: Vue.js, SASS, HTML, CSS, JS, jQuery \n Backend: CodeIgniter, PHP, Python, MySQL \n Control de versions amb Git \n Metodologia: Scrum i Kanban"
         },
         "kriter": {
             "position": "Full Stack Developer",
             "company": "Kriter Software",
             "duration": "Juny 2018 - Juny 2019",
             "type": "Mitja Jornada",
-            "location": "Mataró"
+            "location": "Mataró",
+            "description": "Frontend: Bootstrap, SASS, HTML, CSS, JS, jQuery \n Backend: Spring Boot, PHP, Java, Node.js, MySQL, MongoDB \n Control de versions amb Git \n Servei Tècnic: Trucades i Correus Electrònics"
         },
         "hospital": {
             "position": "Técnico Informático",
             "company": "Consorci Sanitari del Maresme",
             "duration": "Octubre 2016 - Marzo 2017",
             "type": "Becario",
-            "location": "Mataró"
+            "location": "Mataró",
+            "description": "Manteniment d'Ordinadors, portàtils i Impressores \n Desplegament de xarxes \n Còpies de seguretat"
         }
     },
     "education_description": {
         "daw": {
             "degree": "CFGS Desenvolupament d'Aplicacions Web (DAW)",
-            "place": "I.E.S Thos i Codina (Mataró)"
+            "place": "I.E.S Thos i Codina (Mataró)",
+            "description": "Sistemes Operatius Lliures i Serveis en Xarxa \n Java, JavaScript, PHP, MySQL, HTML, CSS \n Desplegament d'Aplicacions Web \n Projecte Final de Grau",
+            "duration": "2017 - 2019"
         },
         "smx": {
             "degree": "CFGM Sistemes Microinformàtics i Xarxes (SMX)",
-            "place": "I.E.S Thos i Codina (Mataró)"
+            "place": "I.E.S Thos i Codina (Mataró)",
+            "description": "Manteniment d'Ordinadors \n Sistemes Operatius Lliures (Client i Servidor) \n Desplegament de xarxes \n Seguretat Informàtica \n Desplegament d'Aplicacions Web \n Anglès Tècnic \n Projecte Final de Grau",
+            "duration": "2014 - 2016"
         }
     },
     "about_me_description": {

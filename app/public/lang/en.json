@@ -11,31 +11,38 @@
             "company": "Intowin",
             "duration": "June 2019 - Present",
             "type": "Full Time",
-            "location": "Mataró and Remote"
+            "location": "Mataró and Remote",
+            "description": "Frontend: Vue.js, SASS, HTML, CSS, JS, jQuery \n Backend: CodeIgniter, PHP, Python, MySQL \n Version control with Git Methodology: Scrum and Kanban"
         },
         "kriter": {
             "position": "Full Stack Developer",
             "company": "Kriter Software",
             "duration": "June 2018 - June 2019",
             "type": "Part Time",
-            "location": "Mataró"
+            "location": "Mataró",
+            "description": "Frontend: Bootstrap, SASS, HTML, CSS, JS, jQuery \n Backend: Spring Boot, PHP, Java, Node.js, MySQL, MongoDB \n Version control with Git \n Technical Service: Calls and Emails"
         },
         "hospital": {
             "position": "Computer Technician",
             "company": "Consorci Sanitari del Maresme",
             "duration": "October 2016 - March 2017",
             "type": "Apprenticeship",
-            "location": "Mataró"
+            "location": "Mataró",
+            "description": "Hardware Maintenance (Computers, Laptops and Printers) \n Network Deployment \n Data Backups"
         }
     },
     "education_description": {
         "daw": {
             "degree": "Associate Degree, Web Development",
-            "place": "Thos i Codina High School"
+            "place": "Thos i Codina High School",
+            "description": "Open Operating Systems and Network Services \n Java, JavaScript, PHP, MySQL, HTML, CSS \n Web Applications Deployment \n End of Degree Project",
+            "duration": "2017 - 2019"
         },
         "smx": {
             "degree": "Associate Degree, Systems and Networks",
-            "place": "Thos i Codina High School"
+            "place": "Thos i Codina High School",
+            "description": "Hardware Maintenance \n Open Operating Systems (Client and Server) \n Network Deployment \n Information Security \n Web Applications Deployment \n Technical English \n End of Degree Project",
+            "duration": "2014 - 2016"
         }
     },
     "about_me_description": {
