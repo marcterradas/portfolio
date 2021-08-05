@@ -46,6 +46,12 @@
             "place": "I.E.S Thos i Codina (Mataró)",
             "description": "Mantenimiento de Ordenadores <br> Sistemas Operativos Libres (Cliente y Servidor) <br> Despliegue de redes <br> Seguridad Informática <br> Despliegue de Aplicaciones Web <br> Inglés Técnico <br> Proyecto Final de Grado",
             "duration": "2014 - 2016"
+        },
+        "b2": {
+            "degree": "Ingles - B2",
+            "place": "Universitat Oberta de Catalunya",
+            "certificated": "Junio 2020",
+            "link": "Ver certificado"
         }
     },
     "about_me_description": {

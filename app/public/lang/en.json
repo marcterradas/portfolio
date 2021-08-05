@@ -46,6 +46,12 @@
             "place": "Thos i Codina High School",
             "description": "Hardware Maintenance <br> Open Operating Systems (Client and Server) <br> Network Deployment <br> Information Security <br> Web Applications Deployment <br> Technical English <br> End of Degree Project",
             "duration": "2014 - 2016"
+        },
+        "b2": {
+            "degree": "English - B2",
+            "place": "Universitat Oberta de Catalunya",
+            "certificated": "June 2020",
+            "link": "See certificate"
         }
     },
     "about_me_description": {

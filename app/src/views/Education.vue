@@ -16,6 +16,16 @@
                 <div class="description" v-html="$t('education_description.smx.description')"></div>
             </div>
         </div>
+        <div class="elementContainer">
+            <div class="element certificate">
+                <div class="degree">{{ $t('education_description.b2.degree') }}</div>
+                <div class="place">{{ $t('education_description.b2.place') }}</div>
+                <div class="duration">{{ $t('education_description.b2.certificated') }}</div>
+                <div class="link">
+                    <a href="https://drive.google.com/file/d/1y1qKp5r3NS-lVC19Be6tuJTgKYusuzHq/view" target="_blank">{{ $t('education_description.b2.link') }}</a>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -63,6 +73,12 @@ export default {
                 font-family: Roboto-Italic;
                 font-size: 14px;
                 margin-bottom: 10px;
+            }
+
+            .link {
+                a {
+                    color: $black;
+                }
             }
         }
     }
