@@ -80,6 +80,10 @@ export default {
                     color: $black;
                 }
             }
+
+            &.certificate {
+                background-color: $blue;
+            }
         }
     }
 
