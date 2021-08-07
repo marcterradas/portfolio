@@ -1,5 +1,5 @@
 <template>
-    <div class="element" id="about_me" @click="$emit('selectedPage','about')">
+    <div class="element" id="about_me" @click="$emit('selectedPage', 'about')">
         <div class="title">{{ $t('about_me') }}</div>
         <div class="icon"></div>
         <div class="resume">
@@ -49,6 +49,16 @@ export default {
             .description {
                 font-size: 14px;
                 margin-bottom: 2px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .resume {
+            .row {
+                .description {
+                    font-size: 12px;
+                }
             }
         }
     }

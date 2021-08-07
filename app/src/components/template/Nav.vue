@@ -159,19 +159,28 @@ export default {
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .element {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                select {
+                    width: 100%;
+                }
+
+                &#cv {
+                    margin: 0 0 10px 0;
+                    .button {
+                        width: 100%;
+                    }
+                }
+            }
         }
 
         .right {
-            margin-bottom: 20px;
-        }
-
-        .left {
-            justify-content: space-between;
-            .element {
-                &#cv {
-                    margin-right: 0;
-                }
-            }
+            margin-bottom: 10px;
         }
     }
 }
