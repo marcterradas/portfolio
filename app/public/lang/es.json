@@ -62,6 +62,10 @@
             "part1": "Hola!, me llamo Marc, tengo {age} años y soy desarrollador de software con {experience} años de experiencia"
         },
         "title": "Hola",
-        "subtitle": "Mi nombre es Marc Terradas Zapata"
+        "subtitle": "Mi nombre es Marc Terradas Zapata",
+        "text1": "Tengo {age} años, nací el 26/04/1998 en Barcelona, y soy desarrollador de software con {experience} años de experiencia",
+        "text2": "El stack tecnológico que más me gusta es: <b>Vue.js</b>, <b>Node.js</b> y <b>MongoDB</b>. También trabajo con <b>PHP</b>, <b>Python</b>, <b>Java</b> y <b>MySQL</b>",
+        "text3": "Los idiomas que hablo son: <b>Catalán</b> (nivel nativo), <b>Castellano</b> (nivel nativo) e <b>Inglés</b> (nivel B2)",
+        "text4": "Mi pasión aparte de la programación es el mundo del deporte. Llevo haciendo deporte des de los 3 años, los que más he practicado y disfrutado han sido: baloncesto (donde aprendí des de pequeño a trabajar en equipo), judo y atletismo"
     }
 }

@@ -62,6 +62,10 @@
             "part1": "Hi! My name is Marc, I'm {age} years old and I'm a software developer with {experience} years of experience"
         },
         "title": "Hello",
-        "subtitle": "My name is Marc Terradas Zapata"
+        "subtitle": "My name is Marc Terradas Zapata",
+        "text1": "I am {age} years old, I was born on 04/26/1998 in Barcelona, and I am a software developer with {experience} years of experience",
+        "text2": "The technology stack that I like the most is: <b>Vue.js</b>, <b>Node.js</b> and <b>MongoDB</b>. I also work with <b>PHP</b>, <b>Python</b>, <b>Java</b> and <b>MySQL</b>",
+        "text3": "The languages I speak are: <b>Catalan</b> (native level), <b>Spanish</b> (native level) and <b>English</b> (B2 level)",
+        "text4": "My passion apart from programming is the world of sports. I have been doing sports since I was 3 years old, the ones that I have practiced and enjoyed the most have been: basketball (where I learned from as a child to work as a team), judo and athletics"
     }
 }
