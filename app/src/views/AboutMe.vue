@@ -1,11 +1,11 @@
 <template>
     <div id="about">
-        <div>{{ $t('about_me_description.title') }}</div>
-        <div>{{ $t('about_me_description.subtitle') }}</div>
-        <div>{{ $t('about_me_description.text1', { age: age, experience: experience }) }}</div>
-        <div v-html="$t('about_me_description.text2')"></div>
-        <div v-html="$t('about_me_description.text3')"></div>
-        <div>{{ $t('about_me_description.text4') }}</div>
+        <div class="title">{{ $t('about_me_description.title') }}</div>
+        <div class="subtitle">{{ $t('about_me_description.subtitle') }}</div>
+        <div class="text">{{ $t('about_me_description.text1', { age: age, experience: experience }) }}</div>
+        <div class="text" v-html="$t('about_me_description.text2')"></div>
+        <div class="text" v-html="$t('about_me_description.text3')"></div>
+        <div class="text" >{{ $t('about_me_description.text4') }}</div>
     </div>
 </template>
 
@@ -31,8 +31,25 @@ export default {
 <style lang="scss">
 #about {
     padding: 20px;
+    max-width: 1000px;
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
     b {
         font-weight: bold;
     }
+
+    .text {
+        line-height: 20px;
+    }
+
 }
 </style>
