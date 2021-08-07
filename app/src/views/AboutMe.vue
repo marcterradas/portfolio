@@ -1,5 +1,5 @@
 <template>
-    <div id="about">{{ $t('about_me') }}</div>
+    <div id="about"></div>
 </template>
 
 <script>

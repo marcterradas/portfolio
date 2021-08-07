@@ -1,4 +1,6 @@
 {
+    "name": "Marc Terradas Zapata",
+    "title": "Full Stack Developer",
     "language": "Castellano",
     "home": "Inicio",
     "work": "Experiencia Laboral",
@@ -57,9 +59,9 @@
     "about_me_description": {
         "birthday": "26/04/1998, Barcelona",
         "description": {
-            "part1": "Hola!, me llamo Marc, tengo {age} años y soy desarrollador de software 🧑‍💻.",
-            "part2": "Tengo {experience} años de experiencia como desarrollador de software 💪.",
-            "part3": "Deportista 🏃."
-        }
+            "part1": "Hola!, me llamo Marc, tengo {age} años y soy desarrollador de software con {experience} años de experiencia"
+        },
+        "title": "Hola",
+        "subtitle": "Mi nombre es Marc Terradas Zapata"
     }
 }

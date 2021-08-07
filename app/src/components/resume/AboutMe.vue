@@ -5,9 +5,7 @@
         <div class="resume">
             <div class="row">
                 <div class="birthday">{{ $t('about_me_description.birthday') }}</div>
-                <div class="description">{{ $t('about_me_description.description.part1', { age: age }) }}</div>
-                <div class="description">{{ $t('about_me_description.description.part2', { experience: experience }) }}</div>
-                <div class="description">{{ $t('about_me_description.description.part3') }}</div>
+                <div class="description">{{ $t('about_me_description.description.part1', { age: age, experience: experience }) }}</div>
             </div>
         </div>
     </div>

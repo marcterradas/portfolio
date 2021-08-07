@@ -2,8 +2,8 @@
     <div id="home">
         <div id="aboutMe">
             <div class="avatar"></div>
-            <div class="name">Marc Terradas Zapata</div>
-            <div class="description">Full Stack Developer</div>
+            <div class="name">{{ $t('name') }}</div>
+            <div class="description">{{ $t('title') }}</div>
         </div>
         <div id="information">
             <Work @selectedPage="changeSelectedPage($event)"></Work>
