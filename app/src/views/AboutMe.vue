@@ -40,7 +40,7 @@ export default {
 
     .subtitle {
         font-size: 22px;
-        margin-bottom: 12px;
+        margin-bottom: 40px;
     }
 
     b {
@@ -48,7 +48,8 @@ export default {
     }
 
     .text {
-        line-height: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
     }
 
 }

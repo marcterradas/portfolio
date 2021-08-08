@@ -40,6 +40,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
     store.commit('setSelectedPage', to.name)
     next()
+    window.scrollTo(0,0);    
 })
 
 export default router

@@ -24,6 +24,7 @@ export default {}
     justify-content: center;
     box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
     margin-top: 10px;
+    background-color: white;
 
     .element {
         width: 50%;
@@ -64,7 +65,7 @@ export default {}
     }
 
     @media screen and (max-width: 1200px) {
-        position: inherit;
+        position: fixed;
     }
 }
 </style>
