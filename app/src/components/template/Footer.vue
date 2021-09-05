@@ -1,10 +1,14 @@
 <template>
     <footer id="footer">
         <div class="element">
-            <a href="https://github.com/marcterradas" target="_blank" id="github"></a>
+            <a href="https://github.com/marcterradas" target="_blank">
+                <div id="github" class="image"></div>
+            </a>
         </div>
         <div class="element">
-            <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank" id="linkedin"></a>
+            <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank">
+                <div id="linkedin" class="image"></div>
+            </a>
         </div>
     </footer>
 </template>
@@ -33,32 +37,35 @@ export default {}
         justify-content: center;
 
         a {
-            width: 40px;
             height: 40px;
-            transition: background-image 1s ease;
+            width: 40px;
             cursor: pointer;
 
-            &#github {
-                background-image: url('../../../public/img/github.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
+            .image {
+                height: 40px;
+                width: 40px;
+                transition: background-image 0.6s ease;
 
-                &:hover {
-                    transition: background-image 0.6s ease;
-                    background-image: url('../../../public/img/githubHover.png');
+                &#github {
+                    background-image: url('../../../public/img/github.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    &:hover {
+                        background-image: url('../../../public/img/githubHover.png');
+                    }
                 }
-            }
 
-            &#linkedin {
-                background-image: url('../../../public/img/linkedin.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
+                &#linkedin {
+                    background-image: url('../../../public/img/linkedin.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
 
-                &:hover {
-                    transition: background-image 0.6s ease;
-                    background-image: url('../../../public/img/linkedinHover.png');
+                    &:hover {
+                        background-image: url('../../../public/img/linkedinHover.png');
+                    }
                 }
             }
         }
