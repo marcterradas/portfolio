@@ -35,7 +35,7 @@ export default {}
         a {
             width: 40px;
             height: 40px;
-            transition: 1s;
+            transition: background-image 1s ease;
             cursor: pointer;
 
             &#github {
