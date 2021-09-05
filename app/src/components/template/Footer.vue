@@ -2,12 +2,18 @@
     <footer id="footer">
         <div class="element">
             <a href="https://github.com/marcterradas" target="_blank">
-                <div id="github" class="image"></div>
+                <div class="imageContainer">
+                    <img id="github" class="image" src="../../../public/img/github.png" data-src="../../../public/img/githubHover.png" />
+                    <img id="githubHover" class="image" src="../../../public/img/githubHover.png" />
+                </div>
             </a>
         </div>
         <div class="element">
             <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank">
-                <div id="linkedin" class="image"></div>
+                <div class="imageContainer">
+                    <img id="linkedin" class="image" src="../../../public/img/linkedin.png" data-src="../../../public/img/linkedinHover.png" />
+                    <img id="linkedinHover" class="image" src="../../../public/img/linkedinHover.png" />
+                </div>
             </a>
         </div>
     </footer>
@@ -41,30 +47,44 @@ export default {}
             width: 40px;
             cursor: pointer;
 
-            .image {
+            .imageContainer {
+                position: relative;
                 height: 40px;
                 width: 40px;
-                transition: background-image 0.6s ease;
 
-                &#github {
-                    background-image: url('../../../public/img/github.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
+                .image {
+                    height: 40px;
+                    width: 40px;
 
-                    &:hover {
-                        background-image: url('../../../public/img/githubHover.png');
+                    &#github,
+                    &#linkedin {
+                        transition: opacity 0.6s ease;
+                    }
+
+                    &#githubHover,
+                    &#linkedinHover {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        object-fit: contain;
+                        opacity: 0;
+                        transition: opacity 0.6s ease;
                     }
                 }
 
-                &#linkedin {
-                    background-image: url('../../../public/img/linkedin.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
+                &:hover {
+                    .image {
+                        &#githubHover,
+                        &#linkedinHover {
+                            opacity: 1;
+                        }
 
-                    &:hover {
-                        background-image: url('../../../public/img/linkedinHover.png');
+                        &#github,
+                        &#linkedin {
+                            opacity: 0;
+                        }
                     }
                 }
             }
