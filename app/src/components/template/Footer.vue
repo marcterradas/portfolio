@@ -27,7 +27,7 @@ export default {}
 #footer {
     position: absolute;
     bottom: 0;
-    height: 60px;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;

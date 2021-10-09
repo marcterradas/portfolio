@@ -53,7 +53,7 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
     transition: 1s;
 
@@ -115,7 +115,7 @@ export default {
             }
 
             &#cv {
-                margin-right: 30px;
+                margin-right: 20px;
                 .button {
                     height: 40px;
                     padding: 0 10px;
