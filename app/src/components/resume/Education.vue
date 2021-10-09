@@ -29,7 +29,7 @@ export default {
 
     .resume {
         .row {
-            width: 100%;
+            width: calc(100% - 20px);
             padding: 20px 0 0 10px;
             .degree {
                 font-family: Roboto-Bold;
