@@ -8,8 +8,7 @@ div {
     font-size: 16px;
 }
 
-@media screen and (max-width: 1200px) {
-    #app {
-        padding-bottom: 80px;
-    }
+html,
+body {
+    height: 100%;
 }

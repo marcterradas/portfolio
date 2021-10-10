@@ -40,6 +40,7 @@ export default {
 <style lang="scss">
 #education {
     padding: 40px;
+    height: fit-content;
 
     .elementContainer {
         width: 100%;
@@ -85,6 +86,10 @@ export default {
                 background-color: $blue;
             }
         }
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding-bottom: 70px;
     }
 
     @media screen and (max-width: 720px) {

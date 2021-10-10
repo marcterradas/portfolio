@@ -46,6 +46,7 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: calc(100% - 165px);
 
     #aboutMe {
         width: 100%;
@@ -53,7 +54,6 @@ export default {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin-bottom: 50px;
 
         .avatar {
             width: 160px;
@@ -129,6 +129,8 @@ export default {
     }
 
     @media screen and (max-width: 1200px) {
+        height: fit-content;
+        padding-bottom: 80px;
         #information {
             grid-template-columns: 1fr 1fr;
         }

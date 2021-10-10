@@ -1,5 +1,5 @@
 <template>
-    <div class="element" id="education" @click="$emit('selectedPage','education')">
+    <div class="element" id="educationResume" @click="$emit('selectedPage', 'education')">
         <div class="title">{{ $t('education') }}</div>
         <div class="icon"></div>
         <div class="resume">
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-#education {
+#educationResume {
     .icon {
         background-image: url('../../../public/img/education-dark.png');
     }

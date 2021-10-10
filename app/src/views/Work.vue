@@ -99,6 +99,7 @@ export default {
 <style lang="scss">
 #work {
     padding: 40px;
+    height: fit-content;
 
     .elementContainer {
         width: 100%;
@@ -150,6 +151,10 @@ export default {
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding-bottom: 70px;
     }
 
     @media screen and (max-width: 720px) {
