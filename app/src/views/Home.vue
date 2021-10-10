@@ -131,12 +131,25 @@ export default {
     @media screen and (max-width: 1200px) {
         height: fit-content;
         padding-bottom: 80px;
+
+        #aboutMe {
+            margin-bottom: 20px;
+        }
+
         #information {
             grid-template-columns: 1fr 1fr;
         }
     }
 
     @media screen and (max-width: 720px) {
+        #aboutMe {
+            padding: 0;
+
+            .name {
+                font-size: 32px;
+            }
+        }
+
         #information {
             grid-template-columns: 1fr;
         }
