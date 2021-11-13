@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import Work from '@/components/resume/Work'
-import Education from '@/components/resume/Education'
-import AboutMe from '@/components/resume/AboutMe'
+import Work from '@/components/resume/Work.vue'
+import Education from '@/components/resume/Education.vue'
+import AboutMe from '@/components/resume/AboutMe.vue'
 
 export default {
     name: 'Home',
