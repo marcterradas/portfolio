@@ -3,16 +3,16 @@
         <div class="element">
             <a href="https://github.com/marcterradas" target="_blank">
                 <div class="imageContainer">
-                    <img id="github" class="image" src="../../../public/img/github.png" data-src="../../../public/img/githubHover.png" />
-                    <img id="githubHover" class="image" src="../../../public/img/githubHover.png" />
+                    <img id="github" class="image" src="/img/github.png" data-src="/img/githubHover.png" />
+                    <img id="githubHover" class="image" src="/img/githubHover.png" />
                 </div>
             </a>
         </div>
         <div class="element">
             <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank">
                 <div class="imageContainer">
-                    <img id="linkedin" class="image" src="../../../public/img/linkedin.png" data-src="../../../public/img/linkedinHover.png" />
-                    <img id="linkedinHover" class="image" src="../../../public/img/linkedinHover.png" />
+                    <img id="linkedin" class="image" src="/img/linkedin.png" data-src="/img/linkedinHover.png" />
+                    <img id="linkedinHover" class="image" src="/img/linkedinHover.png" />
                 </div>
             </a>
         </div>

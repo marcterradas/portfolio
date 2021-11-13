@@ -32,7 +32,7 @@ export default {
 <style lang="scss">
 #aboutMeResume {
     .icon {
-        background-image: url('../../../public/img/about_me-dark.png');
+        background-image: url('/img/about_me-dark.png');
     }
 
     .resume {

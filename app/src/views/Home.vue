@@ -60,7 +60,7 @@ export default {
             height: 160px;
             border-radius: 50%;
             margin-bottom: 20px;
-            background-image: url('../../public/img/marc.png');
+            background-image: url('/img/marc.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center -20px;

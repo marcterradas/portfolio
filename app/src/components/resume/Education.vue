@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
 #educationResume {
     .icon {
-        background-image: url('../../../public/img/education-dark.png');
+        background-image: url('/img/education-dark.png');
     }
 
     .resume {
