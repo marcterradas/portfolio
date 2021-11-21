@@ -14,7 +14,7 @@
                 <div class="title">{{ $t('education') }}</div>
                 <div class="icon"></div>
             </div>
-            <div class="element" id="projects">
+            <div class="element" id="projects" @click="changeSelectedPage('projects')">
                 <div class="title">{{ $t('projects') }}</div>
                 <div class="icon"></div>
             </div>

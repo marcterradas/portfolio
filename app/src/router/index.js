@@ -6,6 +6,7 @@ const Home = () => import('@/views/Home.vue')
 const Work = () => import('@/views/Work.vue')
 const Education = () => import('@/views/Education.vue')
 const AboutMe = () => import('@/views/AboutMe.vue')
+const Projects = () => import('@/views/Projects.vue')
 
 Vue.use(VueRouter)
 
@@ -26,10 +27,15 @@ const routes = [
         component: AboutMe
     },
     {
+        path: '/projects',
+        name: 'projects',
+        component: Projects
+    },
+    {
         path: '*',
         name: 'home',
         component: Home
-    },
+    }
 ]
 
 const router = new VueRouter({
@@ -40,7 +46,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
     store.commit('setSelectedPage', to.name)
     next()
-    window.scrollTo(0,0);    
+    window.scrollTo(0, 0)
 })
 
 export default router
