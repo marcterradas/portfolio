@@ -101,6 +101,7 @@ export default {
         row-gap: 30px;
 
         .element {
+            max-height: 80px;
             width: 100%;
             border-radius: 4px;
             padding: 20px 0;
@@ -179,6 +180,7 @@ export default {
         }
 
         #information {
+            margin-top: 20px;
             grid-template-columns: 1fr;
         }
     }
