@@ -57,10 +57,6 @@
         }
     },
     "about_me_description": {
-        "birthday": "26/04/1998, Barcelona",
-        "description": {
-            "part1": "Hola!, me llamo Marc, tengo {age} años y soy desarrollador de software con {experience} años de experiencia"
-        },
         "title": "Hola",
         "subtitle": "Mi nombre es Marc Terradas Zapata",
         "text1": "Tengo {age} años, nací el 26/04/1998 en Barcelona, y soy desarrollador de software con {experience} años de experiencia",

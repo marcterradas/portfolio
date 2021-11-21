@@ -6,25 +6,25 @@
             <div class="description">{{ $t('title') }}</div>
         </div>
         <div id="information">
-            <Work @selectedPage="changeSelectedPage($event)"></Work>
-            <Education @selectedPage="changeSelectedPage($event)"></Education>
-            <AboutMe @selectedPage="changeSelectedPage($event)"></AboutMe>
+            <div class="element" id="workResume" @click="changeSelectedPage('work')">
+                <div class="title">{{ $t('work') }}</div>
+                <div class="icon"></div>
+            </div>
+            <div class="element" id="educationResume" @click="changeSelectedPage('education')">
+                <div class="title">{{ $t('education') }}</div>
+                <div class="icon"></div>
+            </div>
+            <div class="element" id="aboutMeResume" @click="changeSelectedPage('about')">
+                <div class="title">{{ $t('about_me') }}</div>
+                <div class="icon"></div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-import Work from '@/components/resume/Work.vue'
-import Education from '@/components/resume/Education.vue'
-import AboutMe from '@/components/resume/AboutMe.vue'
-
 export default {
     name: 'Home',
-    components: {
-        Work,
-        Education,
-        AboutMe
-    },
     computed: {
         selectedPage: {
             get: function () {
@@ -124,6 +124,24 @@ export default {
             &:hover {
                 transition: background-color 1s ease;
                 background-color: $white2;
+            }
+
+            &#workResume {
+                .icon {
+                    background-image: url('/img/work.png');
+                }
+            }
+
+            &#educationResume {
+                .icon {
+                    background-image: url('/img/education.png');
+                }
+            }
+
+            &#aboutMeResume {
+                .icon {
+                    background-image: url('/img/about_me.png');
+                }
             }
         }
     }
