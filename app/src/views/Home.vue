@@ -6,15 +6,19 @@
             <div class="description">{{ $t('title') }}</div>
         </div>
         <div id="information">
-            <div class="element" id="workResume" @click="changeSelectedPage('work')">
+            <div class="element" id="work" @click="changeSelectedPage('work')">
                 <div class="title">{{ $t('work') }}</div>
                 <div class="icon"></div>
             </div>
-            <div class="element" id="educationResume" @click="changeSelectedPage('education')">
+            <div class="element" id="education" @click="changeSelectedPage('education')">
                 <div class="title">{{ $t('education') }}</div>
                 <div class="icon"></div>
             </div>
-            <div class="element" id="aboutMeResume" @click="changeSelectedPage('about')">
+            <div class="element" id="projects">
+                <div class="title">{{ $t('projects') }}</div>
+                <div class="icon"></div>
+            </div>
+            <div class="element" id="aboutMe" @click="changeSelectedPage('about')">
                 <div class="title">{{ $t('about_me') }}</div>
                 <div class="icon"></div>
             </div>
@@ -92,9 +96,9 @@ export default {
     #information {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
 
         .element {
             width: 100%;
@@ -126,19 +130,25 @@ export default {
                 background-color: $white2;
             }
 
-            &#workResume {
+            &#work {
                 .icon {
-                    background-image: url('/img/work.png');
+                    background-image: url('/img/desk.png');
                 }
             }
 
-            &#educationResume {
+            &#education {
                 .icon {
                     background-image: url('/img/education.png');
                 }
             }
 
-            &#aboutMeResume {
+            &#projects {
+                .icon {
+                    background-image: url('/img/code.png');
+                }
+            }
+
+            &#aboutMe {
                 .icon {
                     background-image: url('/img/about_me.png');
                 }
