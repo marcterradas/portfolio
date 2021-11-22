@@ -64,5 +64,13 @@
         "text2": "The technology stack that I like the most is: <b>Vue.js</b>, <b>Node.js</b> and <b>MongoDB</b>. I also work with <b>PHP</b>, <b>Python</b>, <b>Java</b> and <b>MySQL</b>",
         "text3": "The languages I speak are: <b>Catalan</b> (native level), <b>Spanish</b> (native level) and <b>English</b> (B2 level)",
         "text4": "My passion apart from programming is the world of sports. I have been doing sports since I was 3 years old, the ones that I have practiced and enjoyed the most have been: basketball (where I learned from as a child to work as a team), judo and athletics"
+    },
+    "projects": {
+        "deployer": {
+            "description": ""
+        },
+        "portfolio": {
+            "description": ""
+        }
     }
 }

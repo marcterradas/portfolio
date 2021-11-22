@@ -1,15 +1,15 @@
 <template>
     <div id="projects">
         <div class="project">
-            <div class="title"></div>
-            <div class="url"></div>
-            <div class="tools"></div>
+            <div class="title">GitHub Pages Deployer</div>
+            <div class="url">https://github.com/marcterradas/githubpages-deployer</div>
+            <div class="tools"><b>Vue.js</b>,<b>JavaScript</b>,<b>SCSS</b>,<b>HTML</b></div>
             <div class="description"></div>
         </div>
         <div class="project">
-            <div class="title"></div>
-            <div class="url"></div>
-            <div class="tools"></div>
+            <div class="title">Portfolio</div>
+            <div class="url">https://github.com/marcterradas/portfolio</div>
+            <div class="tools"><b>Node.js</b>,<b>TypeScript</b>,<b>JEST</b></div>
             <div class="description"></div>
         </div>
     </div>
@@ -24,6 +24,9 @@ export default {
 <style lang="scss">
 #projects {
     .project {
+        b {
+            font-weight: bold;
+        }
     }
 }
 </style>
