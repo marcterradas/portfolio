@@ -3,10 +3,10 @@
     "title": "Full Stack Developer",
     "language": "English",
     "home": "Home",
-    "workTitle": "Work Experience",
-    "education": "Education",
-    "projects": "Projects",
-    "about_me": "About me",
+    "work_title": "Work Experience",
+    "education_title": "Education",
+    "projects_title": "Projects",
+    "aboutMe_title": "About me",
     "download_cv": "Download CV",
     "work": {
         "intowin": {

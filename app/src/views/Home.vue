@@ -7,11 +7,11 @@
         </div>
         <div id="information">
             <div class="element" id="work" @click="changeSelectedPage('work')">
-                <div class="title">{{ $t('workTitle') }}</div>
+                <div class="title">{{ $t('work_title') }}</div>
                 <div class="icon"></div>
             </div>
             <div class="element" id="education" @click="changeSelectedPage('education')">
-                <div class="title">{{ $t('education') }}</div>
+                <div class="title">{{ $t('education_title') }}</div>
                 <div class="icon"></div>
             </div>
             <div class="element" id="projects" @click="changeSelectedPage('projects')">
@@ -19,7 +19,7 @@
                 <div class="icon"></div>
             </div>
             <div class="element" id="aboutMe" @click="changeSelectedPage('about')">
-                <div class="title">{{ $t('about_me') }}</div>
+                <div class="title">{{ $t('aboutMe_title') }}</div>
                 <div class="icon"></div>
             </div>
         </div>

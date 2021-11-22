@@ -3,10 +3,10 @@
     "title": "Full Stack Developer",
     "language": "Català",
     "home": "Inici",
-    "workTitle": "Experiència Laboral",
-    "education": "Educació",
-    "projects": "Projectes",
-    "about_me": "Sobre mi",
+    "work_title": "Experiència Laboral",
+    "education_title": "Educació",
+    "projects_title": "Projectes",
+    "aboutMe_title": "Sobre mi",
     "download_cv": "Descarregar CV",
     "work": {
         "intowin": {
