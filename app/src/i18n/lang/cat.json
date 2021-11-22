@@ -57,7 +57,7 @@
             "link": "Veure certificat"
         }
     },
-    "about_me_description": {
+    "aboutMe": {
         "title": "Hola",
         "subtitle": "El meu nom és Marc Terradas Zapata",
         "text1": "Tinc {age} anys, vaig néixer el 26/04/1998 a Barcelona, i soc desenvolupador de software amb {experience} anys d'experiència",

@@ -57,7 +57,7 @@
             "link": "See certificate"
         }
     },
-    "about_me_description": {
+    "aboutMe": {
         "title": "Hello",
         "subtitle": "My name is Marc Terradas Zapata",
         "text1": "I am {age} years old, I was born on 04/26/1998 in Barcelona, and I am a software developer with {experience} years of experience",
