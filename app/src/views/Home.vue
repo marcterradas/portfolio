@@ -7,7 +7,7 @@
         </div>
         <div id="information">
             <div class="element" id="work" @click="changeSelectedPage('work')">
-                <div class="title">{{ $t('work') }}</div>
+                <div class="title">{{ $t('workTitle') }}</div>
                 <div class="icon"></div>
             </div>
             <div class="element" id="education" @click="changeSelectedPage('education')">

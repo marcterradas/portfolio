@@ -3,47 +3,23 @@
         <div class="elementContainer">
             <div class="element">
                 <div class="row">
-                    <div class="position">{{ $t('work_description.intowin.position') }}</div>
+                    <div class="position">{{ $t('work.intowin.position') }}</div>
                 </div>
                 <div class="row">
-                    <div class="company">{{ $t('work_description.intowin.company') }}</div>
+                    <div class="company">{{ $t('work.intowin.company') }}</div>
                     <div class="separator">·</div>
-                    <div class="type">{{ $t('work_description.intowin.type') }}</div>
+                    <div class="type">{{ $t('work.intowin.type') }}</div>
                 </div>
                 <div class="row">
-                    <div class="duration">{{ $t('work_description.intowin.duration') }}</div>
+                    <div class="duration">{{ $t('work.intowin.duration') }}</div>
                     <div class="separator">·</div>
                     <div class="years">{{ intowinYears }}</div>
                 </div>
                 <div class="row">
-                    <div class="location">{{ $t('work_description.intowin.location') }}</div>
+                    <div class="location">{{ $t('work.intowin.location') }}</div>
                 </div>
                 <div class="row">
-                    <div class="description" v-html="$t('work_description.intowin.description')"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="elementContainer">
-            <div class="element">
-                <div class="row">
-                    <div class="position">{{ $t('work_description.kriter.position') }}</div>
-                </div>
-                <div class="row">
-                    <div class="company">{{ $t('work_description.kriter.company') }}</div>
-                    <div class="separator">·</div>
-                    <div class="type">{{ $t('work_description.kriter.type') }}</div>
-                </div>
-                <div class="row">
-                    <div class="duration">{{ $t('work_description.kriter.duration') }}</div>
-                    <div class="separator">·</div>
-                    <div class="years">{{ $t('work_description.kriter.duration2') }}</div>
-                </div>
-                <div class="row">
-                    <div class="location">{{ $t('work_description.kriter.location') }}</div>
-                </div>
-                <div class="row">
-                    <div class="description" v-html="$t('work_description.kriter.description')"></div>
+                    <div class="description" v-html="$t('work.intowin.description')"></div>
                 </div>
             </div>
         </div>
@@ -51,23 +27,47 @@
         <div class="elementContainer">
             <div class="element">
                 <div class="row">
-                    <div class="position">{{ $t('work_description.hospital.position') }}</div>
+                    <div class="position">{{ $t('work.kriter.position') }}</div>
                 </div>
                 <div class="row">
-                    <div class="company">{{ $t('work_description.hospital.company') }}</div>
+                    <div class="company">{{ $t('work.kriter.company') }}</div>
                     <div class="separator">·</div>
-                    <div class="type">{{ $t('work_description.hospital.type') }}</div>
+                    <div class="type">{{ $t('work.kriter.type') }}</div>
                 </div>
                 <div class="row">
-                    <div class="duration">{{ $t('work_description.hospital.duration') }}</div>
+                    <div class="duration">{{ $t('work.kriter.duration') }}</div>
                     <div class="separator">·</div>
-                    <div class="years">{{ $t('work_description.hospital.duration2') }}</div>
+                    <div class="years">{{ $t('work.kriter.duration2') }}</div>
                 </div>
                 <div class="row">
-                    <div class="location">{{ $t('work_description.hospital.location') }}</div>
+                    <div class="location">{{ $t('work.kriter.location') }}</div>
                 </div>
                 <div class="row">
-                    <div class="description" v-html="$t('work_description.hospital.description')"></div>
+                    <div class="description" v-html="$t('work.kriter.description')"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="elementContainer">
+            <div class="element">
+                <div class="row">
+                    <div class="position">{{ $t('work.hospital.position') }}</div>
+                </div>
+                <div class="row">
+                    <div class="company">{{ $t('work.hospital.company') }}</div>
+                    <div class="separator">·</div>
+                    <div class="type">{{ $t('work.hospital.type') }}</div>
+                </div>
+                <div class="row">
+                    <div class="duration">{{ $t('work.hospital.duration') }}</div>
+                    <div class="separator">·</div>
+                    <div class="years">{{ $t('work.hospital.duration2') }}</div>
+                </div>
+                <div class="row">
+                    <div class="location">{{ $t('work.hospital.location') }}</div>
+                </div>
+                <div class="row">
+                    <div class="description" v-html="$t('work.hospital.description')"></div>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@ export default {
             const years = currentYear - startYear
             const months = currentMonth < 6 ? currentMonth + startMonth + 1 : currentMonth - startMonth + 1
 
-            const duration = this.$tc('work_description.intowin.duration2', months, { y: years, m: months })
+            const duration = this.$tc('work.intowin.duration2', months, { y: years, m: months })
 
             return duration
         }

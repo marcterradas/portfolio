@@ -3,12 +3,12 @@
     "title": "Full Stack Developer",
     "language": "Castellano",
     "home": "Inicio",
-    "work": "Experiencia Laboral",
+    "workTitle": "Experiencia Laboral",
     "education": "Educación",
     "projects": "Proyectos",
     "about_me": "Sobre mi",
     "download_cv": "Descargar CV",
-    "work_description": {
+    "work": {
         "intowin": {
             "position": "Full Stack Developer",
             "company": "Intowin",
