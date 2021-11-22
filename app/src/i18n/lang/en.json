@@ -37,7 +37,7 @@
             "description": "Hardware Maintenance (Computers, Laptops and Printers) <br> Network Deployment <br> Data Backups"
         }
     },
-    "education_description": {
+    "education": {
         "daw": {
             "degree": "Associate Degree, Web Development",
             "place": "Thos i Codina High School",

@@ -37,7 +37,7 @@
             "description": "Mantenimiento de Ordenadores, Portátiles e Impresoras <br> Despliegue de redes <br> Copias de seguridad"
         }
     },
-    "education_description": {
+    "education": {
         "daw": {
             "degree": "CFGS Desarrollo de Aplicaciones Web (DAW)",
             "place": "I.E.S Thos i Codina (Mataró)",

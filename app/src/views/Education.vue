@@ -2,27 +2,27 @@
     <div id="education">
         <div class="elementContainer">
             <div class="element">
-                <div class="degree">{{ $t('education_description.daw.degree') }}</div>
-                <div class="place">{{ $t('education_description.daw.place') }}</div>
-                <div class="duration">{{ $t('education_description.daw.duration') }}</div>
-                <div class="description" v-html="$t('education_description.daw.description')"></div>
+                <div class="degree">{{ $t('education.daw.degree') }}</div>
+                <div class="place">{{ $t('education.daw.place') }}</div>
+                <div class="duration">{{ $t('education.daw.duration') }}</div>
+                <div class="description" v-html="$t('education.daw.description')"></div>
             </div>
         </div>
         <div class="elementContainer">
             <div class="element">
-                <div class="degree">{{ $t('education_description.smx.degree') }}</div>
-                <div class="place">{{ $t('education_description.smx.place') }}</div>
-                <div class="duration">{{ $t('education_description.smx.duration') }}</div>
-                <div class="description" v-html="$t('education_description.smx.description')"></div>
+                <div class="degree">{{ $t('education.smx.degree') }}</div>
+                <div class="place">{{ $t('education.smx.place') }}</div>
+                <div class="duration">{{ $t('education.smx.duration') }}</div>
+                <div class="description" v-html="$t('education.smx.description')"></div>
             </div>
         </div>
         <div class="elementContainer">
             <div class="element certificate">
-                <div class="degree">{{ $t('education_description.b2.degree') }}</div>
-                <div class="place">{{ $t('education_description.b2.place') }}</div>
-                <div class="duration">{{ $t('education_description.b2.certificated') }}</div>
+                <div class="degree">{{ $t('education.b2.degree') }}</div>
+                <div class="place">{{ $t('education.b2.place') }}</div>
+                <div class="duration">{{ $t('education.b2.certificated') }}</div>
                 <div class="link">
-                    <a href="https://drive.google.com/file/d/1y1qKp5r3NS-lVC19Be6tuJTgKYusuzHq/view" target="_blank">{{ $t('education_description.b2.link') }}</a>
+                    <a href="https://drive.google.com/file/d/1y1qKp5r3NS-lVC19Be6tuJTgKYusuzHq/view" target="_blank">{{ $t('education.b2.link') }}</a>
                 </div>
             </div>
         </div>
