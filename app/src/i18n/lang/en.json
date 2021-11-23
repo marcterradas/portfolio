@@ -67,10 +67,10 @@
     },
     "projects": {
         "deployer": {
-            "description": ""
+            "description": "deployer description EN"
         },
         "portfolio": {
-            "description": ""
+            "description": "portfolio description EN"
         }
     }
 }
