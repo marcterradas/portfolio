@@ -3,7 +3,7 @@
         <div class="row">
             <div class="project">
                 <div class="title">GitHub Pages Deployer</div>
-                <div class="url">https://github.com/marcterradas/githubpages-deployer</div>
+                <div class="url"><a href="https://github.com/marcterradas/githubpages-deployer" target="_blank">github.com/marcterradas/githubpages-deployer</a></div>
                 <div class="tools"><b>Vue.js</b>,<b>Vite.js</b>,<b>JavaScript</b>,<b>SCSS</b>,<b>HTML</b></div>
                 <div class="description">{{ $t('projects.deployer.description') }}</div>
             </div>
@@ -11,7 +11,7 @@
         <div class="row">
             <div class="project">
                 <div class="title">Portfolio</div>
-                <div class="url">https://github.com/marcterradas/portfolio</div>
+                <div class="url"><a href="https://github.com/marcterradas/portfolio" target="_blank">github.com/marcterradas/portfolio</a></div>
                 <div class="tools"><b>Node.js</b>,<b>TypeScript</b>,<b>JEST</b></div>
                 <div class="description">{{ $t('projects.portfolio.description') }}</div>
             </div>
@@ -49,6 +49,25 @@ export default {
             b {
                 font-weight: bold;
             }
+
+            .title {
+                font-family: Roboto-BoldItalic;
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .url {
+                font-family: Roboto-Bold;
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .tools {
+                margin-bottom: 10px;
+            }
+
         }
     }
 }
