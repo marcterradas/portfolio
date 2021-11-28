@@ -1,7 +1,7 @@
 <template>
     <footer id="footer">
         <div class="element">
-            <a href="https://github.com/marcterradas" target="_blank">
+            <a href="https://github.com/marcterradas" target="_blank" rel="noopener">
                 <div class="imageContainer">
                     <img id="github" alt="github" class="image" src="/img/github.png" data-src="/img/githubHover.png" />
                     <img id="githubHover" alt="githubHover" class="image" src="/img/githubHover.png" />
@@ -9,7 +9,7 @@
             </a>
         </div>
         <div class="element">
-            <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank">
+            <a href="https://www.linkedin.com/in/marc-terradas-zapata/" target="_blank" rel="noopener">
                 <div class="imageContainer">
                     <img id="linkedin" alt="linkedin" class="image" src="/img/linkedin.png" data-src="/img/linkedinHover.png" />
                     <img id="linkedinHover" alt="linkedinHover" class="image" src="/img/linkedinHover.png" />
