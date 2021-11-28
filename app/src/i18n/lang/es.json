@@ -67,10 +67,10 @@
     },
     "projects": {
         "deployer": {
-            "description": "deployer description ES"
+            "description": "Node.js script para automatizar el despliegue de una app de Vue.js en GitHub Pages."
         },
         "portfolio": {
-            "description": "portfolio description ES"
+            "description": "Página web construida con Vue.js sobre mi experiencia laboral, estudios y proyectos de código abierto como programador."
         }
     }
 }
