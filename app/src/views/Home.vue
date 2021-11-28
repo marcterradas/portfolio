@@ -18,7 +18,7 @@
                 <div class="title">{{ $t('projects_title') }}</div>
                 <div class="icon"></div>
             </div>
-            <div class="element" id="aboutMe" @click="changeSelectedPage('about')">
+            <div class="element" id="about" @click="changeSelectedPage('about')">
                 <div class="title">{{ $t('aboutMe_title') }}</div>
                 <div class="icon"></div>
             </div>
@@ -48,7 +48,7 @@ export default {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     height: calc(100% - 165px);
 
@@ -97,8 +97,9 @@ export default {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 30px;
-        row-gap: 30px;
+        column-gap: 20px;
+        row-gap: 20px;
+        margin-bottom: 60px;
 
         .element {
             max-height: 80px;
@@ -149,7 +150,7 @@ export default {
                 }
             }
 
-            &#aboutMe {
+            &#about {
                 .icon {
                     background-image: url('/img/about_me.png');
                 }
@@ -158,19 +159,20 @@ export default {
     }
 
     @media screen and (max-width: 1200px) {
-        height: fit-content;
-        padding-bottom: 80px;
-
         #aboutMe {
             margin-bottom: 20px;
         }
 
         #information {
             grid-template-columns: 1fr 1fr;
+            margin-bottom: 0;
         }
     }
 
     @media screen and (max-width: 720px) {
+        height: fit-content;
+        padding-bottom: 80px;
+
         #aboutMe {
             padding: 0;
 
