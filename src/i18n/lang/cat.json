@@ -71,6 +71,9 @@
         },
         "portfolio": {
             "description": "Pàgina web construïda amb Vue.js sobre la meva experiència laboral, estudis i projectes de codi obert com a programador."
+        },
+        "runPHP": {
+            "description": "runPHP és un playground de PHP inspirat en runJS"
         }
     }
 }

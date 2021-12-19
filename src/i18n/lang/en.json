@@ -71,6 +71,9 @@
         },
         "portfolio": {
             "description": "Website build with Vue.js about my work experience, studies and personal open source projects as a developer."
+        },
+        "runPHP": {
+            "description": "runPHP is a PHP playground inspired by RunJS"
         }
     }
 }
