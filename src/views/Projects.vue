@@ -12,7 +12,7 @@
             <div class="project">
                 <div class="title">GitHub Pages Deployer</div>
                 <div class="url"><a href="https://github.com/marcterradas/githubpages-deployer" target="_blank">github.com/marcterradas/githubpages-deployer</a></div>
-                <div class="tools"><b>Node.js</b>,<b>TypeScript</b>,<b>JEST</b></div>
+                <div class="tools"><b>Node.js</b>,<b>TypeScript</b>,<b>Jest</b></div>
                 <div class="description">{{ $t('projects.deployer.description') }}</div>
             </div>
         </div>
