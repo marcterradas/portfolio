@@ -4,7 +4,7 @@
             <div class="project">
                 <div class="title">runPHP</div>
                 <div class="url"><a href="https://github.com/marcterradas/runPHP" target="_blank">github.com/marcterradas/runPHP</a></div>
-                <div class="tools"><b>Electron</b>,<b>TypeScript</b>,<b>JavaScript</b><b>Vue.js</b><b>Tailwind CSS</b><b>Vite.js</b></div>
+                <div class="tools"><b>Electron</b>,<b>TypeScript</b>,<b>JavaScript</b>,<b>Vue.js</b>,<b>Tailwind CSS</b>,<b>Vite.js</b></div>
                 <div class="description">{{ $t('projects.runPHP.description') }}</div>
             </div>
         </div>
