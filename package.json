@@ -1,40 +1,12 @@
 {
-    "name": "app",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "serve": "vite preview"
-    },
-    "dependencies": {
-        "@vitejs/plugin-vue": "^1.9.4",
-        "vite": "^2.6.14",
-        "vite-plugin-vue2": "^1.9.0",
-        "vue": "^2.6.11",
-        "vue-i18n": "^8.24.4",
-        "vue-router": "^3.2.0",
-        "vuex": "^3.4.0"
-    },
-    "devDependencies": {
-        "@vue/eslint-config-prettier": "^6.0.0",
-        "eslint": "^8.2.0",
-        "eslint-plugin-prettier": "^3.3.1",
-        "eslint-plugin-vue": "^8.0.3",
-        "prettier": "^2.2.1"
-    },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/essential",
-            "@vue/standard"
-        ],
-        "rules": {},
-        "parserOptions": {
-            "parser": "babel-eslint"
-        }
-    }
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.5"
+  }
 }
