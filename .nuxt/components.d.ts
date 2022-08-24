@@ -17,18 +17,20 @@ declare module 'vue' {
     'LazyNuxtLoadingIndicator': typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
   }
 }
-export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
-export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
-export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
-export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']
-export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
-export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
+
+export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
+export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default'],
+export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default'],
+export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components/client-only")['default'],
+export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default'],
+export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default'],
 export const NuxtLoadingIndicator: typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
-export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
-export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
-export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
-export const LazyClientOnly: typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']
-export const LazyServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
-export const LazyNuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
+export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
+export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default'],
+export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default'],
+export const LazyClientOnly: typeof import("../node_modules/nuxt/dist/app/components/client-only")['default'],
+export const LazyServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default'],
+export const LazyNuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default'],
 export const LazyNuxtLoadingIndicator: typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
+
 export const componentNames: string[]
