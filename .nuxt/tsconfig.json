@@ -58,6 +58,12 @@
       "vue-demi": [
         "node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "~i18n-klona": [
+        "node_modules/klona/full/index"
+      ],
+      "~i18n-ufo": [
+        "node_modules/ufo/dist/index"
+      ],
       "#head": [
         "node_modules/nuxt/dist/head/runtime"
       ],
