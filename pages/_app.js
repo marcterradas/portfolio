@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NextIntlProvider>
+    <NextIntlProvider messages={pageProps.messages}>
       <Navbar />
       <Component {...pageProps} />
     </NextIntlProvider>
