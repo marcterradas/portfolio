@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const LANGUAGES = {
   en: "English",
@@ -7,13 +8,11 @@ const LANGUAGES = {
 };
 
 export default function LanguageSwitcher() {
-  const { locales, locale, pathname, query, asPath } = useRouter();
+  const { locales } = useRouter();
   const langaugesComponents = locales.map((language) => (
-    <option key={language}>{LANGUAGES[language]}</option>
+    <Link key={language} href={language} locale={language}>
+      {LANGUAGES[language]}
+    </Link>
   ));
-  return (
-    <div>
-      <select>{langaugesComponents}</select>
-    </div>
-  );
+  return <div>{langaugesComponents}</div>;
 }
