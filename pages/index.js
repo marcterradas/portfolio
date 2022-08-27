@@ -1,5 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export default function Home() {
-  return <div></div>;
+  const t = useTranslations("home");
+  return <div>{t("language")}</div>;
 }
 
 export async function getStaticProps({ locale }) {
