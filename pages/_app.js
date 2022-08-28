@@ -1,10 +1,8 @@
 import { NextIntlProvider } from "next-intl";
-
 import "../styles/globals.css";
-
 import Navbar from "../components/Navbar";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <NextIntlProvider messages={pageProps.messages}>
       <Navbar />
@@ -12,5 +10,3 @@ function MyApp({ Component, pageProps }) {
     </NextIntlProvider>
   );
 }
-
-export default MyApp;
