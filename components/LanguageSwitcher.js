@@ -16,5 +16,5 @@ export default function LanguageSwitcher({
         </a>
       </Link>
     ));
-  return <div>{dropDown}</div>;
+  return <>{dropDown}</>;
 }
