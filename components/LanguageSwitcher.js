@@ -1,12 +1,11 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 import Language from "./Language";
-import SelectedLanguage from "./SelectedLanguage";
 
-export default function LanguageSwitcher() {
-  const { locale: selectedLanguageCode, locales: languagesCodes } = useRouter();
-
+export default function LanguageSwitcher({
+  selectedLanguageCode,
+  languagesCodes,
+}) {
   const dropDown = languagesCodes
     .filter((languageCode) => languageCode != selectedLanguageCode)
     .sort()
@@ -17,10 +16,5 @@ export default function LanguageSwitcher() {
         </a>
       </Link>
     ));
-  return (
-    <>
-      <SelectedLanguage selectedLanguageCode={selectedLanguageCode} />
-      {dropDown}
-    </>
-  );
+  return <div>{dropDown}</div>;
 }
