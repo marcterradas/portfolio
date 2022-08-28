@@ -7,7 +7,7 @@ export default function LanguageSwitcher() {
   const { locale, locales } = useRouter();
 
   const selectedLanguage = (
-    <div className="pr-2 flex justify-center items-center">
+    <div className="pr-2 pl-1 flex justify-center items-center cursor-pointer hover:bg-stone-100 transition-colors ease-linear duration-500">
       <Language languageCode={locale}></Language>
       <div className="w-3 h-3 bg-[url('/img/arrow-down.svg')] bg-cover bg-no-repeat bg-center"></div>
     </div>
@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
   return (
     <>
       <div>{selectedLanguage}</div>
-      <div>{dropDown}</div>
+      {/* <div>{dropDown}</div> */}
     </>
   );
 }
