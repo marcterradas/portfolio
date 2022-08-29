@@ -8,7 +8,7 @@ export default function Navbar() {
   const { locale: selectedLanguageCode, locales: languagesCodes } = useRouter();
 
   return (
-    <nav className="flex justify-end pr-2">
+    <nav className="flex justify-end pr-4">
       <Popover className="relative">
         <Popover.Button>
           <SelectedLanguage selectedLanguageCode={selectedLanguageCode} />
@@ -22,14 +22,12 @@ export default function Navbar() {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 translate-y-1"
         >
-          <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
-            <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-              <div className="relative">
-                <LanguageDropDown
-                  selectedLanguageCode={selectedLanguageCode}
-                  languagesCodes={languagesCodes}
-                />
-              </div>
+          <Popover.Panel className="absolute z-10 px-4">
+            <div className="rounded-md shadow-md grid gap-2">
+              <LanguageDropDown
+                selectedLanguageCode={selectedLanguageCode}
+                languagesCodes={languagesCodes}
+              />
             </div>
           </Popover.Panel>
         </Transition>
