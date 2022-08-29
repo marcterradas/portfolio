@@ -23,12 +23,15 @@ export default function Navbar() {
           leaveTo="opacity-0 translate-y-1"
         >
           <Popover.Panel className="absolute z-10 px-4">
-            <div className="rounded-md shadow-md grid gap-2">
-              <LanguageDropDown
-                selectedLanguageCode={selectedLanguageCode}
-                languagesCodes={languagesCodes}
-              />
-            </div>
+            {({ close: closePopover }) => (
+              <div className="rounded-md shadow-md grid gap-2">
+                <LanguageDropDown
+                  selectedLanguageCode={selectedLanguageCode}
+                  languagesCodes={languagesCodes}
+                  closePopover={closePopover}
+                />
+              </div>
+            )}
           </Popover.Panel>
         </Transition>
       </Popover>
