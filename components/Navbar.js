@@ -22,7 +22,7 @@ export default function Navbar() {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 translate-y-1"
         >
-          <Popover.Panel className="absolute z-10 px-4">
+          <Popover.Panel className="absolute z-10">
             {({ close: closePopover }) => (
               <div className="rounded-md shadow-md grid gap-2">
                 <LanguageDropDown
