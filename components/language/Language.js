@@ -5,8 +5,8 @@ export default function Language({ languageCode }) {
   const language = Languages[languageCode];
   const imgSrc = `/img/${languageCode}.svg`;
   return (
-    <div className="cursor-pointer flex items-center justify-start p-2">
-      <div className="w-8 h-6 relative">
+    <div className="flex items-center justify-start p-2 cursor-pointer">
+      <div className="relative w-8 h-6">
         <Image
           src={imgSrc}
           alt={languageCode}
@@ -14,7 +14,7 @@ export default function Language({ languageCode }) {
           objectFit="cover"
         ></Image>
       </div>
-      <div className="ml-2 text-lg font-sans">{language}</div>
+      <div className="ml-2 font-sans text-base lg:text-lg">{language}</div>
     </div>
   );
 }
