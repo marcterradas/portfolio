@@ -13,7 +13,7 @@ export default function LanguageDropDownElements({
       <Link key={languageCode} href={languageCode} locale={languageCode}>
         <a
           onClick={closePopover}
-          className="pr-2 pl-1 z-10 rounded-md cursor-pointer hover:bg-stone-200 transition-colors ease-linear duration-300"
+          className="z-10 pl-1 pr-2 transition-colors duration-300 ease-linear rounded-md cursor-pointer hover:bg-stone-200"
         >
           <Language languageCode={languageCode}></Language>
         </a>
