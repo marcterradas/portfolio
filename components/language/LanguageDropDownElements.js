@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Language from "./Language";
 
-export default function LanguageDropDown({
+export default function LanguageDropDownElements({
   selectedLanguageCode,
   languagesCodes,
   closePopover,
