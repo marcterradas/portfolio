@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import SelectedLanguage from "../language/SelectedLanguage";
-import LanguageDropDown from "../language/LanguageDropDown";
+import LanguageDropDownElements from "../language/LanguageDropDownElements";
 
 export default function Navbar() {
   const { locale: selectedLanguageCode, locales: languagesCodes } = useRouter();
@@ -25,7 +25,7 @@ export default function Navbar() {
           <Popover.Panel className="absolute z-10">
             {({ close: closePopover }) => (
               <div className="rounded-md shadow-md grid gap-2">
-                <LanguageDropDown
+                <LanguageDropDownElements
                   selectedLanguageCode={selectedLanguageCode}
                   languagesCodes={languagesCodes}
                   closePopover={closePopover}
