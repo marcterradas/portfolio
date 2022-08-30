@@ -2,7 +2,7 @@ import Language from "./Language";
 
 export default function SelectedLanguage({ selectedLanguageCode }) {
   return (
-    <div className="h-11 pr-2 pl-1 rounded-md flex justify-center items-center cursor-pointer hover:bg-stone-200 transition-colors ease-linear duration-300">
+    <div className="flex items-center justify-center pl-1 pr-2 transition-colors duration-300 ease-linear rounded-md cursor-pointer h-11 hover:bg-stone-200">
       <Language languageCode={selectedLanguageCode}></Language>
       <div className="w-3 h-3 bg-[url('/img/arrow-down.svg')] bg-cover bg-no-repeat bg-center"></div>
     </div>
