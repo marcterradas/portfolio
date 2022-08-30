@@ -14,7 +14,7 @@ export default function Language({ languageCode }) {
           objectFit="cover"
         ></Image>
       </div>
-      <div className="ml-2 font-sans text-base lg:text-lg">{language}</div>
+      <div className="ml-2 font-sans text-base sm:text-lg">{language}</div>
     </div>
   );
 }
