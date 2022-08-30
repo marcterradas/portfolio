@@ -1,5 +1,5 @@
 // import { useTranslations } from "next-intl";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layout/Navbar";
 
 export default function Home() {
   //   const t = useTranslations("home");

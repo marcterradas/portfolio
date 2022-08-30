@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import SelectedLanguage from "./SelectedLanguage";
-import LanguageDropDown from "./LanguageDropDown";
+import SelectedLanguage from "../SelectedLanguage";
+import LanguageDropDown from "../LanguageDropDown";
 
 export default function Navbar() {
   const { locale: selectedLanguageCode, locales: languagesCodes } = useRouter();
