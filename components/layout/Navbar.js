@@ -6,7 +6,7 @@ export default function Navbar() {
   const { locale: selectedLanguageCode, locales: languagesCodes } = useRouter();
 
   return (
-    <nav className="fixed w-full h-16 flex justify-end items-center pr-4">
+    <nav className="fixed flex items-center justify-end w-full h-16 px-4">
       <Curriculum />
       <LanguageDropDown
         selectedLanguageCode={selectedLanguageCode}
