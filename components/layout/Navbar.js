@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import SelectedLanguage from "../language/SelectedLanguage";
+import LanguageSelected from "../language/LanguageSelected";
 import LanguageDropDownElements from "../language/LanguageDropDownElements";
 
 export default function Navbar() {
@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav className="fixed w-full h-11 flex justify-end pr-4">
       <Popover className="relative">
         <Popover.Button>
-          <SelectedLanguage selectedLanguageCode={selectedLanguageCode} />
+          <LanguageSelected selectedLanguageCode={selectedLanguageCode} />
         </Popover.Button>
         <Transition
           as={Fragment}
