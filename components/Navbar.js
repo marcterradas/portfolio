@@ -8,7 +8,7 @@ export default function Navbar() {
   const { locale: selectedLanguageCode, locales: languagesCodes } = useRouter();
 
   return (
-    <nav className="flex justify-end pr-4">
+    <nav className="fixed w-full h-11 flex justify-end pr-4">
       <Popover className="relative">
         <Popover.Button>
           <SelectedLanguage selectedLanguageCode={selectedLanguageCode} />
