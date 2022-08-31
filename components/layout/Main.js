@@ -4,7 +4,7 @@ import Avatar from "../description/Avatar";
 
 export default function Main() {
   return (
-    <main className="flex flex-wrap justify-center pt-2 mt-16">
+    <main className="flex flex-wrap justify-center mt-8">
       <Title />
       <SubTitle />
       <Avatar />
