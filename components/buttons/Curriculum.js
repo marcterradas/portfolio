@@ -7,7 +7,7 @@ export default function Curriculum() {
     <Link href="/documents/marcterradas.pdf" locale={false} passHref>
       <a
         target="_blank"
-        donwload
+        donwload="true"
         className="flex justify-center px-4 mr-4 transition-colors duration-300 ease-linear bg-blue-300 rounded-sm h-11 hover:bg-blue-400 sm:text-lg"
         title={t("curriculum")}
       >
