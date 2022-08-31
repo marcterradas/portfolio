@@ -13,7 +13,7 @@ export default function Curriculum() {
       >
         <div className="flex items-center justify-start cursor-pointer">
           <div className="w-4 h-4 mr-3 bg-[url('/img/download.svg')] bg-cover bg-no-repeat bg-center"></div>
-          <div className="font-sans text-base font-bold sm:text-lg">
+          <div className="font-sans text-base font-normal sm:text-lg">
             {t("curriculum")}
           </div>
         </div>
