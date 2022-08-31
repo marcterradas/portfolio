@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Curriculum() {
   const t = useTranslations("nav");
   return (
-    <Link href="/img/download.svg" locale={false} passHref>
+    <Link href="/documents/marcterradas.pdf" locale={false} passHref>
       <a
         target="_blank"
         donwload
