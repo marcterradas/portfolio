@@ -10,7 +10,12 @@ export default function LanguageDropDownElements({
     .filter((languageCode) => languageCode != selectedLanguageCode)
     .sort()
     .map((languageCode) => (
-      <Link key={languageCode} href={languageCode} locale={languageCode}>
+      <Link
+        key={languageCode}
+        href={languageCode}
+        locale={languageCode}
+        passHref
+      >
         <a
           onClick={closePopover}
           className="z-10 pl-1 pr-2 transition-colors duration-300 ease-linear rounded-md cursor-pointer hover:bg-stone-200"
