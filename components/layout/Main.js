@@ -2,7 +2,7 @@ import Title from "../description/Title";
 
 export default function Main() {
   return (
-    <main className="mt-16">
+    <main className="flex justify-center pt-2 mt-16">
       <Title />
     </main>
   );
