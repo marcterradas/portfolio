@@ -1,3 +1,6 @@
+import { useTranslations } from "next-intl";
+
 export default function SubTitle() {
-  return <h2>Subtitle ...</h2>;
+  const t = useTranslations("main");
+  return <h2>{t("subtitle")}</h2>;
 }
