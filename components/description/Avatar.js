@@ -8,6 +8,7 @@ export default function Avatar() {
         alt="avatar"
         layout="fill"
         objectFit="cover"
+        priority={true}
       ></Image>
     </div>
   );
