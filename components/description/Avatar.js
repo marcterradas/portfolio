@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Avatar() {
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="relative flex items-center justify-center w-48 h-48 mt-6">
+      <div className="relative flex items-center justify-center w-48 h-48 mt-6 lg:w-64 lg:h-64">
         <Image
           src="/img/avatar.svg"
           alt="avatar"
