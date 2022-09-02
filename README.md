@@ -1,6 +1,6 @@
 # Portfolio
 
-Website build with vue.js about my work experience and studies as a developer.
+Personal portfolio
 
 [website](TODO)
 
