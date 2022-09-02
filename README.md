@@ -2,12 +2,12 @@
 
 Website build with vue.js about my work experience and studies as a developer.
 
-[website](https://marcterradas.github.io)
+[website](TODO)
 
 ### Project setup
 
 ```
-npm install
+npm i
 ```
 
 ### Compiles and hot-reloads for development
