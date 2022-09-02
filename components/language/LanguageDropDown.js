@@ -23,7 +23,7 @@ export default function LanguageDropDown({
       >
         <Popover.Panel className="absolute z-10">
           {({ close: closePopover }) => (
-            <div className="grid gap-2 rounded-md shadow-md">
+            <div className="grid gap-2 rounded-sm shadow-md">
               <LanguageDropDownElements
                 selectedLanguageCode={selectedLanguageCode}
                 languagesCodes={languagesCodes}
