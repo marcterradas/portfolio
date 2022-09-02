@@ -1,6 +1,7 @@
 import Title from "../description/Title";
 import SubTitle from "../description/SubTitle";
 import Avatar from "../description/Avatar";
+import AboutMe from "../description/AboutMe";
 
 export default function Main() {
   return (
@@ -9,6 +10,7 @@ export default function Main() {
         <Title />
         <SubTitle />
         <Avatar />
+        <AboutMe />
       </div>
     </main>
   );
