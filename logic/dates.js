@@ -23,11 +23,11 @@ export function calculateDifferenceYears(startDate, currentDate) {
   let difference = currentDateYear - startDateYear;
 
   /*
-    if current year is bigger than start year and current month is bigger or equal to start month
-    increase 1 year difference
+    if current year is bigger than start year and current month is smaller to start month
+    substract 1 year
   */
-  if (currentDateYear > startDateYear && currentDateMonth > startDateMonth)
-    difference++;
+  if (currentDateYear > startDateYear && currentDateMonth < startDateMonth)
+    difference--;
 
   return difference;
 }
