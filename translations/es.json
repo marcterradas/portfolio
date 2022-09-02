@@ -6,7 +6,7 @@
     "subtitle": "Ingeniero de Software",
     "aboutMe": {
       "part1": "Hola! 👋",
-      "part2": "Soy de Barcelona y tengo <b>{experienceYears}</b> años de experiencia como Ingeniero de Software."
+      "part2": "Soy de Barcelona y tengo <b>{experienceYears}</b> años de experiencia como ingeniero de software."
     }
   }
 }
