@@ -1,6 +1,7 @@
 import { expect, test } from "vitest";
 import { calculateDifferenceYears } from "../logic/dates";
 
-test("should work as expected", () => {
-  expect(calculateDifferenceYears()).toBe(0);
+test("calculateDifferenceYears, validate params", () => {
+  expect(calculateDifferenceYears()).toBe(false);
+  expect(calculateDifferenceYears(0)).toBe(false);
 });
