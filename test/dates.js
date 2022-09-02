@@ -1,5 +1,6 @@
 import { expect, test } from "vitest";
+import { calculateDifferenceYears } from "../logic/dates";
 
 test("should work as expected", () => {
-  expect(Math.sqrt(4)).toBe(2);
+  expect(calculateDifferenceYears()).toBe(0);
 });
