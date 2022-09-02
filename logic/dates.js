@@ -1,14 +1,33 @@
 /**
  *
- * @param {string} date1
- * @param {string} date2
+ * @param {string} startDate valid date
+ * @param {string} currentDate valid date
  * @returns {number} difference between two dates
  */
-export function calculateDifferenceYears(date1, date2) {
-  if (typeof date1 !== "string") return false;
-  if (typeof date2 !== "string") return false;
+export function calculateDifferenceYears(startDate, currentDate) {
+  // validate params if are dates
+  if (isNaN(Date.parse(startDate))) return false;
+  if (isNaN(Date.parse(startDate))) return false;
 
-  let difference = 0;
+  // get year and month from params
+  let [startDateYear, startDateMonth] = startDate.split("-");
+  let [currentDateYear, currentDateMonth] = currentDate.split("-");
+
+  // transform strings to integers
+  startDateYear = parseInt(startDateYear);
+  startDateMonth = parseInt(startDateMonth);
+  currentDateYear = parseInt(currentDateYear);
+  currentDateMonth = parseInt(currentDateMonth);
+
+  // calculate year difference
+  let difference = currentDateYear - startDateYear;
+
+  /*
+    if current year is bigger than start year and current month is bigger or equal to start month
+    increase 1 year difference
+  */
+  if (currentDateYear > startDateYear && currentDateMonth > startDateMonth)
+    difference++;
 
   return difference;
 }
