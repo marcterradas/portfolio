@@ -1,6 +1,6 @@
-export function calculateDifferenceYears(year, month) {
-  if (typeof year !== "number") return false;
-  if (typeof month !== "month") return false;
+export function calculateDifferenceYears(date1, date2) {
+  if (typeof date1 !== "string") return false;
+  if (typeof date2 !== "string") return false;
 
   let difference = 0;
 
