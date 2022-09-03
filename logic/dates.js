@@ -46,6 +46,7 @@ export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
   // start with 1 month (like linkedin)
   let monthDifference =
     1 + (parseInt(secondDateMonth) - parseInt(firstDateMonth));
+
   const difference = [yearDifference, monthDifference];
 
   return difference;
