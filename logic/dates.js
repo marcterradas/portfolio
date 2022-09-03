@@ -35,10 +35,7 @@ export function calculateDifferenceYears(startDate, currentDate) {
  * @returns {Array<number>} two positions, first difference in years
  * and the second difference in months
  */
-export default function calculateDifferenceYearsAndMonths(
-  startDate,
-  currentDate
-) {
+export function calculateDifferenceYearsAndMonths(startDate, currentDate) {
   const yearDifference = calculateDifferenceYears(startDate, currentDate);
 
   if (!yearDifference) return false;
