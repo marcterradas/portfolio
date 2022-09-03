@@ -1,28 +1,28 @@
 /**
  * Calculate difference in years between two dates
- * @param {string} startDate valid date
- * @param {string} currentDate valid date
+ * @param {string} firstDate valid date
+ * @param {string} secondDate valid date
  * @returns {number} difference between two dates
  */
-export function calculateDifferenceYears(startDate, currentDate) {
-  if (isNaN(Date.parse(startDate))) return false;
-  if (isNaN(Date.parse(startDate))) return false;
+export function calculateDifferenceYears(firstDate, secondDate) {
+  if (isNaN(Date.parse(firstDate))) return false;
+  if (isNaN(Date.parse(firstDate))) return false;
 
-  let [startDateYear, startDateMonth] = startDate.split("-");
-  let [currentDateYear, currentDateMonth] = currentDate.split("-");
+  let [firstDateYear, firstDateMonth] = firstDate.split("-");
+  let [secondDateYear, secondDateMonth] = secondDate.split("-");
 
-  startDateYear = parseInt(startDateYear);
-  startDateMonth = parseInt(startDateMonth);
-  currentDateYear = parseInt(currentDateYear);
-  currentDateMonth = parseInt(currentDateMonth);
+  firstDateYear = parseInt(firstDateYear);
+  firstDateMonth = parseInt(firstDateMonth);
+  secondDateYear = parseInt(secondDateYear);
+  secondDateMonth = parseInt(secondDateMonth);
 
-  let difference = currentDateYear - startDateYear;
+  let difference = secondDateYear - firstDateYear;
 
   /*
     if current year is bigger than start year and current month is smaller to start month
     substract 1 year
   */
-  if (currentDateYear > startDateYear && currentDateMonth < startDateMonth)
+  if (secondDateYear > firstDateYear && secondDateMonth < firstDateMonth)
     difference--;
 
   return difference;
@@ -30,13 +30,13 @@ export function calculateDifferenceYears(startDate, currentDate) {
 
 /**
  * Calculate difference in years and months between two dates
- * @param {string} startDate valid date
- * @param {string} currentDate valid date
+ * @param {string} firstDate valid date
+ * @param {string} secondDate valid date
  * @returns {Array<number>} two positions, first difference in years
  * and the second difference in months
  */
-export function calculateDifferenceYearsAndMonths(startDate, currentDate) {
-  const yearDifference = calculateDifferenceYears(startDate, currentDate);
+export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
+  const yearDifference = calculateDifferenceYears(firstDate, secondDate);
 
   if (!yearDifference) return false;
 
