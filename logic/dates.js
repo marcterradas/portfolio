@@ -38,9 +38,13 @@ export function calculateDifferenceYears(firstDate, secondDate) {
 export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
   const yearDifference = calculateDifferenceYears(firstDate, secondDate);
 
-  if (!yearDifference) return false;
+  if (yearDifference === false) return false;
 
   let difference = [yearDifference, 0];
+
+  let monthDifference = 1;
+
+  difference[1] = monthDifference;
 
   return difference;
 }
