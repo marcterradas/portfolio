@@ -8,5 +8,35 @@
       "part1": "Hello! 👋",
       "part2": "I am from Barcelona, and I have {experienceYears} years of experience as a software engineer."
     }
+  },
+  "experience": {
+    "andy": {
+      "position": "Software Enginner",
+      "startDate": "2019-06",
+      "endDate": false,
+      "type": "Full time",
+      "ubication": "Remote (CET timezone)",
+      "description": "",
+      "responsibilities": {
+        "part1": "Developing the frontend and backend of Andy.",
+        "part2": "Leading the development of two projects for McDonald's.",
+        "part3": "Designing Andy architecture to improve scalability and performance."
+      },
+      "keyAccomplishments": {
+        "part3": "Lead some OKR's (backlog planning, development, analytics ...)",
+        "part1": "Successfully complete 2 McDonald's projects (example: https://pidetufactura.mcdonalds.es)",
+        "part2": "Improve performance of Andy (adding api cache, db pagination, app architecture ...)"
+      }
+    },
+    "kriter": {
+      "position": "Software Enginner",
+      "startDate": "2018-06",
+      "endDate": "2019-06",
+      "type": "Part time",
+      "ubication": "Mataró, Spain",
+      "description": "",
+      "responsibilities": {},
+      "keyAccomplishments": {}
+    }
   }
 }

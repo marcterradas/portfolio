@@ -8,5 +8,35 @@
       "part1": "Hola! 👋",
       "part2": "Soc de Barcelona, i tinc {experienceYears} anys d'experiència com enginyer de software."
     }
+  },
+  "experience": {
+    "andy": {
+      "position": "Software Enginner",
+      "startDate": "2019-06",
+      "endDate": false,
+      "type": "",
+      "ubication": "",
+      "description": "",
+      "responsibilities": {
+        "part1": "",
+        "part2": "",
+        "part3": ""
+      },
+      "keyAccomplishments": {
+        "part3": "",
+        "part1": "",
+        "part2": ""
+      }
+    },
+    "kriter": {
+      "position": "Software Enginner",
+      "startDate": "2018-06",
+      "endDate": "2019-06",
+      "type": "",
+      "ubication": "",
+      "description": "",
+      "responsibilities": {},
+      "keyAccomplishments": {}
+    }
   }
 }
