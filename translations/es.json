@@ -14,26 +14,26 @@
       "position": "Software Enginner",
       "startDate": "2019-06",
       "endDate": false,
-      "type": "",
-      "ubication": "",
+      "type": "Jornada completa",
+      "ubication": "Remoto (CET zona horaria)",
       "description": "",
       "responsibilities": {
-        "part1": "",
-        "part2": "",
-        "part3": ""
+        "part1": "Desarrollar el frontend y el backend de Andy.",
+        "part2": "Liderar el desarrollo de dos proyectos para McDonald's.",
+        "part3": "Diseñar la arquitectura de Andy para mejorar la escalabilidad y el rendimiento."
       },
       "keyAccomplishments": {
-        "part3": "",
-        "part1": "",
-        "part2": ""
+        "part1": "Liderar OKR's (planificar tareas, desarrollar y analizar)",
+        "part2": "Completar con éxito 2 proyectos de McDonald's (ejemplo: https://pidetufactura.mcdonalds.es)",
+        "part3": "Mejorar el rendimiento de Andy (añadiendo caché en la api, paginación en la bd, uso de la memoria de la aplicación ...)"
       }
     },
     "kriter": {
       "position": "Software Enginner",
       "startDate": "2018-06",
       "endDate": "2019-06",
-      "type": "",
-      "ubication": "",
+      "type": "Jornada partida",
+      "ubication": "Mataró, España",
       "description": "",
       "responsibilities": {},
       "keyAccomplishments": {}
