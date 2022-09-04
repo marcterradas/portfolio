@@ -37,9 +37,15 @@
       "endDate": "2019-06",
       "type": "Jornada partida",
       "ubication": "Mataró, España",
-      "description": "",
-      "responsibilities": {},
-      "objectivesAchieved": {}
+      "description": "Kriter Software S.L. es una consultora de software especializada en ecommerce.",
+      "responsibilities": {
+        "part1": "Desarrollar el frontend y el backend de varios ecommerce.",
+        "part2": "Dar soporte a los clientes (tickets)"
+      },
+      "objectivesAchieved": {
+        "part1": "Desarrollar con éxito 2 ecommerce.",
+        "part2": "Desarrollar con éxito scripts internos."
+      }
     }
   }
 }
