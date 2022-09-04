@@ -10,6 +10,9 @@
     }
   },
   "experience": {
+    "title": "Experience",
+    "responsibilities": "Responsabilidades",
+    "objectivesAchieved": "Objetivos conseguidos",
     "andy": {
       "position": "Software Enginner",
       "startDate": "2019-06",
@@ -22,7 +25,7 @@
         "part2": "Liderar el desarrollo de dos proyectos para McDonald's.",
         "part3": "Diseñar la arquitectura de Andy para mejorar la escalabilidad y el rendimiento."
       },
-      "keyAccomplishments": {
+      "objectivesAchieved": {
         "part1": "Liderar OKR's (planificar tareas, desarrollar y analizar)",
         "part2": "Desarrollar con éxito 2 proyectos de McDonald's (ejemplo: https://pidetufactura.mcdonalds.es)",
         "part3": "Mejorar el rendimiento de Andy (añadiendo caché en la api, paginación en la bd, uso de la memoria de la aplicación ...)"
@@ -36,7 +39,7 @@
       "ubication": "Mataró, España",
       "description": "",
       "responsibilities": {},
-      "keyAccomplishments": {}
+      "objectivesAchieved": {}
     }
   }
 }
