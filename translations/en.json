@@ -24,7 +24,7 @@
       },
       "keyAccomplishments": {
         "part1": "Lead OKR's (backlog planning, development, analytics ...)",
-        "part2": "Successfully complete 2 McDonald's projects (example: https://pidetufactura.mcdonalds.es)",
+        "part2": "Successfully develop 2 McDonald's projects (example: https://pidetufactura.mcdonalds.es)",
         "part3": "Improve performance of Andy (adding api cache, db pagination, app memory usage ...)"
       }
     },
