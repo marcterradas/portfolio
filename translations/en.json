@@ -23,9 +23,9 @@
         "part3": "Designing Andy architecture to improve scalability and performance."
       },
       "keyAccomplishments": {
-        "part3": "Lead some OKR's (backlog planning, development, analytics ...)",
-        "part1": "Successfully complete 2 McDonald's projects (example: https://pidetufactura.mcdonalds.es)",
-        "part2": "Improve performance of Andy (adding api cache, db pagination, app architecture ...)"
+        "part1": "Lead OKR's (backlog planning, development, analytics ...)",
+        "part2": "Successfully complete 2 McDonald's projects (example: https://pidetufactura.mcdonalds.es)",
+        "part3": "Improve performance of Andy (adding api cache, db pagination, app memory usage ...)"
       }
     },
     "kriter": {
