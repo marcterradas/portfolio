@@ -23,12 +23,12 @@
       "responsibilities": {
         "part1": "Developing the frontend and backend of Andy.",
         "part2": "Leading the development of two projects for McDonald's.",
-        "part3": "Designing Andy architecture to improve scalability and performance."
+        "part3": "Customer support (Roll ut, ticketing)"
       },
       "objectivesAchieved": {
-        "part1": "Lead OKR's (backlog planning, development, analytics ...)",
+        "part1": "Lead OKR's (backlog planning, development and analytics)",
         "part2": "Successfully develop 2 McDonald's projects (example: https://pidetufactura.mcdonalds.es)",
-        "part3": "Improve performance of Andy (adding api cache, db pagination, app memory usage ...)"
+        "part3": "Improve performance of Andy (examples: adding api cache, db pagination, app memory usage)"
       }
     },
     "kriter": {
