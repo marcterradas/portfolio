@@ -50,21 +50,23 @@
     }
   },
   "studies": {
+    "diploma": "Ver diploma",
     "ei": {
-      "title": "",
-      "place": "",
-      "startYear": "",
-      "endYear": "",
-      "description": "",
-      "diploma": ""
+      "title": "Grado universitario, ingeniería informática",
+      "place": "Universitat Oberta de Catalunya",
+      "startYear": "2019",
+      "endYear": "2020",
+      "description": "Complete el primer año mientras trabajaba a jornada completa, y decidí por el momento dejar apartado la carrera y estudiar y practicar por mi cuenta."
     },
     "daw": {
-      "title": "",
-      "place": "",
-      "startYear": "",
-      "endYear": "",
-      "description": "",
-      "diploma": ""
+      "title": "Ciclo formativo de grado superior, desarrollo de aplicaciones web (DAW)",
+      "place": "IES Thos i Codina",
+      "startYear": "2017",
+      "endYear": "2019",
+      "description": {
+        "part1": "Nota 8.2",
+        "part2": "Durante los dos años aprendí a como programar, y en el segundo año ya empecé a trabajar como desarrollador mientras finalizaba los estudios."
+      }
     }
   }
 }
