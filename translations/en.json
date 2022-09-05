@@ -3,6 +3,7 @@
     "curriculum": "Download CV"
   },
   "main": {
+    "title": "Marc Terradas Zapata",
     "subtitle": "Software Engineer",
     "aboutMe": {
       "part1": "Hello! 👋",
@@ -46,6 +47,24 @@
         "part1": "Successfully develop 2 ecommerce.",
         "part2": "Successfully develop internal scripts."
       }
+    }
+  },
+  "studies": {
+    "ei": {
+      "title": "",
+      "place": "",
+      "startYear": "",
+      "endYear": "",
+      "description": "",
+      "diploma": ""
+    },
+    "daw": {
+      "title": "",
+      "place": "",
+      "startYear": "",
+      "endYear": "",
+      "description": "",
+      "diploma": ""
     }
   }
 }
