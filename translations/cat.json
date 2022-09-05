@@ -3,6 +3,7 @@
     "curriculum": "Descarregar CV"
   },
   "main": {
+    "title": "Marc Terradas Zapata",
     "subtitle": "Enginyer de Software",
     "aboutMe": {
       "part1": "Hola! 👋",
@@ -46,6 +47,24 @@
         "part1": "Desenvolupar amb èxit dos ecommerce.",
         "part2": "Desenvolupar amb èxit scripts interns."
       }
+    }
+  },
+  "studies": {
+    "ei": {
+      "title": "",
+      "place": "",
+      "startYear": "",
+      "endYear": "",
+      "description": "",
+      "diploma": ""
+    },
+    "daw": {
+      "title": "",
+      "place": "",
+      "startYear": "",
+      "endYear": "",
+      "description": "",
+      "diploma": ""
     }
   }
 }
