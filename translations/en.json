@@ -50,21 +50,23 @@
     }
   },
   "studies": {
+    "diploma": "View diploma",
     "ei": {
-      "title": "",
-      "place": "",
-      "startYear": "",
-      "endYear": "",
-      "description": "",
-      "diploma": ""
+      "title": "Bachelor's degree, Computer Engineering",
+      "place": "Universitat Oberta de Catalunya",
+      "startYear": "2019",
+      "endYear": "2020",
+      "description": "I completed the first year while working full time, and decided for the time being to put my degree aside and study and practice on my own."
     },
     "daw": {
-      "title": "",
-      "place": "",
-      "startYear": "",
-      "endYear": "",
-      "description": "",
-      "diploma": ""
+      "title": "Associate's degree, web development (DAW)",
+      "place": "IES Thos i Codina",
+      "startYear": "2017",
+      "endYear": "2019",
+      "description": {
+        "part1": "Nota 8.2",
+        "part2": "During the two years I learned how to code, and in the second year I started working as a developer while I was finishing my studies."
+      }
     }
   }
 }
