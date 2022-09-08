@@ -1,7 +1,7 @@
-import Title from "../description/Title";
-import SubTitle from "../description/SubTitle";
-import Avatar from "../description/Avatar";
-import AboutMe from "../description/AboutMe";
+import Title from "../main/Title";
+import SubTitle from "../main/SubTitle";
+import Avatar from "../main/Avatar";
+import AboutMe from "../main/AboutMe";
 
 export default function Main() {
   return (
