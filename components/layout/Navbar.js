@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import LanguageDropDown from "../language/LanguageDropDown";
+import LanguageDropDown from "../navbar/LanguageDropDown";
 import Curriculum from "../navbar/Curriculum";
 
 export default function Navbar() {
