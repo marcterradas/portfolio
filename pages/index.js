@@ -1,6 +1,7 @@
 import Navbar from "../components/layout/Navbar";
 import Main from "../components/layout/Main";
 import Experience from "../components/layout/Experience";
+import Studies from "../components/layout/Studies";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Main />
       <Experience />
+      <Studies />
     </div>
   );
 }
