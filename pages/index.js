@@ -3,6 +3,7 @@ import Main from "../components/layout/Main";
 import Experience from "../components/layout/Experience";
 import Studies from "../components/layout/Studies";
 import Skills from "../components/layout/Skills";
+import Footer from "../components/layout/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Experience />
       <Studies />
       <Skills />
+      <Footer />
     </div>
   );
 }
