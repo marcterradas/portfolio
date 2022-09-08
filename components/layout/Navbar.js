@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import LanguageDropDown from "../language/LanguageDropDown";
-import Curriculum from "../buttons/Curriculum";
+import Curriculum from "../navbar/Curriculum";
 
 export default function Navbar() {
   const { locale: selectedLanguageCode, locales: languagesCodes } = useRouter();
