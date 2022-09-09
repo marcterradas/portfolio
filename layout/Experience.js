@@ -1,3 +1,9 @@
+import Title from "../components/experience/Title";
+
 export default function Experience() {
-  return <div>Experience ...</div>;
+  return (
+    <section>
+      <Title />
+    </section>
+  );
 }
