@@ -14,7 +14,10 @@ export default function AboutMe() {
     <div className="mt-8 font-sans text-base font-normal sm:mt-12 sm:text-lg">
       <p>{translations("aboutMe.part1")}</p>
       <p>
-        {translations("aboutMe.part2", { experienceYears: experienceYears })}
+        {translations.rich("aboutMe.part2", {
+          experienceYears: experienceYears,
+          bold: (children) => <b>{children}</b>,
+        })}
       </p>
     </div>
   );
