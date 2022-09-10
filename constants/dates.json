@@ -1,3 +1,10 @@
 {
-  "firstJobDate": "2018-06"
+  "kriter": {
+    "startDate": "2018-06",
+    "endDate": "2019-06"
+  },
+  "andy": {
+    "startDate": "2019-06",
+    "endDate": false
+  }
 }
