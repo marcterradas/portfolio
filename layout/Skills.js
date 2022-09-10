@@ -1,3 +1,3 @@
 export default function Skills() {
-  return <div>Skills...</div>;
+  return <section className="h-[calc(100vh-4rem)]">Skills...</section>;
 }
