@@ -1,8 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useCustomTranslations } from "../../logic/translations";
 
 export default function Title() {
-  const t = useTranslations("experience");
+  const translations = useCustomTranslations("experience");
   return (
-    <h3 className="font-sans text-xl font-bold lg:text-2xl">{t("title")}</h3>
+    <h3 className="font-sans text-xl font-bold lg:text-2xl">
+      {translations("title")}
+    </h3>
   );
 }
