@@ -1,3 +1,3 @@
 export default function Studies() {
-  return <div>Studies...</div>;
+  return <section className="h-screen">Studies...</section>;
 }
