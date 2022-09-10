@@ -16,7 +16,7 @@
     "objectivesAchieved": "Objetivos conseguidos",
     "andy": {
       "title": "Software Enginner en Andy",
-      "duration": "(2019-06 - Presente)",
+      "duration": "(2019-06 - Presente) {years, plural, =1 {1 año} other {# años}} {months, plural, =1 {1 mes} other {# meses}}",
       "type": "Jornada completa",
       "ubication": "Remoto (CET zona horaria)",
       "description": "Andy es un B2B SaaS, especializado en la digitalización de las operaciones de los restaurantes.",
