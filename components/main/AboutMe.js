@@ -6,7 +6,7 @@ export default function AboutMe() {
   const translations = useCustomTranslations("main");
   const [currentDate] = new Date().toISOString().split("T");
   const experienceYears = calculateDifferenceYears(
-    Dates.firstJobDate,
+    Dates.kriter.startDate,
     currentDate
   );
 
