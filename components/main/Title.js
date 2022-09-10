@@ -1,10 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useCustomTranslations } from "../../logic/translations";
 
 export default function Title() {
-  const t = useTranslations("main");
+  const translations = useCustomTranslations("main");
   return (
     <h1 className="flex justify-center w-full font-sans text-3xl font-bold lg:text-5xl">
-      {t("title")}
+      {translations("title")}
     </h1>
   );
 }
