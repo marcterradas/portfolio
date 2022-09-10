@@ -16,7 +16,7 @@
     "objectivesAchieved": "Objectives achieved",
     "andy": {
       "title": "Software Engineer at Andy",
-      "duration": "(2019-06 - Present) {years, plural, =1 {1 year} other {# years}} {months, plural, =1 {1 month} other {# months}}",
+      "duration": "(2019-06 - Present) {years, plural, =1 {<bold>1</bold> year} other {<bold>#</bold> years}} {months, plural, =1 {<bold>1</bold> month} other {<bold>#</bold> months}}",
       "type": "Full time",
       "ubication": "Remote (CET timezone)",
       "description": "Andy is a B2B SaaS, specialising in the digitisation of restaurant operations.",
