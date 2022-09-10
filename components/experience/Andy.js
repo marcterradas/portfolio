@@ -12,7 +12,7 @@ export default function Andy() {
   const [years, months] = calculateDifferenceYearsAndMonths(startDate, endDate);
 
   return (
-    <div>
+    <div className="mb-8">
       <h4 className="font-sans text-lg font-normal lg:text-xl lg:mt-2">
         {translations("andy.title")}
       </h4>
