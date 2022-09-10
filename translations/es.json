@@ -33,7 +33,7 @@
     },
     "kriter": {
       "title": "Software Enginner en Kriter Software",
-      "duration": "(2018-06 - 2019-06)",
+      "duration": "(2018-06 - 2019-06) · {years, plural, =1 {<bold>1</bold> año} other {<bold>#</bold> años}} {months, plural, =1 {<bold>1</bold> mes} other {<bold>#</bold> meses}}",
       "type": "Jornada partida",
       "ubication": "Mataró, España",
       "description": "Kriter Software S.L. es una consultora de software especializada en ecommerce.",
