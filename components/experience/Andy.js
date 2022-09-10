@@ -1,12 +1,15 @@
 import { useCustomTranslations } from "../../logic/translations";
 import Dates from "../../constants/dates.json";
+import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");
   const [currentDate] = new Date().toISOString().split("T");
   let { startDate, endDate } = Dates.andy;
 
-  if (!endDate) endDate = currentDate;
+  endDate = endDate || currentDate;
+
+  const [years, months] = calculateDifferenceYearsAndMonths(startDate, endDate);
 
   return (
     <div>
@@ -14,7 +17,7 @@ export default function Andy() {
         {translations("andy.title")}
       </h4>
       <p className="font-sans text-base font-normal sm:text-lg">
-        {translations("andy.duration")}
+        {translations("andy.duration", { years, months })}
       </p>
     </div>
   );
