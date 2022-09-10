@@ -17,7 +17,11 @@ export default function Andy() {
         {translations("andy.title")}
       </h4>
       <p className="font-sans text-base font-normal sm:text-lg">
-        {translations("andy.duration", { years, months })}
+        {translations.rich("andy.duration", {
+          years,
+          months,
+          bold: (children) => <b>{children}</b>,
+        })}
       </p>
     </div>
   );
