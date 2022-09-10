@@ -7,7 +7,7 @@ import Footer from "../layout/Footer";
 
 export default function Home() {
   return (
-    <div className="m-auto max-w-screen-2xl">
+    <div className="px-4 m-auto max-w-screen-2xl lg:px-0">
       <Navbar />
       <Main />
       <Experience />
