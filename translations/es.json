@@ -15,6 +15,7 @@
     "responsibilities": "Responsabilidades",
     "objectivesAchieved": "Objetivos conseguidos",
     "andy": {
+      "title": "Andy",
       "position": "Software Enginner",
       "startDate": "2019-06",
       "endDate": false,
@@ -33,6 +34,7 @@
       }
     },
     "kriter": {
+      "title": "Kriter Software S.L.",
       "position": "Software Enginner",
       "startDate": "2018-06",
       "endDate": "2019-06",
