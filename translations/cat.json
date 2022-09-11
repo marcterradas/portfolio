@@ -47,6 +47,7 @@
     }
   },
   "studies": {
+    "title": "Estudis",
     "diploma": "Veure diploma",
     "ei": {
       "title": "Grau en enginyeria informàtica",
