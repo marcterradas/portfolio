@@ -1,6 +1,7 @@
+import { Disclosure } from "@headlessui/react";
 import { useCustomTranslations } from "../../logic/translations";
-import Dates from "../../constants/dates.json";
 import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
+import Dates from "../../constants/dates.json";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");
@@ -12,17 +13,29 @@ export default function Andy() {
   const [years, months] = calculateDifferenceYearsAndMonths(startDate, endDate);
 
   return (
-    <div className="mb-8">
-      <h4 className="font-sans text-lg font-normal lg:text-xl lg:mt-2">
-        {translations("andy.title")}
-      </h4>
-      <p className="font-sans text-base font-normal sm:text-lg">
-        {translations.rich("andy.duration", {
-          years,
-          months,
-          bold: (children) => <b>{children}</b>,
-        })}
-      </p>
-    </div>
+    <Disclosure className="mb-8">
+      {({ open }) => (
+        <>
+          <Disclosure.Button className="w-full text-left bg-purple-100 hover:bg-purple-200">
+            <h4 className="font-sans text-lg font-normal lg:text-xl">
+              {translations("andy.title")}
+            </h4>
+            <p className="font-sans text-base font-normal sm:text-lg">
+              {translations.rich("andy.duration", {
+                years,
+                months,
+                bold: (children) => <b>{children}</b>,
+              })}
+            </p>
+            <div
+              className={`${
+                open ? "rotate-180 transform" : ""
+              } w-3 h-3 bg-[url('/img/arrow-down.svg')] bg-cover bg-no-repeat bg-center`}
+            ></div>
+          </Disclosure.Button>
+          <Disclosure.Panel className="">TODO ...</Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
   );
 }
