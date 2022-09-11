@@ -65,5 +65,8 @@
         "part2": "Durante los dos años aprendí a como programar, y en el segundo año ya empecé a trabajar como desarrollador mientras finalizaba los estudios."
       }
     }
+  },
+  "skills": {
+    "title": "Habilidades"
   }
 }
