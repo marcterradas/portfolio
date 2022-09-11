@@ -66,5 +66,8 @@
         "part2": "Durant els dos anys vaig aprendre a com programar, i en el segon any, vaig començar a treballar com a desenvolupador mentre finalitzava els estudis."
       }
     }
+  },
+  "skills": {
+    "title": "Habilitats"
   }
 }
