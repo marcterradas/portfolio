@@ -13,23 +13,25 @@ export default function Andy() {
   const [years, months] = calculateDifferenceYearsAndMonths(startDate, endDate);
 
   return (
-    <Disclosure defaultOpen="true" className="mb-8">
+    <Disclosure as="div" defaultOpen="true" className="mb-8">
       {({ open }) => (
         <>
-          <Disclosure.Button className="w-full bg-red-200">
-            <h4 className="font-sans text-lg font-normal lg:text-xl">
-              {translations("andy.title")}
-            </h4>
-            <p className="font-sans text-base font-normal sm:text-lg">
-              {translations.rich("andy.duration", {
-                years,
-                months,
-                bold: (children) => <b>{children}</b>,
-              })}
-            </p>
-            <p className="font-sans text-base font-normal sm:text-lg">
-              {translations("andy.ubication")}
-            </p>
+          <Disclosure.Button className="flex items-center justify-center w-full px-4 text-left ">
+            <div className="w-full">
+              <h4 className="font-sans text-lg font-normal lg:text-xl">
+                {translations("andy.title")}
+              </h4>
+              <p className="font-sans text-base font-normal sm:text-lg">
+                {translations.rich("andy.duration", {
+                  years,
+                  months,
+                  bold: (children) => <b>{children}</b>,
+                })}
+              </p>
+              <p className="font-sans text-sm font-normal sm:text-base">
+                {translations("andy.ubication")}
+              </p>
+            </div>
             <div
               className={`${
                 open ? "rotate-180 transform" : ""
