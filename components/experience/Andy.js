@@ -13,7 +13,7 @@ export default function Andy() {
   const [years, months] = calculateDifferenceYearsAndMonths(startDate, endDate);
 
   return (
-    <Disclosure as="div" defaultOpen="true" className="mb-4">
+    <Disclosure as="div" defaultOpen="true" className="mb-8">
       {({ open }) => (
         <>
           <Disclosure.Button className="flex items-center justify-center w-full px-4 py-2 text-left transition-colors duration-300 ease-linear rounded-sm bg-stone-100 hover:bg-stone-200 ">
