@@ -21,7 +21,7 @@ export default function Kriter() {
               <h4 className="font-sans text-lg font-normal lg:text-xl">
                 {translations("kriter.title")}
               </h4>
-              <p className="font-sans text-base font-normal sm:text-lg">
+              <p className="font-sans text-sm font-normal sm:text-base">
                 {translations.rich("kriter.duration", {
                   years,
                   months,
