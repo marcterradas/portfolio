@@ -4,7 +4,7 @@ import Kriter from "../components/experience/Kriter";
 
 export default function Experience() {
   return (
-    <section className="h-screen">
+    <section className="h-auto min-h-screen">
       <Title />
       <Andy />
       <Kriter />
