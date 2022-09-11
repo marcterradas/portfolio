@@ -13,7 +13,7 @@ export default function Andy() {
   const [years, months] = calculateDifferenceYearsAndMonths(startDate, endDate);
 
   return (
-    <Disclosure className="mb-8">
+    <Disclosure defaultOpen="true" className="mb-8">
       {({ open }) => (
         <>
           <Disclosure.Button className="w-full text-left bg-purple-100 hover:bg-purple-200">
@@ -36,7 +36,14 @@ export default function Andy() {
               } w-3 h-3 bg-[url('/img/arrow-down.svg')] bg-cover bg-no-repeat bg-center`}
             ></div>
           </Disclosure.Button>
-          <Disclosure.Panel className="">TODO ...</Disclosure.Panel>
+          <Disclosure.Panel className="">
+            <div>
+              <h5>{translations("responsibilities")}</h5>
+              <p>{translations("andy.responsibilities.part1")}</p>
+              <p>{translations("andy.responsibilities.part2")}</p>
+              <p>{translations("andy.responsibilities.part3")}</p>
+            </div>
+          </Disclosure.Panel>
         </>
       )}
     </Disclosure>
