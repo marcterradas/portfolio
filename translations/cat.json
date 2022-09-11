@@ -17,8 +17,7 @@
     "andy": {
       "title": "Software Enginner en Andy",
       "duration": "(2019-06 - Present) · {years, plural, =1 {<bold>1</bold> any} other {<bold>#</bold> anys}} {months, plural, =1 {<bold>1</bold> mes} other {<bold>#</bold> mesos}}",
-      "type": "Jornada completa",
-      "ubication": "Remot (CET zona horària)",
+      "ubication": "Remot (CET zona horària) · Jornada completa",
       "description": "Andy és un B2B SaaS, especialitzat en la digitalització de les operacions dels restaurants",
       "responsibilities": {
         "part1": "Desenvolupar el frontend i el backend d'Andy.",
