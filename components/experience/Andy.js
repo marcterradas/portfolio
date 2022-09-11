@@ -27,6 +27,9 @@ export default function Andy() {
                 bold: (children) => <b>{children}</b>,
               })}
             </p>
+            <p className="font-sans text-base font-normal sm:text-lg">
+              {translations("andy.ubication")}
+            </p>
             <div
               className={`${
                 open ? "rotate-180 transform" : ""
