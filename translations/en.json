@@ -46,6 +46,7 @@
     }
   },
   "studies": {
+    "title": "Studies",
     "diploma": "View diploma",
     "ei": {
       "title": "Bachelor's degree, Computer Engineering",
