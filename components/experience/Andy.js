@@ -16,7 +16,7 @@ export default function Andy() {
     <Disclosure as="div" defaultOpen="true" className="mb-4">
       {({ open }) => (
         <>
-          <Disclosure.Button className="flex items-center justify-center w-full px-4 py-2 text-left transition-colors duration-300 ease-linear rounded-sm bg-stone-200 hover:bg-stone-300 ">
+          <Disclosure.Button className="flex items-center justify-center w-full px-4 py-2 text-left transition-colors duration-300 ease-linear rounded-sm bg-stone-100 hover:bg-stone-200 ">
             <div className="w-full">
               <h4 className="font-sans text-lg font-normal lg:text-xl">
                 {translations("andy.title")}
@@ -46,19 +46,43 @@ export default function Andy() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Disclosure.Panel className="px-4 py-3">
-              <div className="px-4 py-2 rounded-sm bg-stone-200">
-                <div className="mb-4">
-                  <h5>{translations("responsibilities")}</h5>
-                  <p>{translations("andy.responsibilities.part1")}</p>
-                  <p>{translations("andy.responsibilities.part2")}</p>
-                  <p>{translations("andy.responsibilities.part3")}</p>
+            <Disclosure.Panel className="px-2 py-3">
+              <div className="px-4 py-2 rounded-sm bg-stone-100">
+                <div className="mb-6">
+                  <h5 className="mb-1 font-sans text-base font-normal underline sm:text-lg">
+                    {translations("responsibilities")}
+                  </h5>
+                  <div className="pl-4">
+                    <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+                      <li className="mb-1">
+                        {translations("andy.responsibilities.part1")}
+                      </li>
+                      <li className="mb-1">
+                        {translations("andy.responsibilities.part2")}
+                      </li>
+                      <li className="mb-1">
+                        {translations("andy.responsibilities.part3")}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div>
-                  <h5>{translations("objectivesAchieved")}</h5>
-                  <p>{translations("andy.objectivesAchieved.part1")}</p>
-                  <p>{translations("andy.objectivesAchieved.part2")}</p>
-                  <p>{translations("andy.objectivesAchieved.part3")}</p>
+                  <h5 className="mb-1 font-sans text-base font-normal underline sm:text-lg">
+                    {translations("objectivesAchieved")}
+                  </h5>
+                  <div className="pl-4">
+                    <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+                      <li className="mb-1">
+                        {translations("andy.objectivesAchieved.part1")}
+                      </li>
+                      <li className="mb-1">
+                        {translations("andy.objectivesAchieved.part2")}
+                      </li>
+                      <li className="mb-1">
+                        {translations("andy.objectivesAchieved.part3")}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </Disclosure.Panel>
