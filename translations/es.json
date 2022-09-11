@@ -46,6 +46,7 @@
     }
   },
   "studies": {
+    "title": "Estudios",
     "diploma": "Ver diploma",
     "ei": {
       "title": "Grado universitario, ingeniería informática",
