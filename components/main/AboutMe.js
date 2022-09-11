@@ -11,7 +11,7 @@ export default function AboutMe() {
   );
 
   return (
-    <div className="mt-8 font-sans text-base font-normal sm:mt-12 sm:text-lg">
+    <div className="px-4 mt-8 font-sans text-base font-normal sm:mt-12 sm:text-lg">
       <p>{translations("aboutMe.part1")}</p>
       <p>
         {translations.rich("aboutMe.part2", {
