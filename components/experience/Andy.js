@@ -16,7 +16,7 @@ export default function Andy() {
     <Disclosure defaultOpen="true" className="mb-8">
       {({ open }) => (
         <>
-          <Disclosure.Button className="w-full text-left bg-purple-100 hover:bg-purple-200">
+          <Disclosure.Button className="w-full bg-red-200">
             <h4 className="font-sans text-lg font-normal lg:text-xl">
               {translations("andy.title")}
             </h4>
@@ -36,12 +36,18 @@ export default function Andy() {
               } w-3 h-3 bg-[url('/img/arrow-down.svg')] bg-cover bg-no-repeat bg-center`}
             ></div>
           </Disclosure.Button>
-          <Disclosure.Panel className="">
+          <Disclosure.Panel className="bg-blue-200">
             <div>
               <h5>{translations("responsibilities")}</h5>
               <p>{translations("andy.responsibilities.part1")}</p>
               <p>{translations("andy.responsibilities.part2")}</p>
               <p>{translations("andy.responsibilities.part3")}</p>
+            </div>
+            <div>
+              <h5>{translations("objectivesAchieved")}</h5>
+              <p>{translations("andy.objectivesAchieved.part1")}</p>
+              <p>{translations("andy.objectivesAchieved.part2")}</p>
+              <p>{translations("andy.objectivesAchieved.part3")}</p>
             </div>
           </Disclosure.Panel>
         </>
