@@ -8,7 +8,7 @@ export default function Curriculum() {
       <a
         target="_blank"
         donwload="true"
-        className="flex justify-center px-4 mr-4 transition-colors duration-300 ease-linear bg-blue-300 rounded-sm h-11 hover:bg-blue-400 sm:text-lg"
+        className="flex justify-center px-4 mr-4 transition-colors duration-300 ease-linear border-2 border-blue-200 rounded-sm h-11 hover:bg-blue-200 sm:text-lg"
         title={transitions("curriculum")}
       >
         <div className="flex items-center justify-start cursor-pointer">
