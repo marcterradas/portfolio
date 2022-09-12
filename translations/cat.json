@@ -52,15 +52,13 @@
     "ce": {
       "title": "Grau en enginyeria informàtica",
       "place": "Universitat Oberta de Catalunya",
-      "startYear": "2019",
-      "endYear": "2020",
+      "duration": "2019 - 2020",
       "description": "Vaig completar el primer any mentre treballava a jornada completa, i vaig decidir de moment deixar aparcat la carrera i estudiar i practicar pel meu compte."
     },
     "daw": {
       "title": "Cicle formatiu de grau superior, desenvolupament d'aplicacions web (DAW)",
       "place": "IES Thos i Codina",
-      "startYear": "2017",
-      "endYear": "2019",
+      "duration": "2017 - 2019",
       "description": {
         "part1": "Nota 8.2",
         "part2": "Durant els dos anys vaig aprendre a com programar, i en el segon any, vaig començar a treballar com a desenvolupador mentre finalitzava els estudis."
