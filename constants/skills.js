@@ -1,4 +1,4 @@
-export default SKILLS = [
+const SKILLS = [
   "Vue.js",
   "React",
   "Next.js",
@@ -19,3 +19,5 @@ export default SKILLS = [
   "Bash",
   "Git",
 ];
+
+export default SKILLS;
