@@ -28,7 +28,11 @@ export default function Daw() {
           <ul className="font-sans text-sm font-normal list-disc sm:text-base">
             <li className="mb-1">
               <Link href="/documents/daw.pdf" locale={false} passHref>
-                <a target="_blank" className="font-bold underline">
+                <a
+                  target="_blank"
+                  className="font-bold underline"
+                  title={translations("daw.title")}
+                >
                   {translations("daw.description.part1")}
                 </a>
               </Link>
