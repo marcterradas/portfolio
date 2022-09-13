@@ -7,9 +7,11 @@ export default function Skills() {
     <Skill key={skillName} skillName={skillName} />
   ));
   return (
-    <section className="h-[calc(100vh-4rem)]">
+    <section className="h-[calc(100vh-4rem)] w-full">
       <Title />
-      <div>{SkillsElements}</div>
+      <div className="grid grid-cols-2 px-4 py-2 gap-y-4 md:grid-cols-3">
+        {SkillsElements}
+      </div>
     </section>
   );
 }
