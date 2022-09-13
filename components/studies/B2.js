@@ -28,7 +28,11 @@ export default function B2() {
           <ul className="font-sans text-sm font-normal list-disc sm:text-base">
             <li>
               <Link href="/documents/b2.pdf" locale={false} passHref>
-                <a target="_blank" className="font-bold underline">
+                <a
+                  target="_blank"
+                  className="font-bold underline"
+                  title={translations("b2.title")}
+                >
                   {translations("b2.description")}
                 </a>
               </Link>
