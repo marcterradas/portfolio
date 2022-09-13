@@ -1,3 +1,3 @@
-export default function Skill() {
-  return <div>Skill ...</div>;
+export default function Skill({ skillName }) {
+  return <p>{skillName}</p>;
 }
