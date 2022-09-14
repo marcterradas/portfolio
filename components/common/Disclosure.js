@@ -5,7 +5,7 @@ export default function CustomDisclosure({ button, content }) {
     <Disclosure as="div" defaultOpen="true" className="mb-8">
       {({ open }) => (
         <>
-          <Disclosure.Button className="flex items-center justify-center w-full px-4 py-2 text-left transition-colors duration-300 ease-linear rounded-sm hover:bg-stone-100 ">
+          <Disclosure.Button className="flex items-center justify-center w-full px-4 py-2 text-left transition-colors duration-300 ease-linear rounded-sm hover:bg-stone-200 ">
             {button}
             <div
               className={`${
