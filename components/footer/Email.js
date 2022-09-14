@@ -11,7 +11,7 @@ export default function Email() {
 
   return (
     <div>
-      <ContactButton />
+      <ContactButton name={name} link={link} image={image} color={color} />
     </div>
   );
 }
