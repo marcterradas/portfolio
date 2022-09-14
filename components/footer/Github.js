@@ -10,7 +10,7 @@ export default function Github() {
   const color = "stone-200";
   return (
     <div>
-      <ContactButton />
+      <ContactButton name={name} link={link} image={image} color={color} />
     </div>
   );
 }
