@@ -6,6 +6,7 @@ export default function Linkedin() {
   const translations = useCustomTranslations("footer");
   const name = translations("linkedin");
   const link = contactLinks.linkedin;
+  const image = "/img/linkedin.svg";
   return (
     <div>
       <ContactButton />
