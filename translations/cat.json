@@ -73,5 +73,10 @@
   },
   "skills": {
     "title": "Habilitats"
+  },
+  "footer": {
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "email": "Email"
   }
 }
