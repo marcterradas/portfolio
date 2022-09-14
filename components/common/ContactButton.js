@@ -1,3 +1,3 @@
-export default function ContactButton({ name }) {
+export default function ContactButton({ name, url, image, color }) {
   return <div>{name}</div>;
 }
