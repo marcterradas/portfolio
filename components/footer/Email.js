@@ -6,6 +6,8 @@ export default function Email() {
   const translations = useCustomTranslations("footer");
   const name = translations("email");
   const link = contactLinks.email;
+  const image = "/img/email.svg";
+
   return (
     <div>
       <ContactButton />
