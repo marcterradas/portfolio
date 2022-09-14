@@ -1,3 +1,9 @@
+import ContactButton from "../common/ContactButton";
+
 export default function Github() {
-  return <div>Github...</div>;
+  return (
+    <div>
+      <ContactButton />
+    </div>
+  );
 }
