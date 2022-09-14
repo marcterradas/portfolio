@@ -21,7 +21,7 @@ export default function CustomDisclosure({ button, content }) {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Disclosure.Panel className="px-2 py-3">
+            <Disclosure.Panel className="px-2">
               <div className="px-4 py-2 rounded-sm ">{content}</div>
             </Disclosure.Panel>
           </Transition>
