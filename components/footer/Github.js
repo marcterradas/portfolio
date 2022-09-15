@@ -7,10 +7,9 @@ export default function Github() {
   const name = translations("github");
   const link = contactLinks.github;
   const image = "/img/github.svg";
-  const color = "stone-200";
   return (
     <div>
-      <ContactButton name={name} link={link} image={image} color={color} />
+      <ContactButton name={name} link={link} image={image} />
     </div>
   );
 }
