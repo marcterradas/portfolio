@@ -1,15 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ContactButton({ name, link, image, color }) {
-  const borderColor = `border-${color}`;
-  const bgHover = `hover:bg-${color}`;
+export default function ContactButton({ name, link, image }) {
   return (
     <Link href={link} locale={false} passHref>
       <a target="_blank" className="" title={name}>
-        <div
-          className={`h-12 w-40 flex items-center justify-start p-2 border-2 ${borderColor} ${bgHover} transition-colors duration-300 ease-linear rounded-sm`}
-        >
+        <div className="flex items-center justify-start w-40 h-12 p-2 transition-colors duration-300 ease-linear border-2 rounded-sm border-stone-200 hover:bg-stone-200">
           <div className="relative w-8 h-8 mr-2">
             <Image src={image} alt={name} layout="fill" objectFit="cover" />
           </div>
