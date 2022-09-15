@@ -7,11 +7,10 @@ export default function Email() {
   const name = translations("email");
   const link = contactLinks.email;
   const image = "/img/email.svg";
-  const color = "yellow-200";
 
   return (
     <div>
-      <ContactButton name={name} link={link} image={image} color={color} />
+      <ContactButton name={name} link={link} image={image} />
     </div>
   );
 }
