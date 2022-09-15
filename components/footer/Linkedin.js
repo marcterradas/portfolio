@@ -7,10 +7,9 @@ export default function Linkedin() {
   const name = translations("linkedin");
   const link = contactLinks.linkedin;
   const image = "/img/linkedin.svg";
-  const color = "blue-200";
   return (
     <div>
-      <ContactButton name={name} link={link} image={image} color={color} />
+      <ContactButton name={name} link={link} image={image} />
     </div>
   );
 }
