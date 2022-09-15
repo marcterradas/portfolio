@@ -4,7 +4,7 @@ import Email from "../components/footer/Email";
 
 export default function Footer() {
   return (
-    <footer className="h-16">
+    <footer className="">
       <Linkedin />
       <Github />
       <Email />
