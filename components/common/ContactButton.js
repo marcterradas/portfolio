@@ -8,7 +8,7 @@ export default function ContactButton({ name, link, image, color }) {
     <Link href={link} locale={false} passHref>
       <a target="_blank" className="" title={name}>
         <div
-          className={`flex items-center justify-start p-2 border-2 ${borderColor} ${bgHover}`}
+          className={`flex items-center justify-start p-2 border-2 ${borderColor} ${bgHover} transition-colors duration-300 ease-linear rounded-sm`}
         >
           <div className="relative w-8 h-8 mr-2">
             <Image src={image} alt={name} layout="fill" objectFit="cover" />
