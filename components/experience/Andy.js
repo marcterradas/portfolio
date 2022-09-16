@@ -2,6 +2,7 @@ import { useCustomTranslations } from "../../logic/translations";
 import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
 import Dates from "../../constants/dates.json";
 import CustomDisclosure from "../common/Disclosure";
+import Link from "next/link";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");
@@ -63,7 +64,24 @@ export default function Andy() {
                 {translations("andy.objectivesAchieved.part1")}
               </li>
               <li className="mb-1">
-                {translations("andy.objectivesAchieved.part2")}
+                {translations.rich("andy.objectivesAchieved.part2", {
+                  link: (children) => (
+                    <Link
+                      href="https://pidetufactura.mcdonalds.es"
+                      locale={false}
+                      passHref
+                    >
+                      <a
+                        target="_blank"
+                        title={children}
+                        rel="noreferrer"
+                        className="underline"
+                      >
+                        {children}
+                      </a>
+                    </Link>
+                  ),
+                })}
               </li>
               <li className="mb-1">
                 {translations("andy.objectivesAchieved.part3")}
