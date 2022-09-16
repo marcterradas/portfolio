@@ -37,7 +37,7 @@
       "ubication": "Mataró, Espanya",
       "description": "Kriter Software S.L. és una consultora de software especialitzada en ecommerce.",
       "responsibilities": {
-        "part1": "Desenvolupar el frontend i el backend de dos ecommerce.",
+        "part1": "Desenvolupar el frontend i el backend de dos ecommerce. (example: <link>https://gallissa.com</link>)",
         "part2": "Donar suport als clients (tiquets)"
       },
       "objectivesAchieved": {
