@@ -1,11 +1,11 @@
 import { NextIntlProvider } from "next-intl";
 import "../styles/globals.css";
-import Head from "../components/head/Head";
+// import Head from "../components/head/Head";
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <NextIntlProvider messages={pageProps.messages}>
-      <Head />
+      {/* <Head /> */}
       <Component {...pageProps} />
     </NextIntlProvider>
   );
