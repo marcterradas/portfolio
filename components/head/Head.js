@@ -13,7 +13,7 @@ export default function CustomHead() {
       <meta name="description" content={translations("description")} />
       <meta name="author" content={translations("author")} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
     </Head>
   );
 }
