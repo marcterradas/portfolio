@@ -71,12 +71,7 @@ export default function Andy() {
                       locale={false}
                       passHref
                     >
-                      <a
-                        target="_blank"
-                        title={children}
-                        rel="noreferrer"
-                        className="underline"
-                      >
+                      <a target="_blank" title={children} className="underline">
                         {children}
                       </a>
                     </Link>
