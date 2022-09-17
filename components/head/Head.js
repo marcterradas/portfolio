@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { useCustomTranslations } from "../../logic/translations";
-import Skill from "../components/skills/Skill";
+import Skills from "../../constants/skills";
 
 export default function CustomHead() {
   const translations = useCustomTranslations("head");
-  const keywords = Skill.join(",");
+  const keywords = Skills.join(",");
 
   return (
     <Head>
