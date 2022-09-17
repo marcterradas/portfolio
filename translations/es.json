@@ -1,4 +1,9 @@
 {
+  "head": {
+    "description": "Marc Terradas Zapata, portfolio personal",
+    "title": "Marc Terradas Zapata | Portfolio",
+    "author": "Marc Terradas Zapata"
+  },
   "nav": {
     "curriculum": "Descargar CV"
   },
@@ -11,7 +16,7 @@
     }
   },
   "experience": {
-    "title": "Experience",
+    "title": "Experiencia",
     "responsibilities": "Responsabilidades",
     "objectivesAchieved": "Objetivos conseguidos",
     "andy": {
