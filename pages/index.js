@@ -1,4 +1,4 @@
-import Head from "../components/head/Head";
+import Head from "../layout/Head";
 import Navbar from "../layout/Navbar";
 import Main from "../layout/Main";
 import Experience from "../layout/Experience";
