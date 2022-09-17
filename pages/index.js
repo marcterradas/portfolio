@@ -1,3 +1,4 @@
+import Head from "../components/head/Head";
 import Navbar from "../layout/Navbar";
 import Main from "../layout/Main";
 import Experience from "../layout/Experience";
@@ -7,14 +8,17 @@ import Footer from "../layout/Footer";
 
 export default function Home() {
   return (
-    <div className="px-4 m-auto max-w-screen-2xl">
-      <Navbar />
-      <Main />
-      <Experience />
-      <Studies />
-      <Skills />
-      <Footer />
-    </div>
+    <>
+      <Head />
+      <div className="px-4 m-auto max-w-screen-2xl">
+        <Navbar />
+        <Main />
+        <Experience />
+        <Studies />
+        <Skills />
+        <Footer />
+      </div>
+    </>
   );
 }
 
