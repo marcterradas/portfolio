@@ -12,7 +12,9 @@
     "subtitle": "Ingeniero de Software",
     "aboutMe": {
       "part1": "Hola! 👋",
-      "part2": "Me llamo Marc, soy de Barcelona, y tengo <bold>{experienceYears}</bold> años de experiencia como ingeniero de software."
+      "part2": "Me llamo Marc, soy de Barcelona, y tengo <bold>{experienceYears}</bold> años de experiencia como ingeniero de software.",
+      "part3": "Estoy especializado en desarrollo web, como Full Stack Developer con conocimientos de DevOps.",
+      "part4": "Me puedes encontrar en: <link1>Linkedin</link1> y en <link2>Github</link2>"
     }
   },
   "experience": {
