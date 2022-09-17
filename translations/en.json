@@ -1,4 +1,9 @@
 {
+  "head": {
+    "description": "Marc Terradas Zapata, personal portfolio",
+    "title": "Marc Terradas Zapata | Portfolio",
+    "author": "Marc Terradas Zapata"
+  },
   "nav": {
     "curriculum": "Download CV"
   },
