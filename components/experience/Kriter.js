@@ -46,12 +46,7 @@ export default function Kriter() {
                 {translations.rich("kriter.responsibilities.part1", {
                   link: (children) => (
                     <Link href="https://gallissa.com" locale={false} passHref>
-                      <a
-                        target="_blank"
-                        title={children}
-                        rel="noreferrer"
-                        className="underline"
-                      >
+                      <a target="_blank" title={children} className="underline">
                         {children}
                       </a>
                     </Link>
