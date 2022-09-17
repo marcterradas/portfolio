@@ -12,7 +12,9 @@
     "subtitle": "Software Engineer",
     "aboutMe": {
       "part1": "Hello! 👋",
-      "part2": "My name is Marc, I am from Barcelona, and I have <bold>{experienceYears}</bold> years of experience as a software engineer."
+      "part2": "My name is Marc, I am from Barcelona, and I have <bold>{experienceYears}</bold> years of experience as a software engineer.",
+      "part3": "I am specialised in web development, as a Full Stack Developer with DevOps knowledge.",
+      "part4": "You can find me in: <link1>Linkedin</link1> and in <link2>Github</link2>."
     }
   },
   "experience": {
