@@ -12,7 +12,9 @@
     "subtitle": "Enginyer de Software",
     "aboutMe": {
       "part1": "Hola! 👋",
-      "part2": "Em dic Marc, soc de Barcelona, i tinc <bold>{experienceYears}</bold> anys d'experiència com enginyer de software."
+      "part2": "Em dic Marc, soc de Barcelona, i tinc <bold>{experienceYears}</bold> anys d'experiència com enginyer de software.",
+      "part3": "Estic especialitzat en desenvolupament web, com a Full Stack Developer amb coneixements de DevOps.",
+      "part4": "Em pots trobar en: <link1>Linkedin</link1> hi ha <link2>Github</link2>"
     }
   },
   "experience": {
@@ -31,7 +33,7 @@
       },
       "objectivesAchieved": {
         "part1": "Liderar OKR's (planificar tasques, desenvolupar i analitzar)",
-        "part2": "Desenvolupar amb èxit dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link>)",
+        "part2": "Desenvolupar amb èxit dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link1>)",
         "part3": "Millorar el rendiment d'Andy (exemples: afegint cache a l'api, paginació a la bd, ús de la memòria en l'aplicació)"
       }
     },
