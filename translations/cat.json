@@ -33,7 +33,7 @@
       },
       "objectivesAchieved": {
         "part1": "Liderar OKR's (planificar tasques, desenvolupar i analitzar)",
-        "part2": "Desenvolupar amb èxit dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link1>)",
+        "part2": "Desenvolupar amb èxit dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link>)",
         "part3": "Millorar el rendiment d'Andy (exemples: afegint cache a l'api, paginació a la bd, ús de la memòria en l'aplicació)"
       }
     },
