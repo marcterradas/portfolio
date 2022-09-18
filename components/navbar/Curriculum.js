@@ -1,10 +1,11 @@
 import { useCustomTranslations } from "../../logic/translations";
 import Link from "next/link";
+import Documents from "../../constants/documents.json";
 
 export default function Curriculum() {
   const transitions = useCustomTranslations("nav");
   return (
-    <Link href="/documents/marcterradas.pdf" locale={false} passHref>
+    <Link href={Documents.cv} locale={false} passHref>
       <a
         target="_blank"
         donwload="true"
