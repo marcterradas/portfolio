@@ -29,12 +29,14 @@
       "responsibilities": {
         "part1": "Desenvolupar el frontend i el backend d'Andy.",
         "part2": "Liderar el desenvolupament de dos projectes per a McDonald's.",
-        "part3": "Donar suport als clients (posada en marxa, tiquets)"
+        "part3": "Participar en el CI/CD d'Andy",
+        "part4": "Donar suport als clients (posada en marxa, tiquets)"
       },
       "objectivesAchieved": {
-        "part1": "Liderar OKR's (planificar tasques, desenvolupar i analitzar)",
+        "part1": "Liderar OKR's (planificar tasques, desenvolupar i analitzar el rendiment)",
         "part2": "Desenvolupar amb èxit dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link>)",
-        "part3": "Millorar el rendiment d'Andy (exemples: afegint cache a l'api, paginació a la bd, ús de la memòria en l'aplicació)"
+        "part3": "Millorar el rendiment d'Andy (exemples: afegint cache a l'api, paginació a la bd, ús de la memòria en l'app)",
+        "part4": "Implementar un sistema de branques de git per treballar en CI/CD"
       }
     },
     "kriter": {
@@ -44,11 +46,11 @@
       "ubication": "Mataró, Espanya",
       "description": "Kriter Software S.L. és una consultora de software especialitzada en ecommerce.",
       "responsibilities": {
-        "part1": "Desenvolupar el frontend i el backend de dos ecommerce. (example: <link>https://gallissa.com</link>)",
+        "part1": "Desenvolupar el frontend i el backend de dos ecommerce.",
         "part2": "Donar suport als clients (tiquets)"
       },
       "objectivesAchieved": {
-        "part1": "Desenvolupar amb èxit dos ecommerce.",
+        "part1": "Desenvolupar amb èxit dos ecommerce. (example: <link>https://gallissa.com</link>)",
         "part2": "Desenvolupar amb èxit scripts interns."
       }
     }

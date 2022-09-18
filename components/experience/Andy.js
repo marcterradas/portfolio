@@ -52,6 +52,9 @@ export default function Andy() {
               <li className="mb-1">
                 {translations("andy.responsibilities.part3")}
               </li>
+              <li className="mb-1">
+                {translations("andy.responsibilities.part4")}
+              </li>
             </ul>
           </div>
         </div>
@@ -77,6 +80,9 @@ export default function Andy() {
               </li>
               <li className="mb-1">
                 {translations("andy.objectivesAchieved.part3")}
+              </li>
+              <li className="mb-1">
+                {translations("andy.objectivesAchieved.part4")}
               </li>
             </ul>
           </div>

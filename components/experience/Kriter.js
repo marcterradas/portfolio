@@ -44,15 +44,7 @@ export default function Kriter() {
           <div className="pl-4">
             <ul className="font-sans text-sm font-normal list-disc sm:text-base">
               <li className="mb-1">
-                {translations.rich("kriter.responsibilities.part1", {
-                  link: (children) => (
-                    <Link href={Projects.gallissa} locale={false} passHref>
-                      <a target="_blank" title={children} className="underline">
-                        {children}
-                      </a>
-                    </Link>
-                  ),
-                })}
+                {translations("kriter.responsibilities.part1")}
               </li>
               <li className="mb-1">
                 {translations("kriter.responsibilities.part2")}
@@ -67,7 +59,15 @@ export default function Kriter() {
           <div className="pl-4">
             <ul className="font-sans text-sm font-normal list-disc sm:text-base">
               <li className="mb-1">
-                {translations("kriter.objectivesAchieved.part1")}
+                {translations.rich("kriter.objectivesAchieved.part1", {
+                  link: (children) => (
+                    <Link href={Projects.gallissa} locale={false} passHref>
+                      <a target="_blank" title={children} className="underline">
+                        {children}
+                      </a>
+                    </Link>
+                  ),
+                })}
               </li>
               <li className="mb-1">
                 {translations("kriter.objectivesAchieved.part2")}

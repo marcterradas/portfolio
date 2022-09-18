@@ -29,12 +29,14 @@
       "responsibilities": {
         "part1": "Developing the frontend and backend of Andy.",
         "part2": "Leading the development of two projects for McDonald's.",
-        "part3": "Customer support (Roll out, ticketing)"
+        "part3": "Participate in Andy's CI/CD",
+        "part4": "Customer support (Roll out, ticketing)"
       },
       "objectivesAchieved": {
-        "part1": "Lead OKR's (backlog planning, development and analytics)",
+        "part1": "Lead OKR's (backlog planning, development and analyse the performance)",
         "part2": "Successfully develop two McDonald's projects (example: <link>https://pidetufactura.mcdonalds.es</link>)",
-        "part3": "Improve performance of Andy (examples: adding api cache, db pagination, app memory usage)"
+        "part3": "Improve performance of Andy (examples: adding api cache, db pagination, app memory usage)",
+        "part4": "Implement a git branch system to work with CI/CD"
       }
     },
     "kriter": {
@@ -43,11 +45,11 @@
       "ubication": "Mataró, Spain · Part time",
       "description": "Kriter Software S.L. is a software consultancy specialising in ecommerce.",
       "responsibilities": {
-        "part1": "Develop the frontend and backend of two ecommerce. (example: <link>https://gallissa.com</link>)",
+        "part1": "Develop the frontend and backend of two ecommerce.",
         "part2": "Customer support (ticketing)"
       },
       "objectivesAchieved": {
-        "part1": "Successfully develop 2 ecommerce.",
+        "part1": "Successfully develop 2 ecommerce. (example: <link>https://gallissa.com</link>)",
         "part2": "Successfully develop internal scripts."
       }
     }
