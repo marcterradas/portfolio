@@ -1,13 +1,29 @@
-# Portfolio
+<p align='center'>
+  <img src='https://marcterradas.vercel.app/img/avatar.svg' width='100'>
+</p>
 
-Personal portfolio
+<h1 align='center'>Marc Terradas Zapata | Portfolio</h1>
 
-[website](TODO)
+<p>This is the repository of my personal portfolio 👨‍💻</p>
+
+[portfolio](https://marcterradas.vercel.app)
+
+### Technologies
+
+- 📦 Next.js
+- 📦 Tailwind.css
+- 📦 Vitest
 
 ### Project setup
 
 ```
 npm i
+```
+
+### remove dependencies and install again
+
+```
+npm run phoenix
 ```
 
 ### Compiles and hot-reloads for development
