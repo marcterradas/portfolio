@@ -4,9 +4,7 @@
 
 <h1 align='center'>Marc Terradas Zapata | Portfolio</h1>
 
-<p>This is the repository of my personal portfolio 👨‍💻</p>
-
-[portfolio](https://marcterradas.vercel.app)
+<p>This is the repository of my personal <a href='https://marcterradas.vercel.app'>portfolio</a> 👨‍💻</p>
 
 ### Technologies
 
