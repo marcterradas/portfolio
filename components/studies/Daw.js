@@ -1,6 +1,7 @@
 import { useCustomTranslations } from "../../logic/translations";
 import CustomDisclosure from "../common/Disclosure";
 import Link from "next/link";
+import Documents from "../../constants/documents.json";
 
 export default function Daw() {
   const translations = useCustomTranslations("studies");
@@ -27,7 +28,7 @@ export default function Daw() {
         <div className="pl-4">
           <ul className="font-sans text-sm font-normal list-disc sm:text-base">
             <li className="mb-1">
-              <Link href="/documents/daw.pdf" locale={false} passHref>
+              <Link href={Documents.daw} locale={false} passHref>
                 <a
                   target="_blank"
                   className="font-bold underline"
