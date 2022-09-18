@@ -3,6 +3,7 @@ import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
 import Dates from "../../constants/dates.json";
 import CustomDisclosure from "../common/Disclosure";
 import Link from "next/link";
+import Projects from "../../constants/projectsLinks.json";
 
 export default function Kriter() {
   const translations = useCustomTranslations("experience");
@@ -45,7 +46,7 @@ export default function Kriter() {
               <li className="mb-1">
                 {translations.rich("kriter.responsibilities.part1", {
                   link: (children) => (
-                    <Link href="https://gallissa.com" locale={false} passHref>
+                    <Link href={Projects.gallissa} locale={false} passHref>
                       <a target="_blank" title={children} className="underline">
                         {children}
                       </a>
