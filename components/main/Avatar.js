@@ -7,8 +7,8 @@ export default function Avatar() {
         <Image
           src="/img/avatar.png"
           alt="avatar"
-          layout="fill"
-          objectFit="contain"
+          fill
+          style={{ objectFit: "contain" }}
           priority={true}
         ></Image>
       </div>

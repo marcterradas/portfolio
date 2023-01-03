@@ -28,14 +28,14 @@ export default function Daw() {
         <div className="pl-4">
           <ul className="font-sans text-sm font-normal list-disc sm:text-base">
             <li className="mb-1">
-              <Link href={Documents.daw} locale={false} passHref>
-                <a
-                  target="_blank"
-                  className="font-bold underline"
-                  title={translations("daw.title")}
-                >
-                  {translations("daw.description.part1")}
-                </a>
+              <Link
+                href={Documents.daw}
+                locale={false}
+                target="_blank"
+                className="font-bold underline"
+                title={translations("daw.title")}
+              >
+                {translations("daw.description.part1")}
               </Link>
             </li>
             <li className="">{translations("daw.description.part2")}</li>

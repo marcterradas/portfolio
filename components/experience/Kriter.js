@@ -61,10 +61,14 @@ export default function Kriter() {
               <li className="mb-1">
                 {translations.rich("kriter.objectivesAchieved.part1", {
                   link: (children) => (
-                    <Link href={Projects.gallissa} locale={false} passHref>
-                      <a target="_blank" title={children} className="underline">
-                        {children}
-                      </a>
+                    <Link
+                      href={Projects.gallissa}
+                      locale={false}
+                      target="_blank"
+                      title={children}
+                      className="underline"
+                    >
+                      {children}
                     </Link>
                   ),
                 })}

@@ -15,15 +15,11 @@ export default function LanguageDropDownElements({
         key={languageCode}
         href={languageCode}
         locale={languageCode}
-        passHref
+        onClick={closePopover}
+        title={Languages[languageCode]}
+        className="z-10 pl-1 pr-2 transition-colors duration-300 ease-linear rounded-sm cursor-pointer hover:bg-stone-200"
       >
-        <a
-          onClick={closePopover}
-          className="z-10 pl-1 pr-2 transition-colors duration-300 ease-linear rounded-sm cursor-pointer hover:bg-stone-200"
-          title={Languages[languageCode]}
-        >
-          <Language languageCode={languageCode}></Language>
-        </a>
+        <Language languageCode={languageCode}></Language>
       </Link>
     ));
   return <>{dropDown}</>;

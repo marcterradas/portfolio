@@ -70,10 +70,14 @@ export default function Andy() {
               <li className="mb-1">
                 {translations.rich("andy.objectivesAchieved.part2", {
                   link: (children) => (
-                    <Link href={Projects.autofactura} locale={false} passHref>
-                      <a target="_blank" title={children} className="underline">
-                        {children}
-                      </a>
+                    <Link
+                      href={Projects.autofactura}
+                      locale={false}
+                      title={children}
+                      className="underline"
+                      target="_blank"
+                    >
+                      {children}
                     </Link>
                   ),
                 })}

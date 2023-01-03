@@ -10,8 +10,8 @@ export default function Language({ languageCode }) {
         <Image
           src={imgSrc}
           alt={languageCode}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
         ></Image>
       </div>
       <div className="ml-2 font-sans text-base sm:text-lg">{language}</div>

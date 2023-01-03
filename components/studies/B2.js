@@ -28,14 +28,14 @@ export default function B2() {
         <div className="pl-4">
           <ul className="font-sans text-sm font-normal list-disc sm:text-base">
             <li>
-              <Link href={Documents.b2} locale={false} passHref>
-                <a
-                  target="_blank"
-                  className="font-bold underline"
-                  title={translations("b2.title")}
-                >
-                  {translations("b2.description")}
-                </a>
+              <Link
+                href={Documents.b2}
+                locale={false}
+                target="_blank"
+                className="font-bold underline"
+                title={translations("b2.title")}
+              >
+                {translations("b2.description")}
               </Link>
             </li>
           </ul>

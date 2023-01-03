@@ -25,17 +25,25 @@ export default function AboutMe() {
       <p>
         {translations.rich("aboutMe.part4", {
           link1: (children) => (
-            <Link href={contactLinks.linkedin} locale={false} passHref>
-              <a target="_blank" title={children} className="underline">
-                {children}
-              </a>
+            <Link
+              href={contactLinks.linkedin}
+              locale={false}
+              target="_blank"
+              title={children}
+              className="underline"
+            >
+              {children}
             </Link>
           ),
           link2: (children) => (
-            <Link href={contactLinks.github} locale={false} passHref>
-              <a target="_blank" title={children} className="underline">
-                {children}
-              </a>
+            <Link
+              href={contactLinks.github}
+              locale={false}
+              target="_blank"
+              title={children}
+              className="underline"
+            >
+              {children}
             </Link>
           ),
         })}
