@@ -36,16 +36,26 @@ export function calculateDifferenceYears(firstDate, secondDate) {
  * and the second difference in months
  */
 export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
-  const yearDifference = calculateDifferenceYears(firstDate, secondDate);
+  let yearDifference = calculateDifferenceYears(firstDate, secondDate);
 
   if (yearDifference === false) return false;
 
   let [, firstDateMonth] = firstDate.split("-");
   let [, secondDateMonth] = secondDate.split("-");
 
+  firstDateMonth = parseInt(firstDateMonth);
+  secondDateMonth = parseInt(secondDateMonth);
+
+  // if second month is small (for example january) add 12 month
+  if (secondDateMonth < firstDateMonth) secondDateMonth += 12;
+
   // start with 1 month (like linkedin)
-  let monthDifference =
-    1 + (parseInt(secondDateMonth) - parseInt(firstDateMonth));
+  let monthDifference = 1 + (secondDateMonth - firstDateMonth);
+
+  if (monthDifference == 12) {
+    monthDifference = 0;
+    yearDifference += 1;
+  }
 
   const difference = [yearDifference, monthDifference];
 

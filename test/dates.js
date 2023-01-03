@@ -33,4 +33,16 @@ test("calculateDifferenceYearsAndMonths, validate output", () => {
   expect(calculateDifferenceYearsAndMonths("2019-06", "2022-09")).toEqual([
     3, 4,
   ]);
+  expect(calculateDifferenceYearsAndMonths("2019-06", "2023-01")).toEqual([
+    3, 8,
+  ]);
+  expect(calculateDifferenceYearsAndMonths("2019-06", "2023-04")).toEqual([
+    3, 11,
+  ]);
+  expect(calculateDifferenceYearsAndMonths("2019-06", "2023-05")).toEqual([
+    4, 0,
+  ]);
+  expect(calculateDifferenceYearsAndMonths("2019-06", "2023-06")).toEqual([
+    4, 1,
+  ]);
 });
