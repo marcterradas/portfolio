@@ -10,7 +10,7 @@ export default function Curriculum() {
       locale={false}
       target="_blank"
       title={transitions("curriculum")}
-      className="flex justify-center px-4 mr-4 transition-colors duration-300 ease-linear rounded-sm h-11 hover:bg-blue-200 sm:text-lg"
+      className="flex justify-center px-4 mr-4 transition-colors duration-300 ease-linear rounded-sm h-11 hover:bg-stone-200 sm:text-lg"
       download={true}
     >
       <div className="flex items-center justify-start cursor-pointer">
