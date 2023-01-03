@@ -38,7 +38,7 @@ export default function Kriter() {
     return (
       <>
         <div className="mb-6">
-          <h5 className="mb-1 font-sans text-base font-normal underline sm:text-lg">
+          <h5 className="mb-1 font-sans text-base italic font-normal sm:text-lg">
             {translations("responsibilities")}
           </h5>
           <div className="pl-4">
@@ -53,7 +53,7 @@ export default function Kriter() {
           </div>
         </div>
         <div>
-          <h5 className="mb-1 font-sans text-base font-normal underline sm:text-lg">
+          <h5 className="mb-1 font-sans text-base italic font-normal sm:text-lg">
             {translations("objectivesAchieved")}
           </h5>
           <div className="pl-4">
