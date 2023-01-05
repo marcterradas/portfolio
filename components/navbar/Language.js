@@ -5,7 +5,7 @@ export default function Language({ languageCode }) {
   const language = Languages[languageCode];
   const imgSrc = `/img/${languageCode}.svg`;
   return (
-    <div className="flex items-center justify-start p-2 cursor-pointer">
+    <div className="flex items-center justify-start p-2 cursor-pointer w-36">
       <div className="relative w-8 h-6">
         <Image
           src={imgSrc}

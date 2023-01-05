@@ -17,7 +17,7 @@ export default function LanguageDropDownElements({
         locale={languageCode}
         onClick={closePopover}
         title={Languages[languageCode]}
-        className="z-10 pl-1 pr-2 transition-colors duration-300 ease-linear rounded-sm cursor-pointer hover:bg-stone-200"
+        className="z-10 pl-1 pr-2 transition-colors duration-300 ease-linear rounded-sm cursor-pointer w-36 hover:bg-stone-200"
       >
         <Language languageCode={languageCode}></Language>
       </Link>

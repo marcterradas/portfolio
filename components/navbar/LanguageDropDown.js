@@ -8,7 +8,7 @@ export default function LanguageDropDown({
   languagesCodes,
 }) {
   return (
-    <Popover className="relative">
+    <Popover className="relative w-36">
       <Popover.Button>
         <LanguageSelected selectedLanguageCode={selectedLanguageCode} />
       </Popover.Button>
