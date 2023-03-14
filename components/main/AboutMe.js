@@ -14,37 +14,41 @@ export default function AboutMe() {
 
   return (
     <div className="px-4 mt-8 font-sans text-base font-normal sm:mt-12 sm:text-lg">
-      <p>{translations("aboutMe.part1")}</p>
       <p>
-        {translations.rich("aboutMe.part2", {
+        {translations.rich("aboutMe.part1", {
           experienceYears: experienceYears,
           bold: (children) => <b>{children}</b>,
         })}
       </p>
+      <p>{translations("aboutMe.part2")}</p>
       <p>{translations("aboutMe.part3")}</p>
       <p>
         {translations.rich("aboutMe.part4", {
           link1: (children) => (
-            <Link
-              href={contactLinks.linkedin}
-              locale={false}
-              target="_blank"
-              title={children}
-              className="underline"
-            >
-              {children}
-            </Link>
+            <b>
+              <Link
+                href={contactLinks.linkedin}
+                locale={false}
+                target="_blank"
+                title={children}
+                className="underline"
+              >
+                {children}
+              </Link>
+            </b>
           ),
           link2: (children) => (
-            <Link
-              href={contactLinks.github}
-              locale={false}
-              target="_blank"
-              title={children}
-              className="underline"
-            >
-              {children}
-            </Link>
+            <b>
+              <Link
+                href={contactLinks.github}
+                locale={false}
+                target="_blank"
+                title={children}
+                className="underline"
+              >
+                {children}
+              </Link>
+            </b>
           ),
         })}
       </p>

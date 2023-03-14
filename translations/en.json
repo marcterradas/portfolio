@@ -11,9 +11,9 @@
     "title": "Marc Terradas Zapata",
     "subtitle": "Senior Software Engineer (Full Stack Developer)",
     "aboutMe": {
-      "part1": "Hello! 👋",
-      "part2": "My name is Marc, I am from Barcelona, and I have <bold>{experienceYears}</bold> years of experience as a software engineer.",
-      "part3": "I am specialised in web development, as a Full Stack Developer with DevOps knowledge.",
+      "part1": "Senior Software Engineer (Full Stack Developer) with more than <bold>{experienceYears}</bold> years of experience.",
+      "part2": "Specialized in Backend and Frontend logic, with knowledge of DevOps. ",
+      "part3": "Capacity to lead developments/projects.",
       "part4": "You can find me in: <link1>Linkedin</link1> and in <link2>Github</link2>."
     }
   },
