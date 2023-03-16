@@ -19,38 +19,24 @@
   },
   "experience": {
     "title": "Experiencia",
-    "responsibilities": "Responsabilidades",
-    "objectivesAchieved": "Objetivos conseguidos",
     "andy": {
       "title": "Software Enginner en Andy",
       "duration": "(2019-06 - Presente) · {years, plural, =1 {<bold>1</bold> año} other {<bold>#</bold> años}} {months, plural, =1 {<bold>1</bold> mes} other {<bold>#</bold> meses}}",
       "ubication": "Remoto (CET zona horaria) · Jornada completa",
-      "description": "Andy es un B2B SaaS, especializado en la digitalización de las operaciones de los restaurantes.",
-      "responsibilities": {
-        "part1": "Desarrollar el frontend y el backend de Andy.",
-        "part2": "Liderar el desarrollo de dos proyectos para McDonald's.",
-        "part3": "Participar en el CI/CD de Andy",
-        "part4": "Dar soporte a los clientes (puesta en marcha, tickets)"
-      },
-      "objectivesAchieved": {
-        "part1": "Liderar OKR's (planificar tareas, desarrollar y analizar el rendimiento)",
-        "part2": "Desarrollar con éxito 2 proyectos de McDonald's (ejemplo: <link>https://pidetufactura.mcdonalds.es</link>)",
-        "part3": "Mejorar el rendimiento de Andy (ejemplos: añadiendo caché en la api, paginación en la bd, uso de la memoria de la app)",
-        "part4": "Implementar un sistema de ramas de git para trabajar con CI/CD"
+      "description": {
+        "part1": "Desarrollador líder y encargado del soporte en dos proyectos de McDonald's (ejemplo: <link>https://pidetufactura.mcdonalds.es</link>).",
+        "part2": "Liderar desarrollos de Frontend y Backend de Andy: (analizar el problema, planificar tareas, desarrollar de forma escalable, testear, documentar y desplegar a producción).",
+        "part3": "Diseñar e implementar la infraestructura de Andy (servidores y metodologías DevOps).",
+        "part4": "Ayudar al equipo de soporte con los tickets técnicos."
       }
     },
     "kriter": {
       "title": "Software Enginner en Kriter Software",
       "duration": "(2018-06 - 2019-06) · {years, plural, =1 {<bold>1</bold> año} other {<bold>#</bold> años}} {months, plural, =1 {<bold>1</bold> mes} other {<bold>#</bold> meses}}",
       "ubication": "Mataró, España · Jornada partida",
-      "description": "Kriter Software S.L. es una consultora de software especializada en ecommerce.",
-      "responsibilities": {
-        "part1": "Desarrollar el frontend y el backend de dos ecommerce.",
-        "part2": "Dar soporte a los clientes (tickets)"
-      },
-      "objectivesAchieved": {
-        "part1": "Desarrollar con éxito 2 ecommerce. (ejemplo: <link>https://gallissa.com</link>)",
-        "part2": "Desarrollar con éxito scripts internos."
+      "description": {
+        "part1": "Desarrollado y mantenimiento de dos e-commerce, dando soporte al cliente (ejemplo: <link>https://gallissa.com</link>).",
+        "part2": "Desarrollo y mantenimineto de scripts internos para automatizar tareas y analizar datos."
       }
     }
   },

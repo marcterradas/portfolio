@@ -19,38 +19,24 @@
   },
   "experience": {
     "title": "Experience",
-    "responsibilities": "Responsibilities",
-    "objectivesAchieved": "Objectives achieved",
     "andy": {
       "title": "Software Engineer at Andy",
       "duration": "(2019-06 - Present) · {years, plural, =1 {<bold>1</bold> year} other {<bold>#</bold> years}} {months, plural, =1 {<bold>1</bold> month} other {<bold>#</bold> months}}",
       "ubication": "Remote (CET timezone) · Full time",
-      "description": "Andy is a B2B SaaS, specialising in the digitisation of restaurant operations.",
-      "responsibilities": {
-        "part1": "Developing the frontend and backend of Andy.",
-        "part2": "Leading the development of two projects for McDonald's.",
-        "part3": "Participate in Andy's CI/CD",
-        "part4": "Customer support (Roll out, ticketing)"
-      },
-      "objectivesAchieved": {
-        "part1": "Lead OKR's (backlog planning, development and analyse the performance)",
-        "part2": "Successfully develop two McDonald's projects (example: <link>https://pidetufactura.mcdonalds.es</link>)",
-        "part3": "Improve performance of Andy (examples: adding api cache, db pagination, app memory usage)",
-        "part4": "Implement a git branch system to work with CI/CD"
+      "description": {
+        "part1": "Lead developer and person in charge of the support of two McDonald's projects (example: <link>https://pidetufactura.mcdonalds.es</link>).",
+        "part2": "Lead Andy's Frontend and Backend developments: (analyze the problem, plan tasks, develop in a scalable way, test, document and deploy to production).",
+        "part3": "Design and implement Andy's infrastructure (servers and DevOps methodologies).",
+        "part4": "Assist support team with technical tickets."
       }
     },
     "kriter": {
       "title": "Software Enginner at Kriter Software",
       "duration": "(2018-06 - 2019-06) · {years, plural, =1 {<bold>1</bold> year} other {<bold>#</bold> years}} {months, plural, =1 {<bold>1</bold> month} other {<bold>#</bold> months}}",
       "ubication": "Mataró, Spain · Part time",
-      "description": "Kriter Software S.L. is a software consultancy specialising in ecommerce.",
-      "responsibilities": {
-        "part1": "Develop the frontend and backend of two ecommerce.",
-        "part2": "Customer support (ticketing)"
-      },
-      "objectivesAchieved": {
-        "part1": "Successfully develop 2 ecommerce. (example: <link>https://gallissa.com</link>)",
-        "part2": "Successfully develop internal scripts."
+      "description": {
+        "part1": "Developed and maintained two e-commerce sites, providing customer support (example: <link>https://gallissa.com</link>).",
+        "part2": "Developed and maintained internal scripts to automatize tasks and analyze data."
       }
     }
   },

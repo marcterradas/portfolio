@@ -37,47 +37,25 @@ export default function Kriter() {
   const Content = () => {
     return (
       <>
-        <div className="mb-6">
-          <h5 className="mb-1 font-sans text-base italic font-normal sm:text-lg">
-            {translations("responsibilities")}
-          </h5>
-          <div className="pl-4">
-            <ul className="font-sans text-sm font-normal list-disc sm:text-base">
-              <li className="mb-1">
-                {translations("kriter.responsibilities.part1")}
-              </li>
-              <li className="mb-1">
-                {translations("kriter.responsibilities.part2")}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <h5 className="mb-1 font-sans text-base italic font-normal sm:text-lg">
-            {translations("objectivesAchieved")}
-          </h5>
-          <div className="pl-4">
-            <ul className="font-sans text-sm font-normal list-disc sm:text-base">
-              <li className="mb-1">
-                {translations.rich("kriter.objectivesAchieved.part1", {
-                  link: (children) => (
-                    <Link
-                      href={Projects.gallissa}
-                      locale={false}
-                      target="_blank"
-                      title={children}
-                      className="underline"
-                    >
-                      {children}
-                    </Link>
-                  ),
-                })}
-              </li>
-              <li className="mb-1">
-                {translations("kriter.objectivesAchieved.part2")}
-              </li>
-            </ul>
-          </div>
+        <div className="pl-4">
+          <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+            <li className="mb-1">
+              {translations.rich("kriter.description.part1", {
+                link: (children) => (
+                  <Link
+                    href={Projects.gallissa}
+                    locale={false}
+                    title={children}
+                    className="underline"
+                    target="_blank"
+                  >
+                    {children}
+                  </Link>
+                ),
+              })}
+            </li>
+            <li className="mb-1">{translations("kriter.description.part2")}</li>
+          </ul>
         </div>
       </>
     );

@@ -19,24 +19,15 @@
   },
   "experience": {
     "title": "Experiència",
-    "responsibilities": "Responsabilitats",
-    "objectivesAchieved": "Objectius aconseguits",
     "andy": {
       "title": "Software Enginner en Andy",
       "duration": "(2019-06 - Present) · {years, plural, =1 {<bold>1</bold> any} other {<bold>#</bold> anys}} {months, plural, =1 {<bold>1</bold> mes} other {<bold>#</bold> mesos}}",
       "ubication": "Remot (CET zona horària) · Jornada completa",
-      "description": "Andy és un B2B SaaS, especialitzat en la digitalització de les operacions dels restaurants",
-      "responsibilities": {
-        "part1": "Desenvolupar el frontend i el backend d'Andy.",
-        "part2": "Liderar el desenvolupament de dos projectes per a McDonald's.",
-        "part3": "Participar en el CI/CD d'Andy",
-        "part4": "Donar suport als clients (posada en marxa, tiquets)"
-      },
-      "objectivesAchieved": {
-        "part1": "Liderar OKR's (planificar tasques, desenvolupar i analitzar el rendiment)",
-        "part2": "Desenvolupar amb èxit dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link>)",
-        "part3": "Millorar el rendiment d'Andy (exemples: afegint cache a l'api, paginació a la bd, ús de la memòria en l'app)",
-        "part4": "Implementar un sistema de branques de git per treballar en CI/CD"
+      "description": {
+        "part1": "Desenvolupador líder i encarregat del suport de dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link>).",
+        "part2": "Liderar desenvolupaments de Frontend i Backend d'Andy: (analitzar el problema, planificar tasques, desenvolupar de forma escalable, testejar, documentar i desplegar a producció).",
+        "part3": "Dissenyar i implementar la infraestructura d'Andy (servidores i metodologies DevOps).",
+        "part4": "Ajudar a l'equip de suport amb els tiquets tècnics."
       }
     },
     "kriter": {
@@ -44,14 +35,9 @@
       "duration": "(2018-06 - 2019-06) · {years, plural, =1 {<bold>1</bold> any} other {<bold>#</bold> anys}} {months, plural, =1 {<bold>1</bold> mes} other {<bold>#</bold> mesos}}",
       "type": "Jornada partida",
       "ubication": "Mataró, Espanya",
-      "description": "Kriter Software S.L. és una consultora de software especialitzada en ecommerce.",
-      "responsibilities": {
-        "part1": "Desenvolupar el frontend i el backend de dos ecommerce.",
-        "part2": "Donar suport als clients (tiquets)"
-      },
-      "objectivesAchieved": {
-        "part1": "Desenvolupar amb èxit dos ecommerce. (example: <link>https://gallissa.com</link>)",
-        "part2": "Desenvolupar amb èxit scripts interns."
+      "description": {
+        "part1": "Desenvolupar i manteniment de dos e-commerce, donant suport al client (exemple: <link>https://gallissa.com</link>).",
+        "part2": "Desenvolupar i manteniment de scripts interns per automatitzar tasques i analitzar dades."
       }
     }
   },
