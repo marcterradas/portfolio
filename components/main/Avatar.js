@@ -10,6 +10,7 @@ export default function Avatar() {
           fill
           style={{ objectFit: "contain" }}
           priority={true}
+          sizes="h-64 w-64"
         ></Image>
       </div>
     </div>
