@@ -1,7 +1,6 @@
 import { useCustomTranslations } from "../../logic/translations";
 import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
 import Dates from "../../constants/dates.json";
-import CustomDisclosure from "../common/Disclosure";
 import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
 
@@ -14,9 +13,9 @@ export default function Andy() {
 
   const [years, months] = calculateDifferenceYearsAndMonths(startDate, endDate);
 
-  const Button = () => {
+  const Title = () => {
     return (
-      <div className="w-full">
+      <div className="w-full px-4 py-2 mb-4 rounded-sm bg-stone-200">
         <h4 className="font-sans text-lg font-normal lg:text-xl">
           {translations("andy.title")}
         </h4>
@@ -34,34 +33,37 @@ export default function Andy() {
     );
   };
 
-  const Content = () => {
+  const Description = () => {
     return (
-      <>
-        <div className="pl-4">
-          <ul className="font-sans text-sm font-normal list-disc sm:text-base">
-            <li className="mb-1">
-              {translations.rich("andy.description.part1", {
-                link: (children) => (
-                  <Link
-                    href={Projects.autofactura}
-                    locale={false}
-                    title={children}
-                    className="underline"
-                    target="_blank"
-                  >
-                    {children}
-                  </Link>
-                ),
-              })}
-            </li>
-            <li className="mb-1">{translations("andy.description.part2")}</li>
-            <li className="mb-1">{translations("andy.description.part3")}</li>
-            <li className="mb-1">{translations("andy.description.part4")}</li>
-          </ul>
-        </div>
-      </>
+      <div className="pl-4">
+        <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+          <li className="mb-1">
+            {translations.rich("andy.description.part1", {
+              link: (children) => (
+                <Link
+                  href={Projects.autofactura}
+                  locale={false}
+                  title={children}
+                  className="underline"
+                  target="_blank"
+                >
+                  {children}
+                </Link>
+              ),
+            })}
+          </li>
+          <li className="mb-1">{translations("andy.description.part2")}</li>
+          <li className="mb-1">{translations("andy.description.part3")}</li>
+          <li className="mb-1">{translations("andy.description.part4")}</li>
+        </ul>
+      </div>
     );
   };
 
-  return <CustomDisclosure button={<Button />} content={<Content />} />;
+  return (
+    <div className="mb-8">
+      <Title />
+      <Description />
+    </div>
+  );
 }
