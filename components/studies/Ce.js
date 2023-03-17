@@ -1,11 +1,12 @@
 import { useCustomTranslations } from "../../logic/translations";
+import TitleSection from "../common/TitleSection";
 
 export default function Ce() {
   const translations = useCustomTranslations("studies");
 
   const Title = () => {
     return (
-      <div className="w-full px-4 py-2 mb-4 rounded-sm bg-stone-200">
+      <TitleSection>
         <h4 className="font-sans text-lg font-normal lg:text-xl">
           {translations("ce.title")}
         </h4>
@@ -15,7 +16,7 @@ export default function Ce() {
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations("ce.duration")}
         </p>
-      </div>
+      </TitleSection>
     );
   };
 

@@ -3,6 +3,7 @@ import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
 import Dates from "../../constants/dates.json";
 import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
+import TitleSection from "../common/TitleSection";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");
@@ -15,7 +16,7 @@ export default function Andy() {
 
   const Title = () => {
     return (
-      <div className="w-full px-4 py-2 mb-4 rounded-sm bg-stone-200">
+      <TitleSection>
         <h4 className="font-sans text-lg font-normal lg:text-xl">
           {translations("andy.title")}
         </h4>
@@ -29,7 +30,7 @@ export default function Andy() {
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations("andy.ubication")}
         </p>
-      </div>
+      </TitleSection>
     );
   };
 

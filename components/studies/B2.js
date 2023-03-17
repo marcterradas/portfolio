@@ -1,13 +1,14 @@
 import { useCustomTranslations } from "../../logic/translations";
 import Link from "next/link";
 import Documents from "../../constants/documents.json";
+import TitleSection from "../common/TitleSection";
 
 export default function B2() {
   const translations = useCustomTranslations("studies");
 
   const Title = () => {
     return (
-      <div className="w-full px-4 py-2 mb-4 rounded-sm bg-stone-200">
+      <TitleSection>
         <h4 className="font-sans text-lg font-normal lg:text-xl">
           {translations("b2.title")}
         </h4>
@@ -17,7 +18,7 @@ export default function B2() {
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations("b2.date")}
         </p>
-      </div>
+      </TitleSection>
     );
   };
 
