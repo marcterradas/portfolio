@@ -3,6 +3,7 @@ import Link from "next/link";
 import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/SubTitle";
+import Paragraph from "../common/Paragraph";
 
 export default function Daw() {
   const translations = useCustomTranslations("studies");
@@ -11,12 +12,8 @@ export default function Daw() {
     return (
       <SectionContainer>
         <Subtitle>{translations("daw.title")}</Subtitle>
-        <p className="font-sans text-sm font-normal sm:text-base">
-          {translations("daw.place")}
-        </p>
-        <p className="font-sans text-sm font-normal sm:text-base">
-          {translations("daw.duration")}
-        </p>
+        <Paragraph>{translations("daw.place")}</Paragraph>
+        <Paragraph>{translations("daw.duration")}</Paragraph>
       </SectionContainer>
     );
   };

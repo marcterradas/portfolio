@@ -1,6 +1,7 @@
 import { useCustomTranslations } from "../../logic/translations";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/SubTitle";
+import Paragraph from "../common/Paragraph";
 
 export default function Ce() {
   const translations = useCustomTranslations("studies");
@@ -9,12 +10,8 @@ export default function Ce() {
     return (
       <SectionContainer>
         <Subtitle>{translations("ce.title")}</Subtitle>
-        <p className="font-sans text-sm font-normal sm:text-base">
-          {translations("ce.place")}
-        </p>
-        <p className="font-sans text-sm font-normal sm:text-base">
-          {translations("ce.duration")}
-        </p>
+        <Paragraph>{translations("ce.place")}</Paragraph>
+        <Paragraph>{translations("ce.duration")}</Paragraph>
       </SectionContainer>
     );
   };

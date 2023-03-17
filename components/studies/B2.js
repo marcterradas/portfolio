@@ -3,6 +3,7 @@ import Link from "next/link";
 import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/SubTitle";
+import Paragraph from "../common/Paragraph";
 
 export default function B2() {
   const translations = useCustomTranslations("studies");
@@ -11,12 +12,8 @@ export default function B2() {
     return (
       <SectionContainer>
         <Subtitle>{translations("b2.title")}</Subtitle>
-        <p className="font-sans text-sm font-normal sm:text-base">
-          {translations("b2.place")}
-        </p>
-        <p className="font-sans text-sm font-normal sm:text-base">
-          {translations("b2.date")}
-        </p>
+        <Paragraph>{translations("b2.place")}</Paragraph>
+        <Paragraph>{translations("b2.date")}</Paragraph>
       </SectionContainer>
     );
   };

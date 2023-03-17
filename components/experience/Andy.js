@@ -5,6 +5,7 @@ import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/SubTitle";
+import Paragraph from "../common/Paragraph";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");
@@ -19,16 +20,14 @@ export default function Andy() {
     return (
       <SectionContainer>
         <Subtitle>{translations("andy.title")}</Subtitle>
-        <p className="font-sans text-sm font-normal sm:text-base">
+        <Paragraph>
           {translations.rich("andy.duration", {
             years,
             months,
             bold: (children) => <b>{children}</b>,
           })}
-        </p>
-        <p className="font-sans text-sm font-normal sm:text-base">
-          {translations("andy.ubication")}
-        </p>
+        </Paragraph>
+        <Paragraph>{translations("andy.ubication")}</Paragraph>
       </SectionContainer>
     );
   };
