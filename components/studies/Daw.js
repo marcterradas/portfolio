@@ -1,14 +1,13 @@
 import { useCustomTranslations } from "../../logic/translations";
-import CustomDisclosure from "../common/Disclosure";
 import Link from "next/link";
 import Documents from "../../constants/documents.json";
 
 export default function Daw() {
   const translations = useCustomTranslations("studies");
 
-  const Button = () => {
+  const Title = () => {
     return (
-      <div className="w-full">
+      <div className="w-full px-4 py-2 mb-4 rounded-sm bg-stone-200">
         <h4 className="font-sans text-lg font-normal lg:text-xl">
           {translations("daw.title")}
         </h4>
@@ -22,7 +21,7 @@ export default function Daw() {
     );
   };
 
-  const Content = () => {
+  const Description = () => {
     return (
       <div className="mb-6">
         <div className="pl-4">
@@ -45,5 +44,10 @@ export default function Daw() {
     );
   };
 
-  return <CustomDisclosure button={<Button />} content={<Content />} />;
+  return (
+    <div className="mb-8">
+      <Title />
+      <Description />
+    </div>
+  );
 }
