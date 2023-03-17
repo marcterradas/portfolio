@@ -4,6 +4,7 @@ import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
+import List from "../common/List";
 
 export default function Daw() {
   const translations = useCustomTranslations("studies");
@@ -22,7 +23,7 @@ export default function Daw() {
     return (
       <div className="mb-6">
         <div className="pl-4">
-          <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+          <List>
             <li className="mb-1">
               <Link
                 href={Documents.daw}
@@ -35,7 +36,7 @@ export default function Daw() {
               </Link>
             </li>
             <li className="">{translations("daw.description.part2")}</li>
-          </ul>
+          </List>
         </div>
       </div>
     );

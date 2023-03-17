@@ -4,6 +4,7 @@ import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
+import List from "../common/List";
 
 export default function B2() {
   const translations = useCustomTranslations("studies");
@@ -22,7 +23,7 @@ export default function B2() {
     return (
       <div className="mb-6">
         <div className="pl-4">
-          <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+          <List>
             <li>
               <Link
                 href={Documents.b2}
@@ -34,7 +35,7 @@ export default function B2() {
                 {translations("b2.description")}
               </Link>
             </li>
-          </ul>
+          </List>
         </div>
       </div>
     );

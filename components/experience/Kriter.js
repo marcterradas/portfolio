@@ -6,6 +6,7 @@ import Projects from "../../constants/projectsLinks.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
+import List from "../common/List";
 
 export default function Kriter() {
   const translations = useCustomTranslations("experience");
@@ -35,7 +36,7 @@ export default function Kriter() {
   const Description = () => {
     return (
       <div className="pl-4">
-        <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+        <List>
           <li className="mb-1">
             {translations.rich("kriter.description.part1", {
               link: (children) => (
@@ -52,7 +53,7 @@ export default function Kriter() {
             })}
           </li>
           <li className="mb-1">{translations("kriter.description.part2")}</li>
-        </ul>
+        </List>
       </div>
     );
   };

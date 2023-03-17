@@ -6,6 +6,7 @@ import Projects from "../../constants/projectsLinks.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
+import List from "../common/List";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");
@@ -35,7 +36,7 @@ export default function Andy() {
   const Description = () => {
     return (
       <div className="pl-4">
-        <ul className="font-sans text-sm font-normal list-disc sm:text-base">
+        <List>
           <li className="mb-1">
             {translations.rich("andy.description.part1", {
               link: (children) => (
@@ -54,7 +55,7 @@ export default function Andy() {
           <li className="mb-1">{translations("andy.description.part2")}</li>
           <li className="mb-1">{translations("andy.description.part3")}</li>
           <li className="mb-1">{translations("andy.description.part4")}</li>
-        </ul>
+        </List>
       </div>
     );
   };
