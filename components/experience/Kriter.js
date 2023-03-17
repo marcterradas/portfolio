@@ -3,7 +3,7 @@ import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
 import Dates from "../../constants/dates.json";
 import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
-import TitleSection from "../common/TitleSection";
+import SectionContainer from "../common/SectionContainer";
 
 export default function Kriter() {
   const translations = useCustomTranslations("experience");
@@ -16,7 +16,7 @@ export default function Kriter() {
 
   const Title = () => {
     return (
-      <TitleSection>
+      <SectionContainer>
         <h4 className="font-sans text-lg font-normal lg:text-xl">
           {translations("kriter.title")}
         </h4>
@@ -30,7 +30,7 @@ export default function Kriter() {
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations("kriter.ubication")}
         </p>
-      </TitleSection>
+      </SectionContainer>
     );
   };
 
