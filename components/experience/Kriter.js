@@ -4,7 +4,7 @@ import Dates from "../../constants/dates.json";
 import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
 import SectionContainer from "../common/SectionContainer";
-import Subtitle from "../common/SubTitle";
+import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
 
 export default function Kriter() {

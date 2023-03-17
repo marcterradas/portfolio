@@ -2,7 +2,7 @@ import { useCustomTranslations } from "../../logic/translations";
 import Link from "next/link";
 import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
-import Subtitle from "../common/SubTitle";
+import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
 
 export default function B2() {

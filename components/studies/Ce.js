@@ -1,6 +1,6 @@
 import { useCustomTranslations } from "../../logic/translations";
 import SectionContainer from "../common/SectionContainer";
-import Subtitle from "../common/SubTitle";
+import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
 
 export default function Ce() {
