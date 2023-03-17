@@ -4,6 +4,7 @@ import Dates from "../../constants/dates.json";
 import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
 import SectionContainer from "../common/SectionContainer";
+import Subtitle from "../common/SubTitle";
 
 export default function Kriter() {
   const translations = useCustomTranslations("experience");
@@ -17,9 +18,7 @@ export default function Kriter() {
   const Title = () => {
     return (
       <SectionContainer>
-        <h4 className="font-sans text-lg font-normal lg:text-xl">
-          {translations("kriter.title")}
-        </h4>
+        <Subtitle>{translations("kriter.title")}</Subtitle>
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations.rich("kriter.duration", {
             years,

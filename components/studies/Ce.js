@@ -1,5 +1,6 @@
 import { useCustomTranslations } from "../../logic/translations";
 import SectionContainer from "../common/SectionContainer";
+import Subtitle from "../common/SubTitle";
 
 export default function Ce() {
   const translations = useCustomTranslations("studies");
@@ -7,9 +8,7 @@ export default function Ce() {
   const Title = () => {
     return (
       <SectionContainer>
-        <h4 className="font-sans text-lg font-normal lg:text-xl">
-          {translations("ce.title")}
-        </h4>
+        <Subtitle>{translations("ce.title")}</Subtitle>
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations("ce.place")}
         </p>

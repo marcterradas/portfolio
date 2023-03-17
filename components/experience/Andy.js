@@ -4,6 +4,7 @@ import Dates from "../../constants/dates.json";
 import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
 import SectionContainer from "../common/SectionContainer";
+import Subtitle from "../common/SubTitle";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");
@@ -17,9 +18,7 @@ export default function Andy() {
   const Title = () => {
     return (
       <SectionContainer>
-        <h4 className="font-sans text-lg font-normal lg:text-xl">
-          {translations("andy.title")}
-        </h4>
+        <Subtitle>{translations("andy.title")}</Subtitle>
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations.rich("andy.duration", {
             years,

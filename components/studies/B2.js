@@ -2,6 +2,7 @@ import { useCustomTranslations } from "../../logic/translations";
 import Link from "next/link";
 import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
+import Subtitle from "../common/SubTitle";
 
 export default function B2() {
   const translations = useCustomTranslations("studies");
@@ -9,9 +10,7 @@ export default function B2() {
   const Title = () => {
     return (
       <SectionContainer>
-        <h4 className="font-sans text-lg font-normal lg:text-xl">
-          {translations("b2.title")}
-        </h4>
+        <Subtitle>{translations("b2.title")}</Subtitle>
         <p className="font-sans text-sm font-normal sm:text-base">
           {translations("b2.place")}
         </p>
