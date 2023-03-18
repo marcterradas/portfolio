@@ -66,6 +66,9 @@
       "description": "Veure certificat"
     }
   },
+  "projects": {
+    "title": "Projectes"
+  },
   "skills": {
     "title": "Habilitats"
   },

@@ -65,6 +65,9 @@
       "description": "Ver certificado"
     }
   },
+  "projects": {
+    "title": "Proyectos"
+  },
   "skills": {
     "title": "Habilidades"
   },

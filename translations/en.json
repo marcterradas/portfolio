@@ -65,6 +65,9 @@
       "description": "See certificate"
     }
   },
+  "projects": {
+    "title": "Projects"
+  },
   "skills": {
     "title": "Skills"
   },
