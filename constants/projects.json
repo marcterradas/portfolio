@@ -1,0 +1,14 @@
+{
+  "portfolio": {
+    "link": "https://github.com/marcterradas/portfolio",
+    "technologies": ["Next.js", "React", "TailwindCSS", "Vitest"]
+  },
+  "runPHP": {
+    "link": "https://github.com/marcterradas/runPHP",
+    "technologies": ["Vue", "TypeScript", "TailwindCSS"]
+  },
+  "timers-exercises-series": {
+    "link": "https://github.com/marcterradas/timers-exercises-series",
+    "technologies": ["React Native", "React", "Vitest"]
+  }
+}
