@@ -3,6 +3,7 @@ import Navbar from "../layout/Navbar";
 import Main from "../layout/Main";
 import Experience from "../layout/Experience";
 import Studies from "../layout/Studies";
+import Projects from "../layout/Projects";
 import Skills from "../layout/Skills";
 import Footer from "../layout/Footer";
 
@@ -15,6 +16,7 @@ export default function Home() {
         <Main />
         <Experience />
         <Studies />
+        <Projects />
         <Skills />
         <Footer />
       </div>
