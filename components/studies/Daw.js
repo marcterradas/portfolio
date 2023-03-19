@@ -1,10 +1,10 @@
 import { useCustomTranslations } from "../../logic/translations";
-import Link from "next/link";
 import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
 import List from "../common/List";
+import Link from "../common/Link";
 
 export default function Daw() {
   const translations = useCustomTranslations("studies");
@@ -25,17 +25,13 @@ export default function Daw() {
         <div className="pl-4">
           <List>
             <li className="mb-1">
-              <Link
-                href={Documents.daw}
-                locale={false}
-                target="_blank"
-                className="font-bold underline"
-                title={translations("daw.title")}
-              >
-                {translations("daw.description.part1")}
-              </Link>
+              <b>
+                <Link href={Documents.daw} title={translations("daw.title")}>
+                  {translations("daw.description.part1")}
+                </Link>
+              </b>
             </li>
-            <li className="">{translations("daw.description.part2")}</li>
+            <li>{translations("daw.description.part2")}</li>
           </List>
         </div>
       </div>
