@@ -1,3 +1,18 @@
+import ProjectsInformation from "../../constants/projects.json";
+import SectionContainer from "../common/SectionContainer";
+import Subtitle from "../common/Subtitle";
+import Paragraph from "../common/Paragraph";
+
 export default function TimersExercicesSeries() {
-  return <div>Timers Exercices Serires</div>;
+  const { timersExercisesSeries } = ProjectsInformation;
+  const { title, link, technologies } = timersExercisesSeries;
+  const skillsStr = technologies.toString();
+  return (
+    <SectionContainer>
+      <div> image ...</div>
+      <Subtitle>{title}</Subtitle>
+      <Paragraph>Description ...</Paragraph>
+      <Paragraph>{skillsStr}</Paragraph>
+    </SectionContainer>
+  );
 }
