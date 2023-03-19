@@ -68,7 +68,16 @@
   },
   "projects": {
     "title": "Projectes",
-    "repository": "Repositori"
+    "repository": "Repositori",
+    "portfolio": {
+      "description": "Portfoli personal"
+    },
+    "runPHP": {
+      "description": "PHP playground fet amb rust"
+    },
+    "timersExercisesSeries": {
+      "description": "APP per controlar el temps entre exercicis d'un entrenament"
+    }
   },
   "skills": {
     "title": "Habilitats"

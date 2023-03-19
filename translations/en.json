@@ -67,7 +67,16 @@
   },
   "projects": {
     "title": "Projects",
-    "repository": "Repository"
+    "repository": "Repository",
+    "portfolio": {
+      "description": "Personal porfolio"
+    },
+    "runPHP": {
+      "description": "PHP playground build with rust"
+    },
+    "timersExercisesSeries": {
+      "description": "APP to control the time bettwen exercises from a workout"
+    }
   },
   "skills": {
     "title": "Skills"

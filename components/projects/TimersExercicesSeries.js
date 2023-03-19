@@ -16,7 +16,7 @@ export default function TimersExercicesSeries() {
     <SectionContainer>
       <ProjectImage />
       <Subtitle>{title}</Subtitle>
-      <Paragraph>Description ...</Paragraph>
+      <Paragraph>{translations("timersExercisesSeries.description")}</Paragraph>
       <Paragraph>{skillsStr}</Paragraph>
       <Link href={link}>{translations("repository")}</Link>
     </SectionContainer>
