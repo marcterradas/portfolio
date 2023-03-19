@@ -67,7 +67,8 @@
     }
   },
   "projects": {
-    "title": "Projectes"
+    "title": "Projectes",
+    "repository": "Repositori"
   },
   "skills": {
     "title": "Habilitats"
