@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { useCustomTranslations } from "../../logic/translations";
 import { calculateDifferenceYears } from "../../logic/dates";
 import Dates from "../../constants/dates.json";
 import contactLinks from "../../constants/contactLinks.json";
+import Link from "../common/Link";
 
 export default function AboutMe() {
   const translations = useCustomTranslations("main");
@@ -26,28 +26,12 @@ export default function AboutMe() {
         {translations.rich("aboutMe.part4", {
           link1: (children) => (
             <b>
-              <Link
-                href={contactLinks.linkedin}
-                locale={false}
-                target="_blank"
-                title={children}
-                className="underline"
-              >
-                {children}
-              </Link>
+              <Link href={contactLinks.linkedin}>{children}</Link>
             </b>
           ),
           link2: (children) => (
             <b>
-              <Link
-                href={contactLinks.github}
-                locale={false}
-                target="_blank"
-                title={children}
-                className="underline"
-              >
-                {children}
-              </Link>
+              <Link href={contactLinks.github}>{children}</Link>
             </b>
           ),
         })}

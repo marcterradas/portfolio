@@ -1,10 +1,10 @@
 import { useCustomTranslations } from "../../logic/translations";
-import Link from "next/link";
 import Documents from "../../constants/documents.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
 import List from "../common/List";
+import Link from "../common/Link";
 
 export default function B2() {
   const translations = useCustomTranslations("studies");
@@ -25,15 +25,11 @@ export default function B2() {
         <div className="pl-4">
           <List>
             <li>
-              <Link
-                href={Documents.b2}
-                locale={false}
-                target="_blank"
-                className="font-bold underline"
-                title={translations("b2.title")}
-              >
-                {translations("b2.description")}
-              </Link>
+              <b>
+                <Link href={Documents.b2} title={translations("b2.title")}>
+                  {translations("b2.description")}
+                </Link>
+              </b>
             </li>
           </List>
         </div>

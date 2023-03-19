@@ -1,12 +1,12 @@
 import { useCustomTranslations } from "../../logic/translations";
 import { calculateDifferenceYearsAndMonths } from "../../logic/dates";
 import Dates from "../../constants/dates.json";
-import Link from "next/link";
 import Projects from "../../constants/projectsLinks.json";
 import SectionContainer from "../common/SectionContainer";
 import Subtitle from "../common/Subtitle";
 import Paragraph from "../common/Paragraph";
 import List from "../common/List";
+import Link from "../common/Link";
 
 export default function Kriter() {
   const translations = useCustomTranslations("experience");
@@ -40,15 +40,7 @@ export default function Kriter() {
           <li className="mb-1">
             {translations.rich("kriter.description.part1", {
               link: (children) => (
-                <Link
-                  href={Projects.gallissa}
-                  locale={false}
-                  title={children}
-                  className="underline"
-                  target="_blank"
-                >
-                  {children}
-                </Link>
+                <Link href={Projects.gallissa}>{children}</Link>
               ),
             })}
           </li>
