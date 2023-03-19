@@ -14,7 +14,7 @@ export default function Portfolio() {
 
   return (
     <SectionContainer>
-      <ProjectImage />
+      <ProjectImage image="portfolio" />
       <Subtitle>{title}</Subtitle>
       <Paragraph>{translations("portfolio.description")}</Paragraph>
       <Paragraph>{skillsStr}</Paragraph>

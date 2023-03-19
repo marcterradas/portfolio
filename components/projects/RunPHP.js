@@ -14,7 +14,7 @@ export default function RunPHP() {
 
   return (
     <SectionContainer>
-      <ProjectImage />
+      <ProjectImage image="runPHP" />
       <Subtitle>{title}</Subtitle>
       <Paragraph>{translations("runPHP.description")}</Paragraph>
       <Paragraph>{skillsStr}</Paragraph>

@@ -14,7 +14,7 @@ export default function TimersExercicesSeries() {
 
   return (
     <SectionContainer>
-      <ProjectImage />
+      <ProjectImage image="timersExercicesSeries" />
       <Subtitle>{title}</Subtitle>
       <Paragraph>{translations("timersExercisesSeries.description")}</Paragraph>
       <Paragraph>{skillsStr}</Paragraph>
