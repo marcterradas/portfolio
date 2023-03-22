@@ -14,14 +14,16 @@ export default function Portfolio() {
 
   return (
     <SectionContainer>
-      <div class="lg:w-3/6">
-        <Subtitle>{title}</Subtitle>
-        <Paragraph>{translations("portfolio.description")}</Paragraph>
-        <Paragraph>{skillsStr}</Paragraph>
-        <Link href={link}>{translations("repository")}</Link>
-      </div>
-      <div class="lg:w-3/6">
-        <ProjectImage image="portfolio" />
+      <div className="lg:flex">
+        <div class="lg:w-3/6">
+          <Subtitle>{title}</Subtitle>
+          <Paragraph>{translations("portfolio.description")}</Paragraph>
+          <Paragraph>{skillsStr}</Paragraph>
+          <Link href={link}>{translations("repository")}</Link>
+        </div>
+        <div class="lg:w-3/6">
+          <ProjectImage image="portfolio" />
+        </div>
       </div>
     </SectionContainer>
   );
