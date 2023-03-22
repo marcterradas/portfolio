@@ -14,11 +14,17 @@ export default function TimersExercicesSeries() {
 
   return (
     <SectionContainer>
-      <ProjectImage image="timersExercicesSeries" />
-      <Subtitle>{title}</Subtitle>
-      <Paragraph>{translations("timersExercisesSeries.description")}</Paragraph>
-      <Paragraph>{skillsStr}</Paragraph>
-      <Link href={link}>{translations("repository")}</Link>
+      <div class="lg:w-3/6">
+        <Subtitle>{title}</Subtitle>
+        <Paragraph>
+          {translations("timersExercisesSeries.description")}
+        </Paragraph>
+        <Paragraph>{skillsStr}</Paragraph>
+        <Link href={link}>{translations("repository")}</Link>
+      </div>
+      <div class="lg:w-3/6">
+        <ProjectImage image="timersExercicesSeries" />
+      </div>
     </SectionContainer>
   );
 }

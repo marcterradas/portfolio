@@ -14,11 +14,15 @@ export default function RunPHP() {
 
   return (
     <SectionContainer>
-      <ProjectImage image="runPHP" />
-      <Subtitle>{title}</Subtitle>
-      <Paragraph>{translations("runPHP.description")}</Paragraph>
-      <Paragraph>{skillsStr}</Paragraph>
-      <Link href={link}>{translations("repository")}</Link>
+      <div class="lg:w-3/6">
+        <Subtitle>{title}</Subtitle>
+        <Paragraph>{translations("runPHP.description")}</Paragraph>
+        <Paragraph>{skillsStr}</Paragraph>
+        <Link href={link}>{translations("repository")}</Link>
+      </div>
+      <div class="lg:w-3/6">
+        <ProjectImage image="runPHP" />
+      </div>
     </SectionContainer>
   );
 }
