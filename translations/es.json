@@ -11,7 +11,7 @@
     "title": "Marc Terradas Zapata",
     "subtitle": "Senior Software Engineer (Full Stack Developer)",
     "aboutMe": {
-      "part1": "Senior Software Engineer (Full Stack Developer) con más de <bold>{experienceYears}</bold> años de experiencia.",
+      "part1": "+<bold>{experienceYears}</bold> años de experiencia como Senior Software Engineer (Full Stack Developer).",
       "part2": "Especializado en Backend y en la lógica del Frontend, con conocimientos de DevOps.",
       "part3": "Liderazgo en desarrollos y proyectos.",
       "part4": "Me puedes encontrar en: <link1>Linkedin</link1> y en <link2>Github</link2>"
