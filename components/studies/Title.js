@@ -1,5 +1,5 @@
-import { useCustomTranslations } from "../../logic/translations";
-import CustomTitle from "../common/Title";
+import { useCustomTranslations } from "@/logic/translations";
+import CustomTitle from "@/components/common/Title";
 
 export default function Title() {
   const translations = useCustomTranslations("studies");

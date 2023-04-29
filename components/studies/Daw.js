@@ -1,10 +1,10 @@
-import { useCustomTranslations } from "../../logic/translations";
-import Documents from "../../constants/documents.json";
-import SectionContainer from "../common/SectionContainer";
-import Subtitle from "../common/Subtitle";
-import Paragraph from "../common/Paragraph";
-import List from "../common/List";
-import Link from "../common/Link";
+import { useCustomTranslations } from "@/logic/translations";
+import Documents from "@/constants/documents.json";
+import SectionContainer from "@/components/common/SectionContainer";
+import Subtitle from "@/components/common/Subtitle";
+import Paragraph from "@/components/common/Paragraph";
+import List from "@/components/common/List";
+import Link from "@/components/common/Link";
 
 export default function Daw() {
   const translations = useCustomTranslations("studies");

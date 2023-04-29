@@ -1,11 +1,11 @@
-import ProjectsInformation from "../../constants/projects.json";
-import SectionContainer from "../common/SectionContainer";
-import ProjectImage from "../common/ProjectImage";
-import Subtitle from "../common/Subtitle";
-import Paragraph from "../common/Paragraph";
-import Link from "../common/Link";
-import Skill from "../common/Skill";
-import { useCustomTranslations } from "../../logic/translations";
+import ProjectsInformation from "@/constants/projects.json";
+import SectionContainer from "@/components/common/SectionContainer";
+import ProjectImage from "@/components/common/ProjectImage";
+import Subtitle from "@/components/common/Subtitle";
+import Paragraph from "@/components/common/Paragraph";
+import Link from "@/components/common/Link";
+import Skill from "@/components/common/Skill";
+import { useCustomTranslations } from "@/logic/translations";
 
 export default function TimersExercicesSeries() {
   const { timersExercisesSeries } = ProjectsInformation;

@@ -1,7 +1,7 @@
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import LanguageSelected from "./LanguageSelected";
-import LanguageDropDownElements from "./LanguageDropDownElements";
+import LanguageSelected from "@/components/navbar/LanguageSelected";
+import LanguageDropDownElements from "@/components/navbar/LanguageDropDownElements";
 
 export default function LanguageDropDown({
   selectedLanguageCode,

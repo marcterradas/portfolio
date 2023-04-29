@@ -1,6 +1,6 @@
-import { useCustomTranslations } from "../../logic/translations";
+import { useCustomTranslations } from "@/logic/translations";
 import Link from "next/link";
-import Documents from "../../constants/documents.json";
+import Documents from "@/constants/documents.json";
 
 export default function Curriculum() {
   const transitions = useCustomTranslations("nav");

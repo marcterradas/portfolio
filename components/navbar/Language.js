@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Languages from "../../constants/languages.json";
+import Languages from "@/constants/languages.json";
 
 export default function Language({ languageCode }) {
   const language = Languages[languageCode];

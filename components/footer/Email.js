@@ -1,6 +1,6 @@
-import { useCustomTranslations } from "../../logic/translations";
-import ContactButton from "../common/ContactButton";
-import contactLinks from "../../constants/contactLinks.json";
+import { useCustomTranslations } from "@/logic/translations";
+import ContactButton from "@/components/common/ContactButton";
+import contactLinks from "@/constants/contactLinks.json";
 
 export default function Email() {
   const translations = useCustomTranslations("footer");

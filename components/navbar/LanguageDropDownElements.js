@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Language from "./Language";
-import Languages from "../../constants/languages.json";
+import Language from "@/components/navbar/Language";
+import Languages from "@/constants/languages.json";
 
 export default function LanguageDropDownElements({
   selectedLanguageCode,

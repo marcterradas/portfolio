@@ -1,8 +1,8 @@
-import { useCustomTranslations } from "../../logic/translations";
-import { calculateDifferenceYears } from "../../logic/dates";
-import Dates from "../../constants/dates.json";
-import contactLinks from "../../constants/contactLinks.json";
-import Link from "../common/Link";
+import { useCustomTranslations } from "@/logic/translations";
+import { calculateDifferenceYears } from "@/logic/dates";
+import Dates from "@/constants/dates.json";
+import contactLinks from "@/constants/contactLinks.json";
+import Link from "@/components/common/Link";
 
 export default function AboutMe() {
   const translations = useCustomTranslations("main");

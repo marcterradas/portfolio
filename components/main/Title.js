@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "../../logic/translations";
+import { useCustomTranslations } from "@/logic/translations";
 
 export default function Title() {
   const translations = useCustomTranslations("main");

@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { useCustomTranslations } from "../logic/translations";
-import Skills from "../constants/skills";
+import { useCustomTranslations } from "@/logic/translations";
+import Skills from "@/constants/skills";
 
 export default function CustomHead() {
   const translations = useCustomTranslations("head");

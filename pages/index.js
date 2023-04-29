@@ -1,11 +1,11 @@
-import Head from "../layout/Head";
-import Navbar from "../layout/Navbar";
-import Main from "../layout/Main";
-import Experience from "../layout/Experience";
-import Studies from "../layout/Studies";
-import Projects from "../layout/Projects";
-import Skills from "../layout/Skills";
-import Footer from "../layout/Footer";
+import Head from "@/components/layout/Head";
+import Navbar from "@/components/layout/Navbar";
+import Main from "@/components/layout/Main";
+import Experience from "@/components/layout/Experience";
+import Studies from "@/components/layout/Studies";
+import Projects from "@/components/layout/Projects";
+import Skills from "@/components/layout/Skills";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (

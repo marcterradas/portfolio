@@ -1,7 +1,7 @@
-import Title from "../components/main/Title";
-import SubTitle from "../components/main/SubTitle";
-import Avatar from "../components/main/Avatar";
-import AboutMe from "../components/main/AboutMe";
+import Title from "@/components/main/Title";
+import SubTitle from "@/components/main/SubTitle";
+import Avatar from "@/components/main/Avatar";
+import AboutMe from "@/components/main/AboutMe";
 
 export default function Main() {
   return (
