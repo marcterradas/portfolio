@@ -18,7 +18,7 @@ export default function Portfolio() {
   return (
     <SectionContainer>
       <div className="lg:flex">
-        <div class="lg:w-3/6">
+        <div className="lg:w-3/6">
           <Subtitle>{title}</Subtitle>
           <Paragraph>{translations("portfolio.description")}</Paragraph>
           <Link href={link}>
@@ -26,7 +26,7 @@ export default function Portfolio() {
           </Link>
           <div className="flex mt-2">{Skills}</div>
         </div>
-        <div class="lg:w-3/6">
+        <div className="lg:w-3/6">
           <ProjectImage image="portfolio" />
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function RunPHP() {
   return (
     <SectionContainer>
       <div className="lg:flex">
-        <div class="lg:w-3/6">
+        <div className="lg:w-3/6">
           <Subtitle>{title}</Subtitle>
           <Paragraph>{translations("runPHP.description")}</Paragraph>
           <Link href={link}>
@@ -26,7 +26,7 @@ export default function RunPHP() {
           </Link>
           <div className="flex mt-2">{Skills}</div>
         </div>
-        <div class="lg:w-3/6">
+        <div className="lg:w-3/6">
           <ProjectImage image="runPHP" />
         </div>
       </div>

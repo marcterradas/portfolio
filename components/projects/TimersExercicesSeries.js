@@ -18,7 +18,7 @@ export default function TimersExercicesSeries() {
   return (
     <SectionContainer>
       <div className="lg:flex">
-        <div class="lg:w-3/6">
+        <div className="lg:w-3/6">
           <Subtitle>{title}</Subtitle>
           <Paragraph>
             {translations("timersExercisesSeries.description")}
@@ -28,7 +28,7 @@ export default function TimersExercicesSeries() {
           </Link>
           <div className="flex mt-2">{Skills}</div>
         </div>
-        <div class="lg:w-3/6">
+        <div className="lg:w-3/6">
           <ProjectImage image="timersExercicesSeries" />
         </div>
       </div>
