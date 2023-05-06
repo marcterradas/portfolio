@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/infrastructure/components/Link";
 import Language from "@/controller/navbar/Language";
 import Languages from "@/constants/languages.json";
 
