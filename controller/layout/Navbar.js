@@ -1,5 +1,5 @@
 import { router } from "@/infrastructure/functions/router";
-import LanguageDropDown from "@/components/navbar/LanguageDropDown";
+import LanguageDropDown from "@/controller/navbar/LanguageDropDown";
 import Curriculum from "@/components/navbar/Curriculum";
 
 export default function Navbar() {
