@@ -1,7 +1,7 @@
-import Title from "@/components/projects/Title";
-import Portfolio from "@/components/projects/Portfolio";
-import RunPHP from "@/components/projects/RunPHP";
-import TimersExercicesSeries from "@/components/projects/TimersExercicesSeries";
+import Title from "@/controller/projects/Title";
+import Portfolio from "@/controller/projects/Portfolio";
+import RunPHP from "@/controller/projects/RunPHP";
+import TimersExercicesSeries from "@/controller/projects/TimersExercicesSeries";
 
 export default function Projects() {
   return (
