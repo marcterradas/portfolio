@@ -4,8 +4,10 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/styles/*": ["styles/*"],
-      "@/logic/*": ["logic/*"],
-      "@/constants/*": ["constants/*"]
+      "@/logic/*": ["application/*"],
+      "@/constants/*": ["constants/*"],
+      "@/infrastructure/*": ["infrastructure/*"],
+      "@/application/*": ["application/*"]
     }
   }
 }
