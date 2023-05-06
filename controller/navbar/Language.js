@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/infrastructure/components/Image";
 import Languages from "@/constants/languages.json";
 
 export default function Language({ languageCode }) {

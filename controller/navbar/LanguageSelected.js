@@ -1,4 +1,4 @@
-import Language from "@/components/navbar/Language";
+import Language from "@/controller/navbar/Language";
 
 export default function SelectedLanguage({ selectedLanguageCode }) {
   return (

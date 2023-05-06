@@ -3,8 +3,8 @@ import {
   DropDownButton,
   DropDownContent,
 } from "@/infrastructure/components/DropDown";
-import LanguageSelected from "@/components/navbar/LanguageSelected";
-import LanguageDropDownElements from "@/components/navbar/LanguageDropDownElements";
+import LanguageSelected from "@/controller/navbar/LanguageSelected";
+import LanguageDropDownElements from "@/controller/navbar/LanguageDropDownElements";
 
 export default function LanguageDropDown({
   selectedLanguageCode,

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Language from "@/components/navbar/Language";
+import Language from "@/controller/navbar/Language";
 import Languages from "@/constants/languages.json";
 
 export default function LanguageDropDownElements({
