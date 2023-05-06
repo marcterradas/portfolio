@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/infrastructure/components/translations";
+import { useCustomTranslations } from "@/infrastructure/functions/translations";
 import SectionContainer from "@/components/common/SectionContainer";
 import Subtitle from "@/components/common/Subtitle";
 import Paragraph from "@/components/common/Paragraph";

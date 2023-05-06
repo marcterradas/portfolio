@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/infrastructure/components/translations";
+import { useCustomTranslations } from "@/infrastructure/functions/translations";
 
 export default function SubTitle() {
   const translations = useCustomTranslations("main");

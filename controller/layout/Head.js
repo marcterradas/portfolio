@@ -1,5 +1,5 @@
 import Head from "@/infrastructure/components/Head";
-import { useCustomTranslations } from "@/infrastructure/components/translations";
+import { useCustomTranslations } from "@/infrastructure/functions/translations";
 import Skills from "@/constants/skills";
 
 export default function CustomHead() {

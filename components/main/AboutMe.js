@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/infrastructure/components/translations";
+import { useCustomTranslations } from "@/infrastructure/functions/translations";
 import { calculateDifferenceYears } from "@/application/dates";
 import Dates from "@/constants/dates.json";
 import contactLinks from "@/constants/contactLinks.json";
