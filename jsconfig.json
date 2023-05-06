@@ -7,7 +7,8 @@
       "@/logic/*": ["application/*"],
       "@/constants/*": ["constants/*"],
       "@/infrastructure/*": ["infrastructure/*"],
-      "@/application/*": ["application/*"]
+      "@/application/*": ["application/*"],
+      "@/controller/*": ["controller/*"]
     }
   }
 }
