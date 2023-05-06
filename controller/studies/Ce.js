@@ -1,8 +1,8 @@
 import { useCustomTranslations } from "@/infrastructure/functions/translations";
-import SectionContainer from "@/components/common/SectionContainer";
-import Subtitle from "@/components/common/Subtitle";
-import Paragraph from "@/components/common/Paragraph";
-import List from "@/components/common/List";
+import SectionContainer from "@/controller/common/SectionContainer";
+import Subtitle from "@/controller/common/Subtitle";
+import Paragraph from "@/controller/common/Paragraph";
+import List from "@/controller/common/List";
 
 export default function Ce() {
   const translations = useCustomTranslations("studies");

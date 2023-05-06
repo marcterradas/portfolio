@@ -1,10 +1,10 @@
 import ProjectsInformation from "@/constants/projects.json";
-import SectionContainer from "@/components/common/SectionContainer";
-import ProjectImage from "@/components/common/ProjectImage";
-import Subtitle from "@/components/common/Subtitle";
-import Paragraph from "@/components/common/Paragraph";
-import Link from "@/components/common/Link";
-import Skill from "@/components/common/Skill";
+import SectionContainer from "@/controller/common/SectionContainer";
+import ProjectImage from "@/controller/common/ProjectImage";
+import Subtitle from "@/controller/common/Subtitle";
+import Paragraph from "@/controller/common/Paragraph";
+import Link from "@/controller/common/Link";
+import Skill from "@/controller/common/Skill";
 import { useCustomTranslations } from "@/infrastructure/functions/translations";
 
 export default function Portfolio() {

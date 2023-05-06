@@ -1,5 +1,5 @@
 import { useCustomTranslations } from "@/infrastructure/functions/translations";
-import CustomTitle from "@/components/common/Title";
+import CustomTitle from "@/controller/common/Title";
 
 export default function Title() {
   const translations = useCustomTranslations("projects");

@@ -2,7 +2,7 @@ import { useCustomTranslations } from "@/infrastructure/functions/translations";
 import { calculateDifferenceYears } from "@/application/dates";
 import Dates from "@/constants/dates.json";
 import contactLinks from "@/constants/contactLinks.json";
-import Link from "@/components/common/Link";
+import Link from "@/controller/common/Link";
 
 export default function AboutMe() {
   const translations = useCustomTranslations("main");

@@ -2,11 +2,11 @@ import { useCustomTranslations } from "@/infrastructure/functions/translations";
 import { calculateDifferenceYearsAndMonths } from "@/application/dates";
 import Dates from "@/constants/dates.json";
 import Projects from "@/constants/projectsLinks.json";
-import SectionContainer from "@/components/common/SectionContainer";
-import Subtitle from "@/components/common/Subtitle";
-import Paragraph from "@/components/common/Paragraph";
-import List from "@/components/common/List";
-import Link from "@/components/common/Link";
+import SectionContainer from "@/controller/common/SectionContainer";
+import Subtitle from "@/controller/common/Subtitle";
+import Paragraph from "@/controller/common/Paragraph";
+import List from "@/controller/common/List";
+import Link from "@/controller/common/Link";
 
 export default function Andy() {
   const translations = useCustomTranslations("experience");

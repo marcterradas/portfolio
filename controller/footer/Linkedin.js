@@ -1,5 +1,5 @@
 import { useCustomTranslations } from "@/infrastructure/functions/translations";
-import ContactButton from "@/components/common/ContactButton";
+import ContactButton from "@/controller/common/ContactButton";
 import contactLinks from "@/constants/contactLinks.json";
 
 export default function Linkedin() {
