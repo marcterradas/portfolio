@@ -1,6 +1,6 @@
-import Linkedin from "@/components/footer/Linkedin";
-import Github from "@/components/footer/Github";
-import Email from "@/components/footer/Email";
+import Linkedin from "@/controller/footer/Linkedin";
+import Github from "@/controller/footer/Github";
+import Email from "@/controller/footer/Email";
 
 export default function Footer() {
   return (
