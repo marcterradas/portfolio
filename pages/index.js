@@ -1,5 +1,5 @@
 import Head from "@/controller/Head";
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "@/controller/Navbar";
 import Main from "@/components/layout/Main";
 import Experience from "@/components/layout/Experience";
 import Studies from "@/components/layout/Studies";
