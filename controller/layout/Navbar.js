@@ -1,6 +1,6 @@
 import { router } from "@/infrastructure/functions/router";
 import LanguageDropDown from "@/controller/navbar/LanguageDropDown";
-import Curriculum from "@/components/navbar/Curriculum";
+import Curriculum from "@/controller/navbar/Curriculum";
 
 export default function Navbar() {
   const { locale: selectedLanguageCode, locales: languagesCodes } = router();

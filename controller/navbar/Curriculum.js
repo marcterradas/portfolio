@@ -1,5 +1,5 @@
 import { useCustomTranslations } from "@/infrastructure/functions/translations";
-import Link from "next/link";
+import Link from "@/infrastructure/components/Link";
 import Documents from "@/constants/documents.json";
 
 export default function Curriculum() {
