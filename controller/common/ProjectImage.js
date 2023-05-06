@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/infrastructure/components/Image";
 
 export default function ProjectImage({ image }) {
   return (
