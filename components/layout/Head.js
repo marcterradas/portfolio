@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "@/infrastructure/Head";
 import { useCustomTranslations } from "@/infrastructure/translations";
 import Skills from "@/constants/skills";
 
