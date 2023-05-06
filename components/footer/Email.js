@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/logic/translations";
+import { useCustomTranslations } from "@/infrastructure/translations";
 import ContactButton from "@/components/common/ContactButton";
 import contactLinks from "@/constants/contactLinks.json";
 

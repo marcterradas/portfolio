@@ -1,5 +1,5 @@
-import { useCustomTranslations } from "@/logic/translations";
-import { calculateDifferenceYears } from "@/logic/dates";
+import { useCustomTranslations } from "@/infrastructure/translations";
+import { calculateDifferenceYears } from "@/application/dates";
 import Dates from "@/constants/dates.json";
 import contactLinks from "@/constants/contactLinks.json";
 import Link from "@/components/common/Link";

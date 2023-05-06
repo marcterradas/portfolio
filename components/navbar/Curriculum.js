@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/logic/translations";
+import { useCustomTranslations } from "@/infrastructure/translations";
 import Link from "next/link";
 import Documents from "@/constants/documents.json";
 

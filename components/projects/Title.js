@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/logic/translations";
+import { useCustomTranslations } from "@/infrastructure/translations";
 import CustomTitle from "@/components/common/Title";
 
 export default function Title() {
