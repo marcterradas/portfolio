@@ -1,7 +1,7 @@
-import Title from "@/components/studies/Title";
-import Ce from "@/components/studies/Ce";
-import Daw from "@/components/studies/Daw";
-import B2 from "@/components/studies/B2";
+import Title from "@/controller/studies/Title";
+import Ce from "@/controller/studies/Ce";
+import Daw from "@/controller/studies/Daw";
+import B2 from "@/controller/studies/B2";
 
 export default function Studies() {
   return (
