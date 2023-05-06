@@ -1,6 +1,6 @@
-import Title from "@/components/skills/Title";
+import Title from "@/controller/skills/Title";
 import SkillsList from "@/constants/skills";
-import Skill from "@/components/skills/Skill";
+import Skill from "@/controller/skills/Skill";
 
 export default function Skills() {
   const SkillsElements = SkillsList.map((skillName) => (
