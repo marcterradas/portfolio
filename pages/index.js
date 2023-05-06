@@ -1,11 +1,11 @@
-import Head from "@/controller/Head";
-import Navbar from "@/controller/Navbar";
-import Main from "@/controller/Main";
-import Experience from "@/controller/Experience";
-import Studies from "@/controller/Studies";
-import Projects from "@/controller/Projects";
-import Skills from "@/controller/Skills";
-import Footer from "@/controller/Footer";
+import Head from "@/controller/layout/Head";
+import Navbar from "@/controller/layout/Navbar";
+import Main from "@/controller/layout/Main";
+import Experience from "@/controller/layout/Experience";
+import Studies from "@/controller/layout/Studies";
+import Projects from "@/controller/layout/Projects";
+import Skills from "@/controller/layout/Skills";
+import Footer from "@/controller/layout/Footer";
 
 export default function Home() {
   return (
