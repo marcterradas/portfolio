@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from "@/infrastructure/components/Link";
+import Image from "@/infrastructure/components/Image";
 
 export default function ContactButton({ name, link, image }) {
   return (
