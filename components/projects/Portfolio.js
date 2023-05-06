@@ -5,7 +5,7 @@ import Subtitle from "@/components/common/Subtitle";
 import Paragraph from "@/components/common/Paragraph";
 import Link from "@/components/common/Link";
 import Skill from "@/components/common/Skill";
-import { useCustomTranslations } from "@/infrastructure/translations";
+import { useCustomTranslations } from "@/infrastructure/components/translations";
 
 export default function Portfolio() {
   const { portfolio } = ProjectsInformation;

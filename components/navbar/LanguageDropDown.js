@@ -2,7 +2,7 @@ import {
   DropDownWrapper,
   DropDownButton,
   DropDownContent,
-} from "@/infrastructure/DropDown";
+} from "@/infrastructure/components/DropDown";
 import LanguageSelected from "@/components/navbar/LanguageSelected";
 import LanguageDropDownElements from "@/components/navbar/LanguageDropDownElements";
 

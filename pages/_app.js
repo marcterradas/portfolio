@@ -1,4 +1,4 @@
-import LanguageProvider from "@/infrastructure/LanguageProvider";
+import LanguageProvider from "@/infrastructure/components/LanguageProvider";
 import "@/styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {

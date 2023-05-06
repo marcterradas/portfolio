@@ -1,4 +1,4 @@
-import { router } from "@/infrastructure/router";
+import { router } from "@/infrastructure/functions/router";
 import LanguageDropDown from "@/components/navbar/LanguageDropDown";
 import Curriculum from "@/components/navbar/Curriculum";
 
