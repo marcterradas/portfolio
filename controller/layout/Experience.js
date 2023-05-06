@@ -1,6 +1,6 @@
-import Title from "@/components/experience/Title";
-import Andy from "@/components/experience/Andy";
-import Kriter from "@/components/experience/Kriter";
+import Title from "@/controller/experience/Title";
+import Andy from "@/controller/experience/Andy";
+import Kriter from "@/controller/experience/Kriter";
 
 export default function Experience() {
   return (
