@@ -6,7 +6,7 @@
       "@/constants/*": ["constants/*"],
       "@/infrastructure/*": ["infrastructure/*"],
       "@/application/*": ["application/*"],
-      "@/controller/*": ["controller/*"]
+      "@/domain/*": ["domain/*"]
     }
   }
 }
