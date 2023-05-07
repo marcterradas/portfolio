@@ -1,6 +1,6 @@
 import ProjectsLinks from "@/constants/projectsLinks.json";
 import WorkDates from "@/constants/dates.json";
-import contactLinks from "@/constants/contactLinks.json";
+import ContactLinks from "@/constants/contactLinks.json";
 import Skills from "@/constants/skills";
 import Documents from "@/constants/documents.json";
 import Languages from "@/constants/languages.json";
@@ -27,7 +27,7 @@ export function getWorkDates(work) {
  * @returns {string | undefined}
  */
 export function getContactLink(contactLink) {
-  return contactLinks[contactLink];
+  return ContactLinks[contactLink];
 }
 
 /**
