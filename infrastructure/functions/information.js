@@ -1,10 +1,10 @@
-import ProjectsLinks from "@/constants/projectsLinks.json";
-import WorkDates from "@/constants/dates.json";
-import ContactLinks from "@/constants/contactLinks.json";
-import Skills from "@/constants/skills";
-import Documents from "@/constants/documents.json";
-import Languages from "@/constants/languages.json";
-import ProjectsInformation from "@/constants/projects.json";
+import ProjectsLinks from "@/infrastructure/constants/projectsLinks.json";
+import WorkDates from "@/infrastructure/constants/dates.json";
+import ContactLinks from "@/infrastructure/constants/contactLinks.json";
+import Skills from "@/infrastructure/constants/skills";
+import Documents from "@/infrastructure/constants/documents.json";
+import Languages from "@/infrastructure/constants/languages.json";
+import ProjectsInformation from "@/infrastructure/constants/projects.json";
 
 /**
  * @param {string} projectKey
