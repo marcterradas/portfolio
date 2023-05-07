@@ -1,5 +1,10 @@
 import { useTranslations } from "next-intl";
 
-export function useCustomTranslations(key) {
+/**
+ * get translations from specific key
+ * @param {string} key
+ * @returns {function}
+ */
+export function getTranslations(key) {
   return useTranslations(key);
 }

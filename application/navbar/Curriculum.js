@@ -1,9 +1,9 @@
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 import Link from "@/infrastructure/components/Link";
 import Documents from "@/constants/documents.json";
 
 export default function Curriculum() {
-  const transitions = useCustomTranslations("nav");
+  const transitions = getTranslations("nav");
   return (
     <Link
       href={Documents.cv}

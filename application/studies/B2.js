@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 import Documents from "@/constants/documents.json";
 import SectionContainer from "@/application/common/SectionContainer";
 import Subtitle from "@/application/common/Subtitle";
@@ -7,7 +7,7 @@ import List from "@/application/common/List";
 import Link from "@/application/common/Link";
 
 export default function B2() {
-  const translations = useCustomTranslations("studies");
+  const translations = getTranslations("studies");
 
   const Title = () => {
     return (

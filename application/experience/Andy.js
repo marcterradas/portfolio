@@ -1,4 +1,4 @@
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 import { calculateDifferenceYearsAndMonths } from "@/domain/dates";
 import Dates from "@/constants/dates.json";
 import Projects from "@/constants/projectsLinks.json";
@@ -9,7 +9,7 @@ import List from "@/application/common/List";
 import Link from "@/application/common/Link";
 
 export default function Andy() {
-  const translations = useCustomTranslations("experience");
+  const translations = getTranslations("experience");
   const [currentDate] = new Date().toISOString().split("T");
   let { startDate, endDate } = Dates.andy;
 

@@ -1,7 +1,7 @@
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 import CustomTitle from "@/application/common/Title";
 
 export default function Title() {
-  const translations = useCustomTranslations("studies");
+  const translations = getTranslations("studies");
   return <CustomTitle>{translations("title")}</CustomTitle>;
 }

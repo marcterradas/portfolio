@@ -1,9 +1,9 @@
 import Head from "@/infrastructure/components/Head";
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 import Skills from "@/constants/skills";
 
 export default function CustomHead() {
-  const translations = useCustomTranslations("head");
+  const translations = getTranslations("head");
   const keywords = Skills.join(",");
 
   return (

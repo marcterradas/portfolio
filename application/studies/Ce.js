@@ -1,11 +1,11 @@
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 import SectionContainer from "@/application/common/SectionContainer";
 import Subtitle from "@/application/common/Subtitle";
 import Paragraph from "@/application/common/Paragraph";
 import List from "@/application/common/List";
 
 export default function Ce() {
-  const translations = useCustomTranslations("studies");
+  const translations = getTranslations("studies");
 
   const Title = () => {
     return (

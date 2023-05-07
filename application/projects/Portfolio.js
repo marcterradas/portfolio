@@ -5,12 +5,12 @@ import Subtitle from "@/application/common/Subtitle";
 import Paragraph from "@/application/common/Paragraph";
 import Link from "@/application/common/Link";
 import Skill from "@/application/common/Skill";
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 
 export default function Portfolio() {
   const { portfolio } = ProjectsInformation;
   const { title, link, technologies } = portfolio;
-  const translations = useCustomTranslations("projects");
+  const translations = getTranslations("projects");
   const Skills = technologies.map((skill) => {
     return <Skill key={skill}>{skill}</Skill>;
   });

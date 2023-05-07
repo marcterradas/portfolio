@@ -1,11 +1,11 @@
-import { useCustomTranslations } from "@/infrastructure/functions/translations";
+import { getTranslations } from "@/infrastructure/functions/translations";
 import { calculateDifferenceYears } from "@/domain/dates";
 import Dates from "@/constants/dates.json";
 import contactLinks from "@/constants/contactLinks.json";
 import Link from "@/application/common/Link";
 
 export default function AboutMe() {
-  const translations = useCustomTranslations("main");
+  const translations = getTranslations("main");
   const [currentDate] = new Date().toISOString().split("T");
   const experienceYears = calculateDifferenceYears(
     Dates.kriter.startDate,
