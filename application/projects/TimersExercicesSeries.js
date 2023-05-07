@@ -1,14 +1,14 @@
-import ProjectsInformation from "@/constants/projects.json";
+import { getTranslations } from "@/infrastructure/functions/translations";
+import { getProjectInformation } from "@/infrastructure/functions/information";
 import SectionContainer from "@/application/common/SectionContainer";
 import ProjectImage from "@/application/common/ProjectImage";
 import Subtitle from "@/application/common/Subtitle";
 import Paragraph from "@/application/common/Paragraph";
 import Link from "@/application/common/Link";
 import Skill from "@/application/common/Skill";
-import { getTranslations } from "@/infrastructure/functions/translations";
 
 export default function TimersExercicesSeries() {
-  const { timersExercisesSeries } = ProjectsInformation;
+  const timersExercisesSeries = getProjectInformation("timersExercisesSeries");
   const { title, link, technologies } = timersExercisesSeries;
   const translations = getTranslations("projects");
   const Skills = technologies.map((skill) => {

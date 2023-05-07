@@ -1,12 +1,13 @@
 import { getTranslations } from "@/infrastructure/functions/translations";
+import { getDocumentLink } from "@/infrastructure/functions/information";
 import Link from "@/infrastructure/components/Link";
-import Documents from "@/constants/documents.json";
 
 export default function Curriculum() {
   const transitions = getTranslations("nav");
+  const cvLink = getDocumentLink("cv");
   return (
     <Link
-      href={Documents.cv}
+      href={cvLink}
       locale={false}
       target="_blank"
       title={transitions("curriculum")}

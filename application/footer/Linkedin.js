@@ -1,11 +1,11 @@
 import { getTranslations } from "@/infrastructure/functions/translations";
+import { getContactLink } from "@/infrastructure/functions/information";
 import ContactButton from "@/application/common/ContactButton";
-import contactLinks from "@/constants/contactLinks.json";
 
 export default function Linkedin() {
   const translations = getTranslations("footer");
   const name = translations("linkedin");
-  const link = contactLinks.linkedin;
+  const link = getContactLink("linkedin");
   const image = "/img/linkedin.svg";
   return (
     <div>

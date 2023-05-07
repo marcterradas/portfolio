@@ -1,8 +1,8 @@
+import { getLanguage } from "@/infrastructure/functions/information";
 import Image from "@/infrastructure/components/Image";
-import Languages from "@/constants/languages.json";
 
 export default function Language({ languageCode }) {
-  const language = Languages[languageCode];
+  const language = getLanguage(languageCode);
   const imgSrc = `/img/${languageCode}.svg`;
   return (
     <div className="flex items-center justify-start p-2 cursor-pointer w-36">

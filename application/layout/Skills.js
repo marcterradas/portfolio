@@ -1,9 +1,10 @@
+import { getSkills } from "@/infrastructure/functions/information";
 import Title from "@/application/skills/Title";
-import SkillsList from "@/constants/skills";
 import Skill from "@/application/skills/Skill";
 
 export default function Skills() {
-  const SkillsElements = SkillsList.map((skillName) => (
+  const skills = getSkills();
+  const SkillsElements = skills.map((skillName) => (
     <Skill key={skillName} skillName={skillName} />
   ));
   return (

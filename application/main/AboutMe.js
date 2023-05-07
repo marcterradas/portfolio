@@ -1,16 +1,21 @@
 import { getTranslations } from "@/infrastructure/functions/translations";
-import { calculateDifferenceYears } from "@/domain/dates";
-import Dates from "@/constants/dates.json";
-import contactLinks from "@/constants/contactLinks.json";
+import {
+  getWorkDates,
+  getContactLink,
+} from "@/infrastructure/functions/information";
 import Link from "@/application/common/Link";
+import { calculateDifferenceYears } from "@/domain/dates";
 
 export default function AboutMe() {
   const translations = getTranslations("main");
   const [currentDate] = new Date().toISOString().split("T");
+  const kirterDates = getWorkDates("kriter");
   const experienceYears = calculateDifferenceYears(
-    Dates.kriter.startDate,
+    kirterDates.startDate,
     currentDate
   );
+  const linkedinLink = getContactLink("linkedin");
+  const githubLink = getContactLink("github");
 
   return (
     <div className="px-4 mt-8 font-sans text-base font-normal sm:mt-12 sm:text-lg">
@@ -26,12 +31,12 @@ export default function AboutMe() {
         {translations.rich("aboutMe.part4", {
           link1: (children) => (
             <b>
-              <Link href={contactLinks.linkedin}>{children}</Link>
+              <Link href={linkedinLink}>{children}</Link>
             </b>
           ),
           link2: (children) => (
             <b>
-              <Link href={contactLinks.github}>{children}</Link>
+              <Link href={githubLink}>{children}</Link>
             </b>
           ),
         })}

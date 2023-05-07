@@ -1,5 +1,5 @@
 import { getTranslations } from "@/infrastructure/functions/translations";
-import Documents from "@/constants/documents.json";
+import { getDocumentLink } from "@/infrastructure/functions/information";
 import SectionContainer from "@/application/common/SectionContainer";
 import Subtitle from "@/application/common/Subtitle";
 import Paragraph from "@/application/common/Paragraph";
@@ -8,6 +8,7 @@ import Link from "@/application/common/Link";
 
 export default function Daw() {
   const translations = getTranslations("studies");
+  const dawLink = getDocumentLink("daw");
 
   const Title = () => {
     return (
@@ -26,7 +27,7 @@ export default function Daw() {
           <List>
             <li className="mb-1">
               <b>
-                <Link href={Documents.daw} title={translations("daw.title")}>
+                <Link href={dawLink} title={translations("daw.title")}>
                   {translations("daw.description.part1")}
                 </Link>
               </b>

@@ -1,5 +1,5 @@
 import { getTranslations } from "@/infrastructure/functions/translations";
-import Documents from "@/constants/documents.json";
+import { getDocumentLink } from "@/infrastructure/functions/information";
 import SectionContainer from "@/application/common/SectionContainer";
 import Subtitle from "@/application/common/Subtitle";
 import Paragraph from "@/application/common/Paragraph";
@@ -8,6 +8,7 @@ import Link from "@/application/common/Link";
 
 export default function B2() {
   const translations = getTranslations("studies");
+  const b2Link = getDocumentLink("b2");
 
   const Title = () => {
     return (
@@ -26,7 +27,7 @@ export default function B2() {
           <List>
             <li>
               <b>
-                <Link href={Documents.b2} title={translations("b2.title")}>
+                <Link href={b2Link} title={translations("b2.title")}>
                   {translations("b2.description")}
                 </Link>
               </b>

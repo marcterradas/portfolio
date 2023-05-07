@@ -1,17 +1,20 @@
 import { getTranslations } from "@/infrastructure/functions/translations";
-import { calculateDifferenceYearsAndMonths } from "@/domain/dates";
-import Dates from "@/constants/dates.json";
-import Projects from "@/constants/projectsLinks.json";
+import {
+  getProjectLink,
+  getWorkDates,
+} from "@/infrastructure/functions/information";
 import SectionContainer from "@/application/common/SectionContainer";
 import Subtitle from "@/application/common/Subtitle";
 import Paragraph from "@/application/common/Paragraph";
 import List from "@/application/common/List";
 import Link from "@/application/common/Link";
+import { calculateDifferenceYearsAndMonths } from "@/domain/dates";
 
 export default function Kriter() {
   const translations = getTranslations("experience");
   const [currentDate] = new Date().toISOString().split("T");
-  let { startDate, endDate } = Dates.kriter;
+  let { startDate, endDate } = getWorkDates("kriter");
+  const projectLink = getProjectLink("gallissa");
 
   endDate = endDate || currentDate;
 
@@ -39,9 +42,7 @@ export default function Kriter() {
         <List>
           <li className="mb-1">
             {translations.rich("kriter.description.part1", {
-              link: (children) => (
-                <Link href={Projects.gallissa}>{children}</Link>
-              ),
+              link: (children) => <Link href={projectLink}>{children}</Link>,
             })}
           </li>
           <li className="mb-1">{translations("kriter.description.part2")}</li>

@@ -1,6 +1,6 @@
 import Link from "@/infrastructure/components/Link";
+import { getLanguage } from "@/infrastructure/functions/information";
 import Language from "@/application/navbar/Language";
-import Languages from "@/constants/languages.json";
 
 export default function LanguageDropDownElements({
   selectedLanguageCode,
@@ -16,7 +16,7 @@ export default function LanguageDropDownElements({
         href={languageCode}
         locale={languageCode}
         onClick={closePopover}
-        title={Languages[languageCode]}
+        title={getLanguage(languageCode)}
         className="z-10 pl-1 pr-2 transition-colors duration-300 ease-linear rounded-sm cursor-pointer w-36 hover:bg-stone-200"
       >
         <Language languageCode={languageCode}></Language>
