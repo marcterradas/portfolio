@@ -38,7 +38,7 @@ export function getSkills() {
 }
 
 /**
- * @param {string} contactLink
+ * @param {string} document
  * @returns {string | undefined}
  */
 export function getDocumentLink(document) {

@@ -1,27 +1,31 @@
+// @ts-check
+
 /**
  * Calculate difference in years between two dates
  * @param {string} firstDate valid date
  * @param {string} secondDate valid date
- * @returns {number} difference between two dates
+ * @returns {number | false} difference between two dates
  */
 export function calculateDifferenceYears(firstDate, secondDate) {
   if (isNaN(Date.parse(firstDate))) return false;
   if (isNaN(Date.parse(firstDate))) return false;
 
-  let [firstDateYear, firstDateMonth] = firstDate.split("-");
-  let [secondDateYear, secondDateMonth] = secondDate.split("-");
-
-  firstDateYear = parseInt(firstDateYear);
-  firstDateMonth = parseInt(firstDateMonth);
-  secondDateYear = parseInt(secondDateYear);
-  secondDateMonth = parseInt(secondDateMonth);
-
+  /** @type {string[]} */
+  const [_firstDateYear, _firstDateMonth] = firstDate.split("-");
+  /** @type {string[]} */
+  const [_secondDateYear, _secondDateMonth] = secondDate.split("-");
+  /** @type {number} */
+  const firstDateYear = parseInt(_firstDateYear);
+  /** @type {number} */
+  const firstDateMonth = parseInt(_firstDateMonth);
+  /** @type {number} */
+  const secondDateYear = parseInt(_secondDateYear);
+  /** @type {number} */
+  const secondDateMonth = parseInt(_secondDateMonth);
+  /** @type {number} */
   let difference = secondDateYear - firstDateYear;
 
-  /*
-    if current year is bigger than start year and current month is smaller to start month
-    substract 1 year
-  */
+  // if current year is bigger than start year and current month is smaller to start month substract 1 year
   if (secondDateYear > firstDateYear && secondDateMonth < firstDateMonth)
     difference--;
 
@@ -32,24 +36,28 @@ export function calculateDifferenceYears(firstDate, secondDate) {
  * Calculate difference in years and months between two dates
  * @param {string} firstDate valid date
  * @param {string} secondDate valid date
- * @returns {Array<number>} two positions, first difference in years
- * and the second difference in months
+ * @returns { (number | false)[] | false }
  */
 export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
+  /** @type {number | false} */
   let yearDifference = calculateDifferenceYears(firstDate, secondDate);
 
   if (yearDifference === false) return false;
 
-  let [, firstDateMonth] = firstDate.split("-");
-  let [, secondDateMonth] = secondDate.split("-");
-
-  firstDateMonth = parseInt(firstDateMonth);
-  secondDateMonth = parseInt(secondDateMonth);
+  /** @type {string[]} */
+  const [, _firstDateMonth] = firstDate.split("-");
+  /** @type {string[]} */
+  const [, _secondDateMonth] = secondDate.split("-");
+  /** @type {number} */
+  const firstDateMonth = parseInt(_firstDateMonth);
+  /** @type {number} */
+  let secondDateMonth = parseInt(_secondDateMonth);
 
   // if second month is small (for example january) add 12 month
   if (secondDateMonth < firstDateMonth) secondDateMonth += 12;
 
   // start with 1 month (like linkedin)
+  /** @type {number} */
   let monthDifference = 1 + (secondDateMonth - firstDateMonth);
 
   if (monthDifference == 12) {
@@ -57,6 +65,7 @@ export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
     yearDifference += 1;
   }
 
+  /** @type {number[]} */
   const difference = [yearDifference, monthDifference];
 
   return difference;
