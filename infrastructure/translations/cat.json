@@ -12,9 +12,8 @@
     "subtitle": "Senior Software Engineer (Full Stack Developer)",
     "aboutMe": {
       "part1": "+<bold>{experienceYears}</bold> anys d'experiència com a Senior Software Engineer (Full Stack Developer).",
-      "part2": "Especialitzat en Backend i en la lògica del Frontend, amb coneixements de DevOps.",
-      "part3": "Lideratge en desenvolupaments i projectes.",
-      "part4": "Em pots trobar en: <link1>Linkedin</link1> hi ha <link2>Github</link2>"
+      "part2": "Lideratge d'equips, desenvolupaments i projectes.",
+      "part3": "Em pots trobar en: <link1>Linkedin</link1> hi ha <link2>Github</link2>"
     }
   },
   "experience": {
@@ -50,7 +49,7 @@
       "title": "Grau en enginyeria informàtica",
       "place": "Universitat Oberta de Catalunya",
       "duration": "2019 - 2020",
-      "description": "Vaig completar el primer any mentre treballava a jornada completa, i vaig decidir de moment deixar aparcat la carrera i estudiar i practicar pel meu compte."
+      "description": "Vaig completar el primer any mentre treballava a jornada completa, actualment segueixo estudiant però donant-li prioritat a la feina."
     },
     "daw": {
       "title": "Cicle formatiu de grau superior, desenvolupament d'aplicacions web (DAW)",

@@ -26,9 +26,8 @@ export default function AboutMe() {
         })}
       </p>
       <p>{translations("aboutMe.part2")}</p>
-      <p>{translations("aboutMe.part3")}</p>
       <p>
-        {translations.rich("aboutMe.part4", {
+        {translations.rich("aboutMe.part3", {
           link1: (children) => (
             <b>
               <Link href={linkedinLink}>{children}</Link>
