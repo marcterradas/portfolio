@@ -11,9 +11,10 @@
     "title": "Marc Terradas Zapata",
     "subtitle": "Senior Software Engineer (Full Stack Developer)",
     "aboutMe": {
-      "part1": "+<bold>{experienceYears}</bold> anys d'experiència com a Senior Software Engineer (Full Stack Developer).",
-      "part2": "Lideratge d'equips, desenvolupaments i projectes.",
-      "part3": "Em pots trobar en: <link1>Linkedin</link1> hi ha <link2>Github</link2>"
+      "part1": "+<bold>{experienceYears}</bold> anys d'experiència en el desenvolupament i l'entrega de solucions de software.",
+      "part2": "Capacitat demostrada per dirigir i gestionar equips de software, i per treballar en equip i de forma independent.",
+      "part3": "Sòlids coneixements tècnics en diverses tecnologies.",
+      "part4": "Em pots trobar en: <link1>Linkedin</link1> hi ha <link2>Github</link2>"
     }
   },
   "experience": {
@@ -24,11 +25,12 @@
       "ubication": "Remot (CET zona horària) · Jornada completa",
       "description": {
         "part1": "Desenvolupador líder i encarregat del suport de dos projectes de McDonald's (exemple: <link>https://pidetufactura.mcdonalds.es</link>).",
-        "part2": "Liderar desenvolupaments de Frontend i Backend d'Andy: (analitzar el problema, planificar tasques, desenvolupar de forma escalable, testejar, documentar i desplegar a producció).",
-        "part3": "Dissenyar i implementar la infraestructura d'Andy (servidores i metodologies DevOps).",
-        "part4": "Ajudar a l'equip de suport amb els tiquets tècnics.",
-        "part5": "Formar als aprenents",
-        "part6": "Ajudar en el procés de selecció (prova tècnica)."
+        "part2": "Liderar desenvolupaments de Frontend i Backend d'Andy: (analitzar el problema, documentar les tasques, desenvolupar de forma escalable, provar i documentar noves funcionalitats i desplegar a producció).",
+        "part3": "Dissenyar i implementar la infraestructura d'Andy (microserveis i CI/CD).",
+        "part4": "Metodologies àgils (Sprints d'1 setmana amb Scrum i Kanban).",
+        "part5": "Ajudar a l'equip de suport amb els tiquets tècnics.",
+        "part6": "Formar als aprenents",
+        "part7": "Ajudar en el procés de selecció (prova tècnica)."
       }
     },
     "kriter": {

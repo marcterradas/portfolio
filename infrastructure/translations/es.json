@@ -11,9 +11,10 @@
     "title": "Marc Terradas Zapata",
     "subtitle": "Senior Software Engineer (Full Stack Developer)",
     "aboutMe": {
-      "part1": "+<bold>{experienceYears}</bold> años de experiencia como Senior Software Engineer (Full Stack Developer).",
-      "part2": "Liderazgo de equipos, desarrollos y proyectos.",
-      "part3": "Me puedes encontrar en: <link1>Linkedin</link1> y en <link2>Github</link2>"
+      "part1": "+<bold>{experienceYears}</bold> años de experiencia en el desarrollo y la entrega de soluciones de software.",
+      "part2": "Capacidad demostrada para dirigir y gestionar equipos de desarrollo de software, y para trabajar en equipo y de forma independiente.",
+      "part3": "Sólidos conocimientos técnicos en diversas tecnologías.",
+      "part4": "Me puedes encontrar en: <link1>Linkedin</link1> y en <link2>Github</link2>"
     }
   },
   "experience": {
@@ -24,11 +25,12 @@
       "ubication": "Remoto (CET zona horaria) · Jornada completa",
       "description": {
         "part1": "Desarrollador líder y encargado del soporte en dos proyectos de McDonald's (ejemplo: <link>https://pidetufactura.mcdonalds.es</link>).",
-        "part2": "Liderar desarrollos de Frontend y Backend de Andy: (analizar el problema, planificar tareas, desarrollar de forma escalable, testear, documentar y desplegar a producción).",
-        "part3": "Diseñar e implementar la infraestructura de Andy (servidores y metodologías DevOps).",
-        "part4": "Ayudar al equipo de soporte con los tickets técnicos.",
-        "part5": "Formar a los aprendices.",
-        "part6": "Ayudar en los procesos de selección (parte técnica)."
+        "part2": "Liderar desarrollos de Frontend y Backend de Andy: (analizar el problema, documentar las tareas, desarrollar de forma escalable, testear y documentar nuevas funcionalidades y desplegar a producción).",
+        "part3": "Diseñar e implementar la infraestructura de Andy (microservicios y CI/CD).",
+        "part4": "Metodologías ágiles (Sprints de 1 semana con Scrum y Kanban).",
+        "part5": "Ayudar al equipo de soporte con los tickets técnicos.",
+        "part6": "Formar a los aprendices.",
+        "part7": "Ayudar en los procesos de selección (parte técnica)."
       }
     },
     "kriter": {

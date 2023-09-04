@@ -50,6 +50,7 @@ export default function Andy() {
           <li className="mb-1">{translations("andy.description.part4")}</li>
           <li className="mb-1">{translations("andy.description.part5")}</li>
           <li className="mb-1">{translations("andy.description.part6")}</li>
+          <li className="mb-1">{translations("andy.description.part7")}</li>
         </List>
       </div>
     );
