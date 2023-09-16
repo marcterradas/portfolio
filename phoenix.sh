@@ -4,4 +4,4 @@ rm -rf ./node_modules
 rm -rf ./package-lock.json
 
 # install dependencies
-npm i
+pnpm i
