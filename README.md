@@ -15,23 +15,23 @@
 ### Project setup
 
 ```
-npm i
+pnpm i
 ```
 
 ### remove dependencies and install again
 
 ```
-npm run phoenix
+pnpm run phoenix
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-npm run dev
+pnpm run dev
 ```
 
 ### Compiles and minifies for production
 
 ```
-npm run build
+pnpm run build
 ```
