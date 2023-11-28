@@ -5,7 +5,7 @@ export default function Avatar() {
     <div className="flex items-center justify-center w-full">
       <div className="relative flex items-center justify-center w-48 h-48 mt-6 lg:w-64 lg:h-64">
         <Image
-          src="/img/avatar.png"
+          src="/img/avatar.jpg"
           alt="avatar"
           fill
           style={{ objectFit: "contain" }}

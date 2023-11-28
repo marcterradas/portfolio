@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://marcterradas.vercel.app/img/avatar.png' width='100'>
+  <img src='https://marcterradas.vercel.app/img/avatar.jpg' width='100'>
 </p>
 
 <h1 align='center'>Marc Terradas Zapata | Portfolio</h1>
