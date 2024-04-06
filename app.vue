@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <main>
+    Init portfolio ...
+  </main>
 </template>
