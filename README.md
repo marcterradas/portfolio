@@ -1,37 +1,75 @@
-<p align='center'>
-  <img src='https://marcterradas.vercel.app/img/avatar.jpg' width='100'>
-</p>
+# Nuxt 3 Minimal Starter
 
-<h1 align='center'>Marc Terradas Zapata | Portfolio</h1>
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-<p>This is the repository of my personal <a href='https://marcterradas.vercel.app'>portfolio</a> 👨‍💻</p>
+## Setup
 
-### Technologies
+Make sure to install the dependencies:
 
-- 📦 Next.js
-- 📦 Tailwind.css
-- 📦 Vitest
+```bash
+# npm
+npm install
 
-### Project setup
+# pnpm
+pnpm install
 
-```
-pnpm i
-```
+# yarn
+yarn install
 
-### remove dependencies and install again
-
-```
-pnpm run phoenix
+# bun
+bun install
 ```
 
-### Compiles and hot-reloads for development
+## Development Server
 
-```
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
 pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
-### Compiles and minifies for production
+## Production
 
-```
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
 pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
