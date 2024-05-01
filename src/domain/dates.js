@@ -26,8 +26,7 @@ export function calculateDifferenceYears(firstDate, secondDate) {
   let difference = secondDateYear - firstDateYear
 
   // if current year is bigger than start year and current month is smaller to start month substract 1 year
-  if (secondDateYear > firstDateYear && secondDateMonth < firstDateMonth)
-    difference--
+  if (secondDateYear > firstDateYear && secondDateMonth < firstDateMonth) difference--
 
   return difference
 }
