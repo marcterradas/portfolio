@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  srcDir: 'src/',
   modules: [
     '@nuxt/eslint',
   ],
@@ -9,5 +10,5 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
-  css: ['~/src/styles/reset.css'],
+  css: ['~/styles/reset.css'],
 })
