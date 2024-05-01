@@ -45,11 +45,11 @@ export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
   if (yearDifference === false) return false
 
   /** @type {string[]} */
-  let [, firstDateMonth] = firstDate.split('-')
+  const [, _firstDateMonth] = firstDate.split('-')
   /** @type {string[]} */
   const [, _secondDateMonth] = secondDate.split('-')
   /** @type {number} */
-  firstDateMonth = parseInt(firstDateMonth)
+  const firstDateMonth = parseInt(_firstDateMonth)
   /** @type {number} */
   let secondDateMonth = parseInt(_secondDateMonth)
 
