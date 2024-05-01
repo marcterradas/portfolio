@@ -1,5 +1,5 @@
 <template>
   <main>
-    Init portfolio ...
+    test from mac ...
   </main>
 </template>
