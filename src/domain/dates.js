@@ -41,6 +41,7 @@ export function calculateDifferenceYearsAndMonths(firstDate, secondDate) {
   /** @type {number | false} */
   let yearDifference = calculateDifferenceYears(firstDate, secondDate)
 
+  // (yearDifference can be 0)
   if (yearDifference === false) return false
 
   /** @type {string[]} */
