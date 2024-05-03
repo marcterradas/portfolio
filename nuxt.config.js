@@ -11,5 +11,5 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
-  css: ['~/styles/reset.css'],
+  css: ['~/styles/normalize.css'],
 })
