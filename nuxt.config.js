@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
+    '@nuxtjs/i18n',
   ],
   eslint: {
     config: {
