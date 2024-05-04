@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module',
     '@nuxtjs/i18n',
   ],
+  i18n: {
+    vueI18n: './i18n.config.js',
+  },
   eslint: {
     config: {
       stylistic: true,
