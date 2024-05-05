@@ -1,16 +1,22 @@
 <script setup>
 const { setLocale } = useI18n()
+const router = useRouter()
+
+function changeLanguage(locale) {
+  setLocale(locale)
+  router.push(`/${locale}`)
+}
 </script>
 
 <template>
   <main>
-    <button @click="setLocale('en')">
+    <button @click="changeLanguage('en')">
       en
     </button>
-    <button @click="setLocale('es')">
+    <button @click="changeLanguage('es')">
       es
     </button>
-    <button @click="setLocale('cat')">
+    <button @click="changeLanguage('cat')">
       cat
     </button>
     <div>{{ $t('test') }}</div>
