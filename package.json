@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "phoenix": "rm -rf .nuxt node_modules && pnpm install"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^8.3.1",
