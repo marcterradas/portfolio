@@ -1,75 +1,43 @@
-# Nuxt 3 Minimal Starter
+<h1 align='center'>Portfolio</h1>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<p>This is the repository of my personal <a href='https://marcterradas.vercel.app'>portfolio</a> 👨‍💻</p>
 
-## Setup
+### Technologies
 
-Make sure to install the dependencies:
+- 📦 Nuxt.js
 
-```bash
-# npm
-npm install
+### Project setup
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+```
+pnpm i
 ```
 
-## Development Server
+### Remove dependencies and install again
 
-Start the development server on `http://localhost:3000`:
+```
+pnpm run phoenix
+```
 
-```bash
-# npm
-npm run dev
+### Compiles and hot-reloads for development
 
-# pnpm
+```
 pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+### Compiles and minifies for production
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
+```
 pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+### Lint code
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```
+pnpm run lint:fix
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Run unit test
+
+```
+pnpm run test:unit
+```
