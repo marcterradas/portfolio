@@ -2,10 +2,6 @@
 
 <p>This is the repository of my personal <a href='https://marcterradas.vercel.app'>portfolio</a> 👨‍💻</p>
 
-### Technologies
-
-- 📦 Nuxt.js
-
 ### Project setup
 
 ```
