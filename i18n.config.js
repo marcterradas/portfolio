@@ -1,3 +1,5 @@
+import { defineI18nConfig } from '#imports'
+
 export default defineI18nConfig(() => ({
   legacy: false,
   locales: ['en', 'es', 'cat'],
