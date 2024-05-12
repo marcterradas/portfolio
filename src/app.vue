@@ -1,5 +1,5 @@
 <script setup>
-import language from './infrastructure/language.vue'
+import language from '@/infrastructure/language.vue'
 </script>
 
 <template>
