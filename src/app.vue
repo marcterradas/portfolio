@@ -1,6 +1,11 @@
 <script setup>
+import { useI18n, useRouter, useRuntimeConfig } from '#imports'
+
 const { setLocale } = useI18n()
 const router = useRouter()
+const runtimeConfig = useRuntimeConfig()
+
+const { configLocales: languages } = runtimeConfig.public.i18n
 
 function changeLanguage(locale) {
   setLocale(locale)
@@ -10,14 +15,12 @@ function changeLanguage(locale) {
 
 <template>
   <main>
-    <button @click="changeLanguage('en')">
-      en
-    </button>
-    <button @click="changeLanguage('es')">
-      es
-    </button>
-    <button @click="changeLanguage('cat')">
-      cat
+    <button
+      v-for="language in languages"
+      :key="language"
+      @click="changeLanguage(language)"
+    >
+      {{ language }}
     </button>
     <div>{{ $t('test') }}</div>
   </main>
