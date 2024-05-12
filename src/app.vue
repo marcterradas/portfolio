@@ -1,10 +1,10 @@
 <script setup>
-import language from '@/infrastructure/language.vue'
+import LanguageSwitcher from '@/infrastructure/LanguageSwitcher.vue'
 </script>
 
 <template>
   <main>
-    <language />
+    <LanguageSwitcher />
     <div>{{ $t('test') }}</div>
   </main>
 </template>
