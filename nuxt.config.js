@@ -18,5 +18,5 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
-  css: ['~/styles/normalize.css'],
+  css: ['@/styles/normalize.css', '@/styles/tokens.css', '@/styles/main.css'],
 })
