@@ -1,10 +1,10 @@
 <script setup>
-import LanguageSwitcher from '@/infrastructure/components/LanguageSwitcher.vue'
+import NavigationContainer from '@/application/NavigationContainer.vue'
 </script>
 
 <template>
+  <NavigationContainer />
   <main>
-    <LanguageSwitcher />
     <div>{{ $t('test') }}</div>
   </main>
 </template>
