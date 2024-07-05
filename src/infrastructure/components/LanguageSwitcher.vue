@@ -21,10 +21,6 @@ function changeLanguage(locale) {
   >
     {{ language }}
   </div>
-  <img
-    src="/images/cat.svg"
-    alt="cat"
-  >
 </template>
 
 <style>
