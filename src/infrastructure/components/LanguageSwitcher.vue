@@ -14,11 +14,22 @@ function changeLanguage(locale) {
 </script>
 
 <template>
-  <button
+  <div
     v-for="language in languages"
     :key="language"
     @click="changeLanguage(language)"
   >
     {{ language }}
-  </button>
+  </div>
+  <img
+    src="/images/cat.svg"
+    alt="cat"
+  >
 </template>
+
+<style>
+ img {
+    width: 100px;
+    height: 100px;
+ }
+</style>
