@@ -14,18 +14,26 @@ function changeLanguage(locale) {
 </script>
 
 <template>
-  <div
-    v-for="language in languages"
-    :key="language"
-    @click="changeLanguage(language)"
-  >
-    {{ language }}
+  <div class="language-switcher">
+    <div
+      v-for="language in languages"
+      :key="language"
+      class="language-switcher__language"
+      @click="changeLanguage(language)"
+    >
+      {{ language }}
+    </div>
   </div>
 </template>
 
 <style>
- img {
-    width: 100px;
-    height: 100px;
- }
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacer);
+}
+
+.language-switcher__language {
+  cursor: pointer;
+}
 </style>

@@ -3,8 +3,19 @@ import NavigationContainer from '@/application/NavigationContainer.vue'
 </script>
 
 <template>
-  <NavigationContainer />
-  <main>
-    <div>{{ $t('test') }}</div>
-  </main>
+  <div class="app">
+    <NavigationContainer />
+    <main>
+      <div>{{ $t('test') }}</div>
+    </main>
+  </div>
 </template>
+
+<style>
+.app {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--spacer);
+}
+</style>
