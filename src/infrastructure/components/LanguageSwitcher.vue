@@ -1,14 +1,18 @@
 <script setup>
+import { ref } from 'vue'
 import { useI18n, useRouter, useRuntimeConfig } from '#imports'
 
-const { setLocale } = useI18n()
+const { locale, setLocale } = useI18n()
 const router = useRouter()
 const runtimeConfig = useRuntimeConfig()
 
 const { configLocales: languages } = runtimeConfig.public.i18n
 
+const currentLanguage = ref(locale.value)
+
 function changeLanguage(locale) {
   setLocale(locale)
+  currentLanguage.value = locale
   router.push(`/${locale}`)
 }
 </script>
@@ -19,9 +23,12 @@ function changeLanguage(locale) {
       v-for="language in languages"
       :key="language"
       class="language-switcher__language"
+      :class="{ 'language-switcher__language--selected': language === currentLanguage }"
       @click="changeLanguage(language)"
     >
-      {{ language }}
+      <div>
+        {{ language.toUpperCase() }}
+      </div>
     </div>
   </div>
 </template>
@@ -34,6 +41,11 @@ function changeLanguage(locale) {
 }
 
 .language-switcher__language {
+  font-size: var(--font-md);
   cursor: pointer;
+}
+
+.language-switcher__language--selected {
+  font-weight: bold;
 }
 </style>
