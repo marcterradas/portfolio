@@ -13,9 +13,9 @@ import NavigationContainer from '@/application/NavigationContainer.vue'
 
 <style>
 .app {
-    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: var(--spacer);
+    max-width: var(--max-width);
 }
 </style>
