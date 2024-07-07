@@ -13,6 +13,9 @@
     --font-xxl: calc(var(--font-xl) * var(--ratio));
 
     /* Colors */
-    --black: #000;
-    --white: #fff;
+    --black: #212529;
+    --black-lightest: #343A40;
+    --dark-gray: #ADB5BD;
+    --white: #F8F9FA;
+    --light-gray: #E9ECEF;
 }
