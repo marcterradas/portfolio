@@ -10,6 +10,10 @@ const { configLocales: languages } = runtimeConfig.public.i18n
 
 const currentLanguage = ref(locale.value)
 
+/**
+ * Change the current language
+ * @param {string} locale
+ */
 function changeLanguage(locale) {
   setLocale(locale)
   currentLanguage.value = locale
@@ -42,10 +46,15 @@ function changeLanguage(locale) {
 
 .language-switcher__language {
   font-size: var(--font-md);
+  color: var(--dark-gray);
   cursor: pointer;
 }
 
+.language-switcher__language:hover {
+  color: var(--white);
+}
+
 .language-switcher__language--selected {
-  font-weight: bold;
+  color: var(--white);
 }
 </style>
