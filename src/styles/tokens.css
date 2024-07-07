@@ -1,8 +1,18 @@
 :root {
-    /* Colors */
-    --black: #000;
-    --white: #FFF;
-
     /* Spacing */
     --spacer: 1rem;
+    --max-width: 1440px;
+
+    /* Font size */
+    --base-size: 1rem;
+    --ratio: 1.25;
+    --font-sm: calc(var(--base-size) / var(--ratio));
+    --font-md: var(--base-size);
+    --font-lg: calc(var(--base-size) * var(--ratio));
+    --font-xl: calc(var(--font-lg) * var(--ratio));
+    --font-xxl: calc(var(--font-xl) * var(--ratio));
+
+    /* Colors */
+    --black: #000;
+    --white: #fff;
 }
