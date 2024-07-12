@@ -48,7 +48,7 @@ function changeLanguage(locale) {
   font-size: var(--font-md);
   color: var(--dark-gray);
   cursor: pointer;
-  transition: var(--hover-transition)
+  transition: var(--transition-hover)
 }
 
 .language-switcher__language:hover {

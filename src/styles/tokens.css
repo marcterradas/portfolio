@@ -3,6 +3,9 @@
     --spacer: 1rem;
     --max-width: 1440px;
 
+    /* Fonts */
+    --roboto: 'Roboto', sans-serif;
+
     /* Font size */
     --base-size: 1rem;
     --ratio: 1.25;
@@ -20,9 +23,9 @@
     --light-gray: #E9ECEF;
 
     /* Transitions */
-    --hover-transition: color 0.5s ease;
+    --transition-hover: color 0.5s ease;
 
-    /* Fonts */
-    --roboto: 'Roboto', sans-serif;
-
+    /* Breakpoints */
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
 }

@@ -4,7 +4,9 @@ import NavigationContainer from '@/application/NavigationContainer.vue'
 
 <template>
   <div class="app">
-    <NavigationContainer />
+    <nav>
+      <NavigationContainer />
+    </nav>
     <main>
       <div>{{ $t('test') }}</div>
     </main>
