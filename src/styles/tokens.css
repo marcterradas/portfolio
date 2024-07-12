@@ -18,4 +18,8 @@
     --dark-gray: #ADB5BD;
     --white: #F8F9FA;
     --light-gray: #E9ECEF;
+
+    /* Transitions */
+    --hover-transition: color 0.5s ease;
+
 }
