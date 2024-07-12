@@ -22,4 +22,7 @@
     /* Transitions */
     --hover-transition: color 0.5s ease;
 
+    /* Fonts */
+    --roboto: 'Roboto', sans-serif;
+
 }

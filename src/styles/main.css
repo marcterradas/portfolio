@@ -8,4 +8,5 @@ body {
     min-height: 100vh;
     background: linear-gradient(to bottom, var(--black) 0%, var(--black-lightest) 100%);
     color: var(--white);
+    font-family: var(--roboto);
 }
