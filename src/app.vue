@@ -17,7 +17,11 @@ import NavigationContainer from '@/application/NavigationContainer.vue'
 .app {
     width: 100%;
     margin: 0 auto;
-    padding: var(--spacer);
+    padding: calc(var(--spacer)*1.5);
     max-width: var(--max-width);
+
+    @media screen and (min-width: 1024px) {
+      padding: calc(var(--spacer)*2);
+    }
 }
 </style>

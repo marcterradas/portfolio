@@ -24,8 +24,4 @@
 
     /* Transitions */
     --transition-hover: color 0.5s ease;
-
-    /* Breakpoints */
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 1024px;
 }
