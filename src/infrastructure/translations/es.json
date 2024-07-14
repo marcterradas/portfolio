@@ -1,4 +1,6 @@
 {
     "descriptionContainer.label.name": "Marc Terradas Zapata",
-    "descriptionContainer.label.title": "Senior Frontend Developer"
+    "descriptionContainer.label.title": "Senior Frontend Developer",
+    "descriptionContainer.label.description": "+{yearsOfExperience} años de experiencia en el sector IT.",
+    "descriptionContainer.label.about": "Durante estos años, he trabajado como desarrollador full stack y frontend, liderando desarrollos desde la planificación hasta el despliegue en producción."
 }
