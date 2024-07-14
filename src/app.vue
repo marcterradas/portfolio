@@ -1,6 +1,7 @@
 <script setup>
 import NavigationContainer from '@/application/NavigationContainer.vue'
 import DescriptionContainer from '@/application/DescriptionContainer.vue'
+import BaseContainer from '@/application/BaseContainer.vue'
 </script>
 
 <template>
@@ -9,7 +10,9 @@ import DescriptionContainer from '@/application/DescriptionContainer.vue'
       <NavigationContainer />
     </nav>
     <main>
-      <DescriptionContainer />
+      <BaseContainer>
+        <DescriptionContainer />
+      </BaseContainer>
     </main>
   </div>
 </template>
