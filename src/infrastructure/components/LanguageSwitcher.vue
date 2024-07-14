@@ -45,10 +45,14 @@ function changeLanguage(locale) {
 }
 
 .language-switcher__language {
-  font-size: var(--font-md);
+  font-size: var(--font-sm);
   color: var(--dark-gray);
   cursor: pointer;
   transition: var(--transition-hover);
+
+  @media screen and (min-width: 1024px) {
+    font-size: var(--font-md);
+  }
 }
 
 .language-switcher__language:hover {
