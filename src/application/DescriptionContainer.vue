@@ -1,4 +1,6 @@
 <script setup>
+import BaseChip from '@/application/BaseChip.vue'
+
 import { calculateDifferenceYears } from '@/domain/dates.js'
 import config from '@/infrastructure/config.js'
 
@@ -25,6 +27,33 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
       <p class="description-container__description">
         {{ $t('descriptionContainer.label.about') }}
       </p>
+      <div class="description-container__chips-container">
+        <BaseChip
+          icon="/images/linkedin.svg"
+          :link="config.contactLinks.linkedin"
+        >
+          {{ $t('common.label.linkedin') }}
+        </BaseChip>
+        <BaseChip
+          icon="/images/github.svg"
+          :link="config.contactLinks.github"
+        >
+          {{ $t('common.label.github') }}
+        </BaseChip>
+        <BaseChip
+          icon="/images/email.svg"
+          :link="config.contactLinks.email"
+        >
+          {{ $t('common.label.email') }}
+        </BaseChip>
+        <BaseChip
+          icon="/images/download.svg"
+          link="/documents/marcterradas.pdf"
+          download
+        >
+          {{ $t('common.label.curriculum') }}
+        </BaseChip>
+      </div>
     </div>
   </div>
 </template>
@@ -71,5 +100,11 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
     @media screen and (min-width: 1024px) {
         font-size: var(--font-md);
     }
+}
+
+.description-container__chips-container {
+    display: flex;
+    gap: calc(var(--spacer)/2);
+    margin-top: calc(var(--spacer)/2);
 }
 </style>
