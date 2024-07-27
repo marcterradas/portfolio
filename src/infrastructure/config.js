@@ -2,7 +2,7 @@ export default {
   contactLinks: {
     github: 'https://github.com/marcterradas',
     linkedin: 'https://www.linkedin.com/in/marc-terradas-zapata',
-    email: 'terradas.marc@gmail.com',
+    email: 'mailto:terradas.marc@gmail.com',
   },
   dates: {
     dogfy: {
