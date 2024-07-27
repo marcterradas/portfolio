@@ -8,6 +8,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  download: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const hasIcon = computed(() => !!props.icon)
@@ -18,6 +22,7 @@ const hasIcon = computed(() => !!props.icon)
     :href="props.link"
     target="_blank"
     class="base-link"
+    :download="props.download ? '' : null"
   >
     <img
       v-if="hasIcon"
