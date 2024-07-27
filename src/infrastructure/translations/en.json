@@ -1,6 +1,10 @@
 {
-    "descriptionContainer.label.name": "Marc Terradas Zapata",
-    "descriptionContainer.label.title": "Senior Frontend Developer",
+    "common.label.curriculum": "Curriculum",
+    "common.label.email": "Email",
+    "common.label.github": "GitHub",
+    "common.label.linkedin": "LinkedIn",
+    "descriptionContainer.label.about": "During these years, I have worked as a full stack and frontend developer, leading developments from planning to production deployment.",
     "descriptionContainer.label.description": "+{yearsOfExperience} years of experience in the IT industry.",
-    "descriptionContainer.label.about": "During these years, I have worked as a full stack and frontend developer, leading developments from planning to production deployment."
+    "descriptionContainer.label.name": "Marc Terradas Zapata",
+    "descriptionContainer.label.title": "Senior Frontend Developer"
 }
