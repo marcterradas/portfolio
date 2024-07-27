@@ -48,7 +48,7 @@ function changeLanguage(locale) {
   font-size: var(--font-sm);
   color: var(--dark-gray);
   cursor: pointer;
-  transition: var(--transition-hover);
+  transition: var(--transition-color);
 
   @media screen and (min-width: 1024px) {
     font-size: var(--font-md);
