@@ -3,6 +3,9 @@
     --spacer: 1rem;
     --max-width: 1440px;
 
+    /* Sizes */
+    --default-size: 1rem;
+
     /* Fonts */
     --roboto: 'Roboto', sans-serif;
 
@@ -22,6 +25,13 @@
     --white: #F8F9FA;
     --light-gray: #E9ECEF;
 
+    /* Border radius */
+    --default-border-radius: 0.25rem;
+
+    /* Border */
+    --default-border: 1px;
+
     /* Transitions */
-    --transition-hover: color 0.5s ease;
+    --transition-color: color 0.5s ease;
+    --transition-background: background-color 0.5s ease;
 }
