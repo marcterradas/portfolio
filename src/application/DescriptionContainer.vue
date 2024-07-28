@@ -60,52 +60,52 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
 
 <style>
 .description-container {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--spacer)*2);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacer)*2);
 
-    @media screen and (min-width: 1024px) {
-        gap: calc(var(--spacer)*4);
-    }
+  @media screen and (min-width: 1024px) {
+      gap: calc(var(--spacer)*4);
+  }
 }
 
 .description-container__row {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--spacer)/2);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacer)/2);
 }
 
 .description-container__name {
-    font-size: var(--font-xl);
-    font-weight: bold;
-    text-align: center;
+  font-size: var(--font-xl);
+  font-weight: bold;
+  text-align: center;
 
-    @media screen and (min-width: 1024px) {
-        font-size: var(--font-xxl);
-    }
+  @media screen and (min-width: 1024px) {
+      font-size: var(--font-xxl);
+  }
 }
 
 .description-container__title {
-    font-size: var(--font-md);
-    text-align: center;
+  font-size: var(--font-md);
+  text-align: center;
 
-    @media screen and (min-width: 1024px) {
-        font-size: var(--font-lg);
-    }
+  @media screen and (min-width: 1024px) {
+      font-size: var(--font-lg);
+  }
 }
 
 .description-container__description {
-    font-size: var(--font-sm);
+  font-size: var(--font-sm);
 
-    @media screen and (min-width: 1024px) {
-        font-size: var(--font-md);
-    }
+  @media screen and (min-width: 1024px) {
+      font-size: var(--font-md);
+  }
 }
 
 .description-container__chips-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc(var(--spacer)/2);
-    margin-top: calc(var(--spacer)/2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacer)/2);
+  margin-top: calc(var(--spacer)/2);
 }
 </style>
