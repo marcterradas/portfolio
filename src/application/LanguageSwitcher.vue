@@ -23,17 +23,15 @@ function changeLanguage(locale) {
 
 <template>
   <div class="language-switcher">
-    <div
+    <a
       v-for="language in languages"
       :key="language"
       class="language-switcher__language"
       :class="{ 'language-switcher__language--selected': language === currentLanguage }"
-      @click="changeLanguage(language)"
+      @click.prevent="changeLanguage(language)"
     >
-      <div>
-        {{ language.toUpperCase() }}
-      </div>
-    </div>
+      {{ language.toUpperCase() }}
+    </a>
   </div>
 </template>
 
@@ -49,6 +47,7 @@ function changeLanguage(locale) {
   color: var(--dark-gray);
   cursor: pointer;
   transition: var(--transition-color);
+  text-decoration: none;
 
   @media screen and (min-width: 1024px) {
     font-size: var(--font-md);
