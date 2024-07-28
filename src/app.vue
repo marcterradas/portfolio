@@ -1,6 +1,9 @@
 <script setup>
 import NavigationContainer from '@/application/NavigationContainer.vue'
 import DescriptionContainer from '@/application/DescriptionContainer.vue'
+import WorkExperienceContainer from '@/application/WorkExperienceContainer.vue'
+import EducationContainer from '@/application/EducationContainer.vue'
+import FooterContainer from '@/application/FooterContainer.vue'
 import BaseContainer from '@/application/BaseContainer.vue'
 </script>
 
@@ -14,6 +17,19 @@ import BaseContainer from '@/application/BaseContainer.vue'
         <DescriptionContainer />
       </BaseContainer>
     </main>
+    <article>
+      <BaseContainer>
+        <WorkExperienceContainer />
+      </BaseContainer>
+    </article>
+    <article>
+      <BaseContainer>
+        <EducationContainer />
+      </BaseContainer>
+    </article>
+    <footer>
+      <FooterContainer />
+    </footer>
   </div>
 </template>
 
