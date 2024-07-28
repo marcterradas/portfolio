@@ -20,6 +20,7 @@
 
 .education-container__title {
   font-size: var(--font-lg);
+  font-weight: bold;
 
   @media screen and (min-width: 1024px) {
     font-size: var(--font-xl);
