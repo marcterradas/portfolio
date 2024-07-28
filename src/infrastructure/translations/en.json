@@ -6,5 +6,7 @@
     "descriptionContainer.label.about": "During these years, I have worked as a full stack and frontend developer, leading developments from planning to production deployment.",
     "descriptionContainer.label.description": "+{yearsOfExperience} years of experience in the IT industry.",
     "descriptionContainer.label.name": "Marc Terradas Zapata",
-    "descriptionContainer.label.title": "Senior Frontend Developer"
+    "descriptionContainer.label.title": "Senior Frontend Developer",
+    "educationContainer.label.title": "Education",
+    "workExperienceContainer.label.title": "Work experience"
 }
