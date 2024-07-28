@@ -4,7 +4,7 @@ export default {
     linkedin: 'https://www.linkedin.com/in/marc-terradas-zapata',
     email: 'mailto:terradas.marc@gmail.com',
   },
-  dates: {
+  workExperience: {
     dogfy: {
       startDate: '2023-12',
       endDate: null,
@@ -18,5 +18,8 @@ export default {
       endDate: '2019-06',
     },
   },
-  skills: ['Vue.js', 'Nuxt.js', 'Node.js', 'JavaScript', 'PHP', 'Java', 'MySQL', 'MongoDB', 'HTML', 'CSS', 'SCSS', 'GIT'],
+  education: {
+    daw: {},
+    c1: {},
+  },
 }
