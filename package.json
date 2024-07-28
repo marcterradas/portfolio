@@ -11,11 +11,13 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test:unit": "vitest",
-    "phoenix": "rm -rf .nuxt node_modules && pnpm install"
+    "phoenix": "rm -rf .nuxt node_modules && pnpm install",
+    "sort:translations": "sort-json ./src/infrastructure/translations/*.json"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^8.3.1",
     "nuxt": "^3.11.2",
+    "sort-json": "^2.0.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

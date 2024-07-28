@@ -37,3 +37,9 @@ pnpm run lint:fix
 ```
 pnpm run test:unit
 ```
+
+### Sort translations keys
+
+```
+pnpm run sort:translations
+```
