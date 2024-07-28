@@ -35,33 +35,33 @@ const hasIcon = computed(() => !!props.icon)
 </template>
 
 <style>
-    .base-link {
-      align-items: center;
-      background-color: var(--black);
-      border: var(--default-border) solid var(--dark-gray);
-      border-radius: var(--default-border-radius);
-      color: var(--white);
-      cursor: pointer;
-      display: flex;
-      font-size: var(--font-sm);
-      font-weight: bold;
-      gap: calc(var(--spacer)/4);
-      padding: calc(var(--spacer)/3);
-      text-decoration: none;
-      transition: var(--transition-background);
-      width: fit-content;
+.base-link {
+  align-items: center;
+  background-color: var(--black);
+  border: var(--default-border) solid var(--dark-gray);
+  border-radius: var(--default-border-radius);
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--font-sm);
+  font-weight: bold;
+  gap: calc(var(--spacer)/4);
+  padding: calc(var(--spacer)/3);
+  text-decoration: none;
+  transition: var(--transition-background);
+  width: fit-content;
 
-        @media screen and (min-width: 1024px) {
-            font-size: var(--font-md);
-        }
-    }
+  @media screen and (min-width: 1024px) {
+      font-size: var(--font-md);
+  }
+}
 
-    .base-link:hover {
-        background-color: var(--black-lightest);
-    }
+.base-link:hover {
+  background-color: var(--black-lightest);
+}
 
-    .base-link__icon {
-        width: var(--default-size);
-        height: var(--default-size);
-    }
+.base-link__icon {
+  width: var(--default-size);
+  height: var(--default-size);
+}
 </style>
