@@ -1,17 +1,22 @@
 {
     "common.label.barcelona": "Barcelona, Catalonia, Spain",
     "common.label.curriculum": "Curriculum",
+    "common.label.december": "December",
     "common.label.email": "Email",
     "common.label.fullStackDeveloper": "Full Stack Developer",
     "common.label.fullTime": "Full-time",
     "common.label.github": "GitHub",
     "common.label.hybrid": "Hybrid",
+    "common.label.june": "June",
     "common.label.linkedin": "LinkedIn",
     "common.label.mataro": "Mataró, Catalonia, Spain",
+    "common.label.months": "month | months",
     "common.label.onSite": "On-site",
     "common.label.partTime": "Part-time",
+    "common.label.present": "Present",
     "common.label.remote": "Remote",
     "common.label.seniorFrontendDeveloper": "Senior Frontend Developer",
+    "common.label.years": "year | years",
     "descriptionContainer.label.about": "During these years, I have worked as a full stack and frontend developer, leading developments from planning to production deployment.",
     "descriptionContainer.label.description": "+{yearsOfExperience} years of experience in the IT industry.",
     "descriptionContainer.label.name": "Marc Terradas Zapata",
@@ -20,7 +25,5 @@
     "workExperienceContainer.label.andy": "Andy",
     "workExperienceContainer.label.dogfyDiet": "Dogfy Diet",
     "workExperienceContainer.label.kriter": "Kriter Software",
-    "workExperienceContainer.label.title": "Work experience",
-    "common.label.months": "month | months",
-    "common.label.years": "year | years"
+    "workExperienceContainer.label.title": "Work experience"
 }
