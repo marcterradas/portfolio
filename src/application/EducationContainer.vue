@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>Education ...</div>
+  <div>TODO: Education ...</div>
 </template>
 
 <style>
