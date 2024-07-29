@@ -43,47 +43,49 @@ const kriterDuration = computed(() => {
     <h3 class="work-experience-container__title">
       {{ $t('workExperienceContainer.label.title') }}
     </h3>
-    <div class="work-experience-container__job-container">
-      <h3 class="work-experience-container__job-category">
-        {{ $t('common.label.seniorFrontendDeveloper') }}
-      </h3>
-      <p class="work-experience-container__company-name">
-        {{ dogfyDietTitle }}
-      </p>
-      <p class="work-experience-container__company-duration">
-        {{ dogfyDietDuration }}
-      </p>
-      <p class="work-experience-container__company-ubication">
-        {{ dogfyDietUbication }}
-      </p>
-    </div>
-    <div class="work-experience-container__job-container">
-      <h3 class="work-experience-container__job-category">
-        {{ $t('common.label.fullStackDeveloper') }}
-      </h3>
-      <p class="work-experience-container__company-name">
-        {{ andyTitle }}
-      </p>
-      <p class="work-experience-container__company-duration">
-        {{ andyDuration }}
-      </p>
-      <p class="work-experience-container__company-ubication">
-        {{ andyUbication }}
-      </p>
-    </div>
-    <div class="work-experience-container__job-container">
-      <h3 class="work-experience-container__job-category">
-        {{ $t('common.label.fullStackDeveloper') }}
-      </h3>
-      <p class="work-experience-container__company-name">
-        {{ kriterTitle }}
-      </p>
-      <p class="work-experience-container__company-duration">
-        {{ kriterDuration }}
-      </p>
-      <p class="work-experience-container__company-ubication">
-        {{ kriterUbication }}
-      </p>
+    <div class="work-experience-container__jobs">
+      <div class="work-experience-container__job">
+        <h3 class="work-experience-container__job-category">
+          {{ $t('common.label.seniorFrontendDeveloper') }}
+        </h3>
+        <p class="work-experience-container__company-name">
+          {{ dogfyDietTitle }}
+        </p>
+        <p class="work-experience-container__company-duration">
+          {{ dogfyDietDuration }}
+        </p>
+        <p class="work-experience-container__company-ubication">
+          {{ dogfyDietUbication }}
+        </p>
+      </div>
+      <div class="work-experience-container__job">
+        <h3 class="work-experience-container__job-category">
+          {{ $t('common.label.fullStackDeveloper') }}
+        </h3>
+        <p class="work-experience-container__company-name">
+          {{ andyTitle }}
+        </p>
+        <p class="work-experience-container__company-duration">
+          {{ andyDuration }}
+        </p>
+        <p class="work-experience-container__company-ubication">
+          {{ andyUbication }}
+        </p>
+      </div>
+      <div class="work-experience-container__job">
+        <h3 class="work-experience-container__job-category">
+          {{ $t('common.label.fullStackDeveloper') }}
+        </h3>
+        <p class="work-experience-container__company-name">
+          {{ kriterTitle }}
+        </p>
+        <p class="work-experience-container__company-duration">
+          {{ kriterDuration }}
+        </p>
+        <p class="work-experience-container__company-ubication">
+          {{ kriterUbication }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -104,7 +106,13 @@ const kriterDuration = computed(() => {
   }
 }
 
-.work-experience-container__job-container {
+.work-experience-container__jobs {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacer)*2);
+}
+
+.work-experience-container__job {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacer)/4);
