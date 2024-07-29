@@ -2,18 +2,40 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import config from '@/infrastructure/config.js'
+import { calculateDifferenceYearsAndMonths } from '@/domain/dates.js'
+
 const { t } = useI18n()
+
+const { dogfyDiet, andy, kriter } = config.workExperience
+const [currentDate] = new Date().toISOString().split('T')
+const [dogyDietYears, dogyDietMonths] = calculateDifferenceYearsAndMonths(dogfyDiet.startDate, currentDate)
+const [andyYears, andyMonths] = calculateDifferenceYearsAndMonths(andy.startDate, andy.endDate)
+const [kriterYears, kriterMonths] = calculateDifferenceYearsAndMonths(kriter.startDate, kriter.endDate)
 
 const dogfyDietTitle = computed(() => `${t('workExperienceContainer.label.dogfyDiet')} · ${t('common.label.fullTime')}`)
 const dogfyDietUbication = computed(() => `${t('common.label.barcelona')} · ${t('common.label.hybrid')}`)
+const dogfyDietDuration = computed(() => {
+  const years = dogyDietYears > 0 ? `${dogyDietYears} ${t('common.label.years', dogyDietYears)} ` : ''
+  const months = dogyDietMonths > 0 ? `${dogyDietMonths} ${t('common.label.months', dogyDietMonths)}` : ''
+  return `${dogfyDiet.startDate} - ${t('common.label.present')} · ${years}${months}`
+})
 
 const andyTitle = computed(() => `${t('workExperienceContainer.label.andy')} · ${t('common.label.fullTime')}`)
 const andyUbication = computed(() => `${t('common.label.mataro')} · ${t('common.label.remote')}`)
+const andyDuration = computed(() => {
+  const years = andyYears > 0 ? `${andyYears} ${t('common.label.years', andyYears)} ` : ''
+  const months = andyMonths > 0 ? `${andyMonths} ${t('common.label.months', andyMonths)}` : ''
+  return `${andy.startDate} - ${andy.endDate} · ${years}${months}`
+})
 
 const kriterTitle = computed(() => `${t('workExperienceContainer.label.kriter')} · ${t('common.label.partTime')}`)
 const kriterUbication = computed(() => `${t('common.label.mataro')} · ${t('common.label.onSite')}`)
-
-console.log(t('common.label.years', 2))
+const kriterDuration = computed(() => {
+  const years = kriterYears > 0 ? `${kriterYears} ${t('common.label.years', kriterYears)} ` : ''
+  const months = kriterMonths > 0 ? `${kriterMonths} ${t('common.label.months', kriterMonths)}` : ''
+  return `${kriter.startDate} - ${kriter.endDate} · ${years}${months}`
+})
 </script>
 
 <template>
@@ -28,8 +50,8 @@ console.log(t('common.label.years', 2))
       <p class="work-experience-container__company-name">
         {{ dogfyDietTitle }}
       </p>
-      <p class="work-experience-container__company-dates">
-        TODO: dates ...
+      <p class="work-experience-container__company-duration">
+        {{ dogfyDietDuration }}
       </p>
       <p class="work-experience-container__company-ubication">
         {{ dogfyDietUbication }}
@@ -42,8 +64,8 @@ console.log(t('common.label.years', 2))
       <p class="work-experience-container__company-name">
         {{ andyTitle }}
       </p>
-      <p class="work-experience-container__company-dates">
-        TODO: dates ...
+      <p class="work-experience-container__company-duration">
+        {{ andyDuration }}
       </p>
       <p class="work-experience-container__company-ubication">
         {{ andyUbication }}
@@ -56,8 +78,8 @@ console.log(t('common.label.years', 2))
       <p class="work-experience-container__company-name">
         {{ kriterTitle }}
       </p>
-      <p class="work-experience-container__company-dates">
-        TODO: dates ...
+      <p class="work-experience-container__company-duration">
+        {{ kriterDuration }}
       </p>
       <p class="work-experience-container__company-ubication">
         {{ kriterUbication }}
@@ -98,7 +120,7 @@ console.log(t('common.label.years', 2))
 }
 
 .work-experience-container__company-name,
-.work-experience-container__company-dates,
+.work-experience-container__company-duration,
 .work-experience-container__company-ubication {
   font-size: var(--font-sm);
 
