@@ -5,7 +5,7 @@ export default {
     email: 'mailto:terradas.marc@gmail.com',
   },
   workExperience: {
-    dogfy: {
+    dogfyDiet: {
       startDate: '2023-12',
       endDate: null,
     },
