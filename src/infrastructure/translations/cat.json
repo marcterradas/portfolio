@@ -1,13 +1,11 @@
 {
     "common.label.barcelona": "Barcelona, Catalunya, Espanya",
     "common.label.curriculum": "Curriculum",
-    "common.label.december": "Desembre",
     "common.label.email": "Email",
     "common.label.fullStackDeveloper": "Full Stack Developer",
     "common.label.fullTime": "Jornada completa",
     "common.label.github": "GitHub",
     "common.label.hybrid": "Híbrid",
-    "common.label.june": "Juny",
     "common.label.linkedin": "LinkedIn",
     "common.label.mataro": "Mataró, Catalunya, Espanya",
     "common.label.months": "mes | mesos",
@@ -22,8 +20,8 @@
     "descriptionContainer.label.name": "Marc Terradas Zapata",
     "descriptionContainer.label.title": "Senior Frontend Developer",
     "educationContainer.label.title": "Educació",
-    "workExperienceContainer.label.andy": "Andy · Jornada completa",
-    "workExperienceContainer.label.dogfyDiet": "Dogfy Diet · Jornada completa",
-    "workExperienceContainer.label.kriter": "Kriter Software · Jornada partida",
+    "workExperienceContainer.label.andy": "Andy",
+    "workExperienceContainer.label.dogfyDiet": "Dogfy Diet",
+    "workExperienceContainer.label.kriter": "Kriter Software",
     "workExperienceContainer.label.title": "Experiència laboral"
 }
