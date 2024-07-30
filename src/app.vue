@@ -1,4 +1,6 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+
 import NavigationContainer from '@/application/NavigationContainer.vue'
 import DescriptionContainer from '@/application/DescriptionContainer.vue'
 import WorkExperienceContainer from '@/application/WorkExperienceContainer.vue'
@@ -6,6 +8,19 @@ import EducationContainer from '@/application/EducationContainer.vue'
 import LanguagesContainer from '@/application/LanguagesContainer.vue'
 import FooterContainer from '@/application/FooterContainer.vue'
 import BaseContainer from '@/application/BaseContainer.vue'
+
+const { t, locale } = useI18n()
+
+useHead({
+  title: t('header.label.title'),
+  meta: [
+    { name: 'description', content: t('header.label.description') },
+    { name: 'author', content: t('header.label.title') },
+  ],
+  htmlAttrs: {
+    lang: locale,
+  },
+})
 </script>
 
 <template>
