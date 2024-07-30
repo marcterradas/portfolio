@@ -1,16 +1,6 @@
-<p align='center'>
-  <img src='https://marcterradas.vercel.app/img/avatar.jpg' width='100'>
-</p>
+<h1 align='center'>Portfolio</h1>
 
-<h1 align='center'>Marc Terradas Zapata | Portfolio</h1>
-
-<p>This is the repository of my personal <a href='https://marcterradas.vercel.app'>portfolio</a> 👨‍💻</p>
-
-### Technologies
-
-- 📦 Next.js
-- 📦 Tailwind.css
-- 📦 Vitest
+<p>This is the repository of my personal <a href='https://marcterradas.vercel.app'>portfolio</a></p>
 
 ### Project setup
 
@@ -18,7 +8,7 @@
 pnpm i
 ```
 
-### remove dependencies and install again
+### Remove dependencies and install again
 
 ```
 pnpm run phoenix
@@ -34,4 +24,22 @@ pnpm run dev
 
 ```
 pnpm run build
+```
+
+### Lint code
+
+```
+pnpm run lint:fix
+```
+
+### Run unit test
+
+```
+pnpm run test:unit
+```
+
+### Sort translations keys
+
+```
+pnpm run sort:translations
 ```

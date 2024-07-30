@@ -1,0 +1,38 @@
+:root {
+    /* Spacing */
+    --spacer: 1rem;
+    --max-width: 1440px;
+
+    /* Sizes */
+    --default-size: 1rem;
+
+    /* Fonts */
+    --roboto: 'Roboto', sans-serif;
+
+    /* Font size */
+    --base-size: 1rem;
+    --ratio: 1.25;
+    --font-sm: calc(var(--base-size) / var(--ratio));
+    --font-md: var(--base-size);
+    --font-lg: calc(var(--base-size) * var(--ratio));
+    --font-xl: calc(var(--font-lg) * var(--ratio));
+    --font-xxl: calc(var(--font-xl) * var(--ratio));
+
+    /* Colors */
+    --black: #212529;
+    --black-lightest: #343A40;
+    --dark-gray: #ADB5BD;
+    --white: #F8F9FA;
+    --light-gray: #E9ECEF;
+
+    /* Border radius */
+    --default-border-radius: 0.25rem;
+    --border-radius-rounded: 0.50rem;
+
+    /* Border */
+    --default-border: 1px;
+
+    /* Transitions */
+    --transition-color: color 0.5s ease;
+    --transition-background: background-color 0.5s ease;
+}
