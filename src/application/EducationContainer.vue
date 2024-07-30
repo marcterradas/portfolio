@@ -67,7 +67,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         <div class="education-container__diploma">
           <BaseChip
             icon="/images/diploma.svg"
-            link="/documents/c1.pdf"
+            link="/documents/english.c1.pdf"
           >
             {{ $t('common.label.certificate') }}
           </BaseChip>
