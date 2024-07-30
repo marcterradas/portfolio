@@ -3,9 +3,9 @@ import BaseTitleSection from '@/application/BaseTitleSection.vue'
 </script>
 
 <template>
-  <div class="education-container">
+  <div class="languages-container">
     <BaseTitleSection>
-      {{ $t('educationContainer.label.title') }}
+      {{ $t('languagesContainer.label.title') }}
     </BaseTitleSection>
   </div>
 </template>

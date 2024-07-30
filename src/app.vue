@@ -3,6 +3,7 @@ import NavigationContainer from '@/application/NavigationContainer.vue'
 import DescriptionContainer from '@/application/DescriptionContainer.vue'
 import WorkExperienceContainer from '@/application/WorkExperienceContainer.vue'
 import EducationContainer from '@/application/EducationContainer.vue'
+import LanguagesContainer from '@/application/LanguagesContainer.vue'
 import FooterContainer from '@/application/FooterContainer.vue'
 import BaseContainer from '@/application/BaseContainer.vue'
 </script>
@@ -25,6 +26,11 @@ import BaseContainer from '@/application/BaseContainer.vue'
     <article>
       <BaseContainer>
         <EducationContainer />
+      </BaseContainer>
+    </article>
+    <article>
+      <BaseContainer>
+        <LanguagesContainer />
       </BaseContainer>
     </article>
     <footer>

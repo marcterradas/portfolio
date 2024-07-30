@@ -20,6 +20,7 @@
     "descriptionContainer.label.name": "Marc Terradas Zapata",
     "descriptionContainer.label.title": "Senior Frontend Developer",
     "educationContainer.label.title": "Educació",
+    "languagesContainer.label.title": "Idiomes",
     "workExperienceContainer.label.andy": "Andy",
     "workExperienceContainer.label.andyPart1": "Desenvolupador principal i responsable del suport de dos projectes de McDonald's (exemple: https://pidetufactura.mcdonalds.es).",
     "workExperienceContainer.label.andyPart2": "Liderar els desenvolupaments de Frontend i Backend d'Andy a l'app (https://my.andyapp.io) i al back-office (https://panel.andyapp.io): (analitzar el problema, documentar les tasques, desenvolupar de manera escalable, testejar, documentar noves funcionalitats i desplegar en producció).",
