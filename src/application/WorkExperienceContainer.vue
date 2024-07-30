@@ -63,10 +63,10 @@ const kriterDuration = computed(() => {
           {{ dogfyDietUbication }}
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
-          <li>{{ $t('workExperienceContainer.label.dogyDietPart1') }}</li>
-          <li>{{ $t('workExperienceContainer.label.dogyDietPart2') }}</li>
-          <li>{{ $t('workExperienceContainer.label.dogyDietPart3') }}</li>
-          <li>{{ $t('workExperienceContainer.label.dogyDietPart4') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogyDietPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogyDietPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogyDietPart3') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogyDietPart4') }}</li>
         </ul>
         <div class="work-experience-container__skills">
           <BaseSkill
@@ -91,13 +91,13 @@ const kriterDuration = computed(() => {
           {{ andyUbication }}
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
-          <li>{{ $t('workExperienceContainer.label.andyPart1') }}</li>
-          <li>{{ $t('workExperienceContainer.label.andyPart2') }}</li>
-          <li>{{ $t('workExperienceContainer.label.andyPart3') }}</li>
-          <li>{{ $t('workExperienceContainer.label.andyPart4') }}</li>
-          <li>{{ $t('workExperienceContainer.label.andyPart5') }}</li>
-          <li>{{ $t('workExperienceContainer.label.andyPart6') }}</li>
-          <li>{{ $t('workExperienceContainer.label.andyPart7') }}</li>
+          <li>{{ $t('workExperienceContainer.message.andyPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.message.andyPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.message.andyPart3') }}</li>
+          <li>{{ $t('workExperienceContainer.message.andyPart4') }}</li>
+          <li>{{ $t('workExperienceContainer.message.andyPart5') }}</li>
+          <li>{{ $t('workExperienceContainer.message.andyPart6') }}</li>
+          <li>{{ $t('workExperienceContainer.message.andyPart7') }}</li>
         </ul>
         <div class="work-experience-container__skills">
           <BaseSkill
@@ -122,8 +122,8 @@ const kriterDuration = computed(() => {
           {{ kriterUbication }}
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
-          <li>{{ $t('workExperienceContainer.label.kriterPart1') }}</li>
-          <li>{{ $t('workExperienceContainer.label.kriterPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.message.kriterPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.message.kriterPart2') }}</li>
         </ul>
         <div class="work-experience-container__skills">
           <BaseSkill

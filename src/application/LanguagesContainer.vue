@@ -10,13 +10,13 @@ import BaseParagraph from '@/application/BaseParagraph.vue'
     </BaseTitleSection>
     <div class="languages-container__languages">
       <BaseParagraph>
-        {{ $t('educationContainer.label.catalan') }}
+        {{ $t('educationContainer.message.catalan') }}
       </BaseParagraph>
       <BaseParagraph>
-        {{ $t('educationContainer.label.spanish') }}
+        {{ $t('educationContainer.message.spanish') }}
       </BaseParagraph>
       <BaseParagraph>
-        {{ $t('educationContainer.label.english') }}
+        {{ $t('educationContainer.message.english') }}
       </BaseParagraph>
     </div>
   </div>

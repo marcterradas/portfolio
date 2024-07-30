@@ -22,10 +22,10 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
     </div>
     <div class="description-container__row">
       <p class="description-container__description">
-        {{ $t('descriptionContainer.label.description', { yearsOfExperience }) }}
+        {{ $t('descriptionContainer.message.description', { yearsOfExperience }) }}
       </p>
       <p class="description-container__description">
-        {{ $t('descriptionContainer.label.about') }}
+        {{ $t('descriptionContainer.message.about') }}
       </p>
       <div class="description-container__chips-container">
         <BaseChip
