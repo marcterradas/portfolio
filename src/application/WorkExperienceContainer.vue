@@ -2,7 +2,10 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import BaseTitleSection from '@/application/BaseTitleSection.vue'
+import BaseSubTitleSection from '@/application/BaseSubTitleSection.vue'
 import BaseSkill from '@/application/BaseSkill.vue'
+import BaseParagraph from '@/application/BaseParagraph.vue'
 
 import config from '@/infrastructure/config.js'
 import { calculateDifferenceYearsAndMonths } from '@/domain/dates.js'
@@ -42,23 +45,23 @@ const kriterDuration = computed(() => {
 
 <template>
   <div class="work-experience-container">
-    <h3 class="work-experience-container__title">
+    <BaseTitleSection>
       {{ $t('workExperienceContainer.label.title') }}
-    </h3>
+    </BaseTitleSection>
     <div class="work-experience-container__jobs">
       <div class="work-experience-container__job">
-        <h3 class="work-experience-container__job-category">
+        <BaseSubTitleSection>
           {{ $t('common.label.seniorFrontendDeveloper') }}
-        </h3>
-        <p class="work-experience-container__company-name">
+        </BaseSubTitleSection>
+        <BaseParagraph>
           {{ dogfyDietTitle }}
-        </p>
-        <p class="work-experience-container__company-duration">
+        </BaseParagraph>
+        <BaseParagraph>
           {{ dogfyDietDuration }}
-        </p>
-        <p class="work-experience-container__company-ubication">
+        </BaseParagraph>
+        <BaseParagraph>
           {{ dogfyDietUbication }}
-        </p>
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.label.dogyDietPart1') }}</li>
           <li>{{ $t('workExperienceContainer.label.dogyDietPart2') }}</li>
@@ -75,18 +78,18 @@ const kriterDuration = computed(() => {
         </div>
       </div>
       <div class="work-experience-container__job">
-        <h3 class="work-experience-container__job-category">
+        <BaseSubTitleSection>
           {{ $t('common.label.fullStackDeveloper') }}
-        </h3>
-        <p class="work-experience-container__company-name">
+        </BaseSubTitleSection>
+        <BaseParagraph>
           {{ andyTitle }}
-        </p>
-        <p class="work-experience-container__company-duration">
+        </BaseParagraph>
+        <BaseParagraph>
           {{ andyDuration }}
-        </p>
-        <p class="work-experience-container__company-ubication">
+        </BaseParagraph>
+        <BaseParagraph>
           {{ andyUbication }}
-        </p>
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.label.andyPart1') }}</li>
           <li>{{ $t('workExperienceContainer.label.andyPart2') }}</li>
@@ -106,18 +109,18 @@ const kriterDuration = computed(() => {
         </div>
       </div>
       <div class="work-experience-container__job">
-        <h3 class="work-experience-container__job-category">
+        <BaseSubTitleSection>
           {{ $t('common.label.fullStackDeveloper') }}
-        </h3>
-        <p class="work-experience-container__company-name">
+        </BaseSubTitleSection>
+        <BaseParagraph>
           {{ kriterTitle }}
-        </p>
-        <p class="work-experience-container__company-duration">
+        </BaseParagraph>
+        <BaseParagraph>
           {{ kriterDuration }}
-        </p>
-        <p class="work-experience-container__company-ubication">
+        </BaseParagraph>
+        <BaseParagraph>
           {{ kriterUbication }}
-        </p>
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.label.kriterPart1') }}</li>
           <li>{{ $t('workExperienceContainer.label.kriterPart2') }}</li>
@@ -142,15 +145,6 @@ const kriterDuration = computed(() => {
   gap:var(--spacer);
 }
 
-.work-experience-container__title {
-  font-size: var(--font-lg);
-  font-weight: bold;
-
-  @media screen and (min-width: 1024px) {
-    font-size: var(--font-xl);
-  }
-}
-
 .work-experience-container__jobs {
   display: flex;
   flex-direction: column;
@@ -164,26 +158,6 @@ const kriterDuration = computed(() => {
   flex-wrap: wrap;
 }
 
-.work-experience-container__job-category {
-  font-size: var(--font-md);
-  font-weight: bold;
-
-  @media screen and (min-width: 1024px) {
-    font-size: var(--font-lg);
-  }
-}
-
-.work-experience-container__company-name,
-.work-experience-container__company-duration,
-.work-experience-container__company-ubication,
-.work-experience-container__company-description {
-  font-size: var(--font-sm);
-
-  @media screen and (min-width: 1024px) {
-    font-size: var(--font-md);
-  }
-}
-
 .work-experience-container__company-description {
   display: flex;
   flex-direction: column;
@@ -191,6 +165,11 @@ const kriterDuration = computed(() => {
   padding-inline-start: var(--spacer);
   gap: calc(var(--spacer)/4);
   margin-top: calc(var(--spacer)/2);
+  font-size: var(--font-sm);
+
+  @media screen and (min-width: 1024px) {
+      font-size: var(--font-md);
+  }
 }
 
 .work-experience-container__skills {
