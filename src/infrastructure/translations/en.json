@@ -22,6 +22,10 @@
     "educationContainer.label.title": "Education",
     "workExperienceContainer.label.andy": "Andy",
     "workExperienceContainer.label.dogfyDiet": "Dogfy Diet",
+    "workExperienceContainer.label.dogyDietPart1": "Development and maintenance and testing of the frontend of the main website (https://dogfydiet.com), the client area (https://app.dogfydiet.com) and the internal apps.",
+    "workExperienceContainer.label.dogyDietPart2": "Assist in some backend tasks.",
+    "workExperienceContainer.label.dogyDietPart3": "Code review (pull request from frontend and backend)",
+    "workExperienceContainer.label.dogyDietPart4": "Agile methodology (Scrum with two-week sprints).",
     "workExperienceContainer.label.kriter": "Kriter Software",
     "workExperienceContainer.label.title": "Work experience"
 }

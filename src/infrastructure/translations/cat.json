@@ -15,13 +15,17 @@
     "common.label.remote": "Remot",
     "common.label.seniorFrontendDeveloper": "Senior Frontend Developer",
     "common.label.years": "any | anys",
-    "descriptionContainer.label.about": "Durant aquests anys, he treballat com a desenvolupador full stack i frontend, liderant desenvolupaments des de la planificació fins al desplegament about producció.",
+    "descriptionContainer.label.about": "Durant aquests anys, he treballat com a desenvolupador full stack i frontend, liderant desenvolupaments des de la planificació fins al desplegament a producció.",
     "descriptionContainer.label.description": "+{yearsOfExperience} anys d'experiència en el sector IT.",
     "descriptionContainer.label.name": "Marc Terradas Zapata",
     "descriptionContainer.label.title": "Senior Frontend Developer",
     "educationContainer.label.title": "Educació",
     "workExperienceContainer.label.andy": "Andy",
     "workExperienceContainer.label.dogfyDiet": "Dogfy Diet",
+    "workExperienceContainer.label.dogyDietPart1": "Desenvolupament, manteniment i testing del frontend del lloc web principal (https://dogfydiet.com), l'àrea client (https://app.dogfydiet.com) i les aplicacions internes.",
+    "workExperienceContainer.label.dogyDietPart2": "Assistència en algunes tasques de backend.",
+    "workExperienceContainer.label.dogyDietPart3": "Revisió de codi (pull requests de frontend i backend).",
+    "workExperienceContainer.label.dogyDietPart4": "Metodologia àgil (Scrum amb sprints de dues setmanes).",
     "workExperienceContainer.label.kriter": "Kriter Software",
     "workExperienceContainer.label.title": "Experiència laboral"
 }

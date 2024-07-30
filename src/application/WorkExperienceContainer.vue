@@ -57,6 +57,12 @@ const kriterDuration = computed(() => {
         <p class="work-experience-container__company-ubication">
           {{ dogfyDietUbication }}
         </p>
+        <ul class="work-experience-container__company-description">
+          <li>{{ $t('workExperienceContainer.label.dogyDietPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.label.dogyDietPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.label.dogyDietPart3') }}</li>
+          <li>{{ $t('workExperienceContainer.label.dogyDietPart4') }}</li>
+        </ul>
       </div>
       <div class="work-experience-container__job">
         <h3 class="work-experience-container__job-category">
@@ -109,13 +115,14 @@ const kriterDuration = computed(() => {
 .work-experience-container__jobs {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacer)*2);
+  gap: calc(var(--spacer)*3);
 }
 
 .work-experience-container__job {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacer)/4);
+  flex-wrap: wrap;
 }
 
 .work-experience-container__job-category {
@@ -129,11 +136,21 @@ const kriterDuration = computed(() => {
 
 .work-experience-container__company-name,
 .work-experience-container__company-duration,
-.work-experience-container__company-ubication {
+.work-experience-container__company-ubication,
+.work-experience-container__company-description {
   font-size: var(--font-sm);
 
   @media screen and (min-width: 1024px) {
     font-size: var(--font-md);
   }
+}
+
+.work-experience-container__company-description {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  padding-inline-start: var(--spacer);
+  gap: calc(var(--spacer)/4);
+  margin-top: calc(var(--spacer)/2);
 }
 </style>
