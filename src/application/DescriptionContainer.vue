@@ -5,7 +5,7 @@ import { calculateDifferenceYears } from '@/domain/dates.js'
 import config from '@/infrastructure/config.js'
 
 // Get the start date from the first job.
-const { startDate: firstJobStartDate } = config.workExperience.kriter
+const { startDate: firstJobStartDate } = config.workExperience.kriterSoftware
 const [currentDate] = new Date().toISOString().split('T')
 const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDate)
 </script>

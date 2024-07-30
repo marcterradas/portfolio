@@ -12,17 +12,17 @@ import { calculateDifferenceYearsAndMonths } from '@/domain/dates.js'
 
 const { t } = useI18n()
 
-const { dogfyDiet, andy, kriter } = config.workExperience
+const { dogfyDiet, andy, kriterSoftware } = config.workExperience
 const [currentDate] = new Date().toISOString().split('T')
-const [dogyDietYears, dogyDietMonths] = calculateDifferenceYearsAndMonths(dogfyDiet.startDate, currentDate)
+const [dogfyDietYears, dogfyDietMonths] = calculateDifferenceYearsAndMonths(dogfyDiet.startDate, currentDate)
 const [andyYears, andyMonths] = calculateDifferenceYearsAndMonths(andy.startDate, andy.endDate)
-const [kriterYears, kriterMonths] = calculateDifferenceYearsAndMonths(kriter.startDate, kriter.endDate)
+const [kriterSoftwareYears, kriterSoftwareMonths] = calculateDifferenceYearsAndMonths(kriterSoftware.startDate, kriterSoftware.endDate)
 
 const dogfyDietTitle = computed(() => `${t('workExperienceContainer.label.dogfyDiet')} · ${t('common.label.fullTime')}`)
 const dogfyDietUbication = computed(() => `${t('common.label.barcelona')} · ${t('common.label.hybrid')}`)
 const dogfyDietDuration = computed(() => {
-  const years = dogyDietYears > 0 ? `${dogyDietYears} ${t('common.label.years', dogyDietYears)} ` : ''
-  const months = dogyDietMonths > 0 ? `${dogyDietMonths} ${t('common.label.months', dogyDietMonths)}` : ''
+  const years = dogfyDietYears > 0 ? `${dogfyDietYears} ${t('common.label.years', dogfyDietYears)} ` : ''
+  const months = dogfyDietMonths > 0 ? `${dogfyDietMonths} ${t('common.label.months', dogfyDietMonths)}` : ''
   return `${dogfyDiet.startDate} - ${t('common.label.present')} · ${years}${months}`
 })
 
@@ -34,12 +34,12 @@ const andyDuration = computed(() => {
   return `${andy.startDate} - ${andy.endDate} · ${years}${months}`
 })
 
-const kriterTitle = computed(() => `${t('workExperienceContainer.label.kriter')} · ${t('common.label.partTime')}`)
-const kriterUbication = computed(() => `${t('common.label.mataro')} · ${t('common.label.onSite')}`)
-const kriterDuration = computed(() => {
-  const years = kriterYears > 0 ? `${kriterYears} ${t('common.label.years', kriterYears)} ` : ''
-  const months = kriterMonths > 0 ? `${kriterMonths} ${t('common.label.months', kriterMonths)}` : ''
-  return `${kriter.startDate} - ${kriter.endDate} · ${years}${months}`
+const kriterSoftwareTitle = computed(() => `${t('workExperienceContainer.label.kriterSoftware')} · ${t('common.label.partTime')}`)
+const kriterSoftwareUbication = computed(() => `${t('common.label.mataro')} · ${t('common.label.onSite')}`)
+const kriterSoftwareDuration = computed(() => {
+  const years = kriterSoftwareYears > 0 ? `${kriterSoftwareYears} ${t('common.label.years', kriterSoftwareYears)} ` : ''
+  const months = kriterSoftwareMonths > 0 ? `${kriterSoftwareMonths} ${t('common.label.months', kriterSoftwareMonths)}` : ''
+  return `${kriterSoftware.startDate} - ${kriterSoftware.endDate} · ${years}${months}`
 })
 </script>
 
@@ -63,10 +63,10 @@ const kriterDuration = computed(() => {
           {{ dogfyDietUbication }}
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
-          <li>{{ $t('workExperienceContainer.message.dogyDietPart1') }}</li>
-          <li>{{ $t('workExperienceContainer.message.dogyDietPart2') }}</li>
-          <li>{{ $t('workExperienceContainer.message.dogyDietPart3') }}</li>
-          <li>{{ $t('workExperienceContainer.message.dogyDietPart4') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogfyDietPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogfyDietPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogfyDietPart3') }}</li>
+          <li>{{ $t('workExperienceContainer.message.dogfyDietPart4') }}</li>
         </ul>
         <div class="work-experience-container__skills">
           <BaseSkill
@@ -113,21 +113,21 @@ const kriterDuration = computed(() => {
           {{ $t('common.label.fullStackDeveloper') }}
         </BaseSubTitleSection>
         <BaseParagraph>
-          {{ kriterTitle }}
+          {{ kriterSoftwareTitle }}
         </BaseParagraph>
         <BaseParagraph>
-          {{ kriterDuration }}
+          {{ kriterSoftwareDuration }}
         </BaseParagraph>
         <BaseParagraph>
-          {{ kriterUbication }}
+          {{ kriterSoftwareUbication }}
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
-          <li>{{ $t('workExperienceContainer.message.kriterPart1') }}</li>
-          <li>{{ $t('workExperienceContainer.message.kriterPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.message.kriterSoftwarePart1') }}</li>
+          <li>{{ $t('workExperienceContainer.message.kriterSoftwarePart2') }}</li>
         </ul>
         <div class="work-experience-container__skills">
           <BaseSkill
-            v-for="skill in kriter.skills"
+            v-for="skill in kriterSoftware.skills"
             :key="skill"
           >
             {{ skill }}

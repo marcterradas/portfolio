@@ -26,7 +26,7 @@
     "languagesContainer.label.title": "Idiomas",
     "workExperienceContainer.label.andy": "Andy",
     "workExperienceContainer.label.dogfyDiet": "Dogfy Diet",
-    "workExperienceContainer.label.kriter": "Kriter Software",
+    "workExperienceContainer.label.kriterSoftware": "Kriter Software",
     "workExperienceContainer.label.title": "Experiencia laboral",
     "workExperienceContainer.message.andyPart1": "Desarrollador principal y responsable del soporte de dos proyectos de McDonald's (ejemplo: https://pidetufactura.mcdonalds.es).",
     "workExperienceContainer.message.andyPart2": "Liderar los desarrollos de Frontend y Backend de Andy en la app (https://my.andyapp.io) y en el back-office (https://panel.andyapp.io): (analizar el problema, documentar las tareas, desarrollar de manera escalable, testear y documentar nuevas funcionalidades y desplegar en producción).",
@@ -35,10 +35,10 @@
     "workExperienceContainer.message.andyPart5": "Asistir al equipo de soporte con tickets técnicos.",
     "workExperienceContainer.message.andyPart6": "Formación de aprendices.",
     "workExperienceContainer.message.andyPart7": "Asistir en el proceso de selección (parte técnica).",
-    "workExperienceContainer.message.dogyDietPart1": "Desarrollo, mantenimiento y testing del frontend del sitio web principal (https://dogfydiet.com), el área de clientes (https://app.dogfydiet.com) y las aplicaciones internas.",
-    "workExperienceContainer.message.dogyDietPart2": "Asistencia en algunas tareas de backend.",
-    "workExperienceContainer.message.dogyDietPart3": "Revisión de código (pull requests de frontend y backend).",
-    "workExperienceContainer.message.dogyDietPart4": "Metodología ágil (Scrum con sprints de dos semanas).",
-    "workExperienceContainer.message.kriterPart1": "Desarrollar y mantener dos sitios de e-commerce, proporcionando soporte al cliente (ejemplo: https://gallissa.com).",
-    "workExperienceContainer.message.kriterPart2": "Desarrollar y mantener scripts internos para automatizar tareas y analizar datos."
+    "workExperienceContainer.message.dogfyDietPart1": "Desarrollo, mantenimiento y testing del frontend del sitio web principal (https://dogfydiet.com), el área de clientes (https://app.dogfydiet.com) y las aplicaciones internas.",
+    "workExperienceContainer.message.dogfyDietPart2": "Asistencia en algunas tareas de backend.",
+    "workExperienceContainer.message.dogfyDietPart3": "Revisión de código (pull requests de frontend y backend).",
+    "workExperienceContainer.message.dogfyDietPart4": "Metodología ágil (Scrum con sprints de dos semanas).",
+    "workExperienceContainer.message.kriterSoftwarePart1": "Desarrollar y mantener dos sitios de e-commerce, proporcionando soporte al cliente (ejemplo: https://gallissa.com).",
+    "workExperienceContainer.message.kriterSoftwarePart2": "Desarrollar y mantener scripts internos para automatizar tareas y analizar datos."
 }

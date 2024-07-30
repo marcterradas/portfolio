@@ -26,7 +26,7 @@
     "languagesContainer.label.title": "Languages",
     "workExperienceContainer.label.andy": "Andy",
     "workExperienceContainer.label.dogfyDiet": "Dogfy Diet",
-    "workExperienceContainer.label.kriter": "Kriter Software",
+    "workExperienceContainer.label.kriterSoftware": "Kriter Software",
     "workExperienceContainer.label.title": "Work experience",
     "workExperienceContainer.message.andyPart1": "Lead developer and person in charge of the support of two McDonald's projects (example: https://pidetufactura.mcdonalds.es).",
     "workExperienceContainer.message.andyPart2": "Lead Andy's Frontend and Backend developments in the app (https://my.andyapp.io) and in the back-office (https://panel.andyapp.io): (analyze the problem, document the tasks, develop in a scalable way, testing and document new functionalities and deploy to production).",
@@ -35,10 +35,10 @@
     "workExperienceContainer.message.andyPart5": "Assist support team with technical tickets.",
     "workExperienceContainer.message.andyPart6": "Training of apprentices.",
     "workExperienceContainer.message.andyPart7": "Assisting in the selection process (technical part).",
-    "workExperienceContainer.message.dogyDietPart1": "Development and maintenance and testing of the frontend of the main website (https://dogfydiet.com), the client area (https://app.dogfydiet.com) and the internal apps.",
-    "workExperienceContainer.message.dogyDietPart2": "Assist in some backend tasks.",
-    "workExperienceContainer.message.dogyDietPart3": "Code review (pull request from frontend and backend).",
-    "workExperienceContainer.message.dogyDietPart4": "Agile methodology (Scrum with two-week sprints).",
-    "workExperienceContainer.message.kriterPart1": "Developed and maintained two e-commerce sites, providing customer support (example: https://gallissa.com).",
-    "workExperienceContainer.message.kriterPart2": "Developed and maintained internal scripts to automatize tasks and analyze data."
+    "workExperienceContainer.message.dogfyDietPart1": "Development and maintenance and testing of the frontend of the main website (https://dogfydiet.com), the client area (https://app.dogfydiet.com) and the internal apps.",
+    "workExperienceContainer.message.dogfyDietPart2": "Assist in some backend tasks.",
+    "workExperienceContainer.message.dogfyDietPart3": "Code review (pull request from frontend and backend).",
+    "workExperienceContainer.message.dogfyDietPart4": "Agile methodology (Scrum with two-week sprints).",
+    "workExperienceContainer.message.kriterSoftwarePart1": "Developed and maintained two e-commerce sites, providing customer support (example: https://gallissa.com).",
+    "workExperienceContainer.message.kriterSoftwarePart2": "Developed and maintained internal scripts to automatize tasks and analyze data."
 }

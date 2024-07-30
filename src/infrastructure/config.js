@@ -15,7 +15,7 @@ export default {
       endDate: '2023-12',
       skills: ['Vue.js', 'Node.js', 'JavaScript', 'PHP', 'MySQL', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git', 'AWS'],
     },
-    kriter: {
+    kriterSoftware: {
       startDate: '2018-06',
       endDate: '2019-06',
       skills: ['JavaScript', 'Node.js', 'PHP', 'JAVA', 'MySQL', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git'],
