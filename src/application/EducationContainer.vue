@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { useI18n } from '#imports'
 
 import BaseTitleSection from '@/application/BaseTitleSection.vue'
-import BaseSubTitleSection from '@/application/BaseSubTitleSection.vue'
+import BaseSubtitleSection from '@/application/BaseSubtitleSection.vue'
 import BaseParagraph from '@/application/BaseParagraph.vue'
 import BaseChip from '@/application/BaseChip.vue'
 import BaseSkill from '@/application/BaseSkill.vue'
@@ -25,9 +25,9 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
     </BaseTitleSection>
     <div class="education-container__studies">
       <div class="education-container__study">
-        <BaseSubTitleSection>
+        <BaseSubtitleSection>
           {{ $t('educationContainer.label.daw') }}
-        </BaseSubTitleSection>
+        </BaseSubtitleSection>
         <BaseParagraph>
           {{ $t('educationContainer.label.thosICodina') }}
         </BaseParagraph>
@@ -55,9 +55,9 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         </div>
       </div>
       <div class="education-container__study">
-        <BaseSubTitleSection>
+        <BaseSubtitleSection>
           {{ $t('educationContainer.label.c1') }}
-        </BaseSubTitleSection>
+        </BaseSubtitleSection>
         <BaseParagraph>
           {{ $t('educationContainer.label.uoc') }}
         </BaseParagraph>

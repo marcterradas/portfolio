@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { useI18n } from '#imports'
 
 import BaseTitleSection from '@/application/BaseTitleSection.vue'
-import BaseSubTitleSection from '@/application/BaseSubTitleSection.vue'
+import BaseSubtitleSection from '@/application/BaseSubtitleSection.vue'
 import BaseSkill from '@/application/BaseSkill.vue'
 import BaseParagraph from '@/application/BaseParagraph.vue'
 
@@ -50,9 +50,9 @@ const kriterSoftwareDuration = computed(() => {
     </BaseTitleSection>
     <div class="work-experience-container__jobs">
       <div class="work-experience-container__job">
-        <BaseSubTitleSection>
+        <BaseSubtitleSection>
           {{ $t('common.label.seniorFrontendDeveloper') }}
-        </BaseSubTitleSection>
+        </BaseSubtitleSection>
         <BaseParagraph>
           {{ dogfyDietTitle }}
         </BaseParagraph>
@@ -78,9 +78,9 @@ const kriterSoftwareDuration = computed(() => {
         </div>
       </div>
       <div class="work-experience-container__job">
-        <BaseSubTitleSection>
+        <BaseSubtitleSection>
           {{ $t('common.label.fullStackDeveloper') }}
-        </BaseSubTitleSection>
+        </BaseSubtitleSection>
         <BaseParagraph>
           {{ andyTitle }}
         </BaseParagraph>
@@ -109,9 +109,9 @@ const kriterSoftwareDuration = computed(() => {
         </div>
       </div>
       <div class="work-experience-container__job">
-        <BaseSubTitleSection>
+        <BaseSubtitleSection>
           {{ $t('common.label.fullStackDeveloper') }}
-        </BaseSubTitleSection>
+        </BaseSubtitleSection>
         <BaseParagraph>
           {{ kriterSoftwareTitle }}
         </BaseParagraph>
