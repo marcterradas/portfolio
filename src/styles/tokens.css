@@ -27,6 +27,7 @@
 
     /* Border radius */
     --default-border-radius: 0.25rem;
+    --border-radius-rounded: 0.50rem;
 
     /* Border */
     --default-border: 1px;

@@ -2,6 +2,8 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import BaseSkill from '@/application/BaseSkill.vue'
+
 import config from '@/infrastructure/config.js'
 import { calculateDifferenceYearsAndMonths } from '@/domain/dates.js'
 
@@ -63,6 +65,14 @@ const kriterDuration = computed(() => {
           <li>{{ $t('workExperienceContainer.label.dogyDietPart3') }}</li>
           <li>{{ $t('workExperienceContainer.label.dogyDietPart4') }}</li>
         </ul>
+        <div class="work-experience-container__skills">
+          <BaseSkill
+            v-for="skill in dogfyDiet.skills"
+            :key="skill"
+          >
+            {{ skill }}
+          </BaseSkill>
+        </div>
       </div>
       <div class="work-experience-container__job">
         <h3 class="work-experience-container__job-category">
@@ -86,6 +96,14 @@ const kriterDuration = computed(() => {
           <li>{{ $t('workExperienceContainer.label.andyPart6') }}</li>
           <li>{{ $t('workExperienceContainer.label.andyPart7') }}</li>
         </ul>
+        <div class="work-experience-container__skills">
+          <BaseSkill
+            v-for="skill in andy.skills"
+            :key="skill"
+          >
+            {{ skill }}
+          </BaseSkill>
+        </div>
       </div>
       <div class="work-experience-container__job">
         <h3 class="work-experience-container__job-category">
@@ -104,6 +122,14 @@ const kriterDuration = computed(() => {
           <li>{{ $t('workExperienceContainer.label.kriterPart1') }}</li>
           <li>{{ $t('workExperienceContainer.label.kriterPart2') }}</li>
         </ul>
+        <div class="work-experience-container__skills">
+          <BaseSkill
+            v-for="skill in kriter.skills"
+            :key="skill"
+          >
+            {{ skill }}
+          </BaseSkill>
+        </div>
       </div>
     </div>
   </div>
@@ -164,6 +190,13 @@ const kriterDuration = computed(() => {
   list-style-type: disc;
   padding-inline-start: var(--spacer);
   gap: calc(var(--spacer)/4);
+  margin-top: calc(var(--spacer)/2);
+}
+
+.work-experience-container__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacer)/2);
   margin-top: calc(var(--spacer)/2);
 }
 </style>

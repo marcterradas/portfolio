@@ -8,14 +8,17 @@ export default {
     dogfyDiet: {
       startDate: '2023-12',
       endDate: null,
+      skills: ['Vue.js', 'Nuxt.js', 'Node.js', 'JavaScript', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git'],
     },
     andy: {
       startDate: '2019-06',
       endDate: '2023-12',
+      skills: ['Vue.js', 'Node.js', 'JavaScript', 'PHP', 'MySQL', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git', 'AWS'],
     },
     kriter: {
       startDate: '2018-06',
       endDate: '2019-06',
+      skills: ['JavaScript', 'Node.js', 'PHP', 'JAVA', 'MySQL', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git'],
     },
   },
   education: {
