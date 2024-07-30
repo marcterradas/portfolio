@@ -1,5 +1,5 @@
 <script setup>
-import { useI18n } from '#imports'
+import { useI18n, useHead } from '#imports'
 
 import NavigationContainer from '@/application/NavigationContainer.vue'
 import DescriptionContainer from '@/application/DescriptionContainer.vue'
