@@ -1,5 +1,20 @@
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
 import BaseTitleSection from '@/application/BaseTitleSection.vue'
+import BaseSubTitleSection from '@/application/BaseSubTitleSection.vue'
+import BaseParagraph from '@/application/BaseParagraph.vue'
+import BaseSkill from '@/application/BaseSkill.vue'
+
+import config from '@/infrastructure/config.js'
+
+const { t } = useI18n()
+
+const { daw, c1 } = config.education
+const dawDates = `${daw.startDate} - ${daw.endDate}`
+
+const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
 </script>
 
 <template>
@@ -7,6 +22,49 @@ import BaseTitleSection from '@/application/BaseTitleSection.vue'
     <BaseTitleSection>
       {{ $t('educationContainer.label.title') }}
     </BaseTitleSection>
+    <div class="education-container__studies">
+      <div class="education-container__study">
+        <BaseSubTitleSection>
+          {{ $t('educationContainer.label.daw') }}
+        </BaseSubTitleSection>
+        <BaseParagraph>
+          {{ $t('educationContainer.label.thosICodina') }}
+        </BaseParagraph>
+        <BaseParagraph>
+          {{ dawDates }}
+        </BaseParagraph>
+        <BaseParagraph>
+          {{ dawGrade }}
+        </BaseParagraph>
+        <div class="education-container__skills">
+          <BaseSkill
+            v-for="skill in daw.skills"
+            :key="skill"
+          >
+            {{ skill }}
+          </BaseSkill>
+        </div>
+      </div>
+      <div class="education-container__study">
+        <BaseSubTitleSection>
+          {{ $t('educationContainer.label.c1') }}
+        </BaseSubTitleSection>
+        <BaseParagraph>
+          {{ $t('educationContainer.label.uoc') }}
+        </BaseParagraph>
+        <BaseParagraph>
+          {{ c1.issuedDate }}
+        </BaseParagraph>
+        <div class="education-container__skills">
+          <BaseSkill
+            v-for="skill in c1.skills"
+            :key="skill"
+          >
+            {{ skill }}
+          </BaseSkill>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,5 +73,25 @@ import BaseTitleSection from '@/application/BaseTitleSection.vue'
   display: flex;
   flex-direction: column;
   gap:var(--spacer);
+}
+
+.education-container__studies {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacer)*3);
+}
+
+.education-container__study {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacer)/4);
+  flex-wrap: wrap;
+}
+
+.education-container__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacer)/2);
+  margin-top: calc(var(--spacer)/2);
 }
 </style>

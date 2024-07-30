@@ -22,7 +22,15 @@ export default {
     },
   },
   education: {
-    daw: {},
-    c1: {},
+    daw: {
+      startDate: '2017-09',
+      endDate: '2019-06',
+      grade: 8.2,
+      skills: ['JavaScript', 'PHP', 'Java', 'MySQL', 'HTML', 'CSS'],
+    },
+    c1: {
+      issuedDate: '2024-07',
+      skills: ['English'],
+    },
   },
 }
