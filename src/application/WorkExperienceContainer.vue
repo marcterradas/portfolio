@@ -77,6 +77,15 @@ const kriterDuration = computed(() => {
         <p class="work-experience-container__company-ubication">
           {{ andyUbication }}
         </p>
+        <ul class="work-experience-container__company-description">
+          <li>{{ $t('workExperienceContainer.label.andyPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.label.andyPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.label.andyPart3') }}</li>
+          <li>{{ $t('workExperienceContainer.label.andyPart4') }}</li>
+          <li>{{ $t('workExperienceContainer.label.andyPart5') }}</li>
+          <li>{{ $t('workExperienceContainer.label.andyPart6') }}</li>
+          <li>{{ $t('workExperienceContainer.label.andyPart7') }}</li>
+        </ul>
       </div>
       <div class="work-experience-container__job">
         <h3 class="work-experience-container__job-category">
@@ -91,6 +100,10 @@ const kriterDuration = computed(() => {
         <p class="work-experience-container__company-ubication">
           {{ kriterUbication }}
         </p>
+        <ul class="work-experience-container__company-description">
+          <li>{{ $t('workExperienceContainer.label.kriterPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.label.kriterPart2') }}</li>
+        </ul>
       </div>
     </div>
   </div>
