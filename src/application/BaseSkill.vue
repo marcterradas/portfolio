@@ -7,10 +7,8 @@
 <style>
 .base-skill {
   align-items: center;
-  background-color: var(--black);
   border: var(--default-border) solid var(--dark-gray);
   border-radius: var(--border-radius-rounded);
-  color: var(--white);
   display: flex;
   font-size: var(--font-sm);
   font-weight: bold;
