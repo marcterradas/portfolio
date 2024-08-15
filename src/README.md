@@ -1,4 +1,4 @@
-This README file provides an overview of the src folder structure.
+**This README file provides an overview of the src folder structure.**
 
 ## Application
 
