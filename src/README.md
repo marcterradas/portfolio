@@ -1,5 +1,3 @@
-# Documentation
-
 This README file provides an overview of the src folder structure.
 
 ## Application
