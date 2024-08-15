@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
     '@nuxtjs/i18n',
+    '@nuxtjs/robots',
   ],
 
   i18n: {
