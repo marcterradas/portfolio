@@ -18,7 +18,7 @@ export default {
     kriterSoftware: {
       startDate: '2018-06',
       endDate: '2019-06',
-      skills: ['JavaScript', 'Node.js', 'PHP', 'JAVA', 'MySQL', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git'],
+      skills: ['JavaScript', 'Node.js', 'PHP', 'Java', 'MySQL', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git'],
     },
   },
   education: {
