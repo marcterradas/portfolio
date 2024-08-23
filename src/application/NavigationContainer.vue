@@ -23,15 +23,15 @@ function changeLanguage(locale) {
 
 <template>
   <div class="language-switcher">
-    <div
+    <button
       v-for="language in languages"
       :key="language"
       class="language-switcher__language"
       :class="{ 'language-switcher__language--selected': language === currentLanguage }"
-      @click="changeLanguage(language)"
+      @click.prevent="changeLanguage(language)"
     >
       {{ language.toUpperCase() }}
-    </div>
+    </button>
   </div>
 </template>
 
