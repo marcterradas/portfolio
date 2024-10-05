@@ -24,9 +24,6 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
       <p class="description-container__description">
         {{ $t('descriptionContainer.message.description', { yearsOfExperience }) }}
       </p>
-      <p class="description-container__description">
-        {{ $t('descriptionContainer.message.about') }}
-      </p>
       <div class="description-container__chips-container">
         <BaseChip
           icon="/images/linkedin.svg"

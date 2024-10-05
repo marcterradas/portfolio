@@ -62,6 +62,9 @@ const kriterSoftwareDuration = computed(() => {
         <BaseParagraph>
           {{ dogfyDietUbication }}
         </BaseParagraph>
+        <BaseParagraph>
+          {{ $t('workExperienceContainer.message.dogfyDietDescription') }}
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart2') }}</li>
@@ -90,6 +93,9 @@ const kriterSoftwareDuration = computed(() => {
         <BaseParagraph>
           {{ andyUbication }}
         </BaseParagraph>
+        <BaseParagraph>
+          {{ $t('workExperienceContainer.message.andyDescription') }}
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.andyPart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.andyPart2') }}</li>
@@ -97,7 +103,6 @@ const kriterSoftwareDuration = computed(() => {
           <li>{{ $t('workExperienceContainer.message.andyPart4') }}</li>
           <li>{{ $t('workExperienceContainer.message.andyPart5') }}</li>
           <li>{{ $t('workExperienceContainer.message.andyPart6') }}</li>
-          <li>{{ $t('workExperienceContainer.message.andyPart7') }}</li>
         </ul>
         <div class="work-experience-container__skills">
           <BaseSkill
@@ -120,6 +125,9 @@ const kriterSoftwareDuration = computed(() => {
         </BaseParagraph>
         <BaseParagraph>
           {{ kriterSoftwareUbication }}
+        </BaseParagraph>
+        <BaseParagraph>
+          {{ $t('workExperienceContainer.message.kriterSoftwareDescription') }}
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.kriterSoftwarePart1') }}</li>
