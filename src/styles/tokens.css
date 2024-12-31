@@ -20,10 +20,9 @@
 
     /* Colors */
     --black: #212529;
-    --black-lightest: #343A40;
+    --black-lightest: #2a2e33;
     --dark-gray: #ADB5BD;
     --white: #F8F9FA;
-    --light-gray: #E9ECEF;
 
     /* Border radius */
     --default-border-radius: 0.25rem;
