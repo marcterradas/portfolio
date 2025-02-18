@@ -19,7 +19,7 @@ const [andyYears, andyMonths] = calculateDifferenceYearsAndMonths(andy.startDate
 const [kriterSoftwareYears, kriterSoftwareMonths] = calculateDifferenceYearsAndMonths(kriterSoftware.startDate, kriterSoftware.endDate)
 
 const dogfyDietTitle = computed(() => `${t('workExperienceContainer.label.dogfyDiet')} · ${t('common.label.fullTime')}`)
-const dogfyDietUbication = computed(() => `${t('common.label.barcelona')} · ${t('common.label.hybrid')}`)
+const dogfyDietLocation = computed(() => `${t('common.label.barcelona')} · ${t('common.label.hybrid')}`)
 const dogfyDietDuration = computed(() => {
   const years = dogfyDietYears > 0 ? `${dogfyDietYears} ${t('common.label.years', dogfyDietYears)} ` : ''
   const months = dogfyDietMonths > 0 ? `${dogfyDietMonths} ${t('common.label.months', dogfyDietMonths)}` : ''
@@ -27,7 +27,7 @@ const dogfyDietDuration = computed(() => {
 })
 
 const andyTitle = computed(() => `${t('workExperienceContainer.label.andy')} · ${t('common.label.fullTime')}`)
-const andyUbication = computed(() => `${t('common.label.mataro')} · ${t('common.label.remote')}`)
+const andyLocation = computed(() => `${t('common.label.mataro')} · ${t('common.label.remote')}`)
 const andyDuration = computed(() => {
   const years = andyYears > 0 ? `${andyYears} ${t('common.label.years', andyYears)} ` : ''
   const months = andyMonths > 0 ? `${andyMonths} ${t('common.label.months', andyMonths)}` : ''
@@ -35,7 +35,7 @@ const andyDuration = computed(() => {
 })
 
 const kriterSoftwareTitle = computed(() => `${t('workExperienceContainer.label.kriterSoftware')} · ${t('common.label.partTime')}`)
-const kriterSoftwareUbication = computed(() => `${t('common.label.mataro')} · ${t('common.label.onSite')}`)
+const kriterSoftwareLocation = computed(() => `${t('common.label.mataro')} · ${t('common.label.onSite')}`)
 const kriterSoftwareDuration = computed(() => {
   const years = kriterSoftwareYears > 0 ? `${kriterSoftwareYears} ${t('common.label.years', kriterSoftwareYears)} ` : ''
   const months = kriterSoftwareMonths > 0 ? `${kriterSoftwareMonths} ${t('common.label.months', kriterSoftwareMonths)}` : ''
@@ -60,7 +60,7 @@ const kriterSoftwareDuration = computed(() => {
           {{ dogfyDietDuration }}
         </BaseParagraph>
         <BaseParagraph>
-          {{ dogfyDietUbication }}
+          {{ dogfyDietLocation }}
         </BaseParagraph>
         <BaseParagraph>
           {{ $t('workExperienceContainer.message.dogfyDietDescription') }}
@@ -91,7 +91,7 @@ const kriterSoftwareDuration = computed(() => {
           {{ andyDuration }}
         </BaseParagraph>
         <BaseParagraph>
-          {{ andyUbication }}
+          {{ andyLocation }}
         </BaseParagraph>
         <BaseParagraph>
           {{ $t('workExperienceContainer.message.andyDescription') }}
@@ -124,7 +124,7 @@ const kriterSoftwareDuration = computed(() => {
           {{ kriterSoftwareDuration }}
         </BaseParagraph>
         <BaseParagraph>
-          {{ kriterSoftwareUbication }}
+          {{ kriterSoftwareLocation }}
         </BaseParagraph>
         <BaseParagraph>
           {{ $t('workExperienceContainer.message.kriterSoftwareDescription') }}
