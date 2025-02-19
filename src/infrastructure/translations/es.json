@@ -20,7 +20,7 @@
     "common.label.years": "año | años",
     "descriptionContainer.label.name": "Marc Terradas Zapata",
     "descriptionContainer.label.title": "Senior Frontend Developer",
-    "descriptionContainer.message.description": "+{yearsOfExperience} años de experiencia como desarrollador frontend. He contribuido en algunos proyectos OSS, intento mejorar cada día mis habilidades blandas y duras, hago deporte desde pequeño y aprendí que trabajando en equipo se pueden conseguir grandes resultados.",
+    "descriptionContainer.message.description": "+{yearsOfExperience} años de experiencia como desarrollador, enfocado en Frontend, con conocimientos de Backend y DevOps. En los productos en los que he trabajado, he aportado un gran valor, desde el momento de la planificación hasta el despliegue a producción, gracias al trabajo en equipo y habilidades de comunicación. Me enfoco mucho en desarrollar código mantenible y escalable, y dedico mucho tiempo a revisar pull requests y realizar testing.",
     "educationContainer.label.c1": "Inglés - C1 Advanced",
     "educationContainer.label.daw": "CFGS - Desarrollo de Aplicaciones Web",
     "educationContainer.label.thosICodina": "IES Thos i Codina",
