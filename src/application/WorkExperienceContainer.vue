@@ -69,7 +69,6 @@ const kriterSoftwareDuration = computed(() => {
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart2') }}</li>
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart3') }}</li>
-          <li>{{ $t('workExperienceContainer.message.dogfyDietPart4') }}</li>
         </ul>
         <div class="work-experience-container__skills">
           <BaseSkill
