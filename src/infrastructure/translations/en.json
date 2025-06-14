@@ -34,6 +34,7 @@
     "languagesContainer.label.title": "Languages",
     "workExperienceContainer.label.andy": "Andy",
     "workExperienceContainer.label.dogfyDiet": "Dogfy Diet",
+    "workExperienceContainer.label.filmin": "Filmin",
     "workExperienceContainer.label.kriterSoftware": "Kriter Software",
     "workExperienceContainer.label.title": "Work experience",
     "workExperienceContainer.message.andyDescription": "Andy is a B2B app that helps restaurants with food safety, and also develops projects for McDonald's.",
@@ -48,7 +49,12 @@
     "workExperienceContainer.message.dogfyDietPart1": "Development, maintenance and testing of the website (dogfydiet.com), the client area (app.dogfydiet.com), the internal CRM (sales.dogfydiet.com) and the internal back-office (bo.dogfydiet.com).",
     "workExperienceContainer.message.dogfyDietPart2": "Code review (pull request from frontend and backend).",
     "workExperienceContainer.message.dogfyDietPart3": "Agile methodology (Scrum with two-week sprints).",
+    "workExperienceContainer.message.filminDescription": "Filmin is a B2C video on demand platform.",
+    "workExperienceContainer.message.filminPart1": "Development, maintenance, documentation and testing of the main websites: (filmin.es, filmin.pt and filmin.cat).",
+    "workExperienceContainer.message.filminPart2": "Unit and integration testing.",
+    "workExperienceContainer.message.filminPart3": "Code review.",
+    "workExperienceContainer.message.filminPart4": "Deploys to production.",
     "workExperienceContainer.message.kriterSoftwareDescription": "Kriter is a B2B consultant that develops e-commerce for his clients.",
-    "workExperienceContainer.message.kriterSoftwarePart1": "Developed and maintained e-commerce sites, providing customer support (example: gallissa.com).",
-    "workExperienceContainer.message.kriterSoftwarePart2": "Developed and maintained the internal CRM (repcamp.com)."
+    "workExperienceContainer.message.kriterSoftwarePart1": "Development and maintenance of e-commerce sites, providing customer support (example: gallissa.com).",
+    "workExperienceContainer.message.kriterSoftwarePart2": "Development and maintenance of the internal CRM (repcamp.com)."
 }

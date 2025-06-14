@@ -17,6 +17,9 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     // Explicitly resolve the i18n config file from the project root, since srcDir is set to 'src/' and we want to keep i18n.config.js at the root.
     vueI18n: fileURLToPath(new URL('./i18n.config.js', import.meta.url)),
+    bundle: {
+      optimizeTranslationDirective: true,
+    },
   },
 
   eslint: {

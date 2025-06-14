@@ -5,9 +5,14 @@ export default {
     email: 'mailto:terradas.marc@gmail.com',
   },
   workExperience: {
+    filmin: {
+      startDate: '2025-04',
+      endDate: null,
+      skills: ['Vue.js', 'TypeScript', 'JavaScript', 'PHP', 'Laravel', 'HTML', 'CSS', 'SASS', 'Tailwind CSS', 'Git', 'Docker', 'Jest', 'Cloudflare Workers'],
+    },
     dogfyDiet: {
       startDate: '2023-12',
-      endDate: null,
+      endDate: '2025-04',
       skills: ['Vue.js', 'Nuxt.js', 'Node.js', 'JavaScript', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git'],
     },
     andy: {
