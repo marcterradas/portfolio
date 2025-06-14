@@ -6,7 +6,7 @@ const { locale, setLocale } = useI18n()
 const router = useRouter()
 const runtimeConfig = useRuntimeConfig()
 
-const { configLocales: languages } = runtimeConfig.public.i18n
+const { locales: languages } = runtimeConfig.public.i18n
 
 const currentLanguage = ref(locale.value)
 
