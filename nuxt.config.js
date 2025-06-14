@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'url'
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
@@ -14,7 +15,8 @@ export default defineNuxtConfig({
   i18n: {
     locales: ['en', 'es', 'cat'],
     defaultLocale: 'en',
-    vueI18n: './i18n.config.js',
+    // Explicitly resolve the i18n config file from the project root, since srcDir is set to 'src/' and we want to keep i18n.config.js at the root.
+    vueI18n: fileURLToPath(new URL('./i18n.config.js', import.meta.url)),
   },
 
   eslint: {
