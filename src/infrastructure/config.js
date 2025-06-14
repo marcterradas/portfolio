@@ -7,7 +7,7 @@ export default {
   workExperience: {
     dogfyDiet: {
       startDate: '2023-12',
-      endDate: null,
+      endDate: '2025-04',
       skills: ['Vue.js', 'Nuxt.js', 'Node.js', 'JavaScript', 'MongoDB', 'HTML', 'CSS', 'SASS', 'Git'],
     },
     andy: {

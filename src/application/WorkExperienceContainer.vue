@@ -14,7 +14,7 @@ const { t } = useI18n()
 
 const { dogfyDiet, andy, kriterSoftware } = config.workExperience
 const [currentDate] = new Date().toISOString().split('T')
-const [dogfyDietYears, dogfyDietMonths] = calculateDifferenceYearsAndMonths(dogfyDiet.startDate, currentDate)
+const [dogfyDietYears, dogfyDietMonths] = calculateDifferenceYearsAndMonths(dogfyDiet.startDate, dogfyDiet.endDate)
 const [andyYears, andyMonths] = calculateDifferenceYearsAndMonths(andy.startDate, andy.endDate)
 const [kriterSoftwareYears, kriterSoftwareMonths] = calculateDifferenceYearsAndMonths(kriterSoftware.startDate, kriterSoftware.endDate)
 
@@ -23,7 +23,7 @@ const dogfyDietLocation = computed(() => `${t('common.label.barcelona')} · ${t(
 const dogfyDietDuration = computed(() => {
   const years = dogfyDietYears > 0 ? `${dogfyDietYears} ${t('common.label.years', dogfyDietYears)} ` : ''
   const months = dogfyDietMonths > 0 ? `${dogfyDietMonths} ${t('common.label.months', dogfyDietMonths)}` : ''
-  return `${dogfyDiet.startDate} - ${t('common.label.present')} · ${years}${months}`
+  return `${dogfyDiet.startDate} - ${dogfyDiet.endDate} · ${years}${months}`
 })
 
 const andyTitle = computed(() => `${t('workExperienceContainer.label.andy')} · ${t('common.label.fullTime')}`)
