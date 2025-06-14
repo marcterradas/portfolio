@@ -12,11 +12,20 @@ import { calculateDifferenceYearsAndMonths } from '@/domain/dates.js'
 
 const { t } = useI18n()
 
-const { dogfyDiet, andy, kriterSoftware } = config.workExperience
+const { filmin, dogfyDiet, andy, kriterSoftware } = config.workExperience
 const [currentDate] = new Date().toISOString().split('T')
+const [filminYears, filminMonths] = calculateDifferenceYearsAndMonths(filmin.startDate, currentDate)
 const [dogfyDietYears, dogfyDietMonths] = calculateDifferenceYearsAndMonths(dogfyDiet.startDate, dogfyDiet.endDate)
 const [andyYears, andyMonths] = calculateDifferenceYearsAndMonths(andy.startDate, andy.endDate)
 const [kriterSoftwareYears, kriterSoftwareMonths] = calculateDifferenceYearsAndMonths(kriterSoftware.startDate, kriterSoftware.endDate)
+
+const filminTitle = computed(() => `${t('workExperienceContainer.label.filmin')} · ${t('common.label.fullTime')}`)
+const filminLocation = computed(() => `${t('common.label.barcelona')} · ${t('common.label.hybrid')}`)
+const filminDuration = computed(() => {
+  const years = filminYears > 0 ? `${filminYears} ${t('common.label.years', filminYears)} ` : ''
+  const months = filminMonths > 0 ? `${filminMonths} ${t('common.label.months', filminMonths)}` : ''
+  return `${filmin.startDate} -${t('common.label.present')} · ${years}${months}`
+})
 
 const dogfyDietTitle = computed(() => `${t('workExperienceContainer.label.dogfyDiet')} · ${t('common.label.fullTime')}`)
 const dogfyDietLocation = computed(() => `${t('common.label.barcelona')} · ${t('common.label.hybrid')}`)
@@ -49,6 +58,37 @@ const kriterSoftwareDuration = computed(() => {
       {{ $t('workExperienceContainer.label.title') }}
     </BaseTitleSection>
     <div class="work-experience-container__jobs">
+      <div class="work-experience-container__job">
+        <BaseSubtitleSection>
+          {{ $t('common.label.seniorFrontendDeveloper') }}
+        </BaseSubtitleSection>
+        <BaseParagraph>
+          {{ filminTitle }}
+        </BaseParagraph>
+        <BaseParagraph>
+          {{ filminDuration }}
+        </BaseParagraph>
+        <BaseParagraph>
+          {{ filminLocation }}
+        </BaseParagraph>
+        <BaseParagraph>
+          {{ $t('workExperienceContainer.message.filminDescription') }}
+        </BaseParagraph>
+        <ul class="work-experience-container__company-description">
+          <li>{{ $t('workExperienceContainer.message.filminPart1') }}</li>
+          <li>{{ $t('workExperienceContainer.message.filminPart2') }}</li>
+          <li>{{ $t('workExperienceContainer.message.filminPart3') }}</li>
+          <li>{{ $t('workExperienceContainer.message.filminPart4') }}</li>
+        </ul>
+        <div class="work-experience-container__skills">
+          <BaseSkill
+            v-for="skill in filmin.skills"
+            :key="skill"
+          >
+            {{ skill }}
+          </BaseSkill>
+        </div>
+      </div>
       <div class="work-experience-container__job">
         <BaseSubtitleSection>
           {{ $t('common.label.seniorFrontendDeveloper') }}
