@@ -24,7 +24,7 @@ const filminLocation = computed(() => `${t('common.label.barcelona')} · ${t('co
 const filminDuration = computed(() => {
   const years = filminYears > 0 ? `${filminYears} ${t('common.label.years', filminYears)} ` : ''
   const months = filminMonths > 0 ? `${filminMonths} ${t('common.label.months', filminMonths)}` : ''
-  return `${filmin.startDate} -${t('common.label.present')} · ${years}${months}`
+  return `${filmin.startDate} - ${t('common.label.present')} · ${years}${months}`
 })
 
 const dogfyDietTitle = computed(() => `${t('workExperienceContainer.label.dogfyDiet')} · ${t('common.label.fullTime')}`)
