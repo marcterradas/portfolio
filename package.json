@@ -16,7 +16,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test:unit": "vitest",
-    "phoenix": "rm -rf .nuxt node_modules && pnpm install",
+    "phoenix": "rm -rf .nuxt .output node_modules && pnpm install",
     "sort:translations": "sort-json ./src/infrastructure/translations/*.json"
   },
   "dependencies": {
