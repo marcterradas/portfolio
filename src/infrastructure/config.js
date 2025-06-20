@@ -8,7 +8,7 @@ export default {
     filmin: {
       startDate: '2025-04',
       endDate: null,
-      skills: ['Vue.js', 'TypeScript', 'JavaScript', 'PHP', 'Laravel', 'HTML', 'CSS', 'SASS', 'Tailwind CSS', 'Git', 'Docker', 'Jest', 'Cloudflare Workers'],
+      skills: ['Vue.js', 'TypeScript', 'JavaScript', 'PHP', 'Laravel', 'HTML', 'CSS', 'SASS', 'Tailwind CSS', 'Git', 'Docker', 'Jest', 'Cloudflare Workers', 'Sentry'],
     },
     dogfyDiet: {
       startDate: '2023-12',
