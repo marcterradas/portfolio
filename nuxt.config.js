@@ -2,8 +2,6 @@ import { fileURLToPath } from 'url'
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  srcDir: 'src/',
-  ssr: true,
 
   modules: [
     '@nuxt/eslint',
@@ -11,6 +9,17 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/robots',
   ],
+  ssr: true,
+
+  css: ['@/styles/normalize.min.css', '@/styles/tokens.css', '@/styles/main.css', '@/styles/fonts.css'],
+  srcDir: 'src/',
+  compatibilityDate: '2024-07-28',
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
 
   i18n: {
     locales: ['en', 'es', 'cat'],
@@ -21,13 +30,4 @@ export default defineNuxtConfig({
       optimizeTranslationDirective: true,
     },
   },
-
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-  },
-
-  css: ['@/styles/normalize.min.css', '@/styles/tokens.css', '@/styles/main.css', '@/styles/fonts.css'],
-  compatibilityDate: '2024-07-28',
 })
