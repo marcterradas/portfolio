@@ -105,4 +105,10 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
   gap: calc(var(--spacer)/2);
   margin-top: calc(var(--spacer)/2);
 }
+
+@media print {
+.description-container__chips-container {
+  display: none;
+}
+}
 </style>
