@@ -1,8 +1,10 @@
 export default {
   contactLinks: {
-    github: 'https://github.com/marcterradas',
-    linkedin: 'https://www.linkedin.com/in/marc-terradas-zapata',
-    email: 'mailto:terradas.marc@gmail.com',
+    phoneNumber: '+34633625516',
+    github: 'github.com/marcterradas',
+    linkedin: 'linkedin.com/in/marc-terradas-zapata',
+    email: 'terradas.marc@gmail.com',
+    portfolio: 'marcterradas.dev',
   },
   workExperience: {
     filmin: {
