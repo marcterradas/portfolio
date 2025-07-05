@@ -115,4 +115,10 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
 .education-container__diploma {
   margin-top: var(--spacer)
 }
+
+@media print {
+  .education-container__diploma {
+    display: none;
+  }
+}
 </style>
