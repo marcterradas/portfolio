@@ -26,6 +26,7 @@ const filminDuration = computed(() => {
   const months = filminMonths > 0 ? `${filminMonths} ${t('common.label.months', filminMonths)}` : ''
   return `${filmin.startDate} - ${t('common.label.present')} · ${years}${months}`
 })
+const filminSkills = computed(() => `${t('common.label.skills')}: ${filmin.skills.join(', ')}`)
 
 const dogfyDietTitle = computed(() => `${t('workExperienceContainer.label.dogfyDiet')} · ${t('common.label.fullTime')}`)
 const dogfyDietLocation = computed(() => `${t('common.label.barcelona')} · ${t('common.label.hybrid')}`)
@@ -34,6 +35,7 @@ const dogfyDietDuration = computed(() => {
   const months = dogfyDietMonths > 0 ? `${dogfyDietMonths} ${t('common.label.months', dogfyDietMonths)}` : ''
   return `${dogfyDiet.startDate} - ${dogfyDiet.endDate} · ${years}${months}`
 })
+const dogfyDietSkills = computed(() => `${t('common.label.skills')}: ${dogfyDiet.skills.join(', ')}`)
 
 const andyTitle = computed(() => `${t('workExperienceContainer.label.andy')} · ${t('common.label.fullTime')}`)
 const andyLocation = computed(() => `${t('common.label.mataro')} · ${t('common.label.remote')}`)
@@ -43,6 +45,8 @@ const andyDuration = computed(() => {
   return `${andy.startDate} - ${andy.endDate} · ${years}${months}`
 })
 
+const andySkills = computed(() => `${t('common.label.skills')}: ${andy.skills.join(', ')}`)
+
 const kriterSoftwareTitle = computed(() => `${t('workExperienceContainer.label.kriterSoftware')} · ${t('common.label.partTime')}`)
 const kriterSoftwareLocation = computed(() => `${t('common.label.mataro')} · ${t('common.label.onSite')}`)
 const kriterSoftwareDuration = computed(() => {
@@ -50,6 +54,7 @@ const kriterSoftwareDuration = computed(() => {
   const months = kriterSoftwareMonths > 0 ? `${kriterSoftwareMonths} ${t('common.label.months', kriterSoftwareMonths)}` : ''
   return `${kriterSoftware.startDate} - ${kriterSoftware.endDate} · ${years}${months}`
 })
+const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${kriterSoftware.skills.join(', ')}`)
 </script>
 
 <template>
@@ -74,13 +79,16 @@ const kriterSoftwareDuration = computed(() => {
         <BaseParagraph>
           {{ $t('workExperienceContainer.message.filminDescription') }}
         </BaseParagraph>
+        <BaseParagraph class="work-experience-container__skills">
+          {{ filminSkills }}
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.filminPart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.filminPart2') }}</li>
           <li>{{ $t('workExperienceContainer.message.filminPart3') }}</li>
           <li>{{ $t('workExperienceContainer.message.filminPart4') }}</li>
         </ul>
-        <div class="work-experience-container__skills">
+        <div class="work-experience-container__skills-container">
           <BaseSkill
             v-for="skill in filmin.skills"
             :key="skill"
@@ -105,12 +113,15 @@ const kriterSoftwareDuration = computed(() => {
         <BaseParagraph>
           {{ $t('workExperienceContainer.message.dogfyDietDescription') }}
         </BaseParagraph>
+        <BaseParagraph class="work-experience-container__skills">
+          {{ dogfyDietSkills }}
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart2') }}</li>
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart3') }}</li>
         </ul>
-        <div class="work-experience-container__skills">
+        <div class="work-experience-container__skills-container">
           <BaseSkill
             v-for="skill in dogfyDiet.skills"
             :key="skill"
@@ -135,6 +146,9 @@ const kriterSoftwareDuration = computed(() => {
         <BaseParagraph>
           {{ $t('workExperienceContainer.message.andyDescription') }}
         </BaseParagraph>
+        <BaseParagraph class="work-experience-container__skills">
+          {{ andySkills }}
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.andyPart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.andyPart2') }}</li>
@@ -143,7 +157,7 @@ const kriterSoftwareDuration = computed(() => {
           <li>{{ $t('workExperienceContainer.message.andyPart5') }}</li>
           <li>{{ $t('workExperienceContainer.message.andyPart6') }}</li>
         </ul>
-        <div class="work-experience-container__skills">
+        <div class="work-experience-container__skills-container">
           <BaseSkill
             v-for="skill in andy.skills"
             :key="skill"
@@ -168,11 +182,14 @@ const kriterSoftwareDuration = computed(() => {
         <BaseParagraph>
           {{ $t('workExperienceContainer.message.kriterSoftwareDescription') }}
         </BaseParagraph>
+        <BaseParagraph class="work-experience-container__skills">
+          {{ kriterSoftwareSkills }}
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.kriterSoftwarePart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.kriterSoftwarePart2') }}</li>
         </ul>
-        <div class="work-experience-container__skills">
+        <div class="work-experience-container__skills-container">
           <BaseSkill
             v-for="skill in kriterSoftware.skills"
             :key="skill"
@@ -213,16 +230,49 @@ const kriterSoftwareDuration = computed(() => {
   gap: calc(var(--spacer)/4);
   margin-top: calc(var(--spacer)/2);
   font-size: var(--font-sm);
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-md);
-  }
 }
 
 .work-experience-container__skills {
+  display: none;
+}
+
+.work-experience-container__skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: calc(var(--spacer)/2);
   margin-top: calc(var(--spacer)/2);
+}
+
+@media screen and (min-width: 1024px) {
+  .work-experience-container__company-description {
+    font-size: var(--font-md);
+  }
+}
+
+@media print {
+  .work-experience-container {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .work-experience-container__jobs {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .work-experience-container__job {
+    gap: 0;
+  }
+
+  .work-experience-container__skills {
+    display: block;
+  }
+
+  .work-experience-container__company-description {
+    gap: 0;
+  }
+
+  .work-experience-container__skills-container {
+    display: none;
+     margin-top: calc(var(--spacer)/4);
+  }
 }
 </style>

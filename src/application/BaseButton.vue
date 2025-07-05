@@ -1,38 +1,35 @@
 <script setup>
-import { computed } from 'vue'
+import { defineEmits, computed } from 'vue'
 
 const props = defineProps({
   icon: {
     type: String,
     default: null,
   },
-  link: {
-    type: String,
-    required: true,
-  },
 })
+
+defineEmits(['click'])
 
 const hasIcon = computed(() => !!props.icon)
 </script>
 
 <template>
-  <a
-    :href="props.link"
-    target="_blank"
-    class="base-link"
+  <button
+    class="base-button"
+    @click="$emit('click')"
   >
     <img
       v-if="hasIcon"
-      class="base-link__icon"
+      class="base-button__icon"
       :src="icon"
       alt=""
     >
     <slot />
-  </a>
+  </button>
 </template>
 
 <style>
-.base-link {
+.base-button {
   align-items: center;
   background-color: var(--black);
   border: var(--default-border) solid var(--dark-gray);
@@ -49,17 +46,17 @@ const hasIcon = computed(() => !!props.icon)
   width: fit-content;
 }
 
-.base-link:hover {
+.base-button:hover {
   background-color: var(--black-lightest);
 }
 
-.base-link__icon {
+.base-button__icon {
   width: var(--default-size);
   height: var(--default-size);
 }
 
 @media screen and (min-width: 1024px) {
-  .base-link {
+  .base-button {
     font-size: var(--font-md);
   }
 }

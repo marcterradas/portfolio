@@ -31,10 +31,10 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         <BaseParagraph>
           {{ $t('educationContainer.label.thosICodina') }}
         </BaseParagraph>
-        <BaseParagraph>
+        <BaseParagraph class="education-container__dates">
           {{ dawDates }}
         </BaseParagraph>
-        <BaseParagraph>
+        <BaseParagraph class="education-container__grade">
           {{ dawGrade }}
         </BaseParagraph>
         <div class="education-container__diploma">
@@ -45,7 +45,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
             {{ $t('common.label.title') }}
           </BaseChip>
         </div>
-        <div class="education-container__skills">
+        <div class="education-container__skills-container">
           <BaseSkill
             v-for="skill in daw.skills"
             :key="skill"
@@ -61,7 +61,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         <BaseParagraph>
           {{ $t('educationContainer.label.uoc') }}
         </BaseParagraph>
-        <BaseParagraph>
+        <BaseParagraph class="education-container__dates">
           {{ c1.issuedDate }}
         </BaseParagraph>
         <div class="education-container__diploma">
@@ -72,7 +72,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
             {{ $t('common.label.certificate') }}
           </BaseChip>
         </div>
-        <div class="education-container__skills">
+        <div class="education-container__skills-container">
           <BaseSkill
             v-for="skill in c1.skills"
             :key="skill"
@@ -105,7 +105,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
   flex-wrap: wrap;
 }
 
-.education-container__skills {
+.education-container__skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: calc(var(--spacer)/2);
@@ -114,5 +114,26 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
 
 .education-container__diploma {
   margin-top: var(--spacer)
+}
+
+@media print {
+  .education-container {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .education-container__studies {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .education-container__study {
+    gap: 0;
+  }
+
+  .education-container__dates,
+  .education-container__grade,
+  .education-container__skills-container,
+  .education-container__diploma {
+    display: none;
+  }
 }
 </style>

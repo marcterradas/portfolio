@@ -5,9 +5,9 @@
 </template>
 
 <style>
+@media screen and (min-width: 1024px) {
 .base-container {
-  @media screen and (min-width: 1024px) {
-      padding: 0 calc(var(--spacer)*6);
+    padding: 0 calc(var(--spacer)*6);
   }
 }
 </style>

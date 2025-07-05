@@ -34,4 +34,14 @@ import BaseParagraph from '@/application/BaseParagraph.vue'
   flex-direction: column;
   gap: calc(var(--spacer)/2);
 }
+
+@media print {
+  .languages-container {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .languages-container__languages {
+    gap: 0;
+  }
+}
 </style>

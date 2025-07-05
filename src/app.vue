@@ -63,9 +63,18 @@ useHead({
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacer)*4);
+}
 
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+  .app {
     padding: calc(var(--spacer)*2);
+  }
+}
+
+@media print {
+  .app {
+    padding: 0;
+    gap: calc(var(--spacer)/2);
   }
 }
 </style>

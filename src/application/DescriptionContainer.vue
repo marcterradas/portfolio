@@ -1,5 +1,6 @@
 <script setup>
 import BaseChip from '@/application/BaseChip.vue'
+import BaseButton from '@/application/BaseButton.vue'
 
 import { calculateDifferenceYears } from '@/domain/dates.js'
 import config from '@/infrastructure/config.js'
@@ -8,6 +9,14 @@ import config from '@/infrastructure/config.js'
 const { startDate: firstJobStartDate } = config.workExperience.kriterSoftware
 const [currentDate] = new Date().toISOString().split('T')
 const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDate)
+
+const linkedinUrl = `https://www.${config.contactLinks.linkedin}`
+const githubUrl = `https://www.${config.contactLinks.github}`
+const emailUrl = `mailto:${config.contactLinks.email}`
+
+function printDocument() {
+  window.print()
+}
 </script>
 
 <template>
@@ -19,6 +28,9 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
       <h2 class="description-container__title">
         {{ $t('descriptionContainer.label.title') }}
       </h2>
+      <h3 class="description-container__location">
+        {{ $t('descriptionContainer.label.location') }}
+      </h3>
     </div>
     <div class="description-container__row">
       <p class="description-container__description">
@@ -27,29 +39,28 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
       <div class="description-container__chips-container">
         <BaseChip
           icon="/images/linkedin.svg"
-          :link="config.contactLinks.linkedin"
+          :link="linkedinUrl"
         >
           {{ $t('common.label.linkedin') }}
         </BaseChip>
         <BaseChip
           icon="/images/github.svg"
-          :link="config.contactLinks.github"
+          :link="githubUrl"
         >
           {{ $t('common.label.github') }}
         </BaseChip>
         <BaseChip
           icon="/images/email.svg"
-          :link="config.contactLinks.email"
+          :link="emailUrl"
         >
           {{ $t('common.label.email') }}
         </BaseChip>
-        <BaseChip
+        <BaseButton
           icon="/images/download.svg"
-          link="/documents/marcterradas.pdf"
-          download
+          @click="printDocument"
         >
           {{ $t('common.label.curriculum') }}
-        </BaseChip>
+        </BaseButton>
       </div>
     </div>
   </div>
@@ -60,10 +71,6 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacer)*2);
-
-  @media screen and (min-width: 1024px) {
-      gap: calc(var(--spacer)*4);
-  }
 }
 
 .description-container__row {
@@ -76,27 +83,20 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
   font-size: var(--font-xl);
   font-weight: bold;
   text-align: center;
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-xxl);
-  }
 }
 
 .description-container__title {
   font-size: var(--font-md);
   text-align: center;
+}
 
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-lg);
-  }
+.description-container__location {
+  font-size: var(--font-sm);
+  text-align: center;
 }
 
 .description-container__description {
   font-size: var(--font-sm);
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-md);
-  }
 }
 
 .description-container__chips-container {
@@ -104,5 +104,48 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
   flex-wrap: wrap;
   gap: calc(var(--spacer)/2);
   margin-top: calc(var(--spacer)/2);
+}
+
+@media screen and (min-width: 1024px) {
+  .description-container {
+    gap: calc(var(--spacer)*4);
+  }
+
+  .description-container__name {
+    font-size: var(--font-xxl);
+  }
+
+  .description-container__title {
+    font-size: var(--font-lg);
+  }
+
+  .description-container__location {
+    font-size: var(--font-md);
+  }
+
+  .description-container__description {
+    font-size: var(--font-md);
+  }
+}
+
+@media print {
+  .description-container {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .description-container__row {
+    gap: 0;
+  }
+
+  .description-container__name,
+  .description-container__title,
+  .description-container__location {
+    font-size: var(--font-sm);
+    text-align: start;
+  }
+
+  .description-container__chips-container {
+    display: none;
+  }
 }
 </style>
