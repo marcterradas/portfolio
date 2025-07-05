@@ -15,4 +15,11 @@
         font-size: var(--font-xl);
     }
 }
+
+@media print {
+  .base-title-section {
+    font-size: var(--font-sm);
+    text-decoration: underline;
+  }
+}
 </style>
