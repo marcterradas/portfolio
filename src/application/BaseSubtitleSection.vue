@@ -15,4 +15,10 @@
     font-size: var(--font-lg);
   }
 }
+
+@media print {
+  .base-subtitle-section {
+    font-size: var(--font-sm);
+  }
+}
 </style>
