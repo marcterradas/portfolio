@@ -73,7 +73,7 @@ useHead({
 
 @media print {
   .app {
-    padding: calc(var(--spacer)*1.5);
+    padding: 0;
     gap: calc(var(--spacer)/2);
   }
 }
