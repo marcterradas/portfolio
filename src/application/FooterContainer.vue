@@ -4,13 +4,16 @@ import config from '@/infrastructure/config.js'
 const linkedinUrl = `https://www.${config.contactLinks.linkedin}`
 const githubUrl = `https://www.${config.contactLinks.github}`
 const emailUrl = `mailto:${config.contactLinks.email}`
+
+function printDocument() {
+  window.print()
+}
 </script>
 
 <template>
   <div class="footer-container">
     <a
       :href="linkedinUrl"
-      class="footer-container__link"
       target="_blank"
     >
       <img
@@ -21,7 +24,6 @@ const emailUrl = `mailto:${config.contactLinks.email}`
     </a>
     <a
       :href="githubUrl"
-      class="footer-container__link"
       target="_blank"
     >
       <img
@@ -32,7 +34,6 @@ const emailUrl = `mailto:${config.contactLinks.email}`
     </a>
     <a
       :href="emailUrl"
-      class="footer-container__link"
       target="_blank"
     >
       <img
@@ -41,17 +42,16 @@ const emailUrl = `mailto:${config.contactLinks.email}`
         alt="email icon"
       >
     </a>
-    <a
-      href="/documents/marcterradas.pdf"
-      class="footer-container__link"
-      download
+    <div
+      class="footer-container__curriculum"
+      @click="printDocument"
     >
       <img
         class="footer-container__icon"
         src="/images/download.svg"
         alt="download icon"
       >
-    </a>
+    </div>
   </div>
 </template>
 
@@ -65,6 +65,10 @@ const emailUrl = `mailto:${config.contactLinks.email}`
 .footer-container__icon {
   width: calc(var(--default-size)*1.25);
   height: calc(var(--default-size)*1.25);
+}
+
+.footer-container__curriculum {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
