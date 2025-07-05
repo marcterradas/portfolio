@@ -50,10 +50,6 @@ const hasIcon = computed(() => !!props.icon)
   text-decoration: none;
   transition: var(--transition-background);
   width: fit-content;
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-md);
-  }
 }
 
 .base-link:hover {
@@ -63,5 +59,11 @@ const hasIcon = computed(() => !!props.icon)
 .base-link__icon {
   width: var(--default-size);
   height: var(--default-size);
+}
+
+@media screen and (min-width: 1024px) {
+  .base-link {
+    font-size: var(--font-md);
+  }
 }
 </style>

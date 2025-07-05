@@ -213,10 +213,6 @@ const kriterSoftwareDuration = computed(() => {
   gap: calc(var(--spacer)/4);
   margin-top: calc(var(--spacer)/2);
   font-size: var(--font-sm);
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-md);
-  }
 }
 
 .work-experience-container__skills {
@@ -224,5 +220,11 @@ const kriterSoftwareDuration = computed(() => {
   flex-wrap: wrap;
   gap: calc(var(--spacer)/2);
   margin-top: calc(var(--spacer)/2);
+}
+
+@media screen and (min-width: 1024px) {
+  .work-experience-container__company-description {
+    font-size: var(--font-md);
+  }
 }
 </style>

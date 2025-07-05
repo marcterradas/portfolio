@@ -60,15 +60,17 @@ const emailUrl = `mailto:${config.contactLinks.email}`
   display: flex;
   justify-content: center;
   gap: calc(var(--spacer)*1.5);
-
-  @media screen and (min-width: 1024px) {
-    gap: calc(var(--spacer)*1.25);
-  }
 }
 
 .footer-container__icon {
   width: calc(var(--default-size)*1.25);
   height: calc(var(--default-size)*1.25);
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    gap: calc(var(--spacer)*1.25);
+  }
 }
 
 @media print {

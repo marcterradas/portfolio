@@ -61,10 +61,6 @@ function changeLanguage(locale) {
   font-size: var(--font-sm);
   color: var(--dark-gray);
   transition: var(--transition-color);
-
-  @media screen and (min-width: 1024px) {
-    font-size: var(--font-md);
-  }
 }
 
 .navigation_container__language:hover {
@@ -77,6 +73,12 @@ function changeLanguage(locale) {
 
 .navigation_container__contact-links {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation_container__language {
+    font-size: var(--font-md);
+  }
 }
 
 @media print {

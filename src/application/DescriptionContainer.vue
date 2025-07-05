@@ -67,10 +67,6 @@ const emailUrl = `mailto:${config.contactLinks.email}`
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacer)*2);
-
-  @media screen and (min-width: 1024px) {
-      gap: calc(var(--spacer)*4);
-  }
 }
 
 .description-container__row {
@@ -83,36 +79,20 @@ const emailUrl = `mailto:${config.contactLinks.email}`
   font-size: var(--font-xl);
   font-weight: bold;
   text-align: center;
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-xxl);
-  }
 }
 
 .description-container__title {
   font-size: var(--font-md);
   text-align: center;
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-lg);
-  }
 }
 
 .description-container__location {
   font-size: var(--font-sm);
   text-align: center;
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-md);
-  }
 }
 
 .description-container__description {
   font-size: var(--font-sm);
-
-  @media screen and (min-width: 1024px) {
-      font-size: var(--font-md);
-  }
 }
 
 .description-container__chips-container {
@@ -122,24 +102,46 @@ const emailUrl = `mailto:${config.contactLinks.email}`
   margin-top: calc(var(--spacer)/2);
 }
 
+@media screen and (min-width: 1024px) {
+  .description-container {
+    gap: calc(var(--spacer)*4);
+  }
+
+  .description-container__name {
+    font-size: var(--font-xxl);
+  }
+
+  .description-container__title {
+    font-size: var(--font-lg);
+  }
+
+  .description-container__location {
+    font-size: var(--font-md);
+  }
+
+  .description-container__description {
+    font-size: var(--font-md);
+  }
+}
+
 @media print {
-.description-container {
-  gap: calc(var(--spacer)/2);
-}
+  .description-container {
+    gap: calc(var(--spacer)/2);
+  }
 
-.description-container__row {
-  gap: 0;
-}
+  .description-container__row {
+    gap: 0;
+  }
 
-.description-container__name,
-.description-container__title,
-.description-container__location {
-  font-size: var(--font-sm);
-  text-align: start;
-}
+  .description-container__name,
+  .description-container__title,
+  .description-container__location {
+    font-size: var(--font-sm);
+    text-align: start;
+  }
 
-.description-container__chips-container {
-  display: none;
-}
+  .description-container__chips-container {
+    display: none;
+  }
 }
 </style>

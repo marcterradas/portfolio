@@ -6,10 +6,12 @@
 
 <style>
 .base-paragraph {
-    font-size: var(--font-sm);
+  font-size: var(--font-sm);
+}
 
-    @media screen and (min-width: 1024px) {
-        font-size: var(--font-md);
-    }
+@media screen and (min-width: 1024px) {
+  .base-paragraph {
+    font-size: var(--font-md);
+  }
 }
 </style>
