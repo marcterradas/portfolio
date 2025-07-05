@@ -8,6 +8,10 @@ import config from '@/infrastructure/config.js'
 const { startDate: firstJobStartDate } = config.workExperience.kriterSoftware
 const [currentDate] = new Date().toISOString().split('T')
 const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDate)
+
+const linkedinUrl = `https://www.${config.contactLinks.linkedin}`
+const githubUrl = `https://www.${config.contactLinks.github}`
+const emailUrl = `mailto:${config.contactLinks.email}`
 </script>
 
 <template>
@@ -27,19 +31,19 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
       <div class="description-container__chips-container">
         <BaseChip
           icon="/images/linkedin.svg"
-          :link="config.contactLinks.linkedin"
+          :link="linkedinUrl"
         >
           {{ $t('common.label.linkedin') }}
         </BaseChip>
         <BaseChip
           icon="/images/github.svg"
-          :link="config.contactLinks.github"
+          :link="githubUrl"
         >
           {{ $t('common.label.github') }}
         </BaseChip>
         <BaseChip
           icon="/images/email.svg"
-          :link="config.contactLinks.email"
+          :link="emailUrl"
         >
           {{ $t('common.label.email') }}
         </BaseChip>
