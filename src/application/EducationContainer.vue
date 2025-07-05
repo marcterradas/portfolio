@@ -16,6 +16,8 @@ const { daw, c1 } = config.education
 const dawDates = `${daw.startDate} - ${daw.endDate}`
 
 const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
+const dawSkills = computed(() => `${t('common.label.skills')}: ${daw.skills.join(', ')}`)
+const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join(', ')}`)
 </script>
 
 <template>
@@ -45,7 +47,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
             {{ $t('common.label.title') }}
           </BaseChip>
         </div>
-        <div class="education-container__skills">
+        <div class="education-container__skills-container">
           <BaseSkill
             v-for="skill in daw.skills"
             :key="skill"
@@ -53,6 +55,9 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
             {{ skill }}
           </BaseSkill>
         </div>
+        <BaseParagraph class="education-container__skills">
+          {{ dawSkills }}
+        </BaseParagraph>
       </div>
       <div class="education-container__study">
         <BaseSubtitleSection>
@@ -72,7 +77,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
             {{ $t('common.label.certificate') }}
           </BaseChip>
         </div>
-        <div class="education-container__skills">
+        <div class="education-container__skills-container">
           <BaseSkill
             v-for="skill in c1.skills"
             :key="skill"
@@ -80,6 +85,9 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
             {{ skill }}
           </BaseSkill>
         </div>
+        <BaseParagraph class="education-container__skills">
+          {{ c1Skills }}
+        </BaseParagraph>
       </div>
     </div>
   </div>
@@ -105,11 +113,15 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
   flex-wrap: wrap;
 }
 
-.education-container__skills {
+.education-container__skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: calc(var(--spacer)/2);
   margin-top: calc(var(--spacer)/2);
+}
+
+.education-container__skills {
+  display: none;
 }
 
 .education-container__diploma {
@@ -117,6 +129,26 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
 }
 
 @media print {
+  .education-container {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .education-container__studies {
+    gap: calc(var(--spacer)/2);
+  }
+
+  .education-container__study {
+    gap: 0;
+  }
+
+  .education-container__skills-container {
+    display: none;
+  }
+
+  .education-container__skills {
+    display: block;
+  }
+
   .education-container__diploma {
     display: none;
   }
