@@ -1,11 +1,15 @@
 <script setup>
 import config from '@/infrastructure/config.js'
+
+const linkedinUrl = `https://www.${config.contactLinks.linkedin}`
+const githubUrl = `https://www.${config.contactLinks.github}`
+const emailUrl = `mailto:${config.contactLinks.email}`
 </script>
 
 <template>
   <div class="footer-container">
     <a
-      :href="config.contactLinks.linkedin"
+      :href="linkedinUrl"
       class="footer-container__link"
       target="_blank"
     >
@@ -16,7 +20,7 @@ import config from '@/infrastructure/config.js'
       >
     </a>
     <a
-      :href="config.contactLinks.github"
+      :href="githubUrl"
       class="footer-container__link"
       target="_blank"
     >
@@ -27,7 +31,7 @@ import config from '@/infrastructure/config.js'
       >
     </a>
     <a
-      :href="config.contactLinks.email"
+      :href="emailUrl"
       class="footer-container__link"
       target="_blank"
     >
