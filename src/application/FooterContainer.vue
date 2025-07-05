@@ -66,4 +66,10 @@ import config from '@/infrastructure/config.js'
   width: calc(var(--default-size)*1.25);
   height: calc(var(--default-size)*1.25);
 }
+
+@media print {
+  .footer-container {
+    display: none;
+  }
+}
 </style>
