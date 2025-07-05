@@ -22,7 +22,7 @@ const hasIcon = computed(() => !!props.icon)
       v-if="hasIcon"
       class="base-button__icon"
       :src="icon"
-      alt="icon"
+      alt=""
     >
     <slot />
   </button>

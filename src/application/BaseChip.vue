@@ -25,7 +25,7 @@ const hasIcon = computed(() => !!props.icon)
       v-if="hasIcon"
       class="base-link__icon"
       :src="icon"
-      alt="icon"
+      alt=""
     >
     <slot />
   </a>
