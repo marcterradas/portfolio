@@ -55,7 +55,11 @@ import config from '@/infrastructure/config.js'
 .footer-container {
   display: flex;
   justify-content: center;
-  gap: var(--spacer);
+  gap: calc(var(--spacer)*1.5);
+
+  @media screen and (min-width: 1024px) {
+    gap: calc(var(--spacer)*1.25);
+  }
 }
 
 .footer-container__icon {
