@@ -1,9 +1,9 @@
 export default {
   contactLinks: {
     phoneNumber: '+34633625516',
+    email: 'terradas.marc@gmail.com',
     github: 'github.com/marcterradas',
     linkedin: 'linkedin.com/in/marc-terradas-zapata',
-    email: 'terradas.marc@gmail.com',
     portfolio: 'marcterradas.dev',
   },
   workExperience: {
