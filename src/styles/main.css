@@ -12,9 +12,10 @@ body {
 }
 
 @media print {
-    /* Remove default header and footer */
     @page {
+        /* Remove default header and footer with margin 0 */
         margin: 0;
+        padding: calc(var(--spacer)*1.5);
     }
     body {
         color: var(--black-native);
