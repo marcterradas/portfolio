@@ -10,3 +10,14 @@ body {
     color: var(--white);
     font-family: var(--roboto);
 }
+
+@media print {
+    /* Remove default header and footer */
+    @page {
+        margin: 0;
+    }
+    body {
+        color: var(--black-native);
+        background: none;
+    }
+}
