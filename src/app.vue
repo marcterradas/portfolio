@@ -71,8 +71,8 @@ useHead({
 
 @media print {
   .app {
-    padding: var(--spacer);
-    gap: var(--spacer);
+    padding: calc(var(--spacer)*1.5);
+    gap: calc(var(--spacer)/2);
   }
 }
 </style>
