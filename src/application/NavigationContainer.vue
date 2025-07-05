@@ -87,7 +87,7 @@ function changeLanguage(locale) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     font-size: var(--font-sm);
   }
