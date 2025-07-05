@@ -7,6 +7,7 @@ import WorkExperienceContainer from '@/application/WorkExperienceContainer.vue'
 import EducationContainer from '@/application/EducationContainer.vue'
 import LanguagesContainer from '@/application/LanguagesContainer.vue'
 import FooterContainer from '@/application/FooterContainer.vue'
+import BaseContainer from '@/application/BaseContainer.vue'
 
 const { t, locale } = useI18n()
 
@@ -28,16 +29,24 @@ useHead({
       <NavigationContainer />
     </nav>
     <main>
-      <DescriptionContainer />
+      <BaseContainer>
+        <DescriptionContainer />
+      </BaseContainer>
     </main>
     <article>
-      <WorkExperienceContainer />
+      <BaseContainer>
+        <WorkExperienceContainer />
+      </BaseContainer>
     </article>
     <article>
-      <EducationContainer />
+      <BaseContainer>
+        <EducationContainer />
+      </BaseContainer>
     </article>
     <article>
-      <LanguagesContainer />
+      <BaseContainer>
+        <LanguagesContainer />
+      </BaseContainer>
     </article>
     <footer>
       <FooterContainer />
