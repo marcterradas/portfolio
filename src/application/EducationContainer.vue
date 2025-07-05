@@ -16,8 +16,6 @@ const { daw, c1 } = config.education
 const dawDates = `${daw.startDate} - ${daw.endDate}`
 
 const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
-const dawSkills = computed(() => `${t('common.label.skills')}: ${daw.skills.join(', ')}`)
-const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join(', ')}`)
 </script>
 
 <template>
@@ -33,10 +31,10 @@ const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join('
         <BaseParagraph>
           {{ $t('educationContainer.label.thosICodina') }}
         </BaseParagraph>
-        <BaseParagraph>
+        <BaseParagraph class="education-container__dates">
           {{ dawDates }}
         </BaseParagraph>
-        <BaseParagraph>
+        <BaseParagraph class="education-container__grade">
           {{ dawGrade }}
         </BaseParagraph>
         <div class="education-container__diploma">
@@ -55,9 +53,6 @@ const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join('
             {{ skill }}
           </BaseSkill>
         </div>
-        <BaseParagraph class="education-container__skills">
-          {{ dawSkills }}
-        </BaseParagraph>
       </div>
       <div class="education-container__study">
         <BaseSubtitleSection>
@@ -66,7 +61,7 @@ const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join('
         <BaseParagraph>
           {{ $t('educationContainer.label.uoc') }}
         </BaseParagraph>
-        <BaseParagraph>
+        <BaseParagraph class="education-container__dates">
           {{ c1.issuedDate }}
         </BaseParagraph>
         <div class="education-container__diploma">
@@ -85,9 +80,6 @@ const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join('
             {{ skill }}
           </BaseSkill>
         </div>
-        <BaseParagraph class="education-container__skills">
-          {{ c1Skills }}
-        </BaseParagraph>
       </div>
     </div>
   </div>
@@ -120,10 +112,6 @@ const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join('
   margin-top: calc(var(--spacer)/2);
 }
 
-.education-container__skills {
-  display: none;
-}
-
 .education-container__diploma {
   margin-top: var(--spacer)
 }
@@ -141,14 +129,9 @@ const c1Skills = computed(() => `${t('common.label.skills')}: ${c1.skills.join('
     gap: 0;
   }
 
-  .education-container__skills-container {
-    display: none;
-  }
-
-  .education-container__skills {
-    display: block;
-  }
-
+  .education-container__dates,
+  .education-container__grade,
+  .education-container__skills-container,
   .education-container__diploma {
     display: none;
   }
