@@ -123,6 +123,21 @@ const emailUrl = `mailto:${config.contactLinks.email}`
 }
 
 @media print {
+.description-container {
+  gap: calc(var(--spacer)/2);
+}
+
+.description-container__row {
+  gap: 0;
+}
+
+.description-container__name,
+.description-container__title,
+.description-container__location {
+  font-size: var(--font-sm);
+  text-align: start;
+}
+
 .description-container__chips-container {
   display: none;
 }
