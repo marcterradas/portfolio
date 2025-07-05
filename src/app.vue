@@ -68,4 +68,11 @@ useHead({
     padding: calc(var(--spacer)*2);
   }
 }
+
+@media print {
+  .app {
+    padding: var(--spacer);
+    gap: var(--spacer);
+  }
+}
 </style>
