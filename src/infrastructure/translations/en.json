@@ -16,8 +16,10 @@
     "common.label.present": "Present",
     "common.label.remote": "Remote",
     "common.label.seniorFrontendDeveloper": "Senior Frontend Developer",
+    "common.label.skills": "Skills",
     "common.label.title": "Title",
     "common.label.years": "year | years",
+    "descriptionContainer.label.location": "Barcelona (Spain)",
     "descriptionContainer.label.name": "Marc Terradas Zapata",
     "descriptionContainer.label.title": "Senior Frontend Developer",
     "descriptionContainer.message.description": "+{yearsOfExperience} years of experience as a developer, focused on Frontend, with knowledge of Backend and DevOps. In the products I have worked on, I have provided great value, from the moment of planning to production release, thanks to teamwork and communication skills. I focus a lot on developing maintainable and scalable code, and dedicate a lot of time to review pull requests and testing.",
@@ -56,6 +58,5 @@
     "workExperienceContainer.message.filminPart4": "CI/CD using GitLab pipelines for automated testing and deployment.",
     "workExperienceContainer.message.kriterSoftwareDescription": "Kriter is a B2B consultant that develops e-commerce for his clients.",
     "workExperienceContainer.message.kriterSoftwarePart1": "Development and maintenance of e-commerce sites, providing customer support (example: gallissa.com).",
-    "workExperienceContainer.message.kriterSoftwarePart2": "Development and maintenance of the internal CRM (repcamp.com).",
-    "descriptionContainer.label.location": "Barcelona (Spain)"
+    "workExperienceContainer.message.kriterSoftwarePart2": "Development and maintenance of the internal CRM (repcamp.com)."
 }
