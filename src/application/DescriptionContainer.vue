@@ -1,5 +1,6 @@
 <script setup>
 import BaseChip from '@/application/BaseChip.vue'
+import BaseButton from '@/application/BaseButton.vue'
 
 import { calculateDifferenceYears } from '@/domain/dates.js'
 import config from '@/infrastructure/config.js'
@@ -12,6 +13,10 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
 const linkedinUrl = `https://www.${config.contactLinks.linkedin}`
 const githubUrl = `https://www.${config.contactLinks.github}`
 const emailUrl = `mailto:${config.contactLinks.email}`
+
+function printDocument() {
+  window.print()
+}
 </script>
 
 <template>
@@ -50,13 +55,12 @@ const emailUrl = `mailto:${config.contactLinks.email}`
         >
           {{ $t('common.label.email') }}
         </BaseChip>
-        <BaseChip
+        <BaseButton
           icon="/images/download.svg"
-          link="/documents/marcterradas.pdf"
-          download
+          @click="printDocument"
         >
           {{ $t('common.label.curriculum') }}
-        </BaseChip>
+        </BaseButton>
       </div>
     </div>
   </div>
