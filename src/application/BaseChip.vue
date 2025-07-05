@@ -1,4 +1,6 @@
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
   icon: {
     type: String,
@@ -7,10 +9,6 @@ const props = defineProps({
   link: {
     type: String,
     required: true,
-  },
-  download: {
-    type: Boolean,
-    default: false,
   },
 })
 
@@ -22,7 +20,6 @@ const hasIcon = computed(() => !!props.icon)
     :href="props.link"
     target="_blank"
     class="base-link"
-    :download="props.download ? '' : null"
   >
     <img
       v-if="hasIcon"
