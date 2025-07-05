@@ -23,6 +23,9 @@ const emailUrl = `mailto:${config.contactLinks.email}`
       <h2 class="description-container__title">
         {{ $t('descriptionContainer.label.title') }}
       </h2>
+      <h3 class="description-container__location">
+        {{ $t('descriptionContainer.label.location') }}
+      </h3>
     </div>
     <div class="description-container__row">
       <p class="description-container__description">
@@ -92,6 +95,15 @@ const emailUrl = `mailto:${config.contactLinks.email}`
 
   @media screen and (min-width: 1024px) {
       font-size: var(--font-lg);
+  }
+}
+
+.description-container__location {
+  font-size: var(--font-sm);
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+      font-size: var(--font-md);
   }
 }
 
