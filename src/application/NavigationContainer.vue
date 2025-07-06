@@ -8,8 +8,8 @@ const router = useRouter()
 const runtimeConfig = useRuntimeConfig()
 
 const { locales: languages } = runtimeConfig.public.i18n
-const { phoneNumber, email, github, linkedin, portfolio } = config.contactLinks
-const contactLinks = [phoneNumber, email, github, linkedin, portfolio]
+const { phoneNumber, email, linkedin } = config.contactLinks
+const contactLinks = [phoneNumber, email, linkedin]
 
 const currentLanguage = ref(locale.value)
 
@@ -89,7 +89,7 @@ function changeLanguage(locale) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     font-size: var(--font-sm);
   }

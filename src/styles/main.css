@@ -15,7 +15,7 @@ body {
     @page {
         /* Remove default header and footer with margin 0 */
         margin: 0;
-        padding: calc(var(--spacer)*1.5);
+        padding: calc(var(--spacer)*2);
     }
     body {
         color: var(--black-native);

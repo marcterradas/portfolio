@@ -4,7 +4,6 @@ export default {
     email: 'terradas.marc@gmail.com',
     github: 'github.com/marcterradas',
     linkedin: 'linkedin.com/in/marc-terradas-zapata',
-    portfolio: 'marcterradas.dev',
   },
   workExperience: {
     filmin: {
