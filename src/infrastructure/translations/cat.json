@@ -52,7 +52,7 @@
     "workExperienceContainer.message.dogfyDietPart2": "Revisió de codi (pull requests de frontend i backend).",
     "workExperienceContainer.message.dogfyDietPart3": "Metodologia àgil (Scrum amb sprints de dues setmanes).",
     "workExperienceContainer.message.filminDescription": "Filmin és una plataforma B2C de vídeo sota demanda.",
-    "workExperienceContainer.message.filminPart1": "Desenvolupament, manteniment, documentació i testing de les webs principals: (filmin.es, filmin.pt i filmin.cat).",
+    "workExperienceContainer.message.filminPart1": "Desenvolupament, manteniment, documentació i testing de les webs principals: (filmin.es, filmin.pt i filmin.cat) i la llibreria de components (moonlight.pages.filmin.es).",
     "workExperienceContainer.message.filminPart2": "Testing unitari i d'integració.",
     "workExperienceContainer.message.filminPart3": "Revisió de codi.",
     "workExperienceContainer.message.filminPart4": "CI/CD utilitzant pipelines de GitLab per a testing i desplegament automatitzats.",
