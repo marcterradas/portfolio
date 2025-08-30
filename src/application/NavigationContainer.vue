@@ -7,7 +7,7 @@ const { locale, setLocale } = useI18n()
 const router = useRouter()
 const runtimeConfig = useRuntimeConfig()
 
-const { locales: languages } = runtimeConfig.public.i18n
+const languages = runtimeConfig.public.i18n.locales.map(item => item.language)
 const { phoneNumber, email, linkedin } = config.contactLinks
 const contactLinks = [phoneNumber, email, linkedin]
 

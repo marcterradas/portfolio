@@ -20,7 +20,7 @@
     "sort:translations": "sort-json ./src/infrastructure/translations/*.json"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^9.5.6",
+    "@nuxtjs/i18n": "^10.0.6",
     "@nuxtjs/robots": "^5.5.1",
     "nuxt": "^3.17.6",
     "vue": "^3.5.20",
