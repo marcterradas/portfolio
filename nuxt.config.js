@@ -12,6 +12,9 @@ export default defineNuxtConfig({
   ssr: true,
 
   css: ['@/styles/normalize.min.css', '@/styles/tokens.css', '@/styles/main.css', '@/styles/fonts.css'],
+  dir: {
+    public: 'src/public',
+  },
   srcDir: 'src/',
   compatibilityDate: '2024-07-28',
 
