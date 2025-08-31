@@ -100,9 +100,8 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
 
 .education-container__study {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: calc(var(--spacer)/4);
-  flex-wrap: wrap;
 }
 
 .education-container__skills-container {

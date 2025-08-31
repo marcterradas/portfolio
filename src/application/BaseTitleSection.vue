@@ -10,7 +10,7 @@
     font-weight: bold;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
     .base-title-section {
         font-size: var(--font-xl);
     }

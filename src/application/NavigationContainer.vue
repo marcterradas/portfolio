@@ -75,7 +75,7 @@ function changeLanguage(locale) {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .navigation_container__language {
     font-size: var(--font-md);
   }
@@ -85,6 +85,7 @@ function changeLanguage(locale) {
   .navigation_container__language-switcher {
     display: none;
   }
+
   .navigation_container__contact-links {
     display: flex;
     flex-wrap: wrap;

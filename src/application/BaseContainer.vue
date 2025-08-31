@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
 .base-container {
     padding: 0 calc(var(--spacer)*6);
   }

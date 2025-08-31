@@ -65,7 +65,7 @@ useHead({
   gap: calc(var(--spacer)*4);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .app {
     padding: calc(var(--spacer)*2);
   }

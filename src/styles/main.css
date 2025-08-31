@@ -17,6 +17,7 @@ body {
         margin: 0;
         padding: calc(var(--spacer)*2);
     }
+
     body {
         color: var(--black-native);
         background: none;

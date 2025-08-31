@@ -94,7 +94,7 @@ function printDocument() {
   color: var(--color-text-secondary);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .footer-container {
     gap: calc(var(--spacer)*1.25);
   }

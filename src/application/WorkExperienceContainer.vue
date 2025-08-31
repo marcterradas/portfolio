@@ -217,9 +217,8 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
 
 .work-experience-container__job {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: calc(var(--spacer)/4);
-  flex-wrap: wrap;
 }
 
 .work-experience-container__company-description {
@@ -243,7 +242,7 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
   margin-top: calc(var(--spacer)/2);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .work-experience-container__company-description {
     font-size: var(--font-md);
   }

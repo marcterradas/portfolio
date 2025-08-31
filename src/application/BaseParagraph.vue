@@ -9,7 +9,7 @@
   font-size: var(--font-sm);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .base-paragraph {
     font-size: var(--font-md);
   }

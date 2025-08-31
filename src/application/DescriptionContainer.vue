@@ -106,7 +106,7 @@ function printDocument() {
   margin-top: calc(var(--spacer)/2);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .description-container {
     gap: calc(var(--spacer)*4);
   }
