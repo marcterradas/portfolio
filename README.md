@@ -8,38 +8,26 @@
 pnpm i
 ```
 
-### Remove dependencies and install again
-
-```
-pnpm run phoenix
-```
-
 ### Compiles and hot-reloads for development
 
 ```
 pnpm run dev
 ```
 
-### Compiles and minifies for production
-
-```
-pnpm run build
-```
-
 ### Lint code
 
 ```
-pnpm run lint:fix
+pnpm run lint
+```
+
+### Lint styles
+
+```
+pnpm run lint:styles
 ```
 
 ### Run unit test
 
 ```
 pnpm run test:unit
-```
-
-### Sort translations keys
-
-```
-pnpm run sort:translations
 ```

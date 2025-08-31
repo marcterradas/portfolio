@@ -23,7 +23,7 @@
     --black-lightest: #2a2e33;
     --dark-gray: #ADB5BD;
     --white: #F8F9FA;
-    --black-native: #000000;
+    --black-native: #000;
 
     /* Border radius */
     --default-border-radius: 0.25rem;

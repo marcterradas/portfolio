@@ -58,7 +58,7 @@ const hasIcon = computed(() => !!props.icon)
   height: var(--default-size);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .base-link {
     font-size: var(--font-md);
   }
