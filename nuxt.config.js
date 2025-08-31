@@ -1,8 +1,10 @@
 import { fileURLToPath } from 'url'
+import { readFileSync } from 'node:fs'
 import { defineNuxtConfig } from 'nuxt/config'
 
-export default defineNuxtConfig({
+const packageJson = JSON.parse(readFileSync(new URL('./package.json', import.meta.url)))
 
+export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
@@ -12,6 +14,12 @@ export default defineNuxtConfig({
   ssr: true,
 
   css: ['@/styles/normalize.min.css', '@/styles/tokens.css', '@/styles/main.css', '@/styles/fonts.css'],
+
+  runtimeConfig: {
+    public: {
+      appVersion: packageJson.version,
+    },
+  },
   dir: {
     public: 'src/public',
   },
