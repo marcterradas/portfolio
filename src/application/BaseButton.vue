@@ -8,6 +8,8 @@ const props = defineProps({
   },
 })
 
+defineEmits(['click'])
+
 const hasIcon = computed(() => !!props.icon)
 </script>
 
