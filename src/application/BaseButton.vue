@@ -1,5 +1,5 @@
 <script setup>
-import { defineEmits, computed } from 'vue'
+import { computed } from 'vue'
 
 const props = defineProps({
   icon: {
@@ -7,8 +7,6 @@ const props = defineProps({
     default: null,
   },
 })
-
-defineEmits(['click'])
 
 const hasIcon = computed(() => !!props.icon)
 </script>
