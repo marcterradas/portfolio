@@ -8,7 +8,7 @@ export default {
   ],
   rules: {
     // The project uses BEM (Block__Element--Modifier) naming for CSS classes.
-    // The default selector-class-pattern rule expects kebab-case, so we disable it for now.
+    // The default selector-class-pattern rule expects kebab-case, so for now I will not add a custom plugin for BEM.
     'selector-class-pattern': null,
   },
   overrides: [
