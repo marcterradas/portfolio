@@ -1,40 +1,46 @@
 <script setup>
 import { ref } from 'vue'
-import { useI18n, useRouter, useRuntimeConfig } from '#imports'
+import { useI18n, useRuntimeConfig } from '#imports'
 import config from '@/infrastructure/config.js'
 
 const { locale, setLocale } = useI18n()
-const router = useRouter()
 const runtimeConfig = useRuntimeConfig()
+const currentLanguage = ref(locale.value)
 
-const languages = runtimeConfig.public.i18n.locales.map(item => item.language)
+const languages = runtimeConfig.public.i18n.locales
+  .map(item => item.language)
+  .sort(language => language === locale.value ? -1 : 1)
+
 const { phoneNumber, email, linkedin } = config.contactLinks
 const contactLinks = [phoneNumber, email, linkedin]
 
-const currentLanguage = ref(locale.value)
-
 /**
  * Change the current language
- * @param {string} locale
+ * @param {Event} event
  */
-function changeLanguage(locale) {
-  setLocale(locale)
-  currentLanguage.value = locale
-  router.push(`/${locale}`)
+function changeLanguage(event) {
+  const selectedLocale = event.target.value
+  setLocale(selectedLocale)
+  currentLanguage.value = selectedLocale
 }
 </script>
 
 <template>
   <div class="navigation_container__language-switcher">
-    <button
-      v-for="language in languages"
-      :key="language"
-      class="navigation_container__language"
-      :class="{ 'navigation_container__language--selected': language === currentLanguage }"
-      @click.prevent="changeLanguage(language)"
+    <select
+      :value="currentLanguage"
+      class="navigation_container__language-selector"
+      @change="changeLanguage"
     >
-      {{ language.toUpperCase() }}
-    </button>
+      <option
+        v-for="language in languages"
+        :key="language"
+        class="navigation_container__language-option"
+        :value="language"
+      >
+        {{ language.toUpperCase() }}
+      </option>
+    </select>
   </div>
   <div class="navigation_container__contact-links">
     <span
@@ -54,21 +60,21 @@ function changeLanguage(locale) {
 .navigation_container__language-switcher {
   display: flex;
   justify-content: flex-end;
-  gap: var(--spacer);
 }
 
-.navigation_container__language {
+.navigation_container__language-selector {
   font-size: var(--font-sm);
-  color: var(--dark-gray);
-  transition: var(--transition-color);
+  color: var(--white);
+  background-color: var(--black);
+  padding: calc(var(--spacer)/3);
+  cursor: pointer;
+  border: none;
 }
 
-.navigation_container__language:hover {
+.navigation_container__language-option {
+  font-size: var(--font-sm);
   color: var(--white);
-}
-
-.navigation_container__language--selected {
-  color: var(--white);
+  background-color: var(--black);
 }
 
 .navigation_container__contact-links {
@@ -76,7 +82,7 @@ function changeLanguage(locale) {
 }
 
 @media screen and (width >= 1024px) {
-  .navigation_container__language {
+  .navigation_container__language-selector {
     font-size: var(--font-md);
   }
 }
