@@ -35,7 +35,7 @@
     "sort-json": "^2.0.1",
     "stylelint": "^16.24.0",
     "stylelint-config-recommended-vue": "^1.6.1",
-    "stylelint-config-standard": "^39.0.0",
+    "stylelint-config-standard": "^39.0.1",
     "vitest": "^4.0.8"
   }
 }
