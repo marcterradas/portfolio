@@ -6,8 +6,8 @@ body {
     margin: 0 auto;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(to bottom, var(--black) 0%, var(--black-lightest) 100%);
-    color: var(--white);
+    background: linear-gradient(to bottom, var(--background-start) 0%, var(--background-end) 100%);
+    color: var(--text-color);
     font-family: var(--roboto);
 }
 
