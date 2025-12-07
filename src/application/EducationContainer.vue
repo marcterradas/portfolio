@@ -39,7 +39,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         </BaseParagraph>
         <div class="education-container__diploma">
           <BaseChip
-            icon="/images/diploma.svg"
+            icon="/images/light/diploma.svg"
             link="/documents/daw.pdf"
           >
             {{ $t('common.label.title') }}
@@ -66,7 +66,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         </BaseParagraph>
         <div class="education-container__diploma">
           <BaseChip
-            icon="/images/diploma.svg"
+            icon="/images/light/diploma.svg"
             link="/documents/english.c1.pdf"
           >
             {{ $t('common.label.certificate') }}

@@ -22,7 +22,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/linkedin.svg"
+          src="/images/light/linkedin.svg"
           alt="linkedin icon"
         >
       </a>
@@ -32,7 +32,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/github.svg"
+          src="/images/light/github.svg"
           alt="github icon"
         >
       </a>
@@ -42,7 +42,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/email.svg"
+          src="/images/light/email.svg"
           alt="email icon"
         >
       </a>
@@ -52,7 +52,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/download.svg"
+          src="/images/light/download.svg"
           alt="download icon"
         >
       </div>

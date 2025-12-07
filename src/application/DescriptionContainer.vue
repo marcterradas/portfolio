@@ -38,25 +38,25 @@ function printDocument() {
       </p>
       <div class="description-container__chips-container">
         <BaseChip
-          icon="/images/linkedin.svg"
+          icon="/images/light/linkedin.svg"
           :link="linkedinUrl"
         >
           {{ $t('common.label.linkedin') }}
         </BaseChip>
         <BaseChip
-          icon="/images/github.svg"
+          icon="/images/light/github.svg"
           :link="githubUrl"
         >
           {{ $t('common.label.github') }}
         </BaseChip>
         <BaseChip
-          icon="/images/email.svg"
+          icon="/images/light/email.svg"
           :link="emailUrl"
         >
           {{ $t('common.label.email') }}
         </BaseChip>
         <BaseButton
-          icon="/images/download.svg"
+          icon="/images/light/download.svg"
           @click="printDocument"
         >
           {{ $t('common.label.curriculum') }}
