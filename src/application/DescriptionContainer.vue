@@ -1,9 +1,12 @@
 <script setup>
+import { computed } from 'vue'
 import BaseChip from '@/application/BaseChip.vue'
 import BaseButton from '@/application/BaseButton.vue'
-
 import { calculateDifferenceYears } from '@/domain/dates.js'
 import config from '@/infrastructure/config.js'
+import { useTheme } from '@/infrastructure/composables/useTheme.js'
+
+const { theme } = useTheme()
 
 // Get the start date from the first job.
 const { startDate: firstJobStartDate } = config.workExperience.kriterSoftware
@@ -13,6 +16,11 @@ const yearsOfExperience = calculateDifferenceYears(firstJobStartDate, currentDat
 const linkedinUrl = `https://www.${config.contactLinks.linkedin}`
 const githubUrl = `https://www.${config.contactLinks.github}`
 const emailUrl = `mailto:${config.contactLinks.email}`
+
+const linkedinIcon = computed(() => theme.value === 'dark' ? '/images/light/linkedin.svg' : '/images/dark/linkedin.svg')
+const githubIcon = computed(() => theme.value === 'dark' ? '/images/light/github.svg' : '/images/dark/github.svg')
+const emailIcon = computed(() => theme.value === 'dark' ? '/images/light/email.svg' : '/images/dark/email.svg')
+const downloadIcon = computed(() => theme.value === 'dark' ? '/images/light/download.svg' : '/images/dark/download.svg')
 
 function printDocument() {
   window.print()
@@ -38,25 +46,25 @@ function printDocument() {
       </p>
       <div class="description-container__chips-container">
         <BaseChip
-          icon="/images/linkedin.svg"
+          :icon="linkedinIcon"
           :link="linkedinUrl"
         >
           {{ $t('common.label.linkedin') }}
         </BaseChip>
         <BaseChip
-          icon="/images/github.svg"
+          :icon="githubIcon"
           :link="githubUrl"
         >
           {{ $t('common.label.github') }}
         </BaseChip>
         <BaseChip
-          icon="/images/email.svg"
+          :icon="emailIcon"
           :link="emailUrl"
         >
           {{ $t('common.label.email') }}
         </BaseChip>
         <BaseButton
-          icon="/images/download.svg"
+          :icon="downloadIcon"
           @click="printDocument"
         >
           {{ $t('common.label.curriculum') }}

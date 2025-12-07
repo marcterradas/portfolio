@@ -1,7 +1,17 @@
 <script setup>
 import { ref } from 'vue'
-import { useI18n, useRuntimeConfig } from '#imports'
+import { useI18n, useRuntimeConfig, useHead } from '#imports'
 import config from '@/infrastructure/config.js'
+import { useTheme } from '@/infrastructure/composables/useTheme.js'
+
+const { theme, switchTheme } = useTheme()
+
+// Bind the theme value to the html tag attribute.
+useHead({
+  htmlAttrs: {
+    'data-theme': theme,
+  },
+})
 
 const { locale, setLocale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
@@ -17,6 +27,7 @@ const contactLinks = [phoneNumber, email, linkedin]
 /**
  * Change the current language
  * @param {Event} event
+ * @returns {void}
  */
 function changeLanguage(event) {
   const selectedLocale = event.target.value
@@ -26,21 +37,40 @@ function changeLanguage(event) {
 </script>
 
 <template>
-  <div class="navigation_container__language-switcher">
-    <select
-      :value="currentLanguage"
-      class="navigation_container__language-selector"
-      @change="changeLanguage"
+  <div class="navigation_container">
+    <button
+      class="navigation_container__theme-toggle"
+      @click="switchTheme()"
     >
-      <option
-        v-for="language in languages"
-        :key="language"
-        class="navigation_container__language-option"
-        :value="language"
+      <img
+        v-if="theme === 'dark'"
+        src="/images/light/sun.svg"
+        alt="Sun icon"
+        class="navigation_container__theme-icon"
       >
-        {{ language.toUpperCase() }}
-      </option>
-    </select>
+      <img
+        v-else
+        src="/images/dark/moon.svg"
+        alt="Moon icon"
+        class="navigation_container__theme-icon"
+      >
+    </button>
+    <div class="navigation_container__language-switcher">
+      <select
+        :value="currentLanguage"
+        class="navigation_container__language-selector"
+        @change="changeLanguage"
+      >
+        <option
+          v-for="language in languages"
+          :key="language"
+          class="navigation_container__language-option"
+          :value="language"
+        >
+          {{ language.toUpperCase() }}
+        </option>
+      </select>
+    </div>
   </div>
   <div class="navigation_container__contact-links">
     <span
@@ -57,6 +87,26 @@ function changeLanguage(event) {
 </template>
 
 <style>
+.navigation_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: calc(var(--spacer)/2);
+}
+
+.navigation_container__theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navigation_container__theme-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .navigation_container__language-switcher {
   display: flex;
   justify-content: flex-end;
@@ -64,8 +114,8 @@ function changeLanguage(event) {
 
 .navigation_container__language-selector {
   font-size: var(--font-sm);
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--text-color);
+  background-color: var(--background-color);
   padding: calc(var(--spacer)/3);
   cursor: pointer;
   border: none;
@@ -73,8 +123,8 @@ function changeLanguage(event) {
 
 .navigation_container__language-option {
   font-size: var(--font-sm);
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .navigation_container__contact-links {
@@ -88,6 +138,10 @@ function changeLanguage(event) {
 }
 
 @media print {
+  .navigation_container__theme-toggle {
+    display: none;
+  }
+
   .navigation_container__language-switcher {
     display: none;
   }

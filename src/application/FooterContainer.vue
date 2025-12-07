@@ -1,5 +1,7 @@
 <script setup>
+import { computed } from 'vue'
 import config from '@/infrastructure/config.js'
+import { useTheme } from '@/infrastructure/composables/useTheme.js'
 import { getPackageVersion } from '@/domain/useVersion.js'
 
 const linkedinUrl = `https://www.${config.contactLinks.linkedin}`
@@ -7,6 +9,12 @@ const githubUrl = `https://www.${config.contactLinks.github}`
 const emailUrl = `mailto:${config.contactLinks.email}`
 
 const appVersion = getPackageVersion()
+const { theme } = useTheme()
+
+const linkedinIcon = computed(() => theme.value === 'dark' ? '/images/light/linkedin.svg' : '/images/dark/linkedin.svg')
+const githubIcon = computed(() => theme.value === 'dark' ? '/images/light/github.svg' : '/images/dark/github.svg')
+const emailIcon = computed(() => theme.value === 'dark' ? '/images/light/email.svg' : '/images/dark/email.svg')
+const downloadIcon = computed(() => theme.value === 'dark' ? '/images/light/download.svg' : '/images/dark/download.svg')
 
 function printDocument() {
   window.print()
@@ -22,7 +30,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/linkedin.svg"
+          :src="linkedinIcon"
           alt="linkedin icon"
         >
       </a>
@@ -32,7 +40,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/github.svg"
+          :src="githubIcon"
           alt="github icon"
         >
       </a>
@@ -42,7 +50,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/email.svg"
+          :src="emailIcon"
           alt="email icon"
         >
       </a>
@@ -52,7 +60,7 @@ function printDocument() {
       >
         <img
           class="footer-container__icon"
-          src="/images/download.svg"
+          :src="downloadIcon"
           alt="download icon"
         >
       </div>

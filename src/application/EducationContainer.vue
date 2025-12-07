@@ -1,21 +1,22 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from '#imports'
-
 import BaseTitleSection from '@/application/BaseTitleSection.vue'
 import BaseSubtitleSection from '@/application/BaseSubtitleSection.vue'
 import BaseParagraph from '@/application/BaseParagraph.vue'
 import BaseChip from '@/application/BaseChip.vue'
 import BaseSkill from '@/application/BaseSkill.vue'
-
 import config from '@/infrastructure/config.js'
+import { useTheme } from '@/infrastructure/composables/useTheme.js'
 
 const { t } = useI18n()
+const { theme } = useTheme()
 
 const { daw, c1 } = config.education
 const dawDates = `${daw.startDate} - ${daw.endDate}`
 
 const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
+const diplomaIcon = computed(() => theme.value === 'dark' ? '/images/light/diploma.svg' : '/images/dark/diploma.svg')
 </script>
 
 <template>
@@ -39,7 +40,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         </BaseParagraph>
         <div class="education-container__diploma">
           <BaseChip
-            icon="/images/diploma.svg"
+            :icon="diplomaIcon"
             link="/documents/daw.pdf"
           >
             {{ $t('common.label.title') }}
@@ -66,7 +67,7 @@ const dawGrade = computed(() => `${t('common.label.grade')}: ${daw.grade}`)
         </BaseParagraph>
         <div class="education-container__diploma">
           <BaseChip
-            icon="/images/diploma.svg"
+            :icon="diplomaIcon"
             link="/documents/english.c1.pdf"
           >
             {{ $t('common.label.certificate') }}

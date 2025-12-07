@@ -23,6 +23,7 @@
     --black-lightest: #2a2e33;
     --dark-gray: #ADB5BD;
     --white: #F8F9FA;
+    --white-lightest: #FFF;
     --black-native: #000;
 
     /* Border radius */
@@ -35,4 +36,17 @@
     /* Transitions */
     --transition-color: color 0.5s ease;
     --transition-background: background-color 0.5s ease;
+
+    /* Semantic Colors */
+    --background-color: var(--black);
+    --background-start: var(--black);
+    --background-end: var(--black-lightest);
+    --text-color: var(--white);
+}
+
+[data-theme="light"] {
+    --background-color: var(--white);
+    --background-start: var(--white);
+    --background-end: var(--white-lightest);
+    --text-color: var(--black);
 }

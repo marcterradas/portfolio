@@ -34,10 +34,10 @@ const hasIcon = computed(() => !!props.icon)
 <style>
 .base-link {
   align-items: center;
-  background-color: var(--black);
+  background-color: var(--background-color);
   border: var(--default-border) solid var(--dark-gray);
   border-radius: var(--default-border-radius);
-  color: var(--white);
+  color: var(--text-color);
   cursor: pointer;
   display: flex;
   font-size: var(--font-sm);
