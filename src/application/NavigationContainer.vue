@@ -1,9 +1,17 @@
 <script setup>
 import { ref } from 'vue'
-import { useI18n, useRuntimeConfig } from '#imports'
+import { useI18n, useRuntimeConfig, useHead } from '#imports'
 import config from '@/infrastructure/config.js'
+import { useTheme } from '@/infrastructure/composables/useTheme.js'
 
-const theme = ref('dark')
+const { theme, switchTheme } = useTheme()
+
+// Bind the theme value to the html tag attribute.
+useHead({
+  htmlAttrs: {
+    'data-theme': theme,
+  },
+})
 
 const { locale, setLocale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
@@ -15,14 +23,6 @@ const languages = runtimeConfig.public.i18n.locales
 
 const { phoneNumber, email, linkedin } = config.contactLinks
 const contactLinks = [phoneNumber, email, linkedin]
-
-/**
- * Switch the current theme
- * @returns {void}
- */
-function switchTheme() {
-  theme.value = theme.value === 'dark' ? 'light' : 'dark'
-}
 
 /**
  * Change the current language
@@ -114,8 +114,8 @@ function changeLanguage(event) {
 
 .navigation_container__language-selector {
   font-size: var(--font-sm);
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--text-color);
+  background-color: var(--background-color);
   padding: calc(var(--spacer)/3);
   cursor: pointer;
   border: none;
@@ -123,8 +123,8 @@ function changeLanguage(event) {
 
 .navigation_container__language-option {
   font-size: var(--font-sm);
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .navigation_container__contact-links {
