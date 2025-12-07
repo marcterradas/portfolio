@@ -50,7 +50,7 @@ const hasIcon = computed(() => !!props.icon)
 }
 
 .base-link:hover {
-  background-color: var(--black-lightest);
+  background-color: var(--hover-color);
 }
 
 .base-link__icon {

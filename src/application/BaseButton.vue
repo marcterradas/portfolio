@@ -47,7 +47,7 @@ const hasIcon = computed(() => !!props.icon)
 }
 
 .base-button:hover {
-  background-color: var(--black-lightest);
+  background-color: var(--hover-color);
 }
 
 .base-button__icon {

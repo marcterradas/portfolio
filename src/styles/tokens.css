@@ -42,6 +42,7 @@
     --background-start: var(--black);
     --background-end: var(--black-lightest);
     --text-color: var(--white);
+    --hover-color: var(--black-lightest)
 }
 
 [data-theme="light"] {
@@ -49,4 +50,5 @@
     --background-start: var(--white);
     --background-end: var(--white-lightest);
     --text-color: var(--black);
+    --hover-color: var(--white-lightest);
 }
