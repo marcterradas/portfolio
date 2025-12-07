@@ -23,3 +23,7 @@ body {
         background: none;
     }
 }
+
+:root {
+  color-scheme: dark light;
+}
