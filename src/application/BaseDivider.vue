@@ -8,7 +8,7 @@
       height: 1px;
       width: 100%;
       background-color: var(--text-color);
-      opacity: 0.1;
+      opacity: var(--base-opacity);
   }
 
   @media print {
