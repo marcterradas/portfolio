@@ -8,8 +8,15 @@ import EducationContainer from '@/application/EducationContainer.vue'
 import LanguagesContainer from '@/application/LanguagesContainer.vue'
 import FooterContainer from '@/application/FooterContainer.vue'
 import BaseContainer from '@/application/BaseContainer.vue'
+import { useScrollAnimation } from '@/infrastructure/composables/useScrollAnimation.js'
 
 const { t, locale } = useI18n()
+
+const { isVisible: isDescriptionVisible, elementRef: descriptionRef } = useScrollAnimation()
+const { isVisible: isWorkExperienceVisible, elementRef: workExperienceRef } = useScrollAnimation()
+const { isVisible: isEducationVisible, elementRef: educationRef } = useScrollAnimation()
+const { isVisible: isLanguagesVisible, elementRef: languagesRef } = useScrollAnimation()
+const { isVisible: isFooterVisible, elementRef: footerRef } = useScrollAnimation()
 
 useHead({
   title: t('header.label.title'),
@@ -28,28 +35,38 @@ useHead({
     <nav>
       <NavigationContainer />
     </nav>
-    <main>
-      <BaseContainer>
-        <DescriptionContainer />
-      </BaseContainer>
+    <main ref="descriptionRef">
+      <Transition name="fade-slide">
+        <BaseContainer v-if="isDescriptionVisible">
+          <DescriptionContainer />
+        </BaseContainer>
+      </Transition>
     </main>
-    <article>
-      <BaseContainer>
-        <WorkExperienceContainer />
-      </BaseContainer>
+    <article ref="workExperienceRef">
+      <Transition name="fade-slide">
+        <BaseContainer v-if="isWorkExperienceVisible">
+          <WorkExperienceContainer />
+        </BaseContainer>
+      </Transition>
     </article>
-    <article>
-      <BaseContainer>
-        <EducationContainer />
-      </BaseContainer>
+    <article ref="educationRef">
+      <Transition name="fade-slide">
+        <BaseContainer v-if="isEducationVisible">
+          <EducationContainer />
+        </BaseContainer>
+      </Transition>
     </article>
-    <article>
-      <BaseContainer>
-        <LanguagesContainer />
-      </BaseContainer>
+    <article ref="languagesRef">
+      <Transition name="fade-slide">
+        <BaseContainer v-if="isLanguagesVisible">
+          <LanguagesContainer />
+        </BaseContainer>
+      </Transition>
     </article>
-    <footer>
-      <FooterContainer />
+    <footer ref="footerRef">
+      <Transition name="fade-slide">
+        <FooterContainer v-if="isFooterVisible" />
+      </Transition>
     </footer>
   </div>
 </template>
