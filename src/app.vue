@@ -37,35 +37,35 @@ useHead({
     </nav>
     <main ref="descriptionRef">
       <Transition name="fade-slide">
-        <BaseContainer v-if="isDescriptionVisible">
+        <BaseContainer v-show="isDescriptionVisible">
           <DescriptionContainer />
         </BaseContainer>
       </Transition>
     </main>
     <article ref="workExperienceRef">
       <Transition name="fade-slide">
-        <BaseContainer v-if="isWorkExperienceVisible">
+        <BaseContainer v-show="isWorkExperienceVisible">
           <WorkExperienceContainer />
         </BaseContainer>
       </Transition>
     </article>
     <article ref="educationRef">
       <Transition name="fade-slide">
-        <BaseContainer v-if="isEducationVisible">
+        <BaseContainer v-show="isEducationVisible">
           <EducationContainer />
         </BaseContainer>
       </Transition>
     </article>
     <article ref="languagesRef">
       <Transition name="fade-slide">
-        <BaseContainer v-if="isLanguagesVisible">
+        <BaseContainer v-show="isLanguagesVisible">
           <LanguagesContainer />
         </BaseContainer>
       </Transition>
     </article>
     <footer ref="footerRef">
       <Transition name="fade-slide">
-        <FooterContainer v-if="isFooterVisible" />
+        <FooterContainer v-show="isFooterVisible" />
       </Transition>
     </footer>
   </div>
