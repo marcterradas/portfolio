@@ -42,7 +42,7 @@
     --background-start: var(--black);
     --background-end: var(--black-lightest);
     --text-color: var(--white);
-    --hover-color: var(--black-lightest)
+    --hover-color: var(--black-lightest);
 }
 
 [data-theme="light"] {
