@@ -14,8 +14,8 @@
 .base-skill:not(:last-child)::after {
   content: '|';
   margin-left: calc(var(--spacer)/2);
-  color: var(--dark-gray);
-  opacity: calc(var(--base-opacity) + 0.2);
+  color: var(--text-color);
+  opacity: var(--base-opacity);
 }
 
 @media screen and (width >= 1024px) {
