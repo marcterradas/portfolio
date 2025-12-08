@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/test-utils/module', '@nuxtjs/i18n', '@nuxtjs/robots', '@nuxtjs/stylelint-module'],
   ssr: true,
 
-  css: ['@/styles/normalize.min.css', '@/styles/tokens.css', '@/styles/main.css', '@/styles/fonts.css'],
+  css: ['@/styles/normalize.min.css', '@/styles/tokens.css', '@/styles/main.css', '@/styles/fonts.css', '@/styles/animations.css'],
 
   runtimeConfig: {
     public: {
