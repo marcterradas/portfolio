@@ -8,6 +8,7 @@ import EducationContainer from '@/application/EducationContainer.vue'
 import LanguagesContainer from '@/application/LanguagesContainer.vue'
 import FooterContainer from '@/application/FooterContainer.vue'
 import BaseContainer from '@/application/BaseContainer.vue'
+import BaseDivider from '@/application/BaseDivider.vue'
 import { useScrollAnimation } from '@/infrastructure/composables/useScrollAnimation.js'
 
 const { t, locale } = useI18n()
@@ -17,6 +18,9 @@ const { isVisible: isWorkExperienceVisible, elementRef: workExperienceRef } = us
 const { isVisible: isEducationVisible, elementRef: educationRef } = useScrollAnimation()
 const { isVisible: isLanguagesVisible, elementRef: languagesRef } = useScrollAnimation()
 const { isVisible: isFooterVisible, elementRef: footerRef } = useScrollAnimation()
+const { isVisible: isFirstDividerVisible, elementRef: firstDividerRef } = useScrollAnimation()
+const { isVisible: isSecondDividerVisible, elementRef: secondDividerRef } = useScrollAnimation()
+const { isVisible: isThirdDividerVisible, elementRef: thirdDividerRef } = useScrollAnimation()
 
 useHead({
   title: t('header.label.title'),
@@ -42,6 +46,13 @@ useHead({
         </BaseContainer>
       </Transition>
     </main>
+    <section ref="firstDividerRef">
+      <BaseContainer>
+        <Transition name="fade-slide">
+          <BaseDivider v-show="isFirstDividerVisible" />
+        </Transition>
+      </BaseContainer>
+    </section>
     <article ref="workExperienceRef">
       <Transition name="fade-slide">
         <BaseContainer v-show="isWorkExperienceVisible">
@@ -49,6 +60,13 @@ useHead({
         </BaseContainer>
       </Transition>
     </article>
+    <section ref="secondDividerRef">
+      <BaseContainer>
+        <Transition name="fade-slide">
+          <BaseDivider v-show="isSecondDividerVisible" />
+        </Transition>
+      </BaseContainer>
+    </section>
     <article ref="educationRef">
       <Transition name="fade-slide">
         <BaseContainer v-show="isEducationVisible">
@@ -56,6 +74,13 @@ useHead({
         </BaseContainer>
       </Transition>
     </article>
+    <section ref="thirdDividerRef">
+      <BaseContainer>
+        <Transition name="fade-slide">
+          <BaseDivider v-show="isThirdDividerVisible" />
+        </Transition>
+      </BaseContainer>
+    </section>
     <article ref="languagesRef">
       <Transition name="fade-slide">
         <BaseContainer v-show="isLanguagesVisible">
@@ -79,13 +104,7 @@ useHead({
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacer)*4);
-}
-
-@media screen and (width >= 1024px) {
-  .app {
-    padding: calc(var(--spacer)*2);
-  }
+  gap: calc(var(--spacer)*2);
 }
 
 @media print {

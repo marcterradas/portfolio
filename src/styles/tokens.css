@@ -19,11 +19,13 @@
     --font-xxl: calc(var(--font-xl) * var(--ratio));
 
     /* Colors */
-    --black: #212529;
-    --black-lightest: #2a2e33;
-    --dark-gray: #ADB5BD;
+    --black: #090909;
+    --black-lightest: #0f0f0f;
+    --black-hover: #2a2a2a;
     --white: #F8F9FA;
     --white-lightest: #f8f8f8;
+    --white-hover: #e0e0e0;
+    --dark-gray: #ADB5BD;
     --black-native: #000;
 
     /* Border radius */
@@ -37,12 +39,15 @@
     --transition-color: color 0.5s ease;
     --transition-background: background-color 0.5s ease;
 
+    /* Opacity */
+    --base-opacity: 0.1;
+
     /* Semantic Colors */
     --background-color: var(--black);
     --background-start: var(--black);
     --background-end: var(--black-lightest);
     --text-color: var(--white);
-    --hover-color: var(--black-lightest)
+    --hover-color: var(--black-hover);
 }
 
 [data-theme="light"] {
@@ -50,5 +55,5 @@
     --background-start: var(--white);
     --background-end: var(--white-lightest);
     --text-color: var(--black);
-    --hover-color: var(--white-lightest);
+    --hover-color: var(--white-hover);
 }

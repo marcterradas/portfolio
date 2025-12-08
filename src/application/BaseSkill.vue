@@ -6,14 +6,21 @@
 
 <style>
 .base-skill {
-  align-items: center;
-  border: var(--default-border) solid var(--dark-gray);
-  border-radius: var(--border-radius-rounded);
   display: flex;
+  align-items: center;
   font-size: var(--font-sm);
-  font-weight: bold;
-  gap: calc(var(--spacer)/4);
-  padding: calc(var(--spacer)/3);
-  width: fit-content;
+}
+
+.base-skill:not(:last-child)::after {
+  content: '|';
+  margin-left: calc(var(--spacer)/2);
+  color: var(--text-color);
+  opacity: var(--base-opacity);
+}
+
+@media screen and (width >= 1024px) {
+  .base-skill {
+    font-size: var(--font-md);
+  }
 }
 </style>
