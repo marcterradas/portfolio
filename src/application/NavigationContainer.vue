@@ -59,6 +59,7 @@ function changeLanguage(event) {
       <select
         :value="currentLanguage"
         class="navigation_container__language-selector"
+        aria-label="Select Language"
         @change="changeLanguage"
       >
         <option
