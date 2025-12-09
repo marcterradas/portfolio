@@ -3,8 +3,10 @@ import { ref } from 'vue'
 import { useI18n, useRuntimeConfig, useHead } from '#imports'
 import config from '@/infrastructure/config.js'
 import { useTheme } from '@/infrastructure/composables/useTheme.js'
+import { useUserPreferences } from '@/infrastructure/composables/useUserPreferences.js'
 
 const { theme, switchTheme } = useTheme()
+const { saveTheme, saveLanguage } = useUserPreferences()
 
 // Bind the theme value to the html tag attribute.
 useHead({
@@ -24,15 +26,16 @@ const languages = runtimeConfig.public.i18n.locales
 const { phoneNumber, email, linkedin } = config.contactLinks
 const contactLinks = [phoneNumber, email, linkedin]
 
-/**
- * Change the current language
- * @param {Event} event
- * @returns {void}
- */
 function changeLanguage(event) {
   const selectedLocale = event.target.value
-  setLocale(selectedLocale)
   currentLanguage.value = selectedLocale
+  setLocale(selectedLocale)
+  saveLanguage(selectedLocale)
+}
+
+function handleSwitchTheme() {
+  switchTheme()
+  saveTheme(theme.value)
 }
 </script>
 
@@ -40,7 +43,7 @@ function changeLanguage(event) {
   <div class="navigation_container">
     <button
       class="navigation_container__theme-toggle"
-      @click="switchTheme()"
+      @click="handleSwitchTheme()"
     >
       <img
         v-if="theme === 'dark'"
