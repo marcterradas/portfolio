@@ -104,7 +104,13 @@ useHead({
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacer)*2);
+  gap: var(--spacer);
+}
+
+@media screen and (width >= 1024px) {
+  .app {
+   gap: calc(var(--spacer)*2);
+  }
 }
 
 @media print {
