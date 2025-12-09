@@ -10,8 +10,10 @@ import FooterContainer from '@/application/FooterContainer.vue'
 import BaseContainer from '@/application/BaseContainer.vue'
 import BaseDivider from '@/application/BaseDivider.vue'
 import { useScrollAnimation } from '@/infrastructure/composables/useScrollAnimation.js'
+import { useUserPreferences } from '@/infrastructure/composables/useUserPreferences.js'
 
 const { t, locale } = useI18n()
+const { theme } = useUserPreferences()
 
 const { isVisible: isDescriptionVisible, elementRef: descriptionRef } = useScrollAnimation()
 const { isVisible: isWorkExperienceVisible, elementRef: workExperienceRef } = useScrollAnimation()
@@ -29,7 +31,8 @@ useHead({
     { name: 'author', content: t('header.label.title') },
   ],
   htmlAttrs: {
-    lang: locale,
+    'lang': locale,
+    'data-theme': theme.value,
   },
 })
 </script>
