@@ -1,4 +1,5 @@
 {
+    "common.label.accomplishments": "Assoliments",
     "common.label.barcelona": "Barcelona, Catalunya, Espanya",
     "common.label.certificate": "Certificat",
     "common.label.curriculum": "Curriculum",
@@ -15,6 +16,7 @@
     "common.label.partTime": "Jornada partida",
     "common.label.present": "Present",
     "common.label.remote": "Remot",
+    "common.label.responsibilities": "Responsabilitats",
     "common.label.seniorFrontendDeveloper": "Senior Frontend Developer",
     "common.label.skills": "Habilitats",
     "common.label.title": "Títol",
@@ -51,11 +53,10 @@
     "workExperienceContainer.message.dogfyDietPart1": "Desenvolupament, manteniment i testing de la web (dogfydiet.com), l'àrea client (app.dogfydiet.com), el CRM intern (sales.dogfydiet.com) i el back-office intern (bo.dogfydiet.com).",
     "workExperienceContainer.message.dogfyDietPart2": "Revisió de codi (pull requests de frontend i backend).",
     "workExperienceContainer.message.dogfyDietPart3": "Metodologia àgil (Scrum amb sprints de dues setmanes).",
+    "workExperienceContainer.message.filminAccomplishment1": "Millorar el temps de desplegament de 17 minuts a 3 minuts millorant les pipelines, actualitzant Node 14 a Node 22, migrant Webpack a Vite i Jest a Vitest.",
+    "workExperienceContainer.message.filminAccomplishment2": "Actualitzar Vue 2 a Vue 3 a les webs principals.",
     "workExperienceContainer.message.filminDescription": "Filmin és una plataforma B2C de vídeo sota demanda.",
-    "workExperienceContainer.message.filminPart1": "Desenvolupament, manteniment, documentació i testing de les webs principals: (filmin.es, filmin.pt i filmin.cat) i la llibreria de components (moonlight.pages.filmin.es).",
-    "workExperienceContainer.message.filminPart2": "Testing unitari i d'integració.",
-    "workExperienceContainer.message.filminPart3": "Revisió de codi.",
-    "workExperienceContainer.message.filminPart4": "CI/CD utilitzant pipelines de GitLab per a testing i desplegament automatitzats.",
+    "workExperienceContainer.message.filminResponsibility1": "Desenvolupament, manteniment, documentació, testing i desplegament de les webs principals (filmin.es, filmin.pt i filmin.cat), les webs secundàries i la llibreria de components.",
     "workExperienceContainer.message.kriterSoftwareDescription": "Kriter és un consultor B2B que desenvolupa e-commerce per als seus clients.",
     "workExperienceContainer.message.kriterSoftwarePart1": "Desenvolupament i manteniment de llocs d'e-commerce, oferint suport al client (exemple: gallissa.com).",
     "workExperienceContainer.message.kriterSoftwarePart2": "Desenvolupament i manteniment del CRM intern (repcamp.com)."

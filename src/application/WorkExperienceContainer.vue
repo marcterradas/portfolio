@@ -82,11 +82,18 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
         <BaseParagraph class="work-experience-container__skills">
           {{ filminSkills }}
         </BaseParagraph>
+        <BaseParagraph class="work-experience-container__list-title">
+          {{ $t('common.label.responsibilities') }}:
+        </BaseParagraph>
         <ul class="work-experience-container__company-description">
-          <li>{{ $t('workExperienceContainer.message.filminPart1') }}</li>
-          <li>{{ $t('workExperienceContainer.message.filminPart2') }}</li>
-          <li>{{ $t('workExperienceContainer.message.filminPart3') }}</li>
-          <li>{{ $t('workExperienceContainer.message.filminPart4') }}</li>
+          <li>{{ $t('workExperienceContainer.message.filminResponsibility1') }}</li>
+        </ul>
+        <BaseParagraph class="work-experience-container__list-title">
+          {{ $t('common.label.accomplishments') }}:
+        </BaseParagraph>
+        <ul class="work-experience-container__company-description">
+          <li>{{ $t('workExperienceContainer.message.filminAccomplishment1') }}</li>
+          <li>{{ $t('workExperienceContainer.message.filminAccomplishment2') }}</li>
         </ul>
         <div class="work-experience-container__skills-container">
           <BaseSkill
@@ -231,6 +238,15 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
   font-size: var(--font-sm);
 }
 
+.work-experience-container__list-title {
+  margin-top: calc(var(--spacer)/2);
+  font-weight: bold;
+}
+
+.work-experience-container__list-title + .work-experience-container__company-description {
+  margin-top: 0;
+}
+
 .work-experience-container__skills {
   display: none;
 }
@@ -267,6 +283,10 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
 
   .work-experience-container__company-description {
     gap: 0;
+  }
+
+  .work-experience-container__list-title {
+    margin-top: calc(var(--spacer)/4);
   }
 
   .work-experience-container__skills-container {
