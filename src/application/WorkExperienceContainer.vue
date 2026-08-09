@@ -125,8 +125,6 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.dogfyDietPart1') }}</li>
-          <li>{{ $t('workExperienceContainer.message.dogfyDietPart2') }}</li>
-          <li>{{ $t('workExperienceContainer.message.dogfyDietPart3') }}</li>
         </ul>
         <div class="work-experience-container__skills-container">
           <BaseSkill
@@ -139,7 +137,7 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
       </div>
       <div class="work-experience-container__job">
         <BaseSubtitleSection>
-          {{ $t('common.label.fullStackDeveloper') }}
+          {{ $t('common.label.seniorFullStackDeveloper') }}
         </BaseSubtitleSection>
         <BaseParagraph>
           {{ andyTitle }}
@@ -159,10 +157,6 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.andyPart1') }}</li>
           <li>{{ $t('workExperienceContainer.message.andyPart2') }}</li>
-          <li>{{ $t('workExperienceContainer.message.andyPart3') }}</li>
-          <li>{{ $t('workExperienceContainer.message.andyPart4') }}</li>
-          <li>{{ $t('workExperienceContainer.message.andyPart5') }}</li>
-          <li>{{ $t('workExperienceContainer.message.andyPart6') }}</li>
         </ul>
         <div class="work-experience-container__skills-container">
           <BaseSkill
@@ -194,7 +188,6 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
         </BaseParagraph>
         <ul class="work-experience-container__company-description">
           <li>{{ $t('workExperienceContainer.message.kriterSoftwarePart1') }}</li>
-          <li>{{ $t('workExperienceContainer.message.kriterSoftwarePart2') }}</li>
         </ul>
         <div class="work-experience-container__skills-container">
           <BaseSkill
@@ -240,7 +233,7 @@ const kriterSoftwareSkills = computed(() => `${t('common.label.skills')}: ${krit
 
 .work-experience-container__list-title {
   margin-top: calc(var(--spacer)/2);
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 .work-experience-container__list-title + .work-experience-container__company-description {

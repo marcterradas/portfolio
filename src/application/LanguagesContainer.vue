@@ -41,8 +41,7 @@ import BaseParagraph from '@/application/BaseParagraph.vue'
   }
 
   .languages-container__languages {
-    flex-direction: row;
-    gap: var(--spacer);
+    gap: 0;
   }
 }
 </style>
